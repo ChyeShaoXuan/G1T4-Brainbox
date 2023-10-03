@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Meta-Learning-w-Yellow-1-hex { color: #0D3D56; }
+.Meta-Learning-w-Yellow-2-hex { color: #1395BA; }
+.Meta-Learning-w-Yellow-3-hex { color: #EBC844; }
+.Meta-Learning-w-Yellow-4-hex { color: #F06F21; }
+.Meta-Learning-w-Yellow-5-hex { color: #FFFFFF; }
+
+/* Color Theme Swatches in RGBA */
+.Meta-Learning-w-Yellow-1-rgba { color: rgba(13, 61, 86, 1); }
+.Meta-Learning-w-Yellow-2-rgba { color: rgba(18, 149, 186, 1); }
+.Meta-Learning-w-Yellow-3-rgba { color: rgba(235, 200, 68, 1); }
+.Meta-Learning-w-Yellow-4-rgba { color: rgba(239, 110, 33, 1); }
+.Meta-Learning-w-Yellow-5-rgba { color: rgba(255, 255, 255, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Meta-Learning-w-Yellow-1-hsla { color: hsla(0, 73, 19, 1); }
+.Meta-Learning-w-Yellow-2-hsla { color: hsla(0, 81, 40, 1); }
+.Meta-Learning-w-Yellow-3-hsla { color: hsla(0, 80, 59, 1); }
+.Meta-Learning-w-Yellow-4-hsla { color: hsla(0, 87, 53, 1); }
+.Meta-Learning-w-Yellow-5-hsla { color: hsla(0, 0, 100, 1); }
