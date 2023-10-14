@@ -6,10 +6,12 @@ body{
 	align-items: center;
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
-	background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	position: relative;
 }
 .main{
-	width: 350px;
+	width: 30%;
 	height: 550px;
 	background: red;
 	overflow: hidden;
@@ -17,6 +19,13 @@ body{
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
+
+#logo{
+	justify-content: center;
+	position: absolute;
+	top: 30px;
+}
+
 @media (max-width: 768px){
 	body.main{
 		width: 100%;
