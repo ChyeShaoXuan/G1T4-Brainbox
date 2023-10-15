@@ -5,80 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brainbox - Forum </title>
     <link rel="stylesheet" href="forum.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89d8330c95.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg" style="padding:2%;background-color:#F06F21 ">
-        <div class="container-fluid">
-          <form class="d-flex ms-auto justify-content-start" role="search">
-            <img src="images/brainbox_icon.png" style="width:15%;height:15%">
-          </form>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="width:100%;min-width: fit-content;">
-              <li class="nav-item topbar-info">
-                <a class="nav-link active fw-semibold" aria-current="page" href="#" style='color:white;font-size:20px'>Home</a>
-              </li>
-              <li class="nav-item topbar-info">
-                <a class="nav-link active fw-semibold" href="#" style='color:white;font-size:20px'>Forum</a>
-              </li>
-              
-              <li class="nav-item topbar-info" style="min-width:fit-content">
-                <a class="nav-link active fw-semibold" href="#" style='color:white;font-size:20px;'>Test Yourself!</a>
-              </li>
+    
+    
+    
+    <style>
+      a{
+        text-decoration: none;
+        
+      }
+    </style>
 
-              <li class="nav-item topbar-info" style="min-width:fit-content">
-                <a class="nav-link active fw-semibold" href="#" style='color:white;font-size:20px;'>Profile</a>
-              </li>
-            </ul>
-            
-          </div>
-        </div>
-      </nav>
+
+
+  </head>
+<body>
+  <!-- Nav bar -->
+  
+  <section style="background-color:aliceblue" class="text-gray-700">
+    <div class="container mx-auto p-5 md:p-8 flex flex-col md:flex-row justify-center items-center">
+      <div class="flex flex-col md:flex-row items-center">
+        <a href="credits.html" class="mb-5 font-black text-2xl text-gray-900 lg:w-auto lg:items-center lg:justify-center md:mb-0">
+          <span class="text-blue-900">BrainBox<span class="text-blue-900">.</span></span>
+        </a>
+        <nav class="mb-5 md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200 grid grid-cols-2 md:grid-cols-7 gap-5">
+          <a class="text-center flex-1">
+            <div class=" p-2 rounded-full text-gray-600 hover:text-gray-900 pointer-events-none">
+              Home
+            </div>
+          </a>
+          <a href="../Study/study.html" class="text-center flex-1">
+            <div class="p-2 rounded-full text-gray-600 hover:text-gray-900">
+              Study
+            </div>
+          </a>
+          <a href="../forum_page/forum.html" class="text-center flex-1">
+            <div class=" bg-yellow-300 p-2 rounded-full text-gray-600 hover:text-gray-900">
+              Forum
+            </div>
+          </a>
+          <a href="../Tests/test.html" class="text-center flex-1">
+            <div class="p-2 rounded-full text-gray-600 hover:text-gray-900">
+              Tests
+            </div>
+          </a>
+          <a href="../Progress/progress.html" class="text-center flex-1">
+            <div class="p-2 rounded-full text-gray-600 hover:text-gray-900">
+              Progress
+            </div>
+          </a>
+          <a href="../Leaderboard/leaderboard.html" class="text-center flex-1">
+            <div class="p-2 rounded-full text-gray-600 hover:text-gray-900">
+              Leaderboard
+            </div>
+          </a>
+          <a href="../Login/index.html" class="text-center flex-1">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Logout
+            </button>
+          </a>
+
+        </nav>
+      </div>
+    </div>
+  </section>
+  
+  <!-- end of navbar -->
+
+  
+  
+  
+
+
+
+
+
       
-      <div class="container-fluid">
+      
+
+      
+        
+      
         <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 " style="background:linear-gradient(#1395BA,75%,rgb(252, 251, 251))">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span class="fs-2 d-none d-sm-inline fw-semibold ">Subjects</span>
+            <div class="col-auto col-md-3 col-xl-2 col-sm-3 px-sm-2 px-0 " style="background-color:aliceblue"> 
+               <!--sidebar-->
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-75">
+                    <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none">
+                        <span class="fs-3 d-none d-sm-inline fw-bolder">Subjects</span>
                     </a>
                     <ul class="nav nav-pills navbar-collapse-sm flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline text-white">English</span><i class="fa-solid fa-book mx-3 text-white"></i>
-                            </a>
-                        </li>
+                      <!-- example item collapsible-->
+                      <li>
+                        <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline text-gray-600 bg bg-blue-400 p-2 rounded-full ">English<i class="fa-solid fa-book mx-3 text-gray-600" style="margin-left:10px;margin-right:11px "></i></span></a>
+                        
+                    </li>  
+                    <!-- end of example item -->
+                   
+                        
                         <li>
                             <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline text-white">Chinese</span><i class="fa-solid fa-language text-white" style="margin-left:10px;margin-right:11px"></i> </a>
+                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline text-gray-600 bg-blue-300 p-2 rounded-full">Chinese<i class="fa-solid fa-language text-gray-600" style="margin-left:10px;margin-right:11px"></i></span> </a>
                             
                         </li>
                         <li>
                             <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline text-white" ></i>Math</span><i class="fa-solid fa-plus-minus text-white" style="margin-left:30px;margin-right:15px"></i></a>
+                                <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline text-gray-600 bg-blue-300 p-2 rounded-full" >Math<i class="fa-solid fa-plus-minus text-gray-600" style="margin-left:20px;margin-right:15px"></i></span></a>
                         </li>
                         
                         <li>
                             <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline text-white">Science</span><i class="fa-solid fa-flask text-white" style="margin-left:14px;margin-right:14px"></i> </a>
-                                <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
-                                <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-white">Living things</span> 1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-white">Magnetics</span> 2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-white">Product</span> 3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-white">Product</span> 4</a>
-                                </li>
-                            </ul>
+                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline text-gray-600 bg-blue-300 p-2 rounded-full">Science<i class="fa-solid fa-flask text-gray-600" style="margin-left:14px;margin-right:14px"></i></span> </a>
+                                
                         </li>
                         
                         
@@ -86,12 +127,196 @@
                     <hr>
                     
                 </div>
+                <!-- end of hidden sidebar -->
             </div>
-            <div class="col py-3">
+            <div class="col-sm-9 col-lg-8 col-md-6 p-5" >
+              <!-- start of popular topics -->
+              <div class="row">
+                <div class="col-sm-12">
+              
+              <div class="card" id='post1'style="width: 100%;">
+                
+                <div class="card-body bg bg-blue-200">
+                  </i><h5 class="card-title"><i class="fa-regular fa-comments me-2"></i>Popular Topics</h5>
+                  
+                  <span class="card-text float-end">Threads:79&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comments : 1568</span>
+                  
+                </div>
+                
+                
+              </div>
+              </div>
+              </div>
+              <!-- pagination start-->
+              <div class="row mt-2">
+                <div class="col">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link bg bg-blue-100 text-gray-600" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link bg bg-blue-100 text-gray-600" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link bg bg-blue-100 text-gray-600" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link bg bg-blue-100 text-gray-600" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link bg bg-blue-100 text-gray-600" href="#">Next</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+               <!-- pagination end-->
+              <div class="row">
+                <div class="col">
+              
+              <div class="card mt-2" id='post2'style="width: 100%;">
+                <div class="card-header bg bg-blue-200">
+                  Posts
+                </div>
+                
+                <ul class="list-group list-group-flush">
+                  <!-- example item -->
+                  <li class="list-group-item p-3">
+                    <div class="row">
+                    <div class="col-sm-6 col-lg-6 ">
+                        <a href="#" class="text-blue-900 fw-semibold">How do i use for which?</a>
+                    </div>
+                    <div class="col-sm-2 col-lg-2">
+                      <div class="row">
+                      <div class="col-sm-2 col-lg-2">                      
+                      <img src="../Images/avatar1.jpg" class="w-10 h-10 rounded-full">
+                      </div>
+                      <div class="col-sm-10 col-lg-10">
+                        Kylian Mbappi
+                      </div>
+                      </div>
+                  </div>
+                    
+                  <div class="col-sm-3 col-lg-2 text-center">
+                    Replies:100
+                   
+                </div>
+                  <div class="col-sm-3 col-lg-2 text-center">
+                  Views:1.2k
+                 
+                  </div>
+                    </div>
+                  </li>
+                  <!-- example item -->
+                  <li class="list-group-item p-3">
+                    <div class="row">
+                    <div class="col-sm-6 col-lg-6">
+                        <a href="#" class="text-blue-900 fw-semibold">Usage of present perfect tense</a>
+                    </div>
+                    <div class="col-sm-2 col-lg-2">
+                      <div class="row">
+                      <div class="col-sm-2 col-lg-2">                      
+                      <img src="../Images/avatar2.jpg" class="w-10 h-10 rounded-full">
+                      </div>
+                      <div class="col-sm-10 col-lg-10">
+                        Imani Adisa
+                      </div>
+                      </div>
+                  </div>
+                    
+                  <div class="col-sm-3 col-lg-2 text-center">
+                    Replies:120
+                   
+                </div>
+                  <div class="col-sm-3 col-lg-2 text-center">
+                  Views:933
+                 
+                  </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item p-3">
+                    <div class="row">
+                    <div class="col-sm-6 col-lg-6">
+                        <a href="#" class="text-blue-900 fw-semibold">Sang vs Has Sung</a>
+                    </div>
+                    <div class="col-sm-2 col-lg-2">
+                      <div class="row">
+                      <div class="col-sm-2 col-lg-2">                      
+                      <img src="../Images/avatar3.jpg" class="w-10 h-10 rounded-full">
+                      </div>
+                      <div class="col-sm-10 col-lg-10">
+                        Touchemni
+                      </div>
+                      </div>
+                  </div>
+                    
+                  <div class="col-sm-3 col-lg-2 text-center">
+                    Replies:150
+                   
+                </div>
+                  <div class="col-sm-3 col-lg-2 text-center">
+                  Views:834
+                 
+                  </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item p-3">
+                    <div class="row">
+                    <div class="col-sm-6 col-lg-6">
+                        <a href="#" class="text-blue-900 fw-semibold">Antonyms vs Synonyms</a>
+                    </div>
+                    <div class="col-sm-2 col-lg-2">
+                      <div class="row">
+                      <div class="col-sm-2 col-lg-2">                      
+                      <img src="../Images/avatar4.jpg" class="w-10 h-10 rounded-full">
+                      </div>
+                      <div class="col-sm-10 col-lg-10">
+                        Yang Bing
+                      </div>
+                      </div>
+                  </div>
+                    
+                  <div class="col-sm-3 col-lg-2 text-center">
+                    Replies:129
+                   
+                </div>
+                  <div class="col-sm-3 col-lg-2 text-center">
+                  Views:733
+                 
+                  </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item p-3">
+                    <div class="row">
+                    <div class="col-sm-6 col-lg-6">
+                        <a href="#" class="text-blue-900 fw-semibold">To you or with you?</a>
+                    </div>
+                    <div class="col-sm-2 col-lg-2">
+                      <div class="row">
+                      <div class="col-sm-2 col-lg-2">                      
+                      <img src="../Images/avatar5.jpg" class="w-10 h-10 rounded-full">
+                      </div>
+                      <div class="col-sm-10 col-lg-10">
+                        Raihan Razak
+                      </div>
+                      </div>
+                  </div>
+                    
+                  <div class="col-sm-3 col-lg-2 text-center">
+                    Replies:76
+                   
+                </div>
+                  <div class="col-sm-3 col-lg-2 text-center">
+                  Views:589
+                 
+                  </div>
+                    </div>
+                  </li>
+                  
+                  
+                  
+                </ul>
+                
+              </div>
+              </div>
+              </div>
+              
+
               
             </div>
         </div>
-    </div>
+    </div> 
 
 
     
@@ -105,6 +330,8 @@
 
 
     <script src="forum.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 
     
 </body>
