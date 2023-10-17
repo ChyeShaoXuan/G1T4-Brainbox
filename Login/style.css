@@ -18,7 +18,7 @@ main {
   min-height: 100vh;
   overflow: hidden;
   background: rgb(238,174,202);
-	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -212,7 +212,8 @@ main.sign-up-mode .carousel {
   width: 55%;
   left: 45%;
   top: 0;
-  background-color: #ffe0d2;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   border-radius: 2rem;
   display: grid;
   grid-template-rows: auto 1fr;
