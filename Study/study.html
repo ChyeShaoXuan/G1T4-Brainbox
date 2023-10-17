@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="study.css">
 </head>
 <body>
   
@@ -59,6 +60,31 @@
   </section>
   <!-- end of navbar -->
 
+  <!-- Study Page Content -->
+  <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+    <div class="text-center">
+      <div class="flex items-center">
+        <button onclick="goToHome()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded">
+          Back
+        </button>
+        <div class="topbar-info ml-4">
+          <label for="level">Primary Level:</label>
+          <select id="level" class="p-3 rounded-full text-gray-600 hover:text-gray-900">
+            <option value="easy">Easy</option>
+            <option value="normal">Normal</option>
+            <option value="difficult">Difficult</option>
+          </select>
+        </div>
+      </div>
+      <input type="text" id="search-bar" placeholder="Search for keywords/topics" class="p-3 rounded-full text-gray-600 hover:text-gray-900 mb-4 md:mb-0 border border-black">
+    </div>
+    <!-- Yellow Flashcards Section -->
+    <div id="flashcard-container" class="mt-8">
+      <!-- Flashcards will be added here dynamically -->
+    </div>
+  </div>
+  
+  <!-- End of Study Page Content -->
 
   <!-- Bottom -->
   <section class="bg-white">
@@ -69,5 +95,7 @@
     </div>
   </section>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="study.js"></script>
+
 </body>
 </html>
