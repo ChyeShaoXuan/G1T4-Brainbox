@@ -65,41 +65,34 @@
   <div class="row flex-nowrap">
     <div class="col-auto col-md-3 col-xl-2 col-sm-3 px-sm-2 px-0 " style="background-color:aliceblue"> 
        <!--sidebar-->
-        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-75">
-            <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-decoration-none">
-                <span class="fs-3 d-none d-sm-inline fw-bolder">Subjects</span>
-            </a>
-            <ul class="nav nav-pills navbar-collapse-sm flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-              <!-- example item -->
-              <li>
-                <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline text-gray-600 bg bg-blue-400 p-2 rounded-full ">English<i class="fa-solid fa-book mx-3 text-gray-600" style="margin-left:10px;margin-right:11px "></i></span></a>
-                
-            </li>  
-            <!-- end of example item -->
-           
-                
-                <li>
-                    <a href="#" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                        <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline text-gray-600 bg-blue-300 p-2 rounded-full">Chinese<i class="fa-solid fa-language text-gray-600" style="margin-left:10px;margin-right:11px"></i></span> </a>
-                    
-                </li>
-                <li>
-                    <a href="#" class="nav-link px-0 align-middle">
-                        <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline text-gray-600 bg-blue-300 p-2 rounded-full" >Math<i class="fa-solid fa-plus-minus text-gray-600" style="margin-left:20px;margin-right:15px"></i></span></a>
-                </li>
-                
-                <li>
-                    <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                        <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline text-gray-600 bg-blue-300 p-2 rounded-full">Science<i class="fa-solid fa-flask text-gray-600" style="margin-left:14px;margin-right:14px"></i></span> </a>
-                        
-                </li>
-                
-                
-            </ul>
-            <hr>
-            
-        </div>
+        <div class="p-3">
+                    <a href="/" class="text-2xl font-semibold">Subjects</a>
+                    <ul class="nav flex-column mt-4">
+                        <!-- Example item collapsible -->
+                        <li class="nav-item">
+                            <a href="#" data-toggle="collapse" class="nav-link">
+                                <i class="fas fa-book"></i> English
+                            </a>
+                        </li>
+                        <!-- End of example item -->
+                        <li class="nav-item">
+                            <a href="#" data-toggle="collapse" class="nav-link">
+                                <i class="fas fa-language"></i> Chinese
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-plus-minus"></i> Math
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#submenu3" data-toggle="collapse" class="nav-link">
+                                <i class="fas fa-flask"></i> Science
+                            </a>
+                        </li>
+                    </ul>
+                    <hr class="my-4">
+                </div>
         <!-- end of hidden sidebar -->
     </div>
     <div class="col-sm-9 col-lg-8 col-md-6 p-5" >
