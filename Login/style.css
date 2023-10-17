@@ -24,6 +24,7 @@ body{
 	justify-content: center;
 	position: absolute;
 	top: 30px;
+	margin: 30px;
 }
 
 @media (max-width: 768px){
