@@ -81,7 +81,7 @@ form.sign-up-form {
 
 .logo img {
   width: 90%;
-  margin-right: 0.3rem;
+  margin:auto;
 }
 
 .logo h4 {
@@ -167,6 +167,7 @@ label {
   border-radius: 0.8rem;
   font-size: 0.8rem;
   margin-bottom: 2rem;
+  margin-top: 2rem;
   transition: 0.3s;
 }
 
@@ -237,15 +238,15 @@ main.sign-up-mode .carousel {
 }
 
 .img-1 {
-  transform: translate(0, -50px);
+  transform: translateY(0, -50px);
 }
 
 .img-2 {
-  transform: scale(0.4, 0.5);
+  transform: translateY(0, -50px);
 }
 
 .img-3 {
-  transform: scale(0.3) rotate(-20deg);
+  transform: translateY(0, -50px);
 }
 
 .image.show {
@@ -392,4 +393,8 @@ main.sign-up-mode .carousel {
   form {
     padding: 1rem 2rem 1.5rem;
   }
+}
+
+#forgetButton{
+  font-size: 0.7rem;
 }
