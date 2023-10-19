@@ -82,17 +82,17 @@ const firebaseConfig = {
       showSignUpError('none')
       try {
 
-        const userCredential = await createUserWithEmailAndPassword(auth, signupEmail, signupPassword).then(function(userDetails){
-          const user = userDetails.user
-          const db = getDatabase();
-          const reference = ref(db, 'users/' + user.uid)
-          user.displayName = signupName
-          console.log(user)
-          set(reference, {
-            username: signupName,
-            email:signupEmail,
+        const userCredential = await createUserWithEmailAndPassword(auth, signupEmail, signupPassword)
+        const db = getDatabase();
+        const user = userCredential.user
+        const reference = ref(db, 'users/' + user.uid)
+        user.displayName = signupName
+        console.log(user)
+        set(reference, {
+          username: signupName,
+          email:signupEmail,
           })
-        })
+        
 
         document.getElementById('signinMessage').innerText="You have successfully signed up!"
         document.getElementById('signinMessage').setAttribute("style","color:green")
