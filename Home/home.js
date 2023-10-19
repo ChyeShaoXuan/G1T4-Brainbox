@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
+import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
 import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
 
 const firebaseConfig = {
@@ -16,6 +16,16 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
+const db = getDatabase()
+onAuthStateChanged(auth, user => {
+        if (user) {
+            const reference = ref(db,'users/' + user.uid + '/username')
+            onValue(reference, (snapshot) => {
+                document.getElementById('username').innerText = snapshot.val()
+            })
+        }
+    })
+
 
 const logout = async() => {
     await signOut(auth)

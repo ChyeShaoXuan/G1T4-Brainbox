@@ -16,11 +16,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
-
-// const monitorAuthState = async() => {
-    
-// }
-
 function monitorAuthState() {
     onAuthStateChanged(auth, user => {
         if (user) {
