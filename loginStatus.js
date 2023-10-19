@@ -28,7 +28,7 @@ function monitorAuthState() {
             console.log(user.uid)
             document.getElementsByTagName('body')[0].removeAttribute('style')
         } else {
-            window.location.replace("/Login/index.html")
+            window.location.replace("/Testing/Login/index.html")
         }
     })
 }
