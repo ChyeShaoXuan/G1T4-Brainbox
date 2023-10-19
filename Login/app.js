@@ -4,8 +4,7 @@ const main = document.querySelector("main");
 const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
+import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
 import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
 
 
@@ -63,8 +62,6 @@ const firebaseConfig = {
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-
   const auth = getAuth(app)
 
   const signupEmailPassword = async () => { 
@@ -80,19 +77,29 @@ const firebaseConfig = {
     } else if (signupPassword.length <6) {
       showSignUpError('short')
     } else if (!document.querySelector("[name='agree']").checked) {
-      console.log('wat')
       showSignUpError('checkbox')
     } else {
       showSignUpError('none')
       try {
 
-        const userCredential = await createUserWithEmailAndPassword(auth, signupEmail, signupPassword)
+        const userCredential = await createUserWithEmailAndPassword(auth, signupEmail, signupPassword).then(function(userDetails){
+          const user = userDetails.user
+          const db = getDatabase();
+          const reference = ref(db, 'users/' + user.uid)
+          user.displayName = signupName
+          console.log(user)
+          set(reference, {
+            username: signupName,
+            email:signupEmail,
+          })
+        })
 
         document.getElementById('signinMessage').innerText="You have successfully signed up!"
         document.getElementById('signinMessage').setAttribute("style","color:green")
-
         clearFields()
         main.classList.toggle("sign-up-mode")
+
+
 
       }
       catch(error) {
