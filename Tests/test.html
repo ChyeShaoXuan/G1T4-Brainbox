@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    <!-- tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- font awesome cdn -->
     <script src="https://kit.fontawesome.com/89d8330c95.js" crossorigin="anonymous"></script>
+    <!-- animate.css cdn -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <!-- Nav bar -->
@@ -62,104 +71,183 @@
     </section>
   
   <!-- end of navbar -->
+  <div class="py-20 bg-cover bg-no-repeat bg-fixed relative" style="background-image: url(../Images/test_background_1.png)">
+    <div class="container m-auto text-center px-6 opacity-100">
+      <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4">Check out the most popular tests!</h2>
+      
+        
+        
+        <button class=" relative bg-gradient-to-r from-red-300 via-yellow-200 to-yellow-400 font-bold 
+        rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-red-700 
+        hover:bg-gray-800 transition-all shadow-lg animate__animated animate__bounceInDown ">Discover more</button>
+      
+    </div>
+  </div>
 
   
-  <div class="container mx-auto mt-5">
+  <div class="container mx-auto ms-0 mt-5">
     <div class="flex flex-wrap">
-        <div class="w-full md:w-1/4 p-2 bg-blue-100">
-            <!-- Sidebar -->
-            <div class="p-3">
-                <a href="/" class="text-2xl font-semibold">Subjects</a>
-                <ul class="nav flex-column mt-4">
-                    <!-- Example item collapsible -->
-                    <li class="nav-item">
-                        <a href="#" data-toggle="collapse" class="nav-link">
-                            <i class="fas fa-book"></i> English
-                        </a>
-                    </li>
-                    <!-- End of example item -->
-                    <li class="nav-item">
-                        <a href="#" data-toggle="collapse" class="nav-link">
-                            <i class="fas fa-language"></i> Chinese
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <i class="fas fa-plus-minus"></i> Math
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#submenu3" data-toggle="collapse" class="nav-link">
-                            <i class="fas fa-flask"></i> Science
-                        </a>
-                    </li>
-                </ul>
-                <hr class="my-4">
-            </div>
-            <!-- End of hidden sidebar -->
+      <div class="w-full md:w-1/4 p-2 bg-gradient-to-r from-indigo-300 to-blue-200">
+        <!-- Sidebar -->
+        <div class="p-3 text-blue-700 max-h-fit">
+            <div class="text-2xl font-semibold text-center text-blue-900">Subjects</div>
+            <ul class="nav flex-column mt-4">
+                <!-- Example item collapsible -->
+                <li class="nav-item">
+                    <a href="#" data-toggle="collapse" class="nav-link text-xl text-blue-900 hover:text-red-900 text-center font-semibold mb-2">
+                        <i class="fas fa-book"></i> English
+                    </a>
+                </li>
+                <!-- End of example item -->
+                <li class="nav-item">
+                    <a href="#" data-toggle="collapse" class="nav-link text-xl text-blue-900 hover:text-red-900 text-center font-semibold mb-2">
+                        <i class="fas fa-language"></i>Chinese
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-xl text-blue-900 hover:text-red-900 font-semibold text-center mb-2">
+                        <i class="fas fa-plus-minus"></i> Math
+                    </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-xl text-blue-900 hover:text-red-900 text-center font-semibold mb-2">
+                      <i class="fas fa-flask"></i> Science
+                  </a>
+              </li>
+            </ul>
+            
         </div>
+        <!-- End of hidden sidebar -->
+    </div>
         <div class="w-full md:w-3/4">
             <!-- Start of popular topics -->
-            <div class="w-full">
-                <div class="card" id="post1">
-                    <div class="card-body bg-blue-200">
-                        <h5 class="card-title">
-                            <i class="far fa-comments me-2"></i> Popular Tests - English 
-                        </h5>
-                        <p class="card-text md:text-right text-left mt-2 md:mt-0">Views: 10.8k</p>
-                    </div>
-                </div>
-            </div>
+            
             <!-- Pagination start -->
-            <div class="w-full mt-4">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item"><a class="page-link bg-blue-100 text-gray-600" href="#">Previous</a></li>
-                        <li class="page-item"><a class="page-link bg-blue-100 text-gray-600" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link bg-blue-100 text-gray-600" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link bg-blue-100 text-gray-600" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link bg-blue-100 text-gray-600" href="#">Next</a></li>
-                    </ul>
-                </nav>
+            <div class="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+              <div class="flex flex-1 justify-between sm:hidden">
+                <a href="#" class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Previous</a>
+                <a href="#" class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50">Next</a>
+              </div>
+              <div class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
+                <div>
+                  <p class="text-sm text-gray-700">
+                    Showing
+                    <span class="font-medium">1</span>
+                    to
+                    <span class="font-medium">5</span>
+                    of
+                    <span class="font-medium" id="totalnumresultstest">768</span>
+                    Tests for English
+                  </p>
+                </div>
+                <div>
+                  <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
+                    <a href="#" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                      <span class="sr-only">Previous</span>
+                      <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                    <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
+                    <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
+                    <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
+                    <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
+                    <span class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">...</span>
+                    <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">8</a>
+                    <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">9</a>
+                    <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">10</a>
+                    <a href="#" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+                      <span class="sr-only">Next</span>
+                      <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                      </svg>
+                    </a>
+                  </nav>
+                </div>
+              </div>
             </div>
             <!-- Pagination end -->
             
             <div class="w-full mt-4">
-                <div class="card" id="post2">
-                    <div class="card-header bg-blue-200">
-                        Test list - English
-                    </div>
+                <div class="card ms-3" id="post2">
+                    
                     <div class="card-body">
-                      <table class="table table-info">
-                        <thead>
-                          <tr>
-                            <th scope="col" style="text-align: center;">Description</th>
-                            <th scope="col" style="text-align: center;">Ratings by Users (0 to 5 <i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i>)</th>
-                            <th scope="col">Difficulty</th>
-                            <th scope="col">Recommended Time</th>
-                          </tr>
-                        </thead>
-                        <tbody >
-                          <tr style="font-size:17px;" class='hover:bg-blue-300'>
-                            <td><span class='fs-5 fw-semibold text-blue-900'>Test 1</span> <br><span class='text-gray-600' style="font-size:15px;">From Khan Academy<img src="../Images/avatarkhan.png" class="w-10 h-10 rounded-full"></span></td>
-                            <td style="text-align: center;">4.9 <i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i></td>
-                            <td>Normal</td>
-                            <td>120 mins</td>
-                          </tr>
-                          <tr>
-                            <td><span class='fs-5 fw-semibold text-blue-900'>Test 2</span> <br><span class='text-gray-600' style="font-size:15px;">From GusFring<img src="../Images/avatargus.png" class="w-10 h-10 rounded-full"></span></td>
-                            <td style="text-align: center;">4.8 <i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i></td>
-                            <td>Medium</td>
-                            <td>90 mins</td>
-                          </tr>
-                          <tr>
-                            <td><span class='fs-5 fw-semibold text-blue-900'>Test 3</span> <br><span class='text-gray-600' style="font-size:15px;">From EnglishMan2000<img src="../Images/avatar6.jpg" class="w-10 h-10 rounded-full"></span></td>
-                            <td style="text-align: center;">4.7<i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i></td>
-                            <td>Hard</td>
-                            <td>75 mins</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+  <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100">
+      <thead class="text-xs text-white uppercase bg-indigo-600 dark:text-white">
+          <tr>
+              <th scope="col" class="px-6 py-3 text-lg">
+                  Description
+              </th>
+              <th scope="col" class="px-6 py-3 text-lg">
+                Ratings by Users (0 to 5 <i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i>)
+              </th>
+              
+              <th scope="col" class="px-6 py-3 text-lg">
+                Difficulty
+              </th>
+              <th scope="col" class="px-6 py-3 text-lg text-center">
+                  Recommended Time
+              </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="bg-blue-400 border-b border-blue-400">
+              <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
+                 <span class="text-xl text-blue-900">Test 1</span><br>
+                 From Khan Academy<img src="../Images/avatarkhan.png" class="w-10 h-10 rounded-full">
+              </th>
+              <td class="px-6 py-4 text-lg text-center font-semibold">
+                4.9<i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;">
+              </td>
+              <td class="px-6 py-4 text-lg font-semibold">
+                  Easy
+              </td>
+              <td class="px-6 py-4 text-lg text-center font-semibold">
+                  120 min
+              </td>
+              
+          </tr>
+          <tr class="bg-blue-400 border-b border-blue-400">
+              <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
+                <span class="text-xl text-blue-900">Test 2</span><br>
+                From GusFring<img src="../Images/avatargus.png" class="w-10 h-10 rounded-full">
+              </th>
+              <td class="px-6 py-4 text-lg text-center font-semibold">
+                4.8<i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i>
+              </td>
+              <td class="px-6 py-4 text-lg font-semibold">
+                  Medium
+              </td>
+              <td class="px-6 py-4 text-lg text-center font-semibold">
+                90 mins
+              </td>
+              
+          </tr>
+          <tr class="bg-blue-400 border-b border-blue-400">
+              <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
+                <span class="text-xl text-blue-900">Test 3</span><br>
+                From EnglishMan2000<img src="../Images/avatar6.jpg" class="w-10 h-10 rounded-full">
+              </th>
+              <td class="px-6 py-4 text-lg text-center font-semibold">
+                4.7<i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i>
+              </td>
+              <td class="px-6 py-4 text-lg font-semibold">
+                Hard
+              </td>
+              <td class="px-6 py-4 text-lg text-center font-semibold">
+                  75 min 
+              </td>
+              
+          </tr>
+          
+          
+      </tbody>
+  </table>
+</div>
+
+                    
                     </div>
                     
                 </div>
