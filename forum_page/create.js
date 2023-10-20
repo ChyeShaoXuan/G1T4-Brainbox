@@ -2,7 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
 import {getAuth, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
 import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
 
-const current = new Date()
+
 
 
 
@@ -21,7 +21,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const db = getDatabase()
-
 function monitorAuthState() {
     onAuthStateChanged(auth, user => {
         if (user) {
@@ -32,7 +31,7 @@ function monitorAuthState() {
 
             console.log(postTitle,postContent,postSubject)
             console.log('submitted')
-
+            const current = new Date()
             const reference = ref(db, 'posts/' + current.getTime())
 
             set(reference, {
