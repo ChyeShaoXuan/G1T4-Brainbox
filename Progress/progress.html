@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Progress</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        .animated-text {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
 </head>
 <body>
   
@@ -62,12 +79,15 @@
 
   <!-- Bottom -->
   <section class="bg-white">
-    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-      <p class="mt-8 text-base leading-6 text-center text-gray-400">
-        ©2023 AY2023/2024 Semester 1 IS216 G1T4 - Team BrainBox
-      </p>
-    </div>
+    <section class="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-400 text-white">
+        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 text-center">
+            <p class="text-2xl leading-6 animated-text">
+                &copy; 2023 AY2023/2024 Semester 1 - IS216 G1T4 - Team BrainBox
+            </p>
+        </div>
+    </section>
   </section>
+    
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
