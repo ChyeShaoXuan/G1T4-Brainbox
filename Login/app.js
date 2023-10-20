@@ -66,7 +66,7 @@ const firebaseConfig = {
 
   const signupEmailPassword = async () => { 
     
-    const signupEmail = document.getElementById('signupEmail').value;
+    const signupEmail = document.getElementById('signupEmail').value.toLowerCase();
     const signupPassword = document.getElementById('signupPassword').value;
     const signupName = document.getElementById('name').value;
     console.log(signupEmail,signupPassword)
@@ -170,6 +170,7 @@ const firebaseConfig = {
         console.log(field)
         field.value = ''
       }
+      document.querySelector("[name='agree']").checked = false;
     }
 
 
