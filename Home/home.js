@@ -28,19 +28,25 @@ onAuthStateChanged(auth, user => {
 
 
 
-// For typing out animation
-const textElement = document.getElementById('typed-text');
-const text = textElement.textContent;
-textElement.textContent = '';     
-let index = 0;
+document.addEventListener('DOMContentLoaded', () => {
+    typeText();
+});
+
 function typeText() {
-    if (index < text.length) {
-        textElement.textContent += text.charAt(index);
-        index++;
-        setTimeout(typeText, 50); 
+    console.log("Animation started"); 
+    const textElement = document.getElementById('typed-text');
+    const text = textElement.textContent;
+    textElement.textContent = '';
+    let index = 0;
+    function typeChar() {
+        if (index < text.length) {
+            textElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeChar, 50);
         }
     }
-    window.addEventListener('load', typeText);
+    typeChar();
+}
 
 const logout = async() => {
     await signOut(auth)
