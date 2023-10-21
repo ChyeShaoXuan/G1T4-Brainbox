@@ -22,6 +22,7 @@ onAuthStateChanged(auth, user => {
             const reference = ref(db,'users/' + user.uid + '/username')
             onValue(reference, (snapshot) => {
                 document.getElementById('username').innerText = snapshot.val()
+                console.log(document.getElementById('username')
             })
         }
     })
