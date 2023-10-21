@@ -27,25 +27,25 @@ onAuthStateChanged(auth, user => {
     })
 
 
-function typeText() {
-    console.log("Animation started"); 
-    const textElement = document.getElementById('typed-text');
-    const text = textElement.textContent;
-    textElement.textContent = '';
-    let index = 0;
-    function typeChar() {
-        if (index < text.length) {
-            textElement.textContent += text.charAt(index);
-            index++;
-            setTimeout(typeChar, 50);
-        }
-    }
-    typeChar();
-}
+// function typeText() {
+//     console.log("Animation started"); 
+//     const textElement = document.getElementById('typed-text');
+//     const text = textElement.textContent;
+//     textElement.textContent = '';
+//     let index = 0;
+//     function typeChar() {
+//         if (index < text.length) {
+//             textElement.textContent += text.charAt(index);
+//             index++;
+//             setTimeout(typeChar, 50);
+//         }
+//     }
+//     typeChar();
+// }
 
-document.addEventListener('DOMContentLoaded', () => {
-    typeText();
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     typeText();
+// });
 
 
 const logout = async() => {
