@@ -32,3 +32,15 @@ const logout = async() => {
 }
 
 document.getElementById('logout').addEventListener('click',logout);
+
+window.addEventListener('load', () => {
+    const options = {
+        strings: ["Hello ", document.getElementById('username').innerText, "! Shall we learn something new today?"],
+        typeSpeed: 50, 
+        backSpeed: 30, 
+        startDelay: 1000, 
+        backDelay: 1000, 
+        loop: true, 
+    };
+    new Typed(".text-4xl", options);
+});
