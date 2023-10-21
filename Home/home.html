@@ -242,23 +242,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="../loginStatus.js"></script>
     <script type="module" src="home.js"></script>
-    <script>
-          const textElement = document.getElementById('typed-text');
-          const text = textElement.textContent;
-          textElement.textContent = '';
-        
-          let index = 0;
-        
-          function typeText() {
-            if (index < text.length) {
-              textElement.textContent += text.charAt(index);
-              index++;
-              setTimeout(typeText, 50); 
-            }
-          }
-          window.addEventListener('load', typeText);
-    </script>
-    
+
 </body>
 </html>
 
