@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progress</title>
+    <title>Profile & Progress</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
     <style>
+
+        body {
+            background-color: #f8dcff; 
+        }
+        
         .animated-text {
             animation: bounce 2s infinite;
         }
@@ -21,73 +27,202 @@
                 transform: translateY(-5px);
             }
         }
+        .profile-card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .progress-bar {
+            width: 80%; 
+            background: linear-gradient(to right, #805ad5, #b971d9, #e487b8);
+        }
+        .animated-background {
+            background-image: linear-gradient(45deg, #4a90e2, #8e3ca2, #36d1dc, #9930dd);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 100% 0;
+            }
+            100% {
+                background-position: 0 100%;
+            }
+        }
+
+        .snow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+        }
+        .snowflake {
+            position: absolute;
+            background: #fff;
+            opacity: 0.8;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
-  
-  <!-- Nav Bar -->
-  <section class="bg-aliceblue text-gray-700">
-    <div class="container mx-auto py-5 md:py-8">
-      <div class="flex flex-col md:flex-row justify-center items-center">
-        <div class="flex flex-col md:flex-row items-center">
-          <a href="../Home/credits.html" class="mb-5 font-black text-2xl text-gray-900 md:mb-0">
-            <span class="text-blue-900">BrainBox<span class="text-blue-900">.</span></span>
-          </a>
-          <nav class="mb-5 md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200 flex flex-wrap items-center">
-            <a href="../Home/home.html" class="text-center w-full md:w-auto md:ml-0">
-              <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
-                Home
-              </div>
-            </a>
-            <a href="../Study/study.html" class="text-center w-full md:w-auto md:ml-0"> 
-              <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
-                Study
-              </div>
-            </a>
-            <a href="../forum_page/forum.html" class="text-center w-full md:w-auto md:ml-0"> 
-              <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
-                Forum
-              </div>
-            </a>
-            <a href="../Tests/test.html" class="text-center w-full md:w-auto md:ml-0"> 
-              <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
-                Tests
-              </div>
-            </a>
-            <a class="text-center w-full md:w-auto md:ml-0"> 
-              <div class="bg-yellow-300 p-3 rounded-full text-gray-600 hover:text-gray-900 cursor-not-allowed"> 
-                Progress
-              </div>
-            </a>
-            <a href="../Leaderboard/leaderboard.html" class="text-center w-full md:w-auto md:ml-0"> 
-              <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
-                Leaderboard
-              </div>
-            </a>
-            <a href="../Login/index.html" class="text-center w-full md:w-auto md:ml-4"> 
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded"> 
-                Logout
-              </button>
-            </a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end of navbar -->
+    
+    <div class="snow"></div>
+    <script>
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            snowflake.style.width = Math.random() * 10 + 'px';
+            snowflake.style.height = snowflake.style.width;
+            snowflake.style.left = Math.random() * window.innerWidth + 'px';
+            document.querySelector('.snow').appendChild(snowflake);
+
+            anime({
+                targets: snowflake,
+                top: '100vh',
+                duration: 5000 + Math.random() * 5000,
+                easing: 'linear',
+                complete: function(anim) {
+                    anim.animatables[0].target.remove();
+                },
+            });
+        }
+
+        function generateSnowflakes() {
+            setInterval(createSnowflake, 100); 
+        }
+
+        generateSnowflakes();
+    </script>
 
 
-  <!-- Bottom -->
-  <section class="bg-white">
-    <section class="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-400 text-white">
-        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 text-center">
-            <p class="text-2xl leading-6 animated-text">
-                &copy; 2023 AY2023/2024 Semester 1 - IS216 G1T4 - Team BrainBox
-            </p>
+    <!-- Navbar -->
+    <section class="bg-aliceblue text-gray-700">
+        <div class="container mx-auto py-5 md:py-8">
+            <div class="flex flex-col md:flex-row justify-center items-center">
+                <div class="flex flex-col md:flex-row items-center">
+                    <a href="../Home/credits.html" class="mb-5 font-black text-2xl text-gray-900 md:mb-0">
+                        <span class="text-blue-900">BrainBox<span class="text-blue-900">.</span></span>
+                    </a>
+                    <nav class="mb-5 md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200 flex flex-wrap items-center">
+                        <a href="../Home/home.html" class="text-center w-full md:w-auto md:ml-0">
+                            <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
+                                Home
+                            </div>
+                        </a>
+                        <a href="../Study/study.html" class="text-center w-full md:w-auto md:ml-0"> 
+                            <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
+                                Study
+                            </div>
+                        </a>
+                        <a href="../forum_page/forum.html" class ="text-center w-full md:w-auto md:ml-0">
+                            <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
+                                Forum
+                            </div>
+                        </a>
+                        <a href="../Tests/test.html" class="text-center w-full md:w-auto md:ml-0"> 
+                            <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
+                                Tests
+                            </div>
+                        </a>
+                        <a class="text-center w-full md:w-auto md:ml-0"> 
+                            <div class="bg-yellow-300 p-3 rounded-full text-gray-600 hover:text-gray-900 cursor-not-allowed"> 
+                                Progress
+                            </div>
+                        </a>
+                        <a href="../Leaderboard/leaderboard.html" class="text-center w-full md:w-auto md:ml-0"> 
+                            <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
+                                Leaderboard
+                            </div>
+                        </a>
+                        <a href="../Login/index.html" class="text-center w-full md:w-auto md:ml-4"> 
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded"> 
+                                Logout
+                            </button>
+                        </a>
+                    </nav>
+                </div>
+            </div>
         </div>
     </section>
-  </section>
-    
+    <!-- end of navbar -->
+
+    <!-- AnimeJs Implementation, for the smaller orange banner thingy -->
+    <div class="animated-background flex items-center justify-center text-center h-3/4" style="background: linear-gradient(45deg, #c300ff, #ff76e1, #5662ff, #43c3ff); padding-bottom: 10vh; padding-top: 10vh;">
+        <div id="animated-text" class="animated-text-container">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">Explore Your Profile & Progress</h1>
+            <p class="text-black text-xl sm:text-2xl md:text-3xl font-bold mt-4">How has your journey been?</p>
+        </div>
+    </div>
+
+
+    <script> // Animation Scripts
+        const backgroundAnimation = anime({
+            targets: '.animated-background',
+            backgroundSize: '800% 800%',
+            duration: 15000,
+            direction: 'alternate',
+            easing: 'easeInOutQuad',
+            loop: true,
+        });
+
+        const textAnimation = anime({
+            targets: '#animated-text',
+            scale: [0.9, 1],
+            opacity: [0, 1],
+            duration: 2000,
+            easing: 'easeOutExpo',
+            delay: 1000, 
+        });
+    </script>
+
+    <!-- Profile Management Section, to be editable -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="md:w-1/2 mx-auto">
+                <div class="profile-card p-6 text-center">
+                    <!-- In the future, allow an option to change profile picture to pre-selected Avatars choice -->
+                    <img src="../Images/avatar4.jpg" alt="Your Name" class="rounded-full w-32 h-32 mx-auto mb-4">   
+                    <h2 class="text-2xl font-semibold text-gray-800">[INSERT MY NAME HERE]</h2>
+                    <p class="text-gray-600">[ABOUT ME]</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress View Section + Data All Put Here! -->
+    <section class="pb-12">
+        <div class="container mx-auto px-4">
+            <div class="md:w-1/2 mx-auto">
+                <div class="profile-card p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Progress</h3>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-200 rounded-full flex-shrink-0 mr-4">
+                            <div class="progress-bar h-12 rounded-full"></div>
+                        </div>
+                        <div>
+                            <p class="text-gray-600">75% Completed</p>
+                        </div>
+                    </div>
+                    <!-- In the future, we add in more progress stuff here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom -->
+    <section class="bg-white">
+        <section class="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-400 text-white">
+            <div class="max-w-screen-xl px-4 py-12 mx-auto text-center">
+                <p class="text-2xl leading-6 animated-text">
+                    &copy; 2023 AY2023/2024 Semester 1 - IS216 G1T4 - Team BrainBox
+                </p>
+            </div>
+        </section>
+    </section>
+
     <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
