@@ -22,12 +22,11 @@ onAuthStateChanged(auth, user => {
             const reference = ref(db,'users/' + user.uid + '/username')
             onValue(reference, (snapshot) => {
                 document.getElementById('username').innerText = snapshot.val()
+                console.log(snapshot.val())
             })
         }
     })
 
-const username = document.getElementById('username').innerText
-console.log(username)
 const textElement = document.getElementById('typed-text');
 const text = textElement.textContent;
 textElement.textContent = '';     
