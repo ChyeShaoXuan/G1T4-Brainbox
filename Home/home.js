@@ -26,6 +26,8 @@ onAuthStateChanged(auth, user => {
         }
     })
 
+const username = document.getElementById('username').innerText
+console.log(username)
 const textElement = document.getElementById('typed-text');
 const text = textElement.textContent;
 textElement.textContent = '';     
