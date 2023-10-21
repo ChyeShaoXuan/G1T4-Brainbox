@@ -20,27 +20,7 @@
             60% {
                 transform: translateY(-5px);
             }
-        }
-        
-        #typed-text {
-              overflow: hidden; 
-              border-right: .15em solid orange; 
-              white-space: nowrap; 
-              margin: 0 auto; 
-              letter-spacing: .05em; 
-              animation:  
-                typing 3.5s steps(40, end),
-                blink-caret .75s step-end infinite;
-        }
-        @keyframes typing {
-          from { width: 0 }
-          to { width: 100% }
-        }
-        @keyframes blink-caret {
-          from, to { border-color: transparent }
-          50% { border-color: orange; }
-        }   
-        
+        } 
     </style>
             
 </head>
@@ -101,7 +81,7 @@
     <div class="py-40 bg-cover bg-no-repeat bg-fixed relative" style="background-image: url(../Images/scenery.jpg)">
       <div class="container m-auto text-center px-6 opacity-100">
         <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4">
-          Hello <span id="username"></span>! <span id="animated-text"></span>
+          <span id="animated-text"></span>
         </h2>
         <a href="../Study/study.html">
           <button class="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-blue-500 hover:bg-gray-800 transition-all">Study Now!</button>
@@ -263,14 +243,16 @@
   </section>
 
     <!-- JS Calls and Crap-->
+    <!-- JS Calls and Crap-->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const options = {
-          strings: ["Shall we learn something new today?"],
+          strings: ["Hello <span id='username'></span>! Shall we learn something new today?"],
           typeSpeed: 75,
           showCursor: true, 
+          contentType: 'html',
         };
-    
+
         const typed = new Typed("#animated-text", options);
       });
     </script>
