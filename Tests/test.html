@@ -15,89 +15,63 @@
     <!-- animate.css cdn -->
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <style>
-        
-        .animated-text {
-            animation: bounce 2s infinite;
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
-        }
-        .nav-link {
-            text-decoration: none;
-              }
-
-        .nav-logo {
-            text-decoration: none;
-        }
-              
-    </style>
-    
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
-    
-  <!-- Nav Bar -->
-  <section class="bg-aliceblue text-gray-700">
-    <div class="container mx-auto py-5 md:py-8">
-      <div class="flex flex-col md:flex-row justify-center items-center">
-        <div class="flex flex-col md:flex-row items-center">
-          <a href="../Home/credits.html" class="mb-5 font-black text-2xl text-gray-900 md:mb-0 nav-logo">
-            <span class="text-blue-900">BrainBox<span class="text-blue-900">.</span></span>
-          </a>
-          <nav class="mb-5 md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200 flex flex-wrap items-center">
-            <a href="../Home/home.html" class="text-center w-full md:w-auto nav-link">
-              <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
-                Home
-              </div>
+    <!-- Nav bar -->
+  
+    <section class="bg-aliceblue text-gray-700">
+      <div class="container mx-auto py-5 md:py-8">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <div class="flex flex-col md:flex-row items-center">
+            <a href="credits.html" class="mb-5 font-black text-2xl text-gray-900 md:mb-0">
+              <span class="text-blue-900">BrainBox<span class="text-blue-900">.</span></span>
             </a>
-            <a href="../Study/study.html" class="text-center w-full md:w-auto md:ml-0 nav-link"> 
-              <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
-                Study
-              </div>
-            </a>
-            <a href="../forum_page/forum.html" class="text-center w-full md:w-auto md:ml-0 nav-link"> 
-              <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
-                Forum
-              </div>
-            </a>
-            <a class="text-center w-full md:w-auto md:ml-0 nav-link"> 
-              <div class="bg-yellow-300 p-3 rounded-full text-gray-600 hover:text-gray-900 cursor-not-allowed"> 
-                Tests
-              </div>
-            </a>
-            <a href="../Progress/progress.html" class="text-center w-full md:w-auto md:ml-0 nav-link"> 
-              <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
-                Progress
-              </div>
-            </a>
-            <a href="../Leaderboard/leaderboard.html" class="text-center w-full md:w-auto md:ml-0 nav-link"> 
-              <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> 
-                Leaderboard
-              </div>
-            </a>
-            <a href="../Login/index.html" class="text-center w-full md:w-auto md:ml-4 nav-link"> 
-              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded"> 
-                Logout
-              </button>
-            </a>
-          </nav>
+            <nav class="mb-5 md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200 flex flex-wrap items-center">
+              <a class="text-center w-full md:w-auto" href="../Home/home.html">
+                <div class=" p-3 rounded-full text-gray-600 hover:text-gray-900 cursor-not-allowed"> <!-- Increased padding -->
+                  Home
+                </div>
+              </a>
+              <a href="../Study/study.html" class="text-center w-full md:w-auto ml-3 md:ml-0"> <!-- Increased margin -->
+                <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> <!-- Increased padding -->
+                  Study
+                </div>
+              </a>
+              <a href="../forum_page/forum.html" class="text-center w-full md:w-auto ml-3 md:ml-0"> <!-- Increased margin -->
+                <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> <!-- Increased padding -->
+                  Forum
+                </div>
+              </a>
+              <a href="../Tests/test.html" class="text-center w-full md:w-auto ml-3 md:ml-0"> <!-- Increased margin -->
+                <div class="p-3 bg-yellow-300 rounded-full text-gray-600 hover:text-gray-900"> <!-- Increased padding -->
+                  Tests
+                </div>
+              </a>
+              <a href="../Progress/progress.html" class="text-center w-full md:w-auto ml-3 md:ml-0"> <!-- Increased margin -->
+                <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> <!-- Increased padding -->
+                  Progress
+                </div>
+              </a>
+              <a href="../Leaderboard/leaderboard.html" class="text-center w-full md:w-auto ml-3 md:ml-0"> <!-- Increased margin -->
+                <div class="p-3 rounded-full text-gray-600 hover:text-gray-900"> <!-- Increased padding -->
+                  Leaderboard
+                </div>
+              </a>
+              <a href="../Login/index.html" class="text-center w-full md:w-auto ml-3 md:ml-4"> <!-- Increased margin -->
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded"> <!-- Increased padding -->
+                  Logout
+                </button>
+              </a>
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  
   <!-- end of navbar -->
-    
-  <div class="py-20 bg-cover bg-no-repeat bg-fixed relative" style="background-image: url(../Images/test_background_1.png)">
+  <div class="py-20 bg-cover bg-no-repeat bg-fixed relative" style="background-image: url(Images/test_background_1.png)">
     <div class="container m-auto text-center px-6 opacity-100">
       <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4">Check out the most popular tests!</h2>
       
@@ -125,12 +99,12 @@
                     </a>
                 </li>
                 <!-- End of example item -->
-
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-xl text-blue-900 hover:text-red-900 font-semibold text-center mb-2">
-                        <i class="fas fa-plus-minus"></i> Math
+                    <a href="#" data-toggle="collapse" class="nav-link text-xl text-blue-900 hover:text-red-900 text-center font-semibold mb-2">
+                        <i class="fas fa-language"></i>Chinese
                     </a>
                 </li>
+                
                 <li class="nav-item">
                   <a href="#" class="nav-link text-xl text-blue-900 hover:text-red-900 text-center font-semibold mb-2">
                       <i class="fas fa-flask"></i> Science
@@ -156,9 +130,9 @@
                     Showing
                     <span class="font-medium">1</span>
                     to
-                    <span class="font-medium">5</span>
+                    <span class="font-medium">3</span>
                     of
-                    <span class="font-medium" id="totalnumresultstest">768</span>
+                    <span class="font-medium" id="totalnumresultstest">3</span>
                     Tests for English
                   </p>
                 </div>
@@ -196,77 +170,96 @@
                     <div class="card-body">
                       
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-  <table class="w-full text-sm text-left text-blue-100 dark:text-blue-100">
-      <thead class="text-xs text-white uppercase bg-indigo-600 dark:text-white">
-          <tr>
-              <th scope="col" class="px-6 py-3 text-lg">
-                  Description
-              </th>
-              <th scope="col" class="px-6 py-3 text-lg">
-                Ratings by Users (0 to 5 <i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i>)
-              </th>
-              
-              <th scope="col" class="px-6 py-3 text-lg">
-                Difficulty
-              </th>
-              <th scope="col" class="px-6 py-3 text-lg text-center">
-                  Recommended Time
-              </th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr class="bg-blue-400 border-b border-blue-400">
-              <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
-                 <span class="text-xl text-blue-900">Test 1</span><br>
-                 From Khan Academy<img src="../Images/avatarkhan.png" class="w-10 h-10 rounded-full">
-              </th>
-              <td class="px-6 py-4 text-lg text-center font-semibold">
-                4.9<i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;">
-              </td>
-              <td class="px-6 py-4 text-lg font-semibold">
-                  Easy
-              </td>
-              <td class="px-6 py-4 text-lg text-center font-semibold">
-                  120 min
-              </td>
-              
-          </tr>
-          <tr class="bg-blue-400 border-b border-blue-400">
-              <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
-                <span class="text-xl text-blue-900">Test 2</span><br>
-                From GusFring<img src="../Images/avatargus.png" class="w-10 h-10 rounded-full">
-              </th>
-              <td class="px-6 py-4 text-lg text-center font-semibold">
-                4.8<i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i>
-              </td>
-              <td class="px-6 py-4 text-lg font-semibold">
-                  Medium
-              </td>
-              <td class="px-6 py-4 text-lg text-center font-semibold">
-                90 mins
-              </td>
-              
-          </tr>
-          <tr class="bg-blue-400 border-b border-blue-400">
-              <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
-                <span class="text-xl text-blue-900">Test 3</span><br>
-                From EnglishMan2000<img src="../Images/avatar6.jpg" class="w-10 h-10 rounded-full">
-              </th>
-              <td class="px-6 py-4 text-lg text-center font-semibold">
-                4.7<i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i>
-              </td>
-              <td class="px-6 py-4 text-lg font-semibold">
-                Hard
-              </td>
-              <td class="px-6 py-4 text-lg text-center font-semibold">
-                  75 min 
-              </td>
-              
-          </tr>
+  
+  <div class="w-full mt-4 ">
+    <div class="card" id="post2">
+        <div class="card-header bg-gradient-to-r from-pink-200 to-blue-100 hover:from-green-200 to-blue-400 text-xl font-bold text-center">
+            Tests - English<br>
+            
+
+        </div>
+        <ul class="list-group list-group-flush ">
           
-          
-      </tbody>
-  </table>
+            <li class="list-group-item p-3 bg-cyan-100">
+                <div class="flex flex-col items-center md:flex-row ">
+                    <div class="w-full md:w-1/2 md:mb-0 text-center">
+                        <a href="exampletest.html" class="text-blue-900 font-semibold hover:text-red-900">Test 1 
+                          </a>
+                    </div>
+                    <div class="w-1/2 md:w-1/8 md:w-1/4">
+                        <div class="flex items-center">
+                            <div class="w-1/2">
+                                <img src="../Images/avatarkhan.png" class="w-10 h-10 rounded-full">
+                            </div>
+                            <div class="w-1/2 font-semibold text-blue-900">
+                                <span style="font-size: 15px;"> By Khandis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0 font-semibold text-blue-900 text-center">
+                      Rating : 4.9<i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i>
+                    </div>
+                    <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0 font-semibold text-blue-900 text-center">
+                      Difficulty : Easy
+                    </div>
+                </div>
+            </li>
+            
+            <li class="list-group-item p-3 bg-cyan-100">
+                <div class="flex flex-col items-center md:flex-row">
+                    <div class="w-full md:w-1/2 md:mb-0 text-center">
+                        <a href="#" class="text-blue-900 font-semibold hover:text-red-900">Test 2</a>
+                    </div>
+                    <div class="w-1/2 md:w-1/8 md:w-1/4">
+                        <div class="flex items-center">
+                            <div class="w-1/2">
+                                <img src="../Images/avatargus.jpg" class="w-10 h-10 rounded-full font-semibold text-blue-900 ">
+                            </div>
+                            <div class="w-1/2 font-semibold text-blue-900">
+                                <span style="font-size: 15px;"> By Gus Fring</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0 text-center font-semibold text-blue-900">
+                      Rating : 4.8<i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i>
+                    </div>
+                    <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0 font-semibold text-blue-900 text-center">
+                      Difficulty : Medium
+                    </div>
+                </div>
+            </li>
+
+            <li class="list-group-item p-3 bg-cyan-100">
+                <div class="flex flex-col items-center md:flex-row">
+                    <div class="w-full md:w-1/2 md:mb-0 text-center">
+                        <a href="#" class="text-blue-900 font-semibold hover:text-red-900">Test 3</a>
+                    </div>
+                    <div class="w-1/2 md:w-1/8 md:w-1/4">
+                        <div class="flex items-center">
+                            <div class="w-1/2">
+                                <img src="../Images/avatar3.jpg" class="w-10 h-10 rounded-ful font-semibold text-blue-900">
+                            </div>
+                            <div class="w-1/2 font-semibold text-blue-900">
+                                <span style="font-size: 15px;">By SamTek</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0 text-center font-semibold text-blue-900 ">
+                      Rating : 4.7<i class="fa-solid fa-star fa-bounce" style="color: #ff7b42;"></i>
+                    </div>
+                    <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0 font-semibold text-blue-900 text-center">
+                        Difficulty : Hard
+                    </div>
+                </div>
+            </li>
+
+           
+
+            
+
+        </ul>
+    </div>
+</div>
 </div>
 
                     
@@ -278,19 +271,17 @@
     </div>
 </div>
 
-  <!-- Bottom -->
-  <section class="bg-white">
-    <section class="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-400 text-white">
-        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 text-center">
-            <p class="text-2xl leading-6 animated-text">
-                &copy; 2023 AY2023/2024 Semester 1 - IS216 G1T4 - Team BrainBox
-            </p>
-        </div>
-    </section>
-  </section>
+<!-- Bottom -->
+<section class="bg-white">
+<div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+  <p class="mt-8 text-base leading-6 text-center text-gray-400">
+    ©2023 AY2023/2024 Semester 1 IS216 G1T4 - Team BrainBox
+  </p>
+</div>
+</section>
 
             
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
