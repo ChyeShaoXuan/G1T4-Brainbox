@@ -26,11 +26,11 @@ onAuthStateChanged(auth, user => {
         }
     })
 
+// For typing out animation
 const textElement = document.getElementById('typed-text');
 const text = textElement.textContent;
 textElement.textContent = '';     
 let index = 0;
-        
 function typeText() {
     if (index < text.length) {
         textElement.textContent += text.charAt(index);
