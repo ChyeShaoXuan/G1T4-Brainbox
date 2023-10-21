@@ -34,13 +34,17 @@ const logout = async() => {
 document.getElementById('logout').addEventListener('click',logout);
 
 window.addEventListener('load', () => {
-    const options = {
-        strings: ["Hello ", document.getElementById('username').innerText, "! Shall we learn something new today?"],
-        typeSpeed: 50, 
-        backSpeed: 30, 
-        startDelay: 1000, 
-        backDelay: 1000, 
-        loop: true, 
-    };
-    new Typed(".text-4xl", options);
+    const text = document.getElementById('username').innerText;
+    const characters = text.split('');
+    const spannedText = characters.map(char => `<span>${char}</span>`).join('');
+    document.getElementById('username').innerHTML = spannedText;
+    const spans = document.querySelectorAll('#username span');
+    let delay = 0;
+    spans.forEach((span) => {
+        setTimeout(() => {
+            span.style.opacity = 1;
+            span.style.transform = 'translateX(0)';
+        }, delay);
+        delay += 100; 
+    });
 });
