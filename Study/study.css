@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.box{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.box:hover input{
+    width: 400px;
+}
+
+.box input{
+   width: 0;
+   outline: none;
+   border:none;
+   font-weight: none;
+   transition: 0.8s;
+   background: transparent;
+}
+
+.box a .fas{
+    color: blueviolet;
+    font-size: 18px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 350px;
+    perspective: 1000px;
+    margin-top:30px;
+    margin: 0 auto;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: yellow;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+  }
+  
+  .flip-card-back {
+    background:white;
+    transform: rotateY(180deg);
+    background-image: url('https://edurev.gumlet.io/ApplicationImages/Temp/4794054_b0873b8d-27c9-4929-9138-66d0c700fa00_lg.png?w=376&dpr=2.6/');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px;
+  }
+
+
+/* CSS */
+.button-64 {
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-right: 5px;
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 10px 18px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 15px;
+  }
+}
