@@ -13,78 +13,36 @@ const firebaseConfig = {
     databaseURL: "https://wad2-4fc9e-default-rtdb.asia-southeast1.firebasedatabase.app"
     };
   
+
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getDatabase();
+const auth = getAuth(app)
+const db = getDatabase()
+onAuthStateChanged(auth, user => {
+        if (user) {
+            const reference = ref(db,'users/' + user.uid + '/username')
+            onValue(reference, (snapshot) => {
+                document.getElementById('username').innerText = snapshot.val()
+            })
+        }
+    })
 
-const updateUsername = (user) => {
-  const reference = ref(db, 'users/' + user.uid + '/username');
-  onValue(reference, (snapshot) => {
-    const usernameElement = document.getElementById('username');
-    if (usernameElement) {
-      usernameElement.innerText = snapshot.val();
-    }
-  });
-};
-
-// Wait for the DOM to be fully loaded before running any code
-document.addEventListener('DOMContentLoaded', () => {
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      updateUsername(user);
-    }
-  });
-
-  const textElement = document.getElementById('typed-text');
-  const text = textElement.textContent;
-  textElement.textContent = '';
-  let index = 0;
-
-  function typeText() {
-    if (index < text.length) {
-      textElement.textContent += text.charAt(index);
-      index++;
-      setTimeout(typeText, 50);
-    }
-  }
-
-  window.addEventListener('load', typeText);
-
-  const logout = async () => {
-    await signOut(auth);
-  }
-
-  document.getElementById('logout').addEventListener('click', logout);
-});
-// const app = initializeApp(firebaseConfig);
-// const auth = getAuth(app)
-// const db = getDatabase()
-// onAuthStateChanged(auth, user => {
-//         if (user) {
-//             const reference = ref(db,'users/' + user.uid + '/username')
-//             onValue(reference, (snapshot) => {
-//                 document.getElementById('username').innerText = snapshot.val()
-//             })
-//         }
-//     })
-
-// const textElement = document.getElementById('typed-text');
-// const text = textElement.textContent;
-// textElement.textContent = '';     
-// let index = 0;
+const textElement = document.getElementById('typed-text');
+const text = textElement.textContent;
+textElement.textContent = '';     
+let index = 0;
         
-// function typeText() {
-//     if (index < text.length) {
-//         textElement.textContent += text.charAt(index);
-//         index++;
-//         setTimeout(typeText, 50); 
-//         }
-//     }
-//     window.addEventListener('load', typeText);
+function typeText() {
+    if (index < text.length) {
+        textElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeText, 50); 
+        }
+    }
+    window.addEventListener('load', typeText);
 
-// const logout = async() => {
-//     await signOut(auth)
-// }
+const logout = async() => {
+    await signOut(auth)
+}
 
-// document.getElementById('logout').addEventListener('click',logout);
+document.getElementById('logout').addEventListener('click',logout);
 
