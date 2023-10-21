@@ -27,11 +27,6 @@ onAuthStateChanged(auth, user => {
     })
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
-    typeText();
-});
-
 function typeText() {
     console.log("Animation started"); 
     const textElement = document.getElementById('typed-text');
@@ -47,6 +42,11 @@ function typeText() {
     }
     typeChar();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    typeText();
+});
+
 
 const logout = async() => {
     await signOut(auth)
