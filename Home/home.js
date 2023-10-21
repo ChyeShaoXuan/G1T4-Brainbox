@@ -20,17 +20,12 @@ const db = getDatabase()
 onAuthStateChanged(auth, user => {
         if (user) {
             const reference = ref(db,'users/' + user.uid + '/username')
-    //         onValue(reference, (snapshot) => {
-    //             document.getElementById('username').innerText = snapshot.val()
-    //         })
-    //     }
-    // })
-    onValue(reference, (snapshot) => {
-    const usernameSpan = document.querySelector('#typed-text #username');
-    if (usernameSpan) {
-        usernameSpan.innerText = snapshot.val();
-    }
-});
+            onValue(reference, (snapshot) => {
+                document.getElementById('username').innerText = snapshot.val()
+            })
+        }
+    })
+
 
 
 // For typing out animation
