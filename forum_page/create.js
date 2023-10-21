@@ -32,14 +32,17 @@ function monitorAuthState() {
             console.log(postTitle,postContent,postSubject)
             console.log('submitted')
             const current = new Date()
-            const reference = ref(db, 'posts/' + current.getTime())
-
-            set(reference, {
-                uid: user.uid,
-                title: postTitle,
-                content: postContent,
-                subject: postSubject,
+            const reference = ref(db, 'posts/' + postSubject + '/' + current.getTime())
+            const userRef = ref(db, 'users/' + user.uid + '/username')
+            onValue(userRef, (snapshot) => {
+                set(reference, {
+                    uid: user.uid,
+                    username: snapshot.val(),
+                    title: postTitle,
+                    content: postContent,
+                })
             })
+            
         } else {
             console.log('not logged in')
         }
