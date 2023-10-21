@@ -33,18 +33,3 @@ const logout = async() => {
 
 document.getElementById('logout').addEventListener('click',logout);
 
-window.addEventListener('load', () => {
-    const text = document.getElementById('username').innerText;
-    const characters = text.split('');
-    const spannedText = characters.map(char => `<span>${char}</span>`).join('');
-    document.getElementById('username').innerHTML = spannedText;
-    const spans = document.querySelectorAll('#username span');
-    let delay = 0;
-    spans.forEach((span) => {
-        setTimeout(() => {
-            span.style.opacity = 1;
-            span.style.transform = 'translateX(0)';
-        }, delay);
-        delay += 100; 
-    });
-});
