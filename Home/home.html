@@ -21,6 +21,39 @@
                 transform: translateY(-5px);
             }
         }
+
+        .py-40 {
+          position: relative;
+        }
+
+        .sparkles::before {
+          content: "";
+          position: absolute;
+          background: transparent;
+          width: 10px;
+          height: 10px;
+          border: 1px solid #fff;
+          transform: rotate(45deg);
+          animation: sparkles 2s linear infinite;
+        }
+
+        @keyframes sparkles {
+          0% {
+            transform: rotate(45deg) translate(-20px, -20px);
+            opacity: 0;
+          }
+          25% {
+            opacity: 1;
+          }
+          50% {
+            transform: rotate(45deg) translate(20px, -20px);
+            opacity: 0;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+
     </style>
 </head>
 <body style="display:none;">
@@ -31,7 +64,7 @@
       <div class="flex flex-col md:flex-row justify-center items-center">
         <div class="flex flex-col md:flex-row items-center">
           <a href="credits.html" class="mb-5 font-black text-2xl text-gray-900 md:mb-0">
-            <span class="text-blue-900">BrainBox<span class="text-blue-900">.</span></span>
+            <span class="text-blue-900">BrainBoxxx<span class="text-blue-900">.</span></span>
           </a>
           <nav class="mb-5 md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-gray-200 flex flex-wrap items-center">
             <a class="text-center w-full md:w-auto md:ml-0">
@@ -77,7 +110,7 @@
   <!-- end of navbar -->
 
   <!-- Study Now -->
-  <div class="py-40 bg-cover bg-no-repeat bg-fixed relative" style="background-image: url(../Images/scenery.jpg)">
+  <div class="py-40 bg-cover bg-no-repeat bg-fixed relative sparkles" style="background-image: url(../Images/scenery.jpg)">
     <div class="container m-auto text-center px-6 opacity-100">
       <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4">Hello <span id="username"></span>! Shall we learn something new today?</h2>
       <a href="../Study/study.html">
@@ -244,3 +277,4 @@
     <script type="module" src="home.js"></script>
 </body>
 </html>
+
