@@ -26,6 +26,19 @@ onAuthStateChanged(auth, user => {
         }
     })
 
+const textElement = document.getElementById('typed-text');
+const text = textElement.textContent;
+textElement.textContent = '';     
+let index = 0;
+        
+function typeText() {
+    if (index < text.length) {
+        textElement.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeText, 50); 
+        }
+    }
+    window.addEventListener('load', typeText);
 
 const logout = async() => {
     await signOut(auth)
