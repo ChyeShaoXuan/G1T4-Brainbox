@@ -21,6 +21,18 @@
                 transform: translateY(-5px);
             }
         }
+
+        .background {
+          background: linear-gradient(132deg, #7ee9f5, #df934d, #fcfefc);
+          background-size: 400% 400%;
+          animation: Gradient 15s ease infinite;
+          position: relative;
+          
+          width: 100%;
+          overflow: hidden;
+          padding:0;
+          margin:0px;
+        }
     </style>
 </head>
 <body>
@@ -76,7 +88,12 @@
   </section>
   <!-- end of navbar -->
 
-
+  <div class="py-20 bg-cover bg-no-repeat bg-fixed relative background">
+    <div class="container m-auto text-center px-6 opacity-100">
+        <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4"><span id="animated-text"></span></h2>
+    </div>
+  </div>
+    
   <!-- Bottom -->
   <section class="bg-white">
     <section class="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-400 text-white">
@@ -89,5 +106,17 @@
   </section>
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const options = {
+            strings: ["See how you rank among others!"],
+            typeSpeed: 75,
+            showCursor: true, 
+        };
+    
+        const typed = new Typed("#animated-text", options);
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </body>
 </html>
