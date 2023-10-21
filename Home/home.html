@@ -97,16 +97,18 @@
   </section>
   <!-- end of navbar -->
 
-  <!-- Study Now -->
-  <div class="py-40 bg-cover bg-no-repeat bg-fixed relative" style="background-image: url(../Images/scenery.jpg)">
-    <div class="container m-auto text-center px-6 opacity-100">
-      <h2 id="typed-text" class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4">Hello <span id="username"></span>! Shall we learn something new today?</h2>
-      <a href="../Study/study.html">
-        <button class="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-blue-500 hover:bg-gray-800 transition-all">Study Now!</button>
-      </a>
+    <!-- Study Now -->
+    <div class="py-40 bg-cover bg-no-repeat bg-fixed relative" style="background-image: url(../Images/scenery.jpg)">
+      <div class="container m-auto text-center px-6 opacity-100">
+        <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4">
+          Hello <span id="username"></span>! <span id="animated-text"></span>
+        </h2>
+        <a href="../Study/study.html">
+          <button class="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-blue-500 hover:bg-gray-800 transition-all">Study Now!</button>
+        </a>
+      </div>
     </div>
-  </div>
-
+    
   <!-- Test Now -->
   <section class="px-2 py-32 bg-white md:px-0">
     <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
@@ -259,6 +261,20 @@
         </div>
     </section>
   </section>
+
+    <!-- JS Calls and Crap-->
+        <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const options = {
+          strings: ["Shall we learn something new today?"],
+          typeSpeed: 50,
+          showCursor: true, 
+        };
+    
+        const typed = new Typed("#animated-text", options);
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="../loginStatus.js"></script>
     <script type="module" src="home.js"></script>
