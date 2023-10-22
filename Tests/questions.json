@@ -223,87 +223,87 @@
             },
             {
                 "number": 12,
-                "question": "Identify the conjunction in the following sentence: 'I wanted to go to the party, but I was feeling unwell.'",
-                "answers": ["I", "To", "But", "Feeling"],
-                "correct_answer": 3
+                "question": "The ___ cars were recalled by the company for having many problems.",
+                "answers": ["faulty", "perfect", "fancy","fussy"],
+                "correct_answer": "faulty"
             },
             {
                 "number": 13,
-                "question": "Which of the following words is a homonym for 'flower'?",
-                "answers": ["Flour", "Floor", "Flaw", "Flew"],
-                "correct_answer": 1
+                "question": "I am _____ from all the running i did today.",
+                "answers": ["energised", "enriched", "exhausted", "exhumed"],
+                "correct_answer": "exhausted"
             },
             {
                 "number": 14,
-                "question": "What is the correct comparative form of 'good'?",
-                "answers": ["Best", "Gooder", "Better", "Well"],
-                "correct_answer": 3
+                "question": "All my friends claimed that the test was ______, and they could not complete many questions.",
+                "answers": ["difficult", "taxing", "exhilarating","boring"],
+                "correct_answer": "difficult"
             },
             {
                 "number": 15,
-                "question": "Choose the word that best completes the sentence: 'He couldn't buy the car because it was ____ expensive.'",
-                "answers": ["Too", "Very", "Much", "So"],
-                "correct_answer": 1
+                "question": "Wearing masks was ____ during the pandemic. Not wearing one had severe consequences.",
+                "answers": ["mandatory", "option", "interesting","significant"],
+                "correct_answer": "mandatory"
             },
             {
                 "number": 16,
-                "question": "What is the correct superlative form of 'beautiful'?",
-                "answers": ["Beautifuler", "Beautifully", "Beautifulist", "Most beautiful"],
-                "correct_answer": 4
+                "question": "You can conserve the environment by _______ plastic bottles.",
+                "answers": ["wasting", "engraving", "recycling","seeking"],
+                "correct_answer":"recycling"
             },
             {
                 "number": 17,
-                "question": "Which word is an antonym of 'generous'?",
-                "answers": ["Selfish", "Kind", "Altruistic", "Charitable"],
-                "correct_answer": 1
+                "question": "Plants play a _____ role in maintaining Earth's oxygen level.",
+                "answers": ["serious", "crucial", "inactive","culling"],
+                "correct_answer": "many"
             },
             {
                 "number": 18,
-                "question": "Identify the figure of speech in the sentence: 'Her smile is as bright as the sun.'",
-                "answers": ["Metaphor", "Simile", "Hyperbole", "Alliteration"],
-                "correct_answer": 2
+                "question": "The bread tasted _____.",
+                "answers": ["windy", "delicious", "taxing","decorative"],
+                "correct_answer": "delicious"
             },
             {
                 "number": 19,
-                "question": "What is the past participle of 'break'?",
-                "answers": ["Breaking", "Broke", "Broken", "Breaken"],
-                "correct_answer": 3
+                "question": "His work was not up to _____.",
+                "answers":  ["guideline", "timeline", "standard", "barren"],
+                "correct_answer":"standard"
             },
             {
                 "number": 20,
-                "question": "Choose the correct spelling of the word 'necessary.'",
-                "answers": ["Necesary", "Necessery", "Neccessary", "Necessary"],
-                "correct_answer": 4
+                "question": "I am ____ for the upcoming football match.",
+                "answers": ["existing", "excited", "famished", "delayed"],
+                "correct_answer": "excited"
             },
             {
                 "number": 21,
-                "question": "Which word means the opposite of 'accept'?",
-                "answers": ["Refuse", "Agree", "Acknowledge", "Consent"],
-                "correct_answer": 1
+                "question": "Our project _____ is approaching soon. We have to submit all our work before then.",
+                "answers": ["deadline", "deliverable", "schedule","complement"],
+                "correct_answer": "deadline"
             },
             {
                 "number": 22,
-                "question": "What is the plural form of 'mouse'?",
-                "answers": ["Mouses", "Mice", "Micees", "Mousez"],
-                "correct_answer": 2
+                "question": "The mouse ____ into the hole.",
+                "answers": ["scampered", "flipped", "wrangled", "decayed"],
+                "correct_answer": "scampered"
             },
             {
                 "number": 23,
-                "question": "Choose the word that best completes the sentence: 'She felt ____ when she received the award.'",
-                "answers": ["Proud", "Proudly", "Proudness", "Proudest"],
-                "correct_answer": 1
+                "question": "She felt ____ that she received the award.",
+                "answers": ["Proud", "Fear", "Coignizant", "Nauseous"],
+                "correct_answer": "Proud"
             },
             {
                 "number": 24,
-                "question": "What is the opposite of 'calm'?",
-                "answers": ["Stormy", "Quiet", "Serene", "Peaceful"],
-                "correct_answer": 1
+                "question": "The weather is ____ ,with heavy rain today.",
+                "answers": ["Hampered", "Quiet", "Stormy", "Peaceful"],
+                "correct_answer": "Stormy"
             },
             {
                 "number": 25,
-                "question": "What is the plural form of 'man'?",
-                "answers": ["Men", "Mans", "Mens", "Manies"],
-                "correct_answer": 1
+                "question": "I will _____ the present from the post office tomorrow.",
+                "answers": ["press", "observe", "ready", "collect"],
+                "correct_answer": "collect"
             }
         ],
         "hard": [
