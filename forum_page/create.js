@@ -40,6 +40,8 @@ function monitorAuthState() {
                     username: snapshot.val(),
                     title: postTitle,
                     content: postContent,
+                    views: 0,
+                    comments: 0,
                 })
             })
             

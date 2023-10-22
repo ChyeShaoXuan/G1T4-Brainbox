@@ -28,9 +28,9 @@ onValue(userRef, (snapshot) => {
     onValue(postsRef,(snapshot2) => {
         snapshot2.forEach((childSnapshot) => {
             const childKey = childSnapshot.key;
-            const childValue = childSnapshot.val();
+            const postDetails = childSnapshot.val();
             uid = childValue.uid
-            postsList.push([childKey,childValue,users[childValue.uid].image,users[childValue.uid].username])
+            postsList.push([childKey,postDetails,users[postDetails.uid].image,users[postDetails.uid].username])
         });
         postsList = postsList.reverse()
         console.log(postsList)
