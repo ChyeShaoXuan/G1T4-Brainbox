@@ -64,7 +64,7 @@ function show_test(difficulty,subject){
         let content_section=document.getElementById('content_section')
         let questions_arr=response.data.english.easy;
         console.log(questions_arr)
-        let new_html=`<div id="carouselExampleCaptions" class="carousel slide">
+        let new_html=`<div id="carouselExampleCaptions" class="carousel slide md:ms-3 sm:mt-3">
         
         <div class="carousel-inner">
           <div class="carousel-item active bg-blue-100">
