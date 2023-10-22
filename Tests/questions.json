@@ -3,278 +3,155 @@
         "easy":[
             {
                 "number": 1,
-                "question": "What is the opposite of 'happy'?",
+                "question": "My classmates stayed back ____ lunchtime to discuss their school project.",
                 "answers": [
-                    "Sad",
-                    "Angry",
-                    "Tired",
-                    "Excited"
+                    "in", "on", "during", "into"
                   ],
-                "correct_answer": 1
+                "correct_answer": "during"
             },
             {
                 "number": 2,
-                "question": "Which word is a synonym for 'beautiful'?",
-                "answers": [
-                    "Ugly",
-                    "Pretty",
-                    "Boring",
-                    "Smart"
-                  ],
-                "correct_answer": 2
+                "question": "At the concert last week, the students ___ so excited that they could not stop talking.",
+                "answers": ["is", "was", "are","were"],
+                "correct_answer": "were"
             },
             {
                 "number": 3,
-                "question": "What is the plural form of 'child'?",
-                "answers": [
-                    "Children",
-                    "Childs",
-                    "Childes",
-                    "Childies"
-                  ],
-                "correct_answer": 1
+                "question": "You ____ so kind when you helped the teacher carry the heavy books to the classroom.",
+                "answers": ["is", "are", "was","were"],
+                "correct_answer": "were"
             },
             {
                 "number": 4,
-                "question": "Which of the following is a fruit?",
-                "answers": [
-                    "Carrot",
-                    "Potato",
-                    "Apple",
-                    "Broccoli"
-                  ],
-                "correct_answer": 3
+                "question": "The manager is busy. He ___ to a customer now.",
+                "answers": ["talk", "talked", "is talking","has talked"],
+                "correct_answer": "is talking"
             },
             {
                 "number": 5,
-                "question": "What is the past tense of the verb 'go'?",
-                "answers": [
-                    "Went",
-                    "Gone",
-                    "Goes",
-                    "Going"
-                  ],
-                "correct_answer": 4
+                "question": "Yesterday, we ___ some books from the bookshop before going to tuition.",
+                "answers": ["have bought", "were buying", "bought", "buy"],
+                "correct_answer":"bought"
             },
             {
                 "number": 6,
-                "question": "Which of the following is a type of transportation used on water?",
-                "answers": [
-                    "Car",
-                    "Bicycle",
-                    "Boat",
-                    "Helicopter"
-                  ],
-                "correct_answer": 3
+                "question": "While you ____ in the kitchen, i heard a knock on the door.",
+                "answers":["were cooking", "have cooked", "will cook","cook"],
+                "correct_answer": "were cooking"
             },
             {
                 "number": 7,
-                "question": "What is the opposite of 'happy'?",
-                "answers": [
-                    "Sad",
-                    "Angry",
-                    "Tired",
-                    "Excited"
-                  ],
-                "correct_answer": 1
+                "question": "___ girl on the swing has short hair.",
+                "answers": ["were cooking", "have cooked", "will cook","cook"],
+                "correct_answer": "were cooking"
             },
             {
                 "number": 8,
-                "question": "Which word is a synonym for 'beautiful'?",
-                "answers": [
-                    "Ugly",
-                    "Pretty",
-                    "Boring",
-                    "Smart"
-                  ],
-                "correct_answer": 2
+                "question": "She likes waffles ___ not pancakes.",
+                "answers": ["because", "then", "but", "or"],
+                "correct_answer": "but"
             },
             {
                 "number": 9,
-                "question": "What is the plural form of 'child'?",
-                "answers": [
-                    "Children",
-                    "Childs",
-                    "Childes",
-                    "Childies"
-                  ],
-                "correct_answer": 1
+                "question": "I decided not to buy the book as there were ___ people in the queue.",
+                "answers": ["many","much","few","some"],
+                "correct_answer": "many"
             },
             {
                 "number": 10,
-                "question": "Which of the following is a fruit?",
-                "answers": [
-                    "Carrot",
-                    "Potato",
-                    "Apple",
-                    "Broccoli"
-                  ],
-                "correct_answer": 3
+                "question": "My friend needed ___ help with her work, so i stayed back to assist her.",
+                "answers": ["much", "a lot of", "no","much"],
+                "correct_answer": "a lot of"
             },
             {
                 "number": 11,
-                "question": "What is the past tense of the verb 'go'?",
-                "answers": [
-                    "Went",
-                    "Gone",
-                    "Goes",
-                    "Going"
-                  ],
-                "correct_answer": 4
+                "question": "The young boy waited by the door ___ a long time.",
+                "answers": ["in", "by", "for","on"],
+                "correct_answer": "for"
             },
             {
                 "number": 12,
-                "question": "Which of the following is a type of transportation used on water?",
-                "answers": [
-                    "Car",
-                    "Bicycle",
-                    "Boat",
-                    "Helicopter"
-                  ],
-                "correct_answer": 3
+                "question": "Many buildings ___ destroyed by the tsunami last year.",
+                "answers":["was", "were", "is","are"],
+                "correct_answer": "were"
             },
             {
                 "number": 13,
-                "question": "What is the opposite of 'start'?",
-                "answers": [
-                    "Stop",
-                    "Go",
-                    "Begin",
-                    "Finish"
-                  ],
-                "correct_answer": 1
+                "question": "Jun Wei __  unwell, so he is absent from school today.",
+                "answers": ["is", "are", "was", "were"],
+                "correct_answer": "is"
             },
             {
                 "number": 14,
-                "question": "Which of the following words is a pronoun?",
-                "answers": [
-                    "Run",
-                    "House",
-                    "He",
-                    "Jump"
-                  ],
-                "correct_answer": 3
+                "question":  "Mrs Tan ____ the rules of the test now.",
+                "answers": ["explained", "explain", "is explaining","has explained"],
+                "correct_answer": "is explaining"
             },
             {
                 "number": 15,
-                "question": "What is the main color of the sun?",
-                "answers": [
-                    "Blue",
-                    "Red",
-                    "Yellow",
-                    "Green"
-                  ],
-                "correct_answer": 3
+                "question": "15. in 2019, Singapore ____ wearing masks compulsory due to COVID-19.",
+                "answers": ["were making", "has made", "make","made"],
+                "correct_answer": "made"
             },
             {
                 "number": 16,
-                "question": "What is the past tense of 'eat'?",
-                "answers": [
-                    "Eating",
-                    "Eaten",
-                    "Ate",
-                    "Eats"
-                  ],
-                "correct_answer": 3
+                "question": " Amy _____ the piano when the doorbell rang.",
+                "answers": ["were playing", "was playing", "played","has played"],
+                "correct_answer": "was playing"
             },
             {
                 "number": 17,
-                "question": "Which word means the opposite of 'big'?",
-                "answers": [
-                    "Small",
-                    "Large",
-                    "Huge",
-                    "Enourmous"
-                  ],
-                "correct_answer": 1
+                "question": "The Lim family visited ____ local attractions in Singapore during the holidays, instead of travelling overseas.",
+                "answers":["many", "much", "no","any"],
+                "correct_answer": "many"
             },
             {
                 "number": 18,
-                "question": "What is the plural form of 'cat'?",
-                "answers": [
-                    "Cats",
-                    "Caties",
-                    "Cates",
-                    "Catz"
-                  ],
-                "correct_answer": 1
+                "question": "My father said : ' Use ____ two dollar note to buy bread from the store nearby.",
+                "answers": ["that", "those", "this","these"],
+                "correct_answer":  "this"
             },
             {
                 "number": 19,
-                "question": "What is the name of the planet we live on?",
-                "answers": [
-                    "Mars",
-                    "Venus",
-                    "Earth",
-                    "Jupiter"
-                  ],
-                "correct_answer": 3
+                "question": "He was respected _____ he did his work efficiently",
+                "answers": ["because", "or", "after", "then"],
+                "correct_answer":"because"
             },
             {
                 "number": 20,
-                "question": "What do you use to write with?",
-                "answers": [
-                    "Fork",
-                    "Spoon",
-                    "Pen",
-                    "Knife"
-                  ],
-                "correct_answer": 3
+                "question": "Our teacher gave us ___ advice on how to do better in exams.",
+                "answers": ["much", "a few", "some","many"],
+                "correct_answer": "some"
             },
             {
                 "number": 21,
-                "question": "Which of the following words is an adverb?",
-                "answers": [
-                    "Jump",
-                    "Quickly",
-                    "House",
-                    "Car"
-                  ],
-                "correct_answer": 2
+                "question": "Distribute these chocolates among ______ ",
+                "answers": ["yourselves", "ourselves", "themselves", "himself"],
+                "correct_answer": "yourselves"
             },
             {
                 "number": 22,
-                "question": "Which of the following words is a conjunction?",
-                "answers": [
-                    "Blue",
-                    "And",
-                    "Jump",
-                    "Apple"
-                  ],
-                "correct_answer": 3
+                "question": "One week ago, We ____ the museum before it closed for renovations.",
+                "answers":["visit", "had visited", "visited","were visiting"],
+                "correct_answer": "visited"
             },
             {
                 "number": 23,
-                "question": "Which word means the opposite of 'fast'?",
-                "answers": [
-                    "Slow",
-                    "Quick",
-                    "Small",
-                    "Big"
-                  ],
-                "correct_answer": 1
+                "question": "Last Sunday, i ____ happy to meet my favorite celebrity at the mall.",
+                "answers":["were", "is", "was","are"],
+                "correct_answer": "was"
             },
             {
                 "number": 24,
-                "question": "What is the color of the sky on a clear day?",
-                "answers": [
-                    "Green",
-                    "Pink",
-                    "Blue",
-                    "Orange"
-                  ],
-                "correct_answer": 3
+                "question": "___ books stacked in the corner are dusty.",
+                "answers": ["These", "Those", "This","That"],
+                "correct_answer": "Those"
             },
             {
                 "number": 25,
-                "question": "Which of the following is a type of food that grows on trees?",
-                "answers": [
-                    "Chair",
-                    "Pizza",
-                    "Apple",
-                    "Hat"
-                  ],
-                "correct_answer": 3
+                "question": "Aunt Mary is my neighbour that lives ___ units away from me.",
+                "answers": ["a lot", "little", "a few","little"],
+                "correct_answer": "a few"
             }
         ],
         "normal": [
