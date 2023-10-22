@@ -21,6 +21,23 @@
                 transform: translateY(-5px);
             }
         } 
+        .falling-object {
+            position: absolute;
+            animation: fall 5s linear infinite;
+            font-size: 24px;
+            white-space: nowrap;
+        }
+        
+        @keyframes fall {
+            0% {
+            transform: translateY(-5vh);
+            opacity: 1;
+            }
+            100% {
+            transform: translateY(250vh);
+            opacity: 0;
+            }
+        }
     </style>
             
 </head>
