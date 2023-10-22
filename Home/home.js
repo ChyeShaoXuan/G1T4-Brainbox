@@ -77,5 +77,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 
     return emojis[Math.floor(Math.random() * emojis.length)];
     }
-    setInterval(createFallingObject, 500);
+    setInterval(createFallingObject, 750);
 });
