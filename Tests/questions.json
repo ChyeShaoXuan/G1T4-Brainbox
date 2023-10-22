@@ -157,69 +157,69 @@
         "normal": [
             {
                 "number": 1,
-                "question": "Which word is an antonym of 'verbose'?",
-                "answers": ["Talkative", "Concise", "Loquacious", "Garrulous"],
-                "correct_answer": 2
+                "question": "The ____ took out their phones to record the fight in the supermarket.",
+                "answers": ["audience", "onlookers", "spectators", "competitors"],
+                "correct_answer": "spectators"
             },
             {
                 "number": 2,
-                "question": "What is the correct plural form of 'child'?",
-                "answers": ["Childs", "Childes", "Childs", "Children"],
-                "correct_answer": 4
+                "question": "The ____ child refused to listen to the teachers and got into trouble again.",
+                "answers": ["wilful", "ferocious", "ungrateful","ignorant"],
+                "correct_answer": "wilful"
             },
             {
                 "number": 3,
-                "question": "Choose the word that best completes the sentence: 'She is _____ at playing the piano.'",
-                "answers": ["Bad", "Terrible", "Good", "Excellent"],
-                "correct_answer": 3
+                "question": "The students ___ their books into their bags in a hurry before leaving.",
+                "answers": ["strived", "shoved", "sieved","swerved"],
+                "correct_answer": "shoved"
             },
             {
                 "number": 4,
-                "question": "Which of the following is a synonym for 'ubiquitous'?",
-                "answers": ["Rare", "Common", "Elusive", "Scarce"],
-                "correct_answer": 2
+                "question": "All the houses were destroyed by the ___ earthquake.",
+                "answers": ["fiery", "bizarre", "chaotic","devastating"],
+                "correct_answer":"devastating"
             },
             {
                 "number": 5,
-                "question": "Identify the correct tense of the verb in the sentence: 'She will have completed her project by next Friday.'",
-                "answers": ["Present", "Past", "Future", "Present Perfect"],
-                "correct_answer": 4
+                "question": "Her careless caused her unfortunate ____ of having to move around in crutches.",
+                "answers": ["predicament", "resentment", "accomplishment", "embarrassment"],
+                "correct_answer": "predicament?"
             },
             {
                 "number": 6,
-                "question": "What is the plural form of 'cactus'?",
-                "answers": ["Cacti", "Cactuses", "Cactus", "Cactees"],
-                "correct_answer": 1
+                "question": "The timid boy _____ in the face of danger.",
+                "answers": ["cowered", "brightened", "numbed","discouraged"],
+                "correct_answer": "cowered"
             },
             {
                 "number": 7,
-                "question": "Which sentence is in the passive voice?",
-                "answers": ["John baked a delicious cake.", "The delicious cake was baked by John.", "Mary sings beautifully.", "The cat chased the mouse."],
-                "correct_answer": 2
+                "question": "Jay ____ to the manager of the restaurant for serving him raw food.",
+                "answers": ["responded", "commented", "commended","complained"],
+                "correct_answer":"complained"
             },
             {
                 "number": 8,
-                "question": "Choose the word that best fits in the blank: 'He was ____ tired that he fell asleep immediately.'",
-                "answers": ["So", "Such", "Very", "Too"],
-                "correct_answer": 1
+                "question": "The earthquake ____ was visibly shaken as he recounted his experience.",
+                "answers":["survivor", "refugee", "resident", "lifeguard"],
+                "correct_answer": "survivor"
             },
             {
                 "number": 9,
-                "question": "What part of speech is the word 'quickly' in the sentence: 'She ran quickly to catch the bus.'",
-                "answers": ["Adjective", "Noun", "Adverb", "Verb"],
-                "correct_answer": 3
+                "question": "The survival of leatherback turtles is due to ____ caused by human activities.",
+                "answers": ["progressing","pollution","pandemic","programme"],
+                "correct_answer":  "pollution"
             },
             {
                 "number": 10,
-                "question": "Which sentence is grammatically correct?",
-                "answers": ["He don't like coffee.", "She haven't been to the library.", "They doesn't want to go.", "I haven't seen him today."],
-                "correct_answer": 4
+                "question": "10. We ____ our conflict by flipping a coin.",
+                "answers": ["intensified", "assisted", "resolved","navigated"],
+                "correct_answer": "resolved"
             },
             {
                 "number": 11,
-                "question": "What is the meaning of the word 'benevolent'?",
-                "answers": ["Hostile", "Kind", "Indifferent", "Apathetic"],
-                "correct_answer": 2
+                "question": "Many passers-by were ____ to the cyclist who had fallen and did not help him.",
+                "answers": ["inefficient", "inactive", "helpful","indifferent"],
+                "correct_answer":"indifferent"
             },
             {
                 "number": 12,
