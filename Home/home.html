@@ -38,13 +38,58 @@
             opacity: 0;
             }
         }
+        
+        #sectionmain {
+            animation: sectionBackground 45s infinite;
+            background-size: cover;
+            background-image: url("../Images/mountain.jpg")
+        }
+        
+        #section1 {
+            animation: sectionBackground 45s infinite;
+            background-size: cover;
+            background-image: url("../Images/sand.jpg")
+        }
+
+        #section2 {
+            animation: sectionBackground 45s infinite;
+            background-size: cover;
+            background-image: url("../Images/ocean.jpg")
+        }
+
+        #section3 {
+            animation: sectionBackground 45s infinite;
+            background-size: cover;
+            background-image: url("../Images/snow.jpg")
+        }
+
+        #section4 {
+            animation: sectionBackground 45s infinite;
+            background-size: cover;
+            background-image: url("../Images/road.jpg")
+        }
+
+        #section5 {
+            animation: sectionBackground 45s infinite;
+            background-size: cover;
+            background-image: url("../Images/balloon.jpg")
+        }
+
+        @keyframes sectionBackground {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
     </style>
             
 </head>
-<body style="display:none;">
+<body>
     
   <!-- Nav Bar -->
-  <section class="bg-aliceblue text-gray-700">
+  <section id="section1" class="bg-aliceblue text-gray-700">
     <div class="container mx-auto py-5 md:py-8">
       <div class="flex flex-col md:flex-row justify-center items-center">
         <div class="flex flex-col md:flex-row items-center">
@@ -82,7 +127,6 @@
                 Leaderboard
               </div>
             </a>
-            <!-- <a href="../Login/index.html" class="text-center w-full md:w-auto md:ml-4">  -->
               <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded" id="logout"> 
                 Logout
               </button>
@@ -95,19 +139,19 @@
   <!-- end of navbar -->
 
     <!-- Study Now -->
-    <div class="py-40 bg-cover bg-no-repeat bg-fixed relative" style="background-image: url(../Images/scenery.jpg)">
-      <div class="container m-auto text-center px-6 opacity-100">
-        <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4">
-          <span id="animated-text"></span>
-        </h2>
-        <a href="../Study/study.html">
-          <button class="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-blue-500 hover:bg-gray-800 transition-all">Study Now!</button>
-        </a>
-      </div>
+    <div id="sectionmain" class="py-40 bg-cover bg-no-repeat bg-fixed relative">
+        <div class="container m-auto text-center px-6 opacity-100">
+            <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4">
+                <span id="animated-text"></span>
+            </h2>
+            <a href="../Study/study.html">
+                <button class="bg-white font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-blue-500 hover:bg-gray-800 transition-all">Study Now!</button>
+            </a>
+        </div>
     </div>
     
   <!-- Test Now -->
-  <section class="px-2 py-32 bg-white md:px-0">
+  <section id="section2" class="px-2 py-32 bg-white md:px-0">
     <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
       <div class="flex flex-wrap items-center sm:-mx-3">
         <div class="w-full md:w-1/2 md:px-3">
@@ -116,7 +160,7 @@
               <span class="block xl:inline">Are you ready?</span>
               <span style="color:#F06F21" class="block xl:inline">Let's test it.</span>
             </h1>
-            <p class="mx-auto text-base text-gray-500 sm:max-w-md lg:text-xl md:max-w-3xl">"Anyone who has never made a mistake has never tried anything new" - Albert Einstein</p>
+            <p class="mx-auto text-base sm:max-w-md lg:text-xl md:max-w-3xl bg-white bg-opacity-50 backdrop-blur-md">"Anyone who has never made a mistake has never tried anything new" - Albert Einstein</p>
             <div class="relative flex flex-col sm:flex-row sm:space-x-4">
               <a style="background-color:#F06F21" href="../Tests/test.html" class="flex items-center w-full px-6 py-3 mb-3 text-lg text-white rounded-md sm:mb-0 hover:bg-indigo-700 sm:w-auto">
                 Test Now!
@@ -138,10 +182,10 @@
   </section>
 
   <!-- Leaderboard -->
-  <section class="bg-gradient-to-br from-blue-600 to-blue-300 text-white py-20">
+  <section id="section3" class="bg-gradient-to-br from-blue-600 to-blue-300 text-white py-20">
     <div class="container mx-auto">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-100">Current Top 5 2023🏆</h2>
+            <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4">Current Top 5 2023🏆</h2>
         </div>
         <div class="bg-white shadow-md rounded overflow-hidden">
             <table class="min-w-full divide-y divide-gray-400">
@@ -233,14 +277,14 @@
   </section>
   
   <!-- About Us -->
-  <section class="py-20 bg-gray-50">
+  <section id="section4" class="py-20 bg-gray-50">
     <div class="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
       <div class="flex flex-wrap items-center -mx-3">
         <div class="order-1 w-full px-3 lg:w-1/2 lg:order-0">
           <div class="w-full lg:max-w-md">
-            <h1 class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">We are BrainBox.</h1>
-            <h3 class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading">Education For All.</h3>
-            <p class="mb-4 font-medium tracking-tight text-gray-400 xl:mb-6">It's never been easier to learn.</p>
+            <h1 class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading bg-white bg-opacity-50 backdrop-blur-md">We are BrainBox.</h1>
+            <h3 class="mb-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl font-heading bg-white bg-opacity-50 backdrop-blur-md">Education For All.</h3>
+            <p class="mb-4 font-medium tracking-tight xl:mb-6 bg-white bg-opacity-50 backdrop-blur-md">It's never been easier to learn.</p>
           </div>
         </div>
         <div class="w-full px-3 mb-12 lg:w-1/2 order-0 lg:order-1 lg:mb-0"><img class="mx-auto sm:max-w-sm lg:max-w-full" src="../Images/student.jpg" alt="student"></div>
@@ -249,14 +293,12 @@
   </section>
   
   <!-- Bottom -->
-  <section class="bg-white">
-    <section class="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-400 text-white">
-        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 text-center">
-            <p class="text-2xl leading-6 animated-text">
-                &copy; 2023 AY2023/2024 Semester 1 - IS216 G1T4 - Team BrainBox
-            </p>
-        </div>
-    </section>
+  <section id="section5" class="bg-white">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 text-center">
+        <p class="text-2xl leading-6 animated-text">
+            &copy; 2023 AY2023/2024 Semester 1 - IS216 G1T4 - Team BrainBox
+        </p>
+    </div>
   </section>
 
     <!-- JS Calls and Crap-->
