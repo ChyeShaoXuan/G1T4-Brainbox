@@ -2,6 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebas
 import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
 import {getAuth, onAuthStateChanged, signOut} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
 
+
 const firebaseConfig = {
     apiKey: "AIzaSyCEjW5Rq4jgHbSS1GCJy0pl6hpPrFQ9pUI",
     authDomain: "wad2-4fc9e.firebaseapp.com",
@@ -17,15 +18,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const db = getDatabase()
-onAuthStateChanged(auth, user => {
-        if (user) {
-            const reference = ref(db,'users/' + user.uid + '/username')
-            onValue(reference, (snapshot) => {
-                document.getElementById('username').innerText = snapshot.val()
-                console.log(document.getElementById('username'))
-            })
-        }
-    })
+
 
 
 const logout = async() => {
@@ -34,3 +27,21 @@ const logout = async() => {
 
 document.getElementById('logout').addEventListener('click',logout);
 
+document.addEventListener("DOMContentLoaded", function () {
+    onAuthStateChanged(auth, user => {
+        if (user) {
+            const reference = ref(db,'users/' + user.uid + '/username')
+            onValue(reference, (snapshot) => {
+                let usernameVal = snapshot.val()
+                console.log(usernameVal)
+                const options = {
+                    strings: [`Hello ${usernameVal}! Shall we learn something new today?`], // Initial string without username
+                    typeSpeed: 75,
+                    showCursor: true, 
+                    contentType: 'html',
+                  };
+                const typed = new Typed("#animated-text", options);
+            })
+        }
+    })
+  });
