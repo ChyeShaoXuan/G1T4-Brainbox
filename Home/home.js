@@ -45,3 +45,37 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const body = document.body;
+        
+    function createFallingObject() {
+        const object = document.createElement("div");
+        object.className = "falling-object";
+        object.innerHTML = getEmoji();
+        object.style.left = Math.random() * 100 + "vw";
+        body.appendChild(object);
+            
+        object.style.top = "-5vh";
+            
+        const animationDuration = Math.random() * 5 + 5 + "s";
+        object.style.animationDuration = animationDuration;
+        
+        object.addEventListener("animationend", function () {
+            body.removeChild(object);
+        });
+    }
+        
+    function getEmoji() {
+        const emojis = [
+            "😊", "❤️", "⭐", "🌈", "🎈", "🌸", "🐻", "🍭", "🌻", "🐱",
+            "🦄", "🍩", "🌟", "🍓", "🐾", "🌼", "🐥", "🍦", "🌞", "🐰",
+            "🎀", "🌺", "🐶", "🍰", "🎂", "🍁", "🦋", "🐝", "🍍", "🍉",
+            "🍇", "🐢", "🌹", "🌍", "🍒", "🍔", "🦉", "🍄", "🌴", "🍎",
+            "🌽", "🐷", "🎁", "🌳", "🐦", "🍟", "🐨", "🍕", "🍀", "🌱"
+        ];
+                
+    return emojis[Math.floor(Math.random() * emojis.length)];
+    }
+    setInterval(createFallingObject, 100);
+});
