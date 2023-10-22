@@ -17,12 +17,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase()
 const postsRef = ref(db, 'posts/english');
-
 let postsUL = document.getElementById('posts')
 let newStr = ''
 let postsList = []
 let uid = ''
 const userRef = ref(db,'users')
+
 onValue(userRef, (snapshot) => {
     const users = snapshot.val()
     onValue(postsRef,(snapshot2) => {
@@ -60,13 +60,12 @@ onValue(userRef, (snapshot) => {
                                         </div>
                                     </li>`
         }
-        document.getElementById('posts').innerHTML = newStr
+        // document.getElementById('posts').innerHTML = newStr
     });
 });
 
         
 
-console.log(postsList)
 
 
 
