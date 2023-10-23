@@ -154,7 +154,7 @@
                 "correct_answer": "a few"
             }
         ],
-        "normal": [
+        "medium": [
             {
                 "number": 1,
                 "question": "The ____ took out their phones to record the fight in the supermarket.",
@@ -612,7 +612,7 @@
                 "correct_answer": 3
             }
         ],
-        "normal": [
+        "medium": [
             {
                 "number": 1,
                 "question": "What is the process by which green plants make their own food using sunlight?",
@@ -1070,7 +1070,7 @@
                 "correct_answer": 2
             }
         ],
-        "normal": [
+        "medium": [
             {
                 "number": 1,
                 "question": "What is 12 divided by 4?",
