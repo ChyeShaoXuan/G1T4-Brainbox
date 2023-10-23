@@ -156,7 +156,7 @@ function show_test(difficulty,subject){
         content_section.innerHTML=new_html;
         
     }
-
+    //medium difficulty
     else if (difficulty=='medium'){
         
         let content_section=document.getElementById('content_section')
