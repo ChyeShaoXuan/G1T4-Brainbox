@@ -463,75 +463,75 @@
         "easy": [
             {
                 "number": 1,
-                "question": "What gas do humans breathe out when they exhale?",
-                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
-                "correct_answer": 2
+                "question": "What statement is correct about Yeast?",
+                "answers": ["It is a type of bacteria.", "It is used to make bread", "It can make its own food", "It is not a micro-organism."],
+                "correct_answer": "It is used to make bread"
             },
             {
                 "number": 2,
-                "question": "What gas do plants absorb from the atmosphere and use for photosynthesis?",
-                "answers": ["Carbon monoxide", "Oxygen", "Carbon dioxide", "Nitrogen"],
-                "correct_answer": 3
+                "question": "How many stages are there in a grasshopper's life cycle?",
+                "answers": ["1", "2", "3", "4"],
+                "correct_answer": "3"
             },
             {
                 "number": 3,
                 "question": "What is the process by which plants make their own food using sunlight?",
                 "answers": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-                "correct_answer": 2
+                "correct_answer": "Photosynthesis"
             },
             {
                 "number": 4,
-                "question": "What is the chemical symbol for water?",
-                "answers": ["H2O", "O2", "CO2", "NaCl"],
-                "correct_answer": 1
+                "question": "How do coconuts disperse their seeds?",
+                "answers": ["By water", "By wind", "By Animals", "By Gravity"],
+                "correct_answer": "By water"
             },
             {
                 "number": 5,
-                "question": "What is the second most abundant gas in Earth's atmosphere?",
-                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
-                "correct_answer": 3
+                "question": "What state of matter is steam in?",
+                "answers": ["Liquid", "Solid", "Gas", "Dormant"],
+                "correct_answer": "Gas"
             },
             {
                 "number": 6,
-                "question": "What is the largest planet in our solar system?",
-                "answers": ["Earth", "Mars", "Venus", "Jupiter"],
-                "correct_answer": 4
+                "question": "What is a method used to increase the magnetic strength of a bar magnet?",
+                "answers": ["Placing it over a fire", "Dropping it from a height", "Stroking it using the north pole of another magnet", "Bringing it nearer to another magnet"],
+                "correct_answer": "Stroking it using the north pole of another magnet"
             },
             {
                 "number": 7,
                 "question": "What is the process by which living organisms break down food to release energy?",
                 "answers": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
-                "correct_answer": 4
+                "correct_answer": "Digestion"
             },
             {
                 "number": 8,
-                "question": "What is the powerhouse of the cell?",
-                "answers": ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic reticulum"],
-                "correct_answer": 2
+                "question": "Which body system has a function of circulating blood around the body?",
+                "answers": ["Digestive system", "Respiratory system", "Skeletal system", "Circulatory system"],
+                "correct_answer": "Circulatory system"
             },
             {
                 "number": 9,
-                "question": "What is the chemical symbol for oxygen?",
-                "answers": ["Ox", "Oy", "O", "Om"],
-                "correct_answer": 3
+                "question": "Which body system is the mouth a part of?",
+                "answers": ["Digestive system", "Respiratory system", "Skeletal system", "Circulatory system"],
+                "correct_answer": "Digestive system"
             },
             {
                 "number": 10,
-                "question": "Which planet is known as the 'Red Planet'?",
-                "answers": ["Earth", "Mars", "Venus", "Saturn"],
-                "correct_answer": 2
+                "question": "Which part of the plant takes in water?",
+                "answers": ["Roots", "Leaves", "Stem", "Flowers"],
+                "correct_answer": "Roots"
             },
             {
                 "number": 11,
-                "question": "What is the primary gas responsible for the greenhouse effect on Earth?",
-                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
-                "correct_answer": 2
+                "question": "What is the powerhouse of the cell?",
+                "answers": ["Mitochondria", "Cytoplasm", "Cell wall", "Cell membrane"],
+                "correct_answer": "Mitochondria"
             },
             {
                 "number": 12,
-                "question": "What is the smallest particle of an element that retains the properties of that element?",
-                "answers": ["Molecule", "Atom", "Proton", "Neutron"],
-                "correct_answer": 2
+                "question": "What characteristic does a gas have?",
+                "answers": ["It cannot be compressed", "It has a definite shape", "It has a definite volume", "It cannot expand"],
+                "correct_answer": "It cannot be compressed"
             },
             {
                 "number": 13,
