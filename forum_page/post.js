@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-import { getDatabase, ref, onValue, get} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
+import { getDatabase, ref, onValue, update} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
 import {getAuth, signOut} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
 
 const firebaseConfig = {
@@ -20,12 +20,17 @@ const urlParams = new URLSearchParams(window.location.search)
 const postID = urlParams.get('postID')
 const postSub = urlParams.get('subject')
 console.log(postID,postSub)
-
 const postRef = ref(db,'posts/'+ postSub + '/' + postID)
-
 onValue(postRef, (snapshot) => {
     const postContent = snapshot.val()
-    console.log(postContent)
+    let currViews = postContent.views + 1
+    const updates = {
+        views: currViews
+    }
+    update(ref(db,'posts/'+ postSub + '/' + postID),updates)
+
     document.getElementById('title').innerText = postContent.title
     document.getElementById('content').innerText = postContent.content
+}, {
+    onlyOnce: true
 })
