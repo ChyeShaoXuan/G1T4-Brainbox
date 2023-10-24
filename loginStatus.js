@@ -18,16 +18,23 @@ const auth = getAuth(app)
 function monitorAuthState() {
     onAuthStateChanged(auth, user => {
         if (user) {
+            if (document.URL.includes('Login/index.html')) {
+                window.location.replace("../Home/home.html")
+                console.log('test')
+            }
             console.log('user logged in')
             console.log(user.uid)
-            document.getElementsByTagName('body')[0].removeAttribute('style')
+            // document.getElementsByTagName('body')[0].removeAttribute('style')
         } else {
-            window.location.replace("../Login/index.html")
+            if (!document.URL.includes('Login/index.html')) {
+                window.location.replace("../Login/index.html")
+            }
+            console.log('test2')
         }
     })
 }
 
 
 
-window.addEventListener('load',monitorAuthState())
+window.addEventListener('load',monitorAuthState)
 
