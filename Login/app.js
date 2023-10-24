@@ -137,54 +137,53 @@ const firebaseConfig = {
     // }
     // monitorAuthState();
 
-    function showSignUpError(error) {
-          console.log(error)
-          var msgSpace = document.getElementById('signupError')
-          if (error == 'auth/email-already-in-use'){
-            msgSpace.innerText= 'Email already exists!'
-          } else if (error == 'short') {
-            msgSpace.innerText= 'Password has to be more than 6 characters!'
-          } else if (error == 'blank') {
-            msgSpace.innerText = 'Please fill in the blanks!'
-          } else if (error == 'checkbox') {
-            msgSpace.innerText = 'Please agree to our terms and services!'
-          } else if (error == 'none') {
-            msgSpace.innerText = ''
-          }
-            
-    }
-
-    function showLogInError(error) {
-      var loginMsg = document.getElementById('signinMessage')
-      loginMsg.setAttribute('style','color:red')
-      if (error == 'blank') {
-        loginMsg.innerText = 'Please fill in the blanks!'
-      } else if (error == 'invalid') {
-        loginMsg.innerText = 'Wrong email or password!'
+function showSignUpError(error) {
+      console.log(error)
+      var msgSpace = document.getElementById('signupError')
+      if (error == 'auth/email-already-in-use'){
+        msgSpace.innerText= 'Email already exists!'
+      } else if (error == 'short') {
+        msgSpace.innerText= 'Password has to be more than 6 characters!'
+      } else if (error == 'blank') {
+        msgSpace.innerText = 'Please fill in the blanks!'
+      } else if (error == 'checkbox') {
+        msgSpace.innerText = 'Please agree to our terms and services!'
+      } else if (error == 'none') {
+        msgSpace.innerText = ''
       }
-    }
+        
+}
 
-    function clearFields() {
-      let fields = document.getElementsByClassName('input-field')
-      for (let field of fields) {
-        console.log(field)
-        field.value = ''
-      }
-      document.querySelector("[name='agree']").checked = false;
-    }
+function showLogInError(error) {
+  var loginMsg = document.getElementById('signinMessage')
+  loginMsg.setAttribute('style','color:red')
+  if (error == 'blank') {
+    loginMsg.innerText = 'Please fill in the blanks!'
+  } else if (error == 'invalid') {
+    loginMsg.innerText = 'Wrong email or password!'
+  }
+}
+
+function clearFields() {
+  let fields = document.getElementsByClassName('input-field')
+  for (let field of fields) {
+    console.log(field)
+    field.value = ''
+  }
+  document.querySelector("[name='agree']").checked = false;
+}
 
 
   
-  document.getElementById('signup').addEventListener('click',signupEmailPassword);
+document.getElementById('signup').addEventListener('click',signupEmailPassword);
 
-  document.getElementById('login').addEventListener('click',loginEmailPassword);
+document.getElementById('login').addEventListener('click',loginEmailPassword);
 
 
+document.getElementById("signup").addEventListener("click", function(event){
+  event.preventDefault()
+});
 
-  document.getElementById("signup").addEventListener("click", function(event){
-    event.preventDefault()
-  });
-
-  document.getElementById("login").addEventListener("click", function(event){
-    event.preventDefault()
-  });
+document.getElementById("login").addEventListener("click", function(event){
+  event.preventDefault()
+});
