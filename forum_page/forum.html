@@ -278,12 +278,15 @@
             <div class="w-full md:w-3/4">
                 <!-- Start of popular topics -->
                 <div class="w-full sm:my-0.5">
-                    <div class="card shadow-lg" id="post1">
+                    <div class="card shadow-lg">
                         <div class="card-body bg-gradient-to-r from-pink-200 to-blue-100 hover:from-green-200 to-blue-400  text-light">
                             <h5 class="card-title">
                                 <i class="far fa-comments me-2"></i> <span class='text-2xl font-semibold'>Popular Topics</span>
                             </h5>
-                            <p class="card-text md:text-right text-left mt-2 md:mt-0 text-lg">Threads: 79 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comments: 1568</p>
+                            <p class="card-text md:text-right text-left mt-2 md:mt-0 text-lg">
+                                <span id="threads">Threads: 79</span>
+                                <span class="ms-3">Comments: 1568</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -297,15 +300,15 @@
                     <div>
                       <p class="text-sm text-gray-700">
                         Showing
-                        <span class="font-medium">1</span>
+                        <span class="font-medium" id="firstPage">1</span>
                         to
-                        <span class="font-medium">5</span>
+                        <span class="font-medium" id="lastPage">5</span>
                         of
                         <span class="font-medium" id="totalnumresults">97</span>
                         Posts
                       </p>
                     </div>
-                    <div>
+                    <div id="pagesBar">
                       <nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
                         <a href="#" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
                           <span class="sr-only">Previous</span>
@@ -314,13 +317,13 @@
                           </svg>
                         </a>
                         <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:outline-offset-0" -->
-                        <a href="#" aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">1</a>
-                        <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">2</a>
-                        <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">3</a>
+                        <a href="#" id='p1' aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 page">1</a>
+                        <a href="#" id='p2' class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 page">2</a>
+                        <a href="#" id='p3' class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 page">3</a>
                         <span class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-700 ring-1 ring-inset ring-gray-300 focus:outline-offset-0">...</span>
-                        <a href="#" class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">8</a>
-                        <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">9</a>
-                        <a href="#" class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">10</a>
+                        <a href="#" id='p8' class="relative hidden items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 md:inline-flex">8</a>
+                        <a href="#" id='p9' class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">9</a>
+                        <a href="#" id='p10' class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">10</a>
                         <a href="#" class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
                           <span class="sr-only">Next</span>
                           <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
