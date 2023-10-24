@@ -22,6 +22,7 @@ let newStr = ''
 let postsList = []
 let uid = ''
 const userRef = ref(db,'users')
+const currSub = 'english'
 
 onValue(userRef, (snapshot) => {
     const users = snapshot.val()
@@ -29,7 +30,7 @@ onValue(userRef, (snapshot) => {
         snapshot2.forEach((childSnapshot) => {
             const childKey = childSnapshot.key;
             const postDetails = childSnapshot.val();
-            uid = childValue.uid
+            uid = postDetails.uid
             postsList.push([childKey,postDetails,users[postDetails.uid].image,users[postDetails.uid].username])
         });
         postsList = postsList.reverse()
@@ -39,7 +40,7 @@ onValue(userRef, (snapshot) => {
                 <li class="list-group-item p-3">
                                         <div class="flex flex-col items-center md:flex-row">
                                             <div class="w-full md:w-1/2 md:mb-0 text-center">
-                                                <a href="#" class="text-blue-900 font-semibold hover:text-red-900">${post[1].title}</a>
+                                                <a href="post.html?postID=${post[0]}&subject=${currSub}" class="text-blue-900 font-semibold hover:text-red-900">${post[1].title}</a>
                                             </div>
                                             <div class="w-1/2 md:w-1/8 md:w-1/4">
                                                 <div class="flex items-center">
@@ -52,15 +53,16 @@ onValue(userRef, (snapshot) => {
                                                 </div>
                                             </div>
                                             <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
-                                                Replies: 100
+                                                Replies: ${post[1].comments}
                                             </div>
                                             <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
-                                                Views: 1.2k
+                                                Views: ${post[1].views}
                                             </div>
                                         </div>
                                     </li>`
         }
-        // document.getElementById('posts').innerHTML = newStr
+        document.getElementById('posts').innerHTML = newStr
+
     });
 });
 
@@ -72,3 +74,4 @@ onValue(userRef, (snapshot) => {
 document.getElementById('create').addEventListener('click', function() {
     window.location.href = 'create.html';
 })
+
