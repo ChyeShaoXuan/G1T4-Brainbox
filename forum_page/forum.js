@@ -23,54 +23,72 @@ let postsList = []
 let uid = ''
 const userRef = ref(db,'users')
 const currSub = 'english'
-
-onValue(userRef, (snapshot) => {
-    const users = snapshot.val()
-    onValue(postsRef,(snapshot2) => {
-        snapshot2.forEach((childSnapshot) => {
-            const childKey = childSnapshot.key;
-            const postDetails = childSnapshot.val();
-            uid = postDetails.uid
-            postsList.push([childKey,postDetails,users[postDetails.uid].image,users[postDetails.uid].username])
-        });
-        postsList = postsList.reverse()
-        console.log(postsList)
-        for (let post of postsList) {
-            newStr+= `
-                <li class="list-group-item p-3">
-                                        <div class="flex flex-col items-center md:flex-row">
-                                            <div class="w-full md:w-1/2 md:mb-0 text-center">
-                                                <a href="post.html?postID=${post[0]}&subject=${currSub}" class="text-blue-900 font-semibold hover:text-red-900">${post[1].title}</a>
-                                            </div>
-                                            <div class="w-1/2 md:w-1/8 md:w-1/4">
-                                                <div class="flex items-center">
-                                                    <div class="w-1/2">
-                                                        <img src="../Images/${post[2]}" class="w-10 h-10 rounded-full">
-                                                    </div>
-                                                    <div class="w-1/2">
-                                                        <span style="font-size: 15px;">${post[3]}</span>
+let currPost = null
+function displayPage(page) {
+    postsList = []
+    newStr = ''
+    onValue(userRef, (snapshot) => {
+        const users = snapshot.val()
+        onValue(postsRef,(snapshot2) => {
+            snapshot2.forEach((childSnapshot) => {
+                const childKey = childSnapshot.key;
+                const postDetails = childSnapshot.val();
+                uid = postDetails.uid
+                postsList.push([childKey,postDetails,users[postDetails.uid].image,users[postDetails.uid].username])
+            });
+            postsList = postsList.reverse()
+            console.log(postsList)
+            let firstPage = (page-1)*5
+            let lastPage = page*5
+            for (let i=firstPage;i<lastPage;i++) {
+                if (i >= postsList.length) {
+                    break;
+                }
+                console.log(i)
+                currPost = postsList[i]
+                newStr+= `
+                    <li class="list-group-item p-3">
+                                            <div class="flex flex-col items-center md:flex-row">
+                                                <div class="w-full md:w-1/2 md:mb-0 text-center">
+                                                    <a href="post.html?postID=${currPost[0]}&subject=${currSub}" class="text-blue-900 font-semibold hover:text-red-900">${currPost[1].title}</a>
+                                                </div>
+                                                <div class="w-1/2 md:w-1/8 md:w-1/4">
+                                                    <div class="flex items-center">
+                                                        <div class="w-1/2">
+                                                            <img src="../Images/${currPost[2]}" class="w-10 h-10 rounded-full">
+                                                        </div>
+                                                        <div class="w-1/2">
+                                                            <span style="font-size: 15px;">${currPost[3]}</span>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
+                                                    Replies: ${currPost[1].comments}
+                                                </div>
+                                                <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
+                                                    Views: ${currPost[1].views}
+                                                </div>
                                             </div>
-                                            <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
-                                                Replies: ${post[1].comments}
-                                            </div>
-                                            <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
-                                                Views: ${post[1].views}
-                                            </div>
-                                        </div>
-                                    </li>`
-        }
-        document.getElementById('posts').innerHTML = newStr
+                                        </li>`
+            }
+            document.getElementById('posts').innerHTML = newStr
 
+        },{
+            onlyOnce:true
+        });
+    }, {
+        onlyOnce:true
     });
-});
-
-        
+}
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    displayPage(1)
+})
 
-
+document.getElementById('english').addEventListener('click', () => {
+    displayPage(2)
+})
 document.getElementById('create').addEventListener('click', function() {
     window.location.href = 'create.html';
 })
