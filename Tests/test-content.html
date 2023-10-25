@@ -14,17 +14,30 @@
     <!-- Vue.js 3 CDN -->
     <script src="https://unpkg.com/vue@next"></script>
 
+    <style>
+        .correct{
+            color: green;
+        }
+        .error{
+            color: red;
+        }
+    </style>
+
 </head>
 <body>
-    <div id="app">
-        <!-- Vue.js template will be rendered here -->
-        <div v-for="qn of questions">
-            <h1>{{qn.number}}. {{qn.question}}</h1>
-            <p v-for="ans in qn.answers"><input type="radio" :value="ans" :name="qn.number" required>{{ans}}</p>
-
-        </div>
-        Hello World
-    </div>
+    <form id="test">
+        <div id="app">
+            <!-- Vue.js template will be rendered here -->
+            <div v-for="qn of questions">
+                <h1>{{qn.number}}. {{qn.question}}</h1>
+                <label v-for="ans in qn.answers"><input type="radio" :value="ans" :name="qn.number" required>{{ans}}<br></label>
+            </div>
+            
+            <button @click="submit" style="background-color: cyan;">Submit</button>
+            <br>
+            Your Score= <input type="text" size="15" id="mark">
+         </div>
+    </form>
         
     <script src="test-content.js"></script>
 </body>
