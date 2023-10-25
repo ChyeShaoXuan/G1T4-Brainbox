@@ -3,20 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Post!</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f1c40f;
+        }
+        #submit:hover {
+            transform: scale(1.1);
+            background-color: purple;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-xl p-8 bg-white rounded-lg shadow-lg">
+        <h1 class="text-4xl text-center text-indigo-700 mb-6">Create a Forum Post</h1>
+        <form class="space-y-4">
+            <div class="mb-4">
+                <label for="title" class="block text-gray-700 text-lg">Post Title</label>
+                <input type="text" id="title" placeholder="Enter your post title" class="w-full p-3 border border-indigo-400 rounded-md focus:outline-none focus:border-indigo-600 text-lg">
+            </div>
+            <div class="mb-4">
+                <label for="content" class="block text-gray-700 text-lg">Post Content</label>
+                <textarea id="content" placeholder="Enter your post content" class="w-full p-3 border border-indigo-400 rounded-md focus:outline-none focus:border-indigo-600 h-36 text-lg"></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="subject" class="block text-gray-700 text-lg">Choose Post Subject</label>
+                <select name="subject" id="subject" class="w-full p-3 border border-indigo-400 rounded-md focus:outline-none focus:border-indigo-600 text-lg">
+                    <option value="english">English</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                </select>
+            </div>
+            <button id="submit" class="w-full p-3 bg-black text-white rounded-md  text-lg">Submit</button>
+        </form>
+    </div>
 
-    <input type="text" placeholder="title" id="title">
-    <input type="text" placeholder="content" id="content">
-    <select name="subject" id="subject">
-        <option value="english">English</option>
-        <option value="chinese">Chinese</option>
-        <option value="math">Math</option>
-        <option value="science">Science</option>
-    </select>
-    <button id="submit">Submit</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        const colors = ["#f1c40f", "#e74c3c", "#3498db", "#27ae60", "#9b59b6", "#e67e22"];
+        let colorIndex = 0;
 
-<script type="module" src="create.js"></script>
+        const changeBackgroundColor = () => {
+            gsap.to("body", {
+                duration: 2,
+                backgroundColor: colors[colorIndex],
+                ease: "power1.inOut",
+                onComplete: () => {
+                    colorIndex = (colorIndex + 1) % colors.length;
+                    changeBackgroundColor();
+                },
+            });
+        };
+        changeBackgroundColor();
+    </script>
+    <script type="module" src="create.js"></script>
 </body>
 </html>
+
+
