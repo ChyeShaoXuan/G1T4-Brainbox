@@ -17,20 +17,25 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 function monitorAuthState() {
     onAuthStateChanged(auth, user => {
+        breakme: {
         if (user) {
             if (document.URL.includes('Login/index.html')) {
                 window.location.replace("../Home/home.html")
-                console.log('test')
+                break breakme
             }
+            document.getElementById('contentBlock').removeAttribute('style')
             console.log('user logged in')
             console.log(user.uid)
-            // document.getElementsByTagName('body')[0].removeAttribute('style')
+
         } else {
             if (!document.URL.includes('Login/index.html')) {
                 window.location.replace("../Login/index.html")
+                break breakme
             }
+            document.getElementById('contentBlock').removeAttribute('style')
             console.log('test2')
         }
+    }
     })
 }
 
