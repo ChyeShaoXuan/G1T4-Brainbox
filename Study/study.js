@@ -18,7 +18,7 @@ function display_default(){
           <div class='col-sm-5'>
              <img src="${image}" style="height:100%">
           </div>
-          <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../images/study_grammarbackground.jpeg");background-size:100%'>
+          <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/study_grammarbackground.jpeg");background-size:100%'>
                <div class="text-red-900 font-semibold text-xl text-align-center m-5">${text}</div>
                 
           </div>
