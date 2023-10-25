@@ -1,3 +1,7 @@
+const urlParams = new URLSearchParams(window.location.search)
+const testSub = urlParams.get('subject')
+const testDif = urlParams.get('difficulty')
+
 const app = Vue.createApp({
     data() {
         return {
@@ -8,7 +12,7 @@ const app = Vue.createApp({
         axios.get('questions.json')
             .then((response) => {
                 this.questions = response.data;
-                console.log(this.questions.English.Easy)
+                console.log(this.questions[testSub][testDif])
             })
             .catch((error) => {
                 console.error('Error loading questions:', error);

@@ -18,6 +18,13 @@
 <body>
     <div id="app">
         <!-- Vue.js template will be rendered here -->
+        <div v-for="qn in questions">
+            <h1>{{qn.number}} {{qn.question}}</h1>
+            <label v-for="ans in qn.answers">
+                <input type="radio" value="ans">
+            </label>
+
+        </div>
         Hello World
     </div>
         
