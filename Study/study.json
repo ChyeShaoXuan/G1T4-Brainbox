@@ -234,157 +234,68 @@
         
     },    
     "science":{
-        "Plants and Animals": [
+       "Plants and Animals": [
             {
                 "number": 1,
-                "image_url": "..Images/study",
-                "front_text": "A 3 stage life-cycle consists of the egg, young and adult stage.",
+                "image_url": "../Images/study_3stagelifecycle.jpg",
+                "front_text": "A 3 stage life-cycle for animals consists of the egg, young and adult stage.",
                 "examples": "In the picture, a grasshopper goes from the egg, nymph to finally the adult stage."
             },
             {
                 "number": 2,
-                "image_url": "What gas do plants absorb from the atmosphere and use for photosynthesis?",
-                "front_text": ["Carbon monoxide", "Oxygen", "Carbon dioxide", "Nitrogen"],
-                "examples": 3
+                "image_url": "../Images/study_4stagelifecycle.jpg",
+                "front_text": "A 4 stage life-cycle for animals consists of the egg, larva, pupa and adult stage.",
+                "examples": "In the picture, a butterfly goes from the egg, to a larva(caterpillar), where it becomes a pupa to reach the adult stage."
             },
             {
                 "number": 3,
-                "image_url": "What is the process by which plants make their own food using sunlight?",
-                "front_text": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-                "examples": 2
+                "image_url": "../Images/cold_hotblooded.jpg",
+                "front_text": "Cold-blooded animals are unable to regulate their body's temperature according to the temperature of the surroundings. Warm-blooded animals are able to maintain a nearly constant body temperature, in almost any environment",
+                "examples": "Reptiles, Amphibians, Fish and Insects are cold-blooded. Mammals, birds, and some fish and insects are warm-blooded."
             },
             {
                 "number": 4,
-                "image_url": "What is the chemical symbol for water?",
-                "front_text": ["H2O", "O2", "CO2", "NaCl"],
-                "examples": 1
+                "image_url": "../Images/plant_lifecycle.jpg",
+                "front_text": "For a flowering plant, the seed first germinates under sufficient water, warmth and oxygen, grows into a seedling, then young plant. The plant bears flowers then fruit in the adult stage.",
+                "examples": "In the picture, the life cycle of a flowering plant is mainly split into 5 parts."
             },
             {
                 "number": 5,
-                "image_url": "What is the second most abundant gas in Earth's atmosphere?",
-                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
-                "examples": 3
+                "image_url": "../Images/seed_germination.jpg",
+                "front_text": "After seed germination, the roots, then shoot grows out. The seedling depends on the seed coat for food before developing leaves. ",
+                "examples": "In the picture, the development of a seed to a young plant is shown."
             },
             {
                 "number": 6,
-                "image_url": "What is the largest planet in our solar system?",
-                "front_text": ["Earth", "Mars", "Venus", "Jupiter"],
-                "examples": 4
+                "image_url": "../Images/plant_parts.jpg",
+                "front_text": "A plant has many parts that perform different functions. The picture shows the different functions of these parts.",
+                "examples": ""
             },
             {
                 "number": 7,
-                "image_url": "What is the process by which living organisms break down food to release energy?",
-                "front_text": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
-                "examples": 4
+                "image_url": "../Images/photosynthesis.png",
+                "front_text": "Photosynthesis is the process by which plants turn water, sunlight, and carbon dioxide into water, oxygen, and simple sugars",
+                "examples": "The diagram shows the process of photosynthesis in more detail."
             },
             {
                 "number": 8,
-                "image_url": "What is the powerhouse of the cell?",
-                "front_text": ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic reticulum"],
-                "examples": 2
+                "image_url": "../Images/seed_dispersal.jpg",
+                "front_text": "There are five main modes of seed dispersal: by gravity, wind, explosion, water, and animals.",
+                "examples": "The diagram shows examples of plants that have different seed dispersal methods."
             },
             {
                 "number": 9,
-                "image_url": "What is the chemical symbol for oxygen?",
-                "front_text": ["Ox", "Oy", "O", "Om"],
-                "examples": 3
+                "image_url": "../Images/animal_groups.jpg",
+                "front_text": "There are six basic animal groups: fish, amphibians, reptiles, mammals, birds and invertaebrates.",
+                "examples": ""
             },
             {
                 "number": 10,
-                "image_url": "Which planet is known as the 'Red Planet'?",
-                "front_text": ["Earth", "Mars", "Venus", "Saturn"],
-                "examples": 2
-            },
-            {
-                "number": 11,
-                "image_url": "What is the primary gas responsible for the greenhouse effect on Earth?",
-                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
-                "examples": 2
-            },
-            {
-                "number": 12,
-                "image_url": "What is the smallest particle of an element that retains the properties of that element?",
-                "front_text": ["Molecule", "Atom", "Proton", "Neutron"],
-                "examples": 2
-            },
-            {
-                "number": 13,
-                "image_url": "What is the freezing point of water in degrees Fahrenheit?",
-                "front_text": ["32°F", "0°F", "50°F", "100°F"],
-                "examples": 1
-            },
-            {
-                "number": 14,
-                "image_url": "What is the process by which plants convert light energy into chemical energy in the form of glucose?",
-                "front_text": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-                "examples": 2
-            },
-            {
-                "number": 15,
-                "image_url": "What is the primary source of energy for the Earth?",
-                "front_text": ["Wind", "Solar", "Fossil Fuels", "Hydropower"],
-                "examples": 2
-            },
-            {
-                "number": 16,
-                "image_url": "What is the main function of leaves on a plant?",
-                "front_text": ["To anchor the plant", "To store water", "To absorb sunlight", "To pump blood"],
-                "examples": 3
-            },
-            {
-                "number": 17,
-                "image_url": "What is the primary gas responsible for the blue color of the Earth's sky?",
-                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Ozone"],
-                "examples": 3
-            },
-            {
-                "number": 18,
-                "image_url": "What is the chemical symbol for carbon?",
-                "front_text": ["Ca", "Co", "C", "Cu"],
-                "examples": 3
-            },
-            {
-                "number": 19,
-                "image_url": "What is the largest organ in the human body?",
-                "front_text": ["Heart", "Liver", "Brain", "Skin"],
-                "examples": 4
-            },
-            {
-                "number": 20,
-                "image_url": "What is the chemical symbol for sodium?",
-                "front_text": ["Na", "No", "Ne", "Ni"],
-                "examples": 1
-            },
-            {
-                "number": 21,
-                "image_url": "What is the process by which living organisms produce energy from food?",
-                "front_text": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
-                "examples": 4
-            },
-            {
-                "number": 22,
-                "image_url": "What is the main function of the heart in the human body?",
-                "front_text": ["To think", "To pump blood", "To digest food", "To breathe"],
-                "examples": 2
-            },
-            {
-                "number": 23,
-                "image_url": "What gas is released during photosynthesis and absorbed during respiration?",
-                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-                "examples": 2
-            },
-            {
-                "number": 24,
-                "image_url": "What is the main function of the brain in the human body?",
-                "front_text": ["To filter water", "To pump blood", "To think and process information", "To digest food"],
-                "examples": 3
-            },
-            {
-                "number": 25,
-                "image_url": "What is the main function of the lungs in the human body?",
-                "front_text": ["To pump blood", "To digest food", "To breathe and exchange oxygen and carbon dioxide", "To think"],
-                "examples": 3
+                "image_url": "..Images/food_chain.png",
+                "front_text": "In a food chain, there are food producers, organisms that make their own food, and food consumers, that consume food. A herbivore eats plants, an omnivore eats both plants and animals and a carnivore eats animals.",
+                "examples": "The diagram shows a simple example of a food chain."
             }
+            
         ],
         "normal": [
             {
