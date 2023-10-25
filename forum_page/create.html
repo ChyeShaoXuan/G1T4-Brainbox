@@ -8,13 +8,20 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 
     <style>
+
         body {
             background-color: #f1c40f;
         }
         #submit:hover {
             transform: scale(1.1);
-            background-color: purple;
+            background-color: green;
         }
+
+        #exit:hover {
+            transform: scale(1.1);
+            background-color: red;
+        }
+
     </style>
 </head>
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
@@ -38,6 +45,9 @@
                 </select>
             </div>
             <button id="submit" type="button" class="w-full p-3 bg-black text-white rounded-md  text-lg">Submit</button>
+
+            <a id="exit" href="forum.html" class="w-full p-3 bg-black text-white rounded-md text-lg block text-center">I don't want to post!</a>
+
         </div>
     </div>
 
