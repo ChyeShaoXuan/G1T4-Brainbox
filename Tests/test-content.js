@@ -11,10 +11,16 @@ const app = Vue.createApp({
     mounted() {
         axios.get('questions.json')
             .then((response) => {
-                this.questions = response.data;
-                this.questions[testSub][testDif].forEach(element => {
-                    console.log(element.question);
-                });
+                this.questions = response.data[testSub][testDif];
+                console.log(this.questions)
+                // console.log(response.data[testSub][testDif])
+                // console.log(this.questions[testSub][testDif][0].question)
+                // this.questions[testSub][testDif].forEach(element => {
+                    // console.log(element)
+                    // counter++;
+                    // this.questions.push({number:counter,question:element.question})
+                // });
+                // console.log(this.questions)
                 
             })
             .catch((error) => {
