@@ -66,6 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
             displayPage(Number(pageNum))
         })
     }
+    }, {
+        onlyOnce: true
     })
 
 })
