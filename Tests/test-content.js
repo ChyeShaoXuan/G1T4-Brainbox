@@ -13,6 +13,7 @@ const app = Vue.createApp({
             .then((response) => {
                 this.questions = response.data;
                 console.log(this.questions.English.Easy)
+                console.log(testSub, testDif)
             })
             .catch((error) => {
                 console.error('Error loading questions:', error);
