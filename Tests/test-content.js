@@ -63,7 +63,7 @@ const app = Vue.createApp({
                         score +=1;
                     }  
                     else{
-                        score--;
+                        
                         rad.closest("label").classList.toggle("error")
                     }  
                     counter++
