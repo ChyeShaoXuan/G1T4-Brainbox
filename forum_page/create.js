@@ -30,21 +30,27 @@ function monitorAuthState() {
             const postSubject = document.getElementById('subject').value
 
             console.log(postTitle,postContent,postSubject)
-            console.log('submitted')
+
             const current = new Date()
             const reference = ref(db, 'posts/' + postSubject + '/' + current.getTime())
             const userRef = ref(db, 'users/' + user.uid + '/username')
-                set(reference, {
-                    uid: user.uid,
-                    title: postTitle,
-                    content: postContent,
-                    views: 0,
-                    comments: 0,
-                })         
+            set(reference, {
+                uid: user.uid,
+                title: postTitle,
+                content: postContent,
+                views: 0,
+                comments: 0,
+            }).then(() => {
+                console.log('submitted')
+                window.location.href = "forum.html" 
+            }).catch(error => {
+                console.log(error.message)
+            })
         } else {
             console.log('not logged in')
         }
     })
+
 }
 
 
