@@ -39,7 +39,7 @@ function display_default(){
 }
 
 
-function populate_carousel(subject,difficulty){
+function populate_page(subject,topic){
   let api_endpoint_url = "study.json"
 
     axios.get(api_endpoint_url)
