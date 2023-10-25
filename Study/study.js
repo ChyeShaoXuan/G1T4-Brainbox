@@ -1,64 +1,57 @@
-// study.js
+function display_default(){
+  let api_endpoint_url = "study.json"
 
-// Mock API for flashcard content
-const flashcardAPI = {
-    getFlashcards: (level) => {
-      // Replace this with a real API call
-      // For simplicity, using static data here
-      const data = [
-        { topic: "Topic 1", subTopic: "Sub-topic 1" },
-        // Add more flashcards as needed
-      ];
-  
-      return Promise.resolve(data);
+    axios.get(api_endpoint_url)
+    .then(response => {  
+      let default_data_arr=(response.data.english.grammar)
+      let first_text=default_data_arr[0].front_text;
+      let first_image=default_data_arr[0].image_url;
+      let first_examples=default_data_arr[0].examples;
+      new_html=``;
+    for (let i=0; i<default_data_arr.length;i++){
+      let image=default_data_arr[i].image_url;
+      let text=default_data_arr[i].front_text;
+      let examples=default_data_arr[i].examples;
+      new_html+=
+      `<div class='row mb-3'>
+          <div class='col-sm-1'></div>
+          <div class='col-sm-5'>
+             <img src="${image}" style="height:100%">
+          </div>
+          <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../images/study_grammarbackground.jpeg");background-size:100%'>
+               <div class="text-red-900 font-semibold text-xl text-align-center m-5">${text}</div>
+                
+          </div>
+
+     </div>`
     }
-  };
-  
-  function goToHome() {
-    window.location.href = '../Home/home.html';
-  }
+    let study_carousel= document.getElementById('contents')
+    study_carousel.innerHTML=new_html
+      
 
-  // Function to create a yellow flashcard
-  function createFlashcard(topic, subTopic) {
-    const cardElement = document.createElement("div");
-    cardElement.classList.add("flashcard", "bg-yellow-300", "rounded-lg", "text-gray-800", "w-2/3", "h-80", "mx-auto", "my-4", "p-6", "text-center", "relative");
-  
-    // Content inside the flashcard
-    cardElement.innerHTML = `
-      <p class="text-2xl font-bold">${topic}</p>
-      <p>${subTopic}</p>
-      <div class="flex justify-end absolute bottom-4 right-4 space-x-4">
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded">Previous</button>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded">Next</button>
-      </div>
-    `;
-  
-    return cardElement;
-  }
-  
-  // Function to render flashcards
-  function renderFlashcards(level) {
-    const flashcardContainer = document.getElementById("flashcard-container");
-    flashcardContainer.innerHTML = ""; // Clear previous content
-  
-    // Fetch flashcards from the API
-    flashcardAPI.getFlashcards(level)
-      .then(flashcards => {
-        flashcards.forEach(flashcard => {
-          const cardElement = createFlashcard(flashcard.topic, flashcard.subTopic);
-          flashcardContainer.appendChild(cardElement);
-        });
-      })
-      .catch(error => {
-        console.error("Error fetching flashcards:", error);
-      });
-  }
-  
-  // Initial render
-  renderFlashcards("easy"); // You can pass the initial level here
-  
-  // Event listener for level selection
-  document.getElementById("level").addEventListener("change", () => {
-    const selectedLevel = document.getElementById("level").value;
-    renderFlashcards(selectedLevel);
-  });
+    })
+    .catch(error => {
+
+        // ERROR
+        // Something went wrong
+        console.log(error.message)
+    })
+}
+
+
+function populate_carousel(subject,difficulty){
+  let api_endpoint_url = "study.json"
+
+    axios.get(api_endpoint_url)
+    .then(response => {  
+      console.log(response)
+    })
+    .catch(error => {
+
+        // ERROR
+        // Something went wrong
+        console.log(error.message)
+    })
+
+
+}
