@@ -1,0 +1,1153 @@
+{
+    "english":{
+        "grammar":[
+            {
+                "number": 1,
+                "image_url": "../Images/study_nouns.jpg",
+                "front_text": 
+                    "Nouns refer to people, places or things. Ideas and thoughts are things too!"
+                  ,
+                "examples":"<strong>Sally</strong> doesn’t use an iPhone."
+            },
+            {
+                "number": 2,
+                "image_url": "../Images/study_pronouns.png",
+                "front_text": 
+                    "Pronouns are words that replace nouns. The thing (or person, or place) that the pronoun refers to needs to have been mentioned already by name somewhere earlier in the sentence or paragraph!"
+                  ,
+                "examples":"<strong>I</strong> swam in the ocean. <strong>You swam</strong> in the ocean."
+            },
+            {
+                "number": 3,
+                "image_url": "../Images/study_adjectives.jpg",
+                "front_text": 
+                    "Adjectives are descriptive words that add detail to a sentence. They are used to describe nouns, that we just learnt!"
+                  ,
+                "examples": "The stuffed toy is <strong>fuzzy</strong> and <strong>round</strong."
+            },
+            
+            {
+                "number": 4,
+                "image_url": "../Images/study_verbs.png",
+                "front_text": "Verbs are action words, and tell you what the subject(described by a noun or pronoun) is doing.",
+                "examples": "He<strong> ran</strong> into the wall."
+            },
+            {
+                "number": 5,
+                "image_url": "../Images/study_adverbs.png",
+                "front_text": "Adverbs describe verbs, adjectives, or even a whole sentence. Adverbs often end with the suffix -ly. Some look the same as their adjective forms, however, such as fast. Watch out for these exceptions!",
+                "examples": "He did <strong>badly</strong> for his test. I <strong>strongly</strong> disagreed with her."
+            },
+            {
+                "number": 6,
+                "image_url": "../Images/study_articles.jpg",
+                "front_text": "Articles are words that come before a noun, to describe it. There are 2 different articles - the and a. 'The' means the noun is not specific, while 'a' means the noun is specific!"
+                  ,
+                "examples": "<strong>The wind</strong> is strong today. <strong>A</strong> visitor came to my house today."
+            },
+            {
+                "number": 7,
+                "image_url": "../Images/study_prepositions.png",
+                "front_text": "Prepositions are little words that tell where or when something is."
+                  ,
+                "examples": "The monkey is <strong>on</strong> his back. The glue is <strong>behind</strong> the board. "
+            },
+            {
+                "number": 8,
+                "image_url": "../Images/study_conjunctions.jpg",
+                "front_text": 
+                    "Conjunctions are words that connect sentences together, such as and, but and or."
+                  ,
+                "examples": "I wanted to meet her there on time, <strong>but</strong> I got stuck in traffic. You can’t wear socks <strong>and</strong> sandals."
+            },
+            {
+                "number": 9,
+                "image_url": "../Images/study_tenses.jpg",
+                "front_text":"Verbs come in past, present, and future tenses. The past is describes things that already happened. The present tense describes things that are happening right now, and the future tense describes things that have yet to happen.",
+                "examples": "Past tense - I lived here when I was ten. Present tense - I live here now. Future tense - I will live there when I am retired."
+            },
+            
+            {
+                "number": 11,
+                "image_url": "../Images/study_subjectverbagreement.png",
+                "front_text": 
+                    "Singular subjects should take singular verbs, while plural subjects should take plural verbs."
+                ,
+                "examples": "My brother <strong>is</strong> a doctor. My parents <strong>are</strong>yoga teachers."
+            }
+            
+            
+            
+            ],
+        "vocabulary": [
+            {
+                "number": 1,
+                "image_url": "Which word is an antonym of 'verbose'?",
+                "front_text": ["Talkative", "Concise", "Loquacious", "Garrulous"],
+                "examples": 2
+            },
+            {
+                "number": 2,
+                "image_url": "What is the correct plural form of 'child'?",
+                "front_text": ["Childs", "Childes", "Childs", "Children"],
+                "examples": 4
+            },
+            {
+                "number": 3,
+                "image_url": "Choose the word that best completes the sentence: 'She is _____ at playing the piano.'",
+                "front_text": ["Bad", "Terrible", "Good", "Excellent"],
+                "examples": 3
+            },
+            {
+                "number": 4,
+                "image_url": "Which of the following is a synonym for 'ubiquitous'?",
+                "front_text": ["Rare", "Common", "Elusive", "Scarce"],
+                "examples": 2
+            },
+            {
+                "number": 5,
+                "image_url": "Identify the correct tense of the verb in the sentence: 'She will have completed her project by next Friday.'",
+                "front_text": ["Present", "Past", "Future", "Present Perfect"],
+                "examples": 4
+            },
+            {
+                "number": 6,
+                "image_url": "What is the plural form of 'cactus'?",
+                "front_text": ["Cacti", "Cactuses", "Cactus", "Cactees"],
+                "examples": 1
+            },
+            {
+                "number": 7,
+                "image_url": "Which sentence is in the passive voice?",
+                "front_text": ["John baked a delicious cake.", "The delicious cake was baked by John.", "Mary sings beautifully.", "The cat chased the mouse."],
+                "examples": 2
+            },
+            {
+                "number": 8,
+                "image_url": "Choose the word that best fits in the blank: 'He was ____ tired that he fell asleep immediately.'",
+                "front_text": ["So", "Such", "Very", "Too"],
+                "examples": 1
+            },
+            {
+                "number": 9,
+                "image_url": "What part of speech is the word 'quickly' in the sentence: 'She ran quickly to catch the bus.'",
+                "front_text": ["Adjective", "Noun", "Adverb", "Verb"],
+                "examples": 3
+            },
+            {
+                "number": 10,
+                "image_url": "Which sentence is grammatically correct?",
+                "front_text": ["He don't like coffee.", "She haven't been to the library.", "They doesn't want to go.", "I haven't seen him today."],
+                "examples": 4
+            },
+            {
+                "number": 11,
+                "image_url": "What is the meaning of the word 'benevolent'?",
+                "front_text": ["Hostile", "Kind", "Indifferent", "Apathetic"],
+                "examples": 2
+            },
+            {
+                "number": 12,
+                "image_url": "Identify the conjunction in the following sentence: 'I wanted to go to the party, but I was feeling unwell.'",
+                "front_text": ["I", "To", "But", "Feeling"],
+                "examples": 3
+            },
+            {
+                "number": 13,
+                "image_url": "Which of the following words is a homonym for 'flower'?",
+                "front_text": ["Flour", "Floor", "Flaw", "Flew"],
+                "examples": 1
+            },
+            {
+                "number": 14,
+                "image_url": "What is the correct comparative form of 'good'?",
+                "front_text": ["Best", "Gooder", "Better", "Well"],
+                "examples": 3
+            },
+            {
+                "number": 15,
+                "image_url": "Choose the word that best completes the sentence: 'He couldn't buy the car because it was ____ expensive.'",
+                "front_text": ["Too", "Very", "Much", "So"],
+                "examples": 1
+            },
+            {
+                "number": 16,
+                "image_url": "What is the correct superlative form of 'beautiful'?",
+                "front_text": ["Beautifuler", "Beautifully", "Beautifulist", "Most beautiful"],
+                "examples": 4
+            },
+            {
+                "number": 17,
+                "image_url": "Which word is an antonym of 'generous'?",
+                "front_text": ["Selfish", "Kind", "Altruistic", "Charitable"],
+                "examples": 1
+            },
+            {
+                "number": 18,
+                "image_url": "Identify the figure of speech in the sentence: 'Her smile is as bright as the sun.'",
+                "front_text": ["Metaphor", "Simile", "Hyperbole", "Alliteration"],
+                "examples": 2
+            },
+            {
+                "number": 19,
+                "image_url": "What is the past participle of 'break'?",
+                "front_text": ["Breaking", "Broke", "Broken", "Breaken"],
+                "examples": 3
+            },
+            {
+                "number": 20,
+                "image_url": "Choose the correct spelling of the word 'necessary.'",
+                "front_text": ["Necesary", "Necessery", "Neccessary", "Necessary"],
+                "examples": 4
+            },
+            {
+                "number": 21,
+                "image_url": "Which word means the opposite of 'accept'?",
+                "front_text": ["Refuse", "Agree", "Acknowledge", "Consent"],
+                "examples": 1
+            },
+            {
+                "number": 22,
+                "image_url": "What is the plural form of 'mouse'?",
+                "front_text": ["Mouses", "Mice", "Micees", "Mousez"],
+                "examples": 2
+            },
+            {
+                "number": 23,
+                "image_url": "Choose the word that best completes the sentence: 'She felt ____ when she received the award.'",
+                "front_text": ["Proud", "Proudly", "Proudness", "Proudest"],
+                "examples": 1
+            },
+            {
+                "number": 24,
+                "image_url": "What is the opposite of 'calm'?",
+                "front_text": ["Stormy", "Quiet", "Serene", "Peaceful"],
+                "examples": 1
+            },
+            {
+                "number": 25,
+                "image_url": "What is the plural form of 'man'?",
+                "front_text": ["Men", "Mans", "Mens", "Manies"],
+                "examples": 1
+            }
+        ]
+        
+    },    
+    "science":{
+        "Plants and Animals": [
+            {
+                "number": 1,
+                "image_url": "..Images/study",
+                "front_text": "A 3 stage life-cycle consists of the egg, young and adult stage.",
+                "examples": "In the picture, a grasshopper goes from the egg, nymph to finally the adult stage."
+            },
+            {
+                "number": 2,
+                "image_url": "What gas do plants absorb from the atmosphere and use for photosynthesis?",
+                "front_text": ["Carbon monoxide", "Oxygen", "Carbon dioxide", "Nitrogen"],
+                "examples": 3
+            },
+            {
+                "number": 3,
+                "image_url": "What is the process by which plants make their own food using sunlight?",
+                "front_text": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+                "examples": 2
+            },
+            {
+                "number": 4,
+                "image_url": "What is the chemical symbol for water?",
+                "front_text": ["H2O", "O2", "CO2", "NaCl"],
+                "examples": 1
+            },
+            {
+                "number": 5,
+                "image_url": "What is the second most abundant gas in Earth's atmosphere?",
+                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
+                "examples": 3
+            },
+            {
+                "number": 6,
+                "image_url": "What is the largest planet in our solar system?",
+                "front_text": ["Earth", "Mars", "Venus", "Jupiter"],
+                "examples": 4
+            },
+            {
+                "number": 7,
+                "image_url": "What is the process by which living organisms break down food to release energy?",
+                "front_text": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
+                "examples": 4
+            },
+            {
+                "number": 8,
+                "image_url": "What is the powerhouse of the cell?",
+                "front_text": ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic reticulum"],
+                "examples": 2
+            },
+            {
+                "number": 9,
+                "image_url": "What is the chemical symbol for oxygen?",
+                "front_text": ["Ox", "Oy", "O", "Om"],
+                "examples": 3
+            },
+            {
+                "number": 10,
+                "image_url": "Which planet is known as the 'Red Planet'?",
+                "front_text": ["Earth", "Mars", "Venus", "Saturn"],
+                "examples": 2
+            },
+            {
+                "number": 11,
+                "image_url": "What is the primary gas responsible for the greenhouse effect on Earth?",
+                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
+                "examples": 2
+            },
+            {
+                "number": 12,
+                "image_url": "What is the smallest particle of an element that retains the properties of that element?",
+                "front_text": ["Molecule", "Atom", "Proton", "Neutron"],
+                "examples": 2
+            },
+            {
+                "number": 13,
+                "image_url": "What is the freezing point of water in degrees Fahrenheit?",
+                "front_text": ["32°F", "0°F", "50°F", "100°F"],
+                "examples": 1
+            },
+            {
+                "number": 14,
+                "image_url": "What is the process by which plants convert light energy into chemical energy in the form of glucose?",
+                "front_text": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+                "examples": 2
+            },
+            {
+                "number": 15,
+                "image_url": "What is the primary source of energy for the Earth?",
+                "front_text": ["Wind", "Solar", "Fossil Fuels", "Hydropower"],
+                "examples": 2
+            },
+            {
+                "number": 16,
+                "image_url": "What is the main function of leaves on a plant?",
+                "front_text": ["To anchor the plant", "To store water", "To absorb sunlight", "To pump blood"],
+                "examples": 3
+            },
+            {
+                "number": 17,
+                "image_url": "What is the primary gas responsible for the blue color of the Earth's sky?",
+                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Ozone"],
+                "examples": 3
+            },
+            {
+                "number": 18,
+                "image_url": "What is the chemical symbol for carbon?",
+                "front_text": ["Ca", "Co", "C", "Cu"],
+                "examples": 3
+            },
+            {
+                "number": 19,
+                "image_url": "What is the largest organ in the human body?",
+                "front_text": ["Heart", "Liver", "Brain", "Skin"],
+                "examples": 4
+            },
+            {
+                "number": 20,
+                "image_url": "What is the chemical symbol for sodium?",
+                "front_text": ["Na", "No", "Ne", "Ni"],
+                "examples": 1
+            },
+            {
+                "number": 21,
+                "image_url": "What is the process by which living organisms produce energy from food?",
+                "front_text": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
+                "examples": 4
+            },
+            {
+                "number": 22,
+                "image_url": "What is the main function of the heart in the human body?",
+                "front_text": ["To think", "To pump blood", "To digest food", "To breathe"],
+                "examples": 2
+            },
+            {
+                "number": 23,
+                "image_url": "What gas is released during photosynthesis and absorbed during respiration?",
+                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+                "examples": 2
+            },
+            {
+                "number": 24,
+                "image_url": "What is the main function of the brain in the human body?",
+                "front_text": ["To filter water", "To pump blood", "To think and process information", "To digest food"],
+                "examples": 3
+            },
+            {
+                "number": 25,
+                "image_url": "What is the main function of the lungs in the human body?",
+                "front_text": ["To pump blood", "To digest food", "To breathe and exchange oxygen and carbon dioxide", "To think"],
+                "examples": 3
+            }
+        ],
+        "normal": [
+            {
+                "number": 1,
+                "image_url": "What is the process by which green plants make their own food using sunlight?",
+                "front_text": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+                "examples": 2
+            },
+            {
+                "number": 2,
+                "image_url": "What is the chemical formula for the compound known as hydrogen peroxide?",
+                "front_text": ["H2O2", "HO2", "H3O", "H2O3"],
+                "examples": 1
+            },
+            {
+                "number": 3,
+                "image_url": "Which gas is responsible for the Earth's ozone layer and protects us from harmful ultraviolet (UV) radiation?",
+                "front_text": ["Carbon dioxide", "Oxygen", "Ozone", "Methane"],
+                "examples": 3
+            },
+            {
+                "number": 4,
+                "image_url": "What is the chemical formula for table salt (sodium chloride)?",
+                "front_text": ["H2O", "NaCl", "CO2", "O2"],
+                "examples": 2
+            },
+            {
+                "number": 5,
+                "image_url": "Which planet is known as the 'Red Planet'?",
+                "front_text": ["Earth", "Mars", "Venus", "Saturn"],
+                "examples": 2
+            },
+            {
+                "number": 6,
+                "image_url": "What is the chemical formula for methane gas?",
+                "front_text": ["CH4", "CO2", "H2O", "O2"],
+                "examples": 1
+            },
+            {
+                "number": 7,
+                "image_url": "What is the process by which living organisms break down food to release energy?",
+                "front_text": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
+                "examples": 4
+            },
+            {
+                "number": 8,
+                "image_url": "What is the molecular formula for water?",
+                "front_text": ["H2O", "CO2", "O2", "NaCl"],
+                "examples": 1
+            },
+            {
+                "number": 9,
+                "image_url": "Which gas do plants absorb from the atmosphere and use for photosynthesis?",
+                "front_text": ["Carbon monoxide", "Oxygen", "Carbon dioxide", "Nitrogen"],
+                "examples": 3
+            },
+            {
+                "number": 10,
+                "image_url": "What is the chemical formula for carbon dioxide?",
+                "front_text": ["H2O", "NaCl", "CO2", "O2"],
+                "examples": 3
+            },
+            {
+                "number": 11,
+                "image_url": "What is the chemical formula for oxygen gas?",
+                "front_text": ["H2O", "NaCl", "CO2", "O2"],
+                "examples": 4
+            },
+            {
+                "number": 12,
+                "image_url": "What is the chemical formula for carbon monoxide?",
+                "front_text": ["H2O", "NaCl", "CO2", "CO"],
+                "examples": 4
+            },
+            {
+                "number": 13,
+                "image_url": "What gas is released during photosynthesis and absorbed during respiration?",
+                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+                "examples": 1
+            },
+            {
+                "number": 14,
+                "image_url": "What is the chemical formula for sulfuric acid?",
+                "front_text": ["H2SO4", "HCl", "HNO3", "H3PO4"],
+                "examples": 1
+            },
+            {
+                "number": 15,
+                "image_url": "What gas is responsible for the greenhouse effect on Earth?",
+                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
+                "examples": 2
+            },
+            {
+                "number": 16,
+                "image_url": "What is the chemical formula for ammonia?",
+                "front_text": ["NH4", "NH3", "NO2", "N2"],
+                "examples": 2
+            },
+            {
+                "number": 17,
+                "image_url": "What gas do humans breathe in to support respiration?",
+                "front_text": ["Carbon dioxide", "Oxygen", "Nitrogen", "Methane"],
+                "examples": 2
+            },
+            {
+                "number": 18,
+                "image_url": "What is the chemical formula for hydrochloric acid?",
+                "front_text": ["H2O", "NaCl", "HCl", "CO2"],
+                "examples": 3
+            },
+            {
+                "number": 19,
+                "image_url": "What is the chemical formula for nitric acid?",
+                "front_text": ["HNO3", "HCl", "H2SO4", "H3PO4"],
+                "examples": 1
+            },
+            {
+                "number": 20,
+                "image_url": "What is the chemical formula for acetic acid, which is found in vinegar?",
+                "front_text": ["CH4", "H2SO4", "H3PO4", "CH3COOH"],
+                "examples": 4
+            },
+            {
+                "number": 21,
+                "image_url": "What is the chemical formula for citric acid, which is found in citrus fruits?",
+                "front_text": ["C6H12O6", "HCl", "HNO3", "C6H8O7"],
+                "examples": 4
+            },
+            {
+                "number": 22,
+                "image_url": "What gas is used in the process of welding due to its ability to react with metals?",
+                "front_text": ["Helium", "Oxygen", "Argon", "Acetylene"],
+                "examples": 4
+            },
+            {
+                "number": 23,
+                "image_url": "What is the chemical formula for sulfur dioxide, a pollutant released from burning fossil fuels?",
+                "front_text": ["SO2", "CO2", "O2", "NO2"],
+                "examples": 1
+            },
+            {
+                "number": 24,
+                "image_url": "Which element is represented by the chemical symbol 'Fe'?",
+                "front_text": ["Ferrum", "Fluorine", "Iron", "Iodine"],
+                "examples": 3
+            },
+            {
+                "number": 25,
+                "image_url": "What gas is used in balloons to make them float in the air?",
+                "front_text": ["Helium", "Oxygen", "Argon", "Nitrogen"],
+                "examples": 1
+            }
+        ],
+        "hard": [
+            {
+                "number": 1,
+                "image_url": "What is the process by which green plants make their own food using sunlight and convert it into chemical energy?",
+                "front_text": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+                "examples": 2
+            },
+            {
+                "number": 2,
+                "image_url": "What is the chemical formula for the compound known as sodium bicarbonate?",
+                "front_text": ["NaOH", "Na2CO3", "NaCl", "Na2SO4"],
+                "examples": 2
+            },
+            {
+                "number": 3,
+                "image_url": "Which gas is the most abundant in Earth's atmosphere?",
+                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
+                "examples": 3
+            },
+            {
+                "number": 4,
+                "image_url": "What is the chemical formula for acetic acid, which is a key component of vinegar?",
+                "front_text": ["H2O2", "HO2", "CH3COOH", "H2O3"],
+                "examples": 3
+            },
+            {
+                "number": 5,
+                "image_url": "What is the chemical formula for methane gas?",
+                "front_text": ["CH4", "CO2", "H2O", "O2"],
+                "examples": 1
+            },
+            {
+                "number": 6,
+                "image_url": "What is the process by which living organisms break down glucose to release energy and produce carbon dioxide and water as byproducts?",
+                "front_text": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
+                "examples": 4
+            },
+            {
+                "number": 7,
+                "image_url": "What is the molecular formula for water?",
+                "front_text": ["H2O", "CO2", "O2", "NaCl"],
+                "examples": 1
+            },
+            {
+                "number": 8,
+                "image_url": "Which gas is responsible for the Earth's greenhouse effect?",
+                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
+                "examples": 2
+            },
+            {
+                "number": 9,
+                "image_url": "What is the chemical formula for sulfuric acid?",
+                "front_text": ["H2SO4", "HCl", "HNO3", "H3PO4"],
+                "examples": 1
+            },
+            {
+                "number": 10,
+                "image_url": "What is the chemical formula for ammonia?",
+                "front_text": ["NH4", "NH3", "NO2", "N2"],
+                "examples": 2
+            },
+            {
+                "number": 11,
+                "image_url": "Which gas do humans breathe in to support cellular respiration?",
+                "front_text": ["Carbon dioxide", "Oxygen", "Nitrogen", "Methane"],
+                "examples": 2
+            },
+            {
+                "number": 12,
+                "image_url": "What is the chemical formula for hydrochloric acid?",
+                "front_text": ["H2O", "NaCl", "HCl", "CO2"],
+                "examples": 3
+            },
+            {
+                "number": 13,
+                "image_url": "What is the chemical formula for nitric acid?",
+                "front_text": ["HNO3", "HCl", "H2SO4", "H3PO4"],
+                "examples": 1
+            },
+            {
+                "number": 14,
+                "image_url": "What gas is used in the process of welding due to its ability to react with metals?",
+                "front_text": ["Helium", "Oxygen", "Argon", "Acetylene"],
+                "examples": 4
+            },
+            {
+                "number": 15,
+                "image_url": "What is the chemical formula for hydrogen peroxide?",
+                "front_text": ["H2O2", "HO2", "H3O", "H2O3"],
+                "examples": 1
+            },
+            {
+                "number": 16,
+                "image_url": "What is the chemical formula for carbon tetrachloride?",
+                "front_text": ["CCl4", "CH4", "H2O", "CO2"],
+                "examples": 1
+            },
+            {
+                "number": 17,
+                "image_url": "What gas is responsible for the distinct smell of rotten eggs?",
+                "front_text": ["Hydrogen", "Oxygen", "Sulfur dioxide", "Methane"],
+                "examples": 3
+            },
+            {
+                "number": 18,
+                "image_url": "What is the chemical formula for hydrofluoric acid, which can etch glass?",
+                "front_text": ["HF", "HCl", "HNO3", "H2SO4"],
+                "examples": 1
+            },
+            {
+                "number": 19,
+                "image_url": "What is the chemical formula for hydrogen sulfide, a toxic gas with a foul odor?",
+                "front_text": ["H2S", "HSO4", "HNO3", "H2SO4"],
+                "examples": 1
+            },
+            {
+                "number": 20,
+                "image_url": "What is the chemical formula for carbon disulfide, a volatile and flammable liquid?",
+                "front_text": ["CS2", "CO2", "H2O", "C2H4"],
+                "examples": 1
+            },
+            {
+                "number": 21,
+                "image_url": "What gas is used in balloons to make them float in the air?",
+                "front_text": ["Helium", "Oxygen", "Argon", "Nitrogen"],
+                "examples": 1
+            },
+            {
+                "number": 22,
+                "image_url": "What is the molecular formula for glucose?",
+                "front_text": ["C6H12O6", "HCl", "HNO3", "C6H8O7"],
+                "examples": 1
+            },
+            {
+                "number": 23,
+                "image_url": "What is the chemical formula for phosphoric acid, a common food additive?",
+                "front_text": ["H3PO4", "HCl", "HNO3", "H2SO4"],
+                "examples": 1
+            },
+            {
+                "number": 24,
+                "image_url": "What is the chemical formula for sulfur hexafluoride, a potent greenhouse gas?",
+                "front_text": ["SF6", "SO2", "SiF4", "SH2"],
+                "examples": 1
+            },
+            {
+                "number": 25,
+                "image_url": "Which gas is commonly used in fire extinguishers due to its ability to displace oxygen and cool the fire?",
+                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Halothane"],
+                "examples": 2
+            }
+        ]
+    },
+    "math":{
+        "easy": [
+            {
+                "number": 1,
+                "image_url": "What is 2 + 2?",
+                "front_text": [3, 4, 5, 6],
+                "examples": 2
+            },
+            {
+                "number": 2,
+                "image_url": "If you have 3 apples and you eat 1, how many apples do you have left?",
+                "front_text": [0, 1, 2, 3],
+                "examples": 1
+            },
+            {
+                "number": 3,
+                "image_url": "What is 5 multiplied by 3?",
+                "front_text": [10, 15, 20, 25],
+                "examples": 2
+            },
+            {
+                "number": 4,
+                "image_url": "If you have 10 fingers, how many fingers do you have on one hand?",
+                "front_text": [1, 5, 10, 20],
+                "examples": 3
+            },
+            {
+                "number": 5,
+                "image_url": "What is 9 minus 4?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 3
+            },
+            {
+                "number": 6,
+                "image_url": "How many sides does a triangle have?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 2
+            },
+            {
+                "number": 7,
+                "image_url": "What is the next number in the sequence: 2, 4, 6, __?",
+                "front_text": [7, 8, 9, 10],
+                "examples": 4
+            },
+            {
+                "number": 8,
+                "image_url": "If you have 5 fingers on one hand, how many fingers do you have on both hands?",
+                "front_text": [5, 10, 15, 20],
+                "examples": 2
+            },
+            {
+                "number": 9,
+                "image_url": "What is 7 plus 3?",
+                "front_text": [9, 10, 11, 12],
+                "examples": 3
+            },
+            {
+                "number": 10,
+                "image_url": "If you have 4 quarters, how much money do you have?",
+                "front_text": ["$1", "$0.25", "$0.50", "$1.25"],
+                "examples": 1
+            },
+            {
+                "number": 11,
+                "image_url": "What is the result of 6 divided by 2?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 2
+            },
+            {
+                "number": 12,
+                "image_url": "If you have 8 legs, how many legs do you have left if you lose 2?",
+                "front_text": [4, 6, 8, 10],
+                "examples": 4
+            },
+            {
+                "number": 13,
+                "image_url": "What is the value of 'x' in the equation 2x + 3 = 7?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 1
+            },
+            {
+                "number": 14,
+                "image_url": "How many sides does a square have?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 3
+            },
+            {
+                "number": 15,
+                "image_url": "What is 8 minus 5?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 2
+            },
+            {
+                "number": 16,
+                "image_url": "If you have 12 months in a year, how many months are there in 2 years?",
+                "front_text": [12, 18, 24, 36],
+                "examples": 3
+            },
+            {
+                "number": 17,
+                "image_url": "What is the sum of 9 and 6?",
+                "front_text": [12, 13, 14, 15],
+                "examples": 4
+            },
+            {
+                "number": 18,
+                "image_url": "If you have 20 candies and you eat 8, how many candies do you have left?",
+                "front_text": [8, 10, 12, 15],
+                "examples": 1
+            },
+            {
+                "number": 19,
+                "image_url": "What is 4 times 5?",
+                "front_text": [15, 18, 20, 25],
+                "examples": 3
+            },
+            {
+                "number": 20,
+                "image_url": "How many days are there in a week?",
+                "front_text": [5, 6, 7, 8],
+                "examples": 3
+            },
+            {
+                "number": 21,
+                "image_url": "What is the next number in the sequence: 3, 6, 9, __?",
+                "front_text": [10, 11, 12, 15],
+                "examples": 4
+            },
+            {
+                "number": 22,
+                "image_url": "If you have 4 quarters, how much money do you have?",
+                "front_text": ["$1", "$0.25", "$0.50", "$1.25"],
+                "examples": 1
+            },
+            {
+                "number": 23,
+                "image_url": "What is 10 plus 2?",
+                "front_text": [11, 12, 13, 14],
+                "examples": 2
+            },
+            {
+                "number": 24,
+                "image_url": "How many fingers are there on one hand?",
+                "front_text": [2, 5, 10, 20],
+                "examples": 2
+            },
+            {
+                "number": 25,
+                "image_url": "What is 7 minus 3?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 2
+            }
+        ],
+        "normal": [
+            {
+                "number": 1,
+                "image_url": "What is 12 divided by 4?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 3
+            },
+            {
+                "number": 2,
+                "image_url": "If a book costs $15 and you have $20, how much change will you get?",
+                "front_text": ["$5", "$10", "$15", "$20"],
+                "examples": 1
+            },
+            {
+                "number": 3,
+                "image_url": "What is 3 squared (3^2)?",
+                "front_text": [6, 9, 12, 15],
+                "examples": 2
+            },
+            {
+                "number": 4,
+                "image_url": "If you have 30 pencils and you give away 8, how many pencils do you have left?",
+                "front_text": [10, 15, 20, 22],
+                "examples": 4
+            },
+            {
+                "number": 5,
+                "image_url": "What is the result of 8 multiplied by 7?",
+                "front_text": [48, 56, 64, 72],
+                "examples": 2
+            },
+            {
+                "number": 6,
+                "image_url": "What is 1/4 of 20?",
+                "front_text": [2, 4, 5, 6],
+                "examples": 4
+            },
+            {
+                "number": 7,
+                "image_url": "If you have 5 siblings, and you are the 3rd oldest, how many siblings are younger than you?",
+                "front_text": [0, 1, 2, 4],
+                "examples": 2
+            },
+            {
+                "number": 8,
+                "image_url": "What is the next number in the sequence: 5, 10, 15, __?",
+                "front_text": [18, 20, 25, 30],
+                "examples": 3
+            },
+            {
+                "number": 9,
+                "image_url": "What is 40% of 80?",
+                "front_text": [16, 32, 40, 64],
+                "examples": 2
+            },
+            {
+                "number": 10,
+                "image_url": "If you have 24 marbles and you give away half of them, how many marbles do you have left?",
+                "front_text": [6, 8, 12, 18],
+                "examples": 4
+            },
+            {
+                "number": 11,
+                "image_url": "What is the sum of 5 and 1/4?",
+                "front_text": [5.25, 5.5, 5.75, 6],
+                "examples": 1
+            },
+            {
+                "number": 12,
+                "image_url": "If a square has a side length of 6 inches, what is its area?",
+                "front_text": ["6 square inches", "12 square inches", "24 square inches", "36 square inches"],
+                "examples": 4
+            },
+            {
+                "number": 13,
+                "image_url": "What is 15% of 200?",
+                "front_text": [20, 30, 40, 50],
+                "examples": 2
+            },
+            {
+                "number": 14,
+                "image_url": "If a rectangle has a length of 8 units and a width of 5 units, what is its perimeter?",
+                "front_text": ["13 units", "18 units", "26 units", "40 units"],
+                "examples": 3
+            },
+            {
+                "number": 15,
+                "image_url": "What is the product of 7 and 1/2?",
+                "front_text": [3.5, 5, 7, 14],
+                "examples": 1
+            },
+            {
+                "number": 16,
+                "image_url": "If you have $50, and you spend $20, how much money do you have left?",
+                "front_text": ["$30", "$20", "$10", "$5"],
+                "examples": 1
+            },
+            {
+                "number": 17,
+                "image_url": "What is 2/3 of 18?",
+                "front_text": [4, 8, 12, 16],
+                "examples": 3
+            },
+            {
+                "number": 18,
+                "image_url": "If you have 60 candies and you give away one-third of them, how many candies do you have left?",
+                "front_text": [10, 20, 30, 40],
+                "examples": 4
+            },
+            {
+                "number": 19,
+                "image_url": "What is the next number in the sequence: 8, 16, 32, __?",
+                "front_text": [48, 64, 72, 80],
+                "examples": 2
+            },
+            {
+                "number": 20,
+                "image_url": "What is 5 divided by 1/5?",
+                "front_text": [1, 5, 10, 25],
+                "examples": 4
+            },
+            {
+                "number": 21,
+                "image_url": "If a box contains 25 red balls, 30 blue balls, and 15 green balls, what is the total number of balls in the box?",
+                "front_text": [50, 70, 75, 100],
+                "examples": 2
+            },
+            {
+                "number": 22,
+                "image_url": "What is the difference between 15 and 1/3?",
+                "front_text": [13.5, 13.67, 14, 14.5],
+                "examples": 1
+            },
+            {
+                "number": 23,
+                "image_url": "If a car travels at a speed of 60 miles per hour, how far will it travel in 4 hours?",
+                "front_text": ["120 miles", "180 miles", "240 miles", "300 miles"],
+                "examples": 3
+            },
+            {
+                "number": 24,
+                "image_url": "What is the product of 3 and 3/4?",
+                "front_text": [2.25, 3, 9, 12],
+                "examples": 3
+            },
+            {
+                "number": 25,
+                "image_url": "If a book costs $25 and it is on sale for 20% off, what is the sale price?",
+                "front_text": ["$5", "$10", "$15", "$20"],
+                "examples": 2
+            }
+        ],
+        "hard": [
+            {
+                "number": 1,
+                "image_url": "What is the value of 'x' in the equation 3x + 5 = 17?",
+                "front_text": [4, 6, 7, 8],
+                "examples": 1
+            },
+            {
+                "number": 2,
+                "image_url": "Solve for 'y' in the equation 2y - 3 = 11.",
+                "front_text": [2, 4, 5, 7],
+                "examples": 4
+            },
+            {
+                "number": 3,
+                "image_url": "What is the square root of 169?",
+                "front_text": [10, 11, 12, 13],
+                "examples": 2
+            },
+            {
+                "number": 4,
+                "image_url": "If a train travels at a speed of 80 miles per hour, how long will it take to travel 160 miles?",
+                "front_text": ["1 hour", "2 hours", "3 hours", "4 hours"],
+                "examples": 2
+            },
+            {
+                "number": 5,
+                "image_url": "Solve for 'x' in the equation 4x - 7 = 5x + 3.",
+                "front_text": [10, 8, 6, 4],
+                "examples": 2
+            },
+            {
+                "number": 6,
+                "image_url": "What is the area of a triangle with a base of 8 inches and a height of 10 inches?",
+                "front_text": ["40 square inches", "48 square inches", "60 square inches", "80 square inches"],
+                "examples": 1
+            },
+            {
+                "number": 7,
+                "image_url": "Solve for 'y' in the equation 3y + 2 = 2y - 5.",
+                "front_text": [4, 7, 9, 12],
+                "examples": 2
+            },
+            {
+                "number": 8,
+                "image_url": "What is the result of 5 to the power of 3 (5^3)?",
+                "front_text": [100, 125, 150, 175],
+                "examples": 2
+            },
+            {
+                "number": 9,
+                "image_url": "If a car travels at a speed of 60 kilometers per hour, how long will it take to travel 180 kilometers?",
+                "front_text": ["2 hours", "3 hours", "4 hours", "5 hours"],
+                "examples": 3
+            },
+            {
+                "number": 10,
+                "image_url": "What is the volume of a cube with edges of length 4 inches?",
+                "front_text": ["16 cubic inches", "32 cubic inches", "48 cubic inches", "64 cubic inches"],
+                "examples": 4
+            },
+            {
+                "number": 11,
+                "image_url": "Solve for 'x' in the equation 2x^2 - 5x - 3 = 0.",
+                "front_text": [-3, -2, 1, 3],
+                "examples": 4
+            },
+            {
+                "number": 12,
+                "image_url": "What is the result of 7 divided by 2, expressed as a mixed number or fraction?",
+                "front_text": ["3.5", "3 1/2", "7/2", "2 7/2"],
+                "examples": 2
+            },
+            {
+                "number": 13,
+                "image_url": "If a rectangular room measures 12 feet in length, 10 feet in width, and 8 feet in height, what is its volume?",
+                "front_text": ["960 cubic feet", "1000 cubic feet", "1080 cubic feet", "1200 cubic feet"],
+                "examples": 1
+            },
+            {
+                "number": 14,
+                "image_url": "Solve for 'x' in the equation (x + 3)(x - 2) = 0.",
+                "front_text": [-3, -2, 2, 3],
+                "examples": 3
+            },
+            {
+                "number": 15,
+                "image_url": "What is the result of 2 to the power of 5 (2^5)?",
+                "front_text": [16, 32, 64, 128],
+                "examples": 3
+            },
+            {
+                "number": 16,
+                "image_url": "If a bicycle wheel has a diameter of 26 inches, what is its circumference?",
+                "front_text": ["26 inches", "52 inches", "65 inches", "78 inches"],
+                "examples": 4
+            },
+            {
+                "number": 17,
+                "image_url": "Solve for 'y' in the equation 4y + 9 = 2y - 5.",
+                "front_text": [7, 10, 14, 18],
+                "examples": 1
+            },
+            {
+                "number": 18,
+                "image_url": "What is the result of 3/4 divided by 1/8, expressed as a fraction?",
+                "front_text": ["1", "2", "3", "4"],
+                "examples": 2
+            },
+            {
+                "number": 19,
+                "image_url": "If a box contains 12 red balls, 18 blue balls, and 15 green balls, what is the probability of drawing a green ball at random?",
+                "front_text": ["1/5", "1/6", "1/7", "1/8"],
+                "examples": 1
+            },
+            {
+                "number": 20,
+                "image_url": "Solve for 'x' in the equation 5x - 2 = 3x + 10.",
+                "front_text": [3, 6, 7, 12],
+                "examples": 2
+            },
+            {
+                "number": 21,
+                "image_url": "What is the result of 4 to the power of 4 (4^4)?",
+                "front_text": [64, 256, 1024, 4096],
+                "examples": 4
+            },
+            {
+                "number": 22,
+                "image_url": "If a train travels at a speed of 100 kilometers per hour, how long will it take to travel 400 kilometers?",
+                "front_text": ["2 hours", "3 hours", "4 hours", "5 hours"],
+                "examples": 3
+            },
+            {
+                "number": 23,
+                "image_url": "Solve for 'y' in the equation 6y + 8 = 4y - 12.",
+                "front_text": [6, 10, 14, 20],
+                "examples": 1
+            },
+            {
+                "number": 24,
+                "image_url": "What is the result of 9 squared (9^2)?",
+                "front_text": [72, 81, 90, 99],
+                "examples": 2
+            },
+            {
+                "number": 25,
+                "image_url": "If a rectangular box measures 15 inches in length, 8 inches in width, and 6 inches in height, what is its volume?",
+                "front_text": ["720 cubic inches", "900 cubic inches", "1080 cubic inches", "1200 cubic inches"],
+                "examples": 1
+            }
+        ]    
+    }
+        
+}
