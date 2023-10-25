@@ -297,7 +297,7 @@
             }
             
         ],
-        "normal": [
+        "light": [
             {
                 "number": 1,
                 "image_url": "What is the process by which green plants make their own food using sunlight?",
@@ -449,7 +449,7 @@
                 "examples": 1
             }
         ],
-        "hard": [
+        "magnets": [
             {
                 "number": 1,
                 "image_url": "What is the process by which green plants make their own food using sunlight and convert it into chemical energy?",
@@ -603,7 +603,7 @@
         ]
     },
     "math":{
-        "easy": [
+        "addition and subtraction": [
             {
                 "number": 1,
                 "image_url": "What is 2 + 2?",
@@ -755,7 +755,7 @@
                 "examples": 2
             }
         ],
-        "normal": [
+        "division and multiplication": [
             {
                 "number": 1,
                 "image_url": "What is 12 divided by 4?",
@@ -907,7 +907,7 @@
                 "examples": 2
             }
         ],
-        "hard": [
+        "advanced multiplication": [
             {
                 "number": 1,
                 "image_url": "What is the value of 'x' in the equation 3x + 5 = 17?",
