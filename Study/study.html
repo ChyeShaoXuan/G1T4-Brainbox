@@ -1,20 +1,29 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study</title>
-    
+    <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     crossorigin="anonymous">
+    <!-- study css -->
     <link rel="stylesheet" href="study.css">
     <script src="https://kit.fontawesome.com/89d8330c95.js" crossorigin="anonymous"></script>
+    <!-- animate css cdn -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 
     <style>
+        
+  
        
         .animated-text {
             animation: bounce 2s infinite;
@@ -97,7 +106,7 @@
 
 </head>
 
-<body>
+<body onload="display_default()" class="bg-gradient-to-r from-cyan-200 to-cyan-400">
 
     <!-- Nav Bar -->
   <section class="bg-aliceblue text-gray-700">
@@ -114,7 +123,7 @@
               </div>
             </a>
             <a class="text-center w-full md:w-auto md:ml-0"> 
-              <div class="bg-yellow-300 p-3 rounded-full text-gray-600 hover:text-gray-900 font-bold cursor-not-allowed"> 
+              <div class="bg-yellow-300 p-3 rounded-full text-gray-600 hover:text-gray-900 cursor-not-allowed"> 
                 Study
               </div>
             </a>
@@ -160,7 +169,7 @@
 
     <div class="container m-auto text-center px-6 opacity-100">
 
-        <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4"><span id="animated-text"></span></h2>
+        <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4"><span id="animated-text">Ready?</span></h2>
             
         <button class=" relative bg-gradient-to-r from-red-300 via-blue-200 to-purple-400 font-bold 
         rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-red-700 
@@ -169,93 +178,60 @@
     </div>
   </div>
 
-  <!-- Study Page Content -->
-  <div class="container-fluid mt-5 mb-5 w-100 mx-0">
+  <div class="container mx-auto ms-0 mt-5">
     <div class="flex flex-wrap">
-        <div class="w-full md:w-1/4 p-2 bg-gradient-to-r from-indigo-300 to-blue-200">
-
-          <!-- Sidebar -->
-          <div class="p-3 text-blue-700 max-h-fit ms-0">
-              <div class="text-2xl font-semibold text-center text-blue-900">Subjects</div>
-              <ul class="nav flex-column mt-4">
-
-                  <!-- Example item collapsible -->
-                  <li class="nav-item">
-                      <a href="#" data-toggle="collapse" class="nav-link text-xl text-blue-900 hover:text-red-900 text-center font-semibold mb-2">
-                          <i class="fas fa-book"></i> English
-                      </a>
-                  </li>
-                  <!-- End of example item -->
-
-                  <li class="nav-item">
-                      <a href="#" class="nav-link text-xl text-blue-900 hover:text-red-900 font-semibold text-center mb-2">
-                          <i class="fas fa-plus-minus"></i> Math
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link text-xl text-blue-900 hover:text-red-900 text-center font-semibold mb-2">
-                        <i class="fas fa-flask"></i> Science
+      <div class="w-full md:w-1/4 p-2 bg-gradient-to-r from-indigo-300 to-blue-200 md:h-fit h-96">
+        <!-- Sidebar -->
+        <div class="p-3 text-blue-700">
+            <div class="text-2xl font-semibold text-center text-blue-900">Subjects</div>
+            <ul class="nav flex-column mt-4">
+                <!-- Example item collapsible -->
+                <li class="nav-item">
+                    <a href="#" data-toggle="collapse" class="nav-link text-xl text-blue-900 hover:text-red-900 text-center font-semibold mb-2">
+                        <i class="fas fa-book"></i> English
                     </a>
                 </li>
-              </ul>
-          </div>
-          <!-- End of hidden sidebar -->
-
-      </div>
-      
-
-    <div class="inner-container mx-auto">
-
-    <div style="display:flex; align-items:center">
-
-       
-
-        <select id="level" class="ml-3 border border-black rounded" style="height: 35px;">
-            <option value="easy">Body Systems</option>
-            <option value="medium">Cells</option>
-            <option value="difficult">Plants and Animals</option>
-        </select>
-
+                <!-- End of example item -->
+                <li class="nav-item">
+                            <a href="#" class="nav-link text-xl text-blue-900 hover:text-red-900 font-semibold text-center mb-2">
+                                <i class="fas fa-plus-minus"></i> Math
+                            </a>
+                        </li>
+                
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-xl text-blue-900 hover:text-red-900 text-center font-semibold mb-2">
+                      <i class="fas fa-flask"></i> Science
+                  </a>
+              </li>
+            </ul>
+            
+        </div>
+        <!-- End of hidden sidebar -->
     </div>
-
-    <!--search bar-->
-      <div class="box">
-
-        <input type="text" placeholder="search for keywords/topics">
-        <a href="#">
-            <i class="fas fa-search"></i>
-        </a>
-        <!--end of search bar-->
-      </div>
-
-
-      <!--flashcard-->
-        <div class="flip-card-container mx-auto mt-5 text-center">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h1 class="animate__animated animate__jackInTheBox">Components of the Digestive System</h1>
-                </div>
-                <div class="flip-card-back">
-                    
-                </div>
-                </div>
+        <div class="w-full md:w-3/4" id="content_section" class="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100" >
+            <!-- Start of popular topics -->
+            
+            <!-- Pagination start -->
+            
+            <!-- Pagination end -->
+            
+            <div class="w-full mt-4" id="contents" class="flex items-center justify-center">
+              
+        
+              
+      
             </div>
         </div>
-
-        
-
-        <!--buttons-->
-        
-      </div>     
     </div>
 </div>
-<!-- End of Study Page Content -->
+
+  
+  
 
 <!-- Bottom -->
 <section class="bg-white">
     <section class="bg-gradient-to-r from-purple-500 via-pink-500 to-blue-400 text-white">
-        <div class="max-w-screen-xl px-4 py-3 mx-auto space-y-8 text-center">
+        <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 text-center">
             <p class="text-2xl leading-6 animated-text">
                 &copy; 2023 AY2023/2024 Semester 1 - IS216 G1T4 - Team BrainBox
             </p>
@@ -263,23 +239,10 @@
     </section>
   </section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        const options = {
-            strings: ["Discover educational content!"],
-            typeSpeed: 75,
-            showCursor: true, 
-        };
-
-        const typed = new Typed("#animated-text", options);
-        });
-    </script>
+     
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"  
     crossorigin="anonymous"></script>
     <script src="study.js"></script>
-
-</body>
-</html>
 
 
