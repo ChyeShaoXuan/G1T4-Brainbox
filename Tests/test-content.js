@@ -1,3 +1,7 @@
+const urlParams = new URLSearchParams(window.location.search)
+const testSub = urlParams.get('subject')
+const testDif = urlParams.get('difficulty')
+
 const app = Vue.createApp({
     data() {
         return {
