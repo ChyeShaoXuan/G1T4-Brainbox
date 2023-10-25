@@ -12,8 +12,11 @@ const app = Vue.createApp({
     mounted() {
         axios.get('questions.json')
             .then((response) => {
-                
-                this.questions = response.data[testSub][testDif];
+                let something = response.data[testSub][testDif]
+                for(let i=0;i<5;i++) {
+                    this.questions.push(something[i])
+                }
+                // this.questions = response.data[testSub][testDif];
                 console.log(this.questions)
                 // console.log(response.data[testSub][testDif])
                 // console.log(this.questions[testSub][testDif][0].question)
