@@ -67,9 +67,7 @@ const app = Vue.createApp({
             document.getElementById('submit').style.display='none'
             //document.getElementById("mark").setAttribute('value',score)
     },
-        goBack(){
-            return this.$router.go(-1)
-        }
+        
 
     
     
