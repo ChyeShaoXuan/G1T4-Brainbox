@@ -10,7 +10,7 @@ function display_default(){
       let text=default_data_arr[i].front_text;
       let examples=default_data_arr[i].examples;
       new_html+=
-      `<div class='row mb-3'>
+      `<div class='row mb-3 gap-0'>
           <div class='col-sm-1'></div>
           <div class='col-sm-5 hover:scale-125' style='transition: transform .2s'>
              <img src="${image}" style="max-width:100%;
@@ -51,7 +51,7 @@ function populate_page(subject,topic){
       let text=data_arr[i].front_text;
       let examples=data_arr[i].examples;
       new_html+=
-      `<div class='row mb-3'>
+      `<div class='row mb-3 gap-0'>
       <div class='col-sm-1'></div>
       <div class='col-sm-5 hover:scale-125' style='transition: transform .2s'>
          <img src="${image}" style="max-width:100%;
