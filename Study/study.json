@@ -300,27 +300,27 @@
         "body systems, fungi and bacteria": [
             {
                 "number": 1,
-                "image_url": "../Images/circulatory_sys.jpg",
+                "image_url": "../Images/circulatory_sys.png",
                 "front_text": "The circulatory system consists of the heart, the blood and the blood vessels. It transports oxygen, digested food and water to the different parts of the body and at the same time, transports carbon dioxide and waste away from the different parts of the body for removal.",
-                "examples": "The diagram shows the functions of different parts of the circulatory system."
+                "examples": "The diagram shows different parts of the circulatory system."
             },
             {
                 "number": 2,
-                "image_url": "../Images/skeletal_sys.jpg",
+                "image_url": "../Images/skeletal_sys.png",
                 "front_text": "The skeletal system consists of all the bones in our body. It provides support to our body, protects our important organs and work together with the muscular system to enable movement. ",
-                "examples": "The diagram shows the different parts of the skeletal system."
+                "examples": "The diagram shows how the skeletal system looks like."
             },
             {
                 "number": 3,
-                "image_url": "../Images/respiratory_sys.jpg",
+                "image_url": "../Images/respiratory_sys.PNG",
                 "front_text": "The respiratory system consists of the nose, windpipe and the lungs. It helps take in oxygen that our body needs for survival, and give out carbon dioxide",
-                "examples": "The diagram shows the functions of different parts of the respiratory system."
+                "examples": "The diagram shows the different parts of the respiratory system."
             },
             {
                 "number": 4,
-                "image_url": "../Images/muscular_sys.jpg",
+                "image_url": "../Images/muscular_sys.png",
                 "front_text": "The muscular system is made of different types of muscles.  Some muscles, like the muscles that are found on our arms and legs, can be controlled to enable movement. However, some muscles, such as those that make up our heart and stomach, cannot be controlled.",
-                "examples": "The diagram shows the functions of different parts of the muscular system. Muscles work in pairs to enable movement.As one muscle contracts, the other muscle relaxes."
+                "examples": "The diagram shows the different parts of the muscular system. Muscles work in pairs to enable movement.As one muscle contracts, the other muscle relaxes."
             },
             {
                 "number": 5,
