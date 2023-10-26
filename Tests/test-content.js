@@ -6,7 +6,8 @@ const app = Vue.createApp({
     data() {
         return {
             questions: [],
-            answers:[]
+            answers:[],
+            score: 0
         }
     },
     mounted() {
@@ -39,28 +40,22 @@ const app = Vue.createApp({
     methods:{
         submit(){
             console.log('ululu');
-        var rads, test; // need to be set after load
-        //window.addEventListener("load",function() { // when page loads
-        test = document.getElementById("test");
-        rads = test.querySelectorAll("input[type=radio]"); // all radios in the quiz
-        // console.log(rads);
-        //document.getElementById("submit").addEventListener("click",function(e) { // on click of scoreme
-            var score = 0;
-            // console.log(rads)
-            // console.log(this.answers)
+            var rads, test; // need to be set after load
+            test = document.getElementById("test");
+            rads = test.querySelectorAll("input[type=radio]"); // all radios in the quiz
+            
             let counter = 0
             for (var i=0;i<rads.length;i++) { // loop over all radios in the form
                 var rad = rads[i];
 
                 if (rad.checked) {
-                    //var idx = rad.name.substring(1)-1; //remove the q from the name - JS arrays start at 0
                     console.log(rad.value,this.answers[counter])
                     var correct = (rad.value==this.answers[counter]);
                     console.log(correct)
                     
                     if (correct) {
                         rad.closest("label").classList.toggle("correct");
-                        score +=1;
+                        this.score +=1;
                     }  
                     else{
                         
@@ -70,10 +65,8 @@ const app = Vue.createApp({
                 }
 
             }
-            // var scoreper = Math.round(score * 100 / rads.length);
-            // document.querySelector("#percentage").innerHTML = scoreper + "%";
-            //test.value = score;
-            document.getElementById("mark").setAttribute('value',score)
+            document.getElementById('mark').style.display='block'
+            //document.getElementById("mark").setAttribute('value',score)
         //});  
 //});
     }

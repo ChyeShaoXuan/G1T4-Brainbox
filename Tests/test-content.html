@@ -32,7 +32,7 @@
                 <h1>{{qn.number}}. {{qn.question}}</h1>
                 <label v-for="ans in qn.answers"><input type="radio" :value="ans" :name="qn.number" required>{{ans}}<br></label>
             </div>
-            
+            <p id="mark" style="display: none;">Your Score= /{{questions.length}}</p>
             <button @click="submit" style="background-color: cyan;">Submit</button>
             <br>
             Your Score= /{{questions.length}} <input type="text" size="15" id="mark">
