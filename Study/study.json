@@ -291,7 +291,7 @@
             },
             {
                 "number": 10,
-                "image_url": "..Images/food_chain.png",
+                "image_url": "../Images/food_chain.png",
                 "front_text": "In a food chain, there are food producers, organisms that make their own food, and food consumers, that consume food. A herbivore eats plants, an omnivore eats both plants and animals and a carnivore eats animals.",
                 "examples": "The diagram shows a simple example of a food chain."
             }
