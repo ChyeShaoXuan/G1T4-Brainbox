@@ -369,154 +369,59 @@
         "matter": [
             {
                 "number": 1,
-                "image_url": "What is the process by which green plants make their own food using sunlight and convert it into chemical energy?",
-                "front_text": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-                "examples": 2
+                "image_url": "../Images/electronic_balance.jpg",
+                "front_text": "The mass of an object refers to the amount of matter in the object.",
+                "examples": "It can be measured by an electronic balance or beam balance. "
             },
             {
                 "number": 2,
-                "image_url": "What is the chemical formula for the compound known as sodium bicarbonate?",
-                "front_text": ["NaOH", "Na2CO3", "NaCl", "Na2SO4"],
-                "examples": 2
+                "image_url": "../Images/mass_units.jpg",
+                "front_text": "The units for mass are kilogram (kg) and gram (g).",
+                "examples": "1000 grams is equal to 1 kilogram."
             },
             {
                 "number": 3,
-                "image_url": "Which gas is the most abundant in Earth's atmosphere?",
-                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
-                "examples": 3
+                "image_url": "../Images/volume.jpg",
+                "front_text": "The volume of an object refers to the amount of space the object occupies.",
+                "examples": "It can be measured by a beaker, test tube, conical flask and other equipment as well."
             },
             {
                 "number": 4,
-                "image_url": "What is the chemical formula for acetic acid, which is a key component of vinegar?",
-                "front_text": ["H2O2", "HO2", "CH3COOH", "H2O3"],
-                "examples": 3
+                "image_url": "../Images/volume_units.jpg",
+                "front_text": "The units for volume are litres, millitres, cubic centimetres and cubic metres.",
+                "examples": "A litre(l) is equal to 1000 millilitres(ml)."
             },
             {
                 "number": 5,
-                "image_url": "What is the chemical formula for methane gas?",
-                "front_text": ["CH4", "CO2", "H2O", "O2"],
-                "examples": 1
+                "image_url": "../Images/non_matter.jpg",
+                "front_text": "Non-matter is anything that does not have mass and/or does not occupy space.",
+                "examples": "Examples of non-matter are light, heat and sound."
             },
             {
                 "number": 6,
-                "image_url": "What is the process by which living organisms break down glucose to release energy and produce carbon dioxide and water as byproducts?",
-                "front_text": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
-                "examples": 4
+                "image_url": "../Images/states_matter.jpg",
+                "front_text": "Matter is classified to 3 different states - solid, liquid and gaseous state.",
+                "examples": "Each state of matter has different properties, even if it is the same object, such as water!"
             },
             {
                 "number": 7,
-                "image_url": "What is the molecular formula for water?",
-                "front_text": ["H2O", "CO2", "O2", "NaCl"],
-                "examples": 1
+                "image_url": "../Images/liquid.jpg",
+                "front_text": "Liquids have no fixed shape, have a fixed volume, is able to take up the shape of its container and cannot be compressed.",
+                "examples": "Examples of liquids include the water you drink everyday, oil, and milk."
             },
             {
                 "number": 8,
-                "image_url": "Which gas is responsible for the Earth's greenhouse effect?",
-                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
-                "examples": 2
+                "image_url": "../Images/solid.jpg",
+                "front_text": "Solids have a fixed shape and volume, cannot take up the shape of its container and cannot be compressed.",
+                "examples": "Examples of solids include ice, gold and ice cream."
             },
             {
                 "number": 9,
-                "image_url": "What is the chemical formula for sulfuric acid?",
-                "front_text": ["H2SO4", "HCl", "HNO3", "H3PO4"],
-                "examples": 1
-            },
-            {
-                "number": 10,
-                "image_url": "What is the chemical formula for ammonia?",
-                "front_text": ["NH4", "NH3", "NO2", "N2"],
-                "examples": 2
-            },
-            {
-                "number": 11,
-                "image_url": "Which gas do humans breathe in to support cellular respiration?",
-                "front_text": ["Carbon dioxide", "Oxygen", "Nitrogen", "Methane"],
-                "examples": 2
-            },
-            {
-                "number": 12,
-                "image_url": "What is the chemical formula for hydrochloric acid?",
-                "front_text": ["H2O", "NaCl", "HCl", "CO2"],
-                "examples": 3
-            },
-            {
-                "number": 13,
-                "image_url": "What is the chemical formula for nitric acid?",
-                "front_text": ["HNO3", "HCl", "H2SO4", "H3PO4"],
-                "examples": 1
-            },
-            {
-                "number": 14,
-                "image_url": "What gas is used in the process of welding due to its ability to react with metals?",
-                "front_text": ["Helium", "Oxygen", "Argon", "Acetylene"],
-                "examples": 4
-            },
-            {
-                "number": 15,
-                "image_url": "What is the chemical formula for hydrogen peroxide?",
-                "front_text": ["H2O2", "HO2", "H3O", "H2O3"],
-                "examples": 1
-            },
-            {
-                "number": 16,
-                "image_url": "What is the chemical formula for carbon tetrachloride?",
-                "front_text": ["CCl4", "CH4", "H2O", "CO2"],
-                "examples": 1
-            },
-            {
-                "number": 17,
-                "image_url": "What gas is responsible for the distinct smell of rotten eggs?",
-                "front_text": ["Hydrogen", "Oxygen", "Sulfur dioxide", "Methane"],
-                "examples": 3
-            },
-            {
-                "number": 18,
-                "image_url": "What is the chemical formula for hydrofluoric acid, which can etch glass?",
-                "front_text": ["HF", "HCl", "HNO3", "H2SO4"],
-                "examples": 1
-            },
-            {
-                "number": 19,
-                "image_url": "What is the chemical formula for hydrogen sulfide, a toxic gas with a foul odor?",
-                "front_text": ["H2S", "HSO4", "HNO3", "H2SO4"],
-                "examples": 1
-            },
-            {
-                "number": 20,
-                "image_url": "What is the chemical formula for carbon disulfide, a volatile and flammable liquid?",
-                "front_text": ["CS2", "CO2", "H2O", "C2H4"],
-                "examples": 1
-            },
-            {
-                "number": 21,
-                "image_url": "What gas is used in balloons to make them float in the air?",
-                "front_text": ["Helium", "Oxygen", "Argon", "Nitrogen"],
-                "examples": 1
-            },
-            {
-                "number": 22,
-                "image_url": "What is the molecular formula for glucose?",
-                "front_text": ["C6H12O6", "HCl", "HNO3", "C6H8O7"],
-                "examples": 1
-            },
-            {
-                "number": 23,
-                "image_url": "What is the chemical formula for phosphoric acid, a common food additive?",
-                "front_text": ["H3PO4", "HCl", "HNO3", "H2SO4"],
-                "examples": 1
-            },
-            {
-                "number": 24,
-                "image_url": "What is the chemical formula for sulfur hexafluoride, a potent greenhouse gas?",
-                "front_text": ["SF6", "SO2", "SiF4", "SH2"],
-                "examples": 1
-            },
-            {
-                "number": 25,
-                "image_url": "Which gas is commonly used in fire extinguishers due to its ability to displace oxygen and cool the fire?",
-                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Halothane"],
-                "examples": 2
+                "image_url": "../Images/gas.jpg",
+                "front_text": "Gases have no fixed shape and no fixed volume, is able to take up the shape of its container and can be compressed.",
+                "examples": "Examples of gases include steam and the air we breathe in everyday."
             }
+            
         ]
     },
     "math":{
