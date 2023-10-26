@@ -369,7 +369,7 @@
         "matter": [
             {
                 "number": 1,
-                "image_url": "../Images/electronic_balance.jpg",
+                "image_url": "../Images/electronic-balance.jpg",
                 "front_text": "The mass of an object refers to the amount of matter in the object.",
                 "examples": "It can be measured by an electronic balance or beam balance. "
             },
