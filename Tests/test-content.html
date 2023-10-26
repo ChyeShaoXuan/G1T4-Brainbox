@@ -37,7 +37,7 @@
             <button id='submit' @click="submit" style="background-color: #008000; color: white; margin-right:20px">Submit</button>
             
             
-            <button id="back" @click="history.back()" style="background-color: blue; color: white;">Back</button>
+            <button id="back" @click="window.history.back()" style="background-color: blue; color: white;">Back</button>
             <br>
 
             <p id="mark" style="display: none;">Your Score= {{score}}/{{questions.length}}</p>
