@@ -57,7 +57,6 @@ const app = Vue.createApp({
                         this.score +=1;
                     }  
                     else{
-                        console.log(rad.closest(this.answers[counter]))
                         rad.closest("label").classList.toggle("error")
                     }  
                     counter++
