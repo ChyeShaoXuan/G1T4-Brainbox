@@ -39,7 +39,6 @@ const app = Vue.createApp({
     },
     methods:{
         submit(){
-            console.log('ululu');
             var rads, test; // need to be set after load
             test = document.getElementById("test");
             rads = test.querySelectorAll("input[type=radio]"); // all radios in the quiz
@@ -58,7 +57,7 @@ const app = Vue.createApp({
                         this.score +=1;
                     }  
                     else{
-                        console.log(rad.closest('value'))
+                        console.log(rad.closest(this.answers[counter]))
                         rad.closest("label").classList.toggle("error")
                     }  
                     counter++
