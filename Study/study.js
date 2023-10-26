@@ -13,7 +13,8 @@ function display_default(){
       `<div class='row mb-3'>
           <div class='col-sm-1'></div>
           <div class='col-sm-5'>
-             <img src="${image}" style="height:100%;width:100%">
+             <img src="${image}" style="max-width:100%;
+             max-height:100%;">
           </div>
           <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../images/study_grammarbackground.jpeg");background-size:100%'>
                <p class="text-red-900 font-semibold text-md text-align-center m-5">${text}</p>
@@ -54,7 +55,8 @@ function populate_page(subject,topic){
       `<div class='row mb-3'>
           <div class='col-sm-1'></div>
           <div class='col-sm-5'>
-             <img src="${image}" style="height:100%;width:100%">
+             <img src="${image}" style="max-width:100%;
+             max-height:100%;">
           </div>
           <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../images/study_grammarbackground.jpeg");background-size:cover;background-repeat: no-repeat;'>
                <div class="text-red-900 font-semibold text-md text-align-center m-5">${text}</div>
