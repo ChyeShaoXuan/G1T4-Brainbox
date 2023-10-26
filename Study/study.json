@@ -63,7 +63,7 @@
             {
                 "number": 9,
                 "image_url": "../Images/study_tenses.jpg",
-                "front_text":"Verbs come in past, present, and future tenses. The past is describes things that already happened. The present tense describes things that are happening right now, and the future tense describes things that have yet to happen.",
+                "front_text":"Verbs come in past, present, and future tenses. Past tense describes things that already happened, present tense for things that are happening right now, and future tense for things that have yet to happen.",
                 "examples": "Past tense - I lived here when I was ten. Present tense - I live here now. Future tense - I will live there when I am retired."
             },
             
@@ -250,7 +250,7 @@
             {
                 "number": 3,
                 "image_url": "../Images/cold_hotblooded.jpg",
-                "front_text": "Cold-blooded animals are unable to regulate their body's temperature according to the temperature of the surroundings. Warm-blooded animals are able to maintain a nearly constant body temperature, in almost any environment",
+                "front_text": "Cold-blooded animals are unable to regulate their body's temperature according to the temperature of the surroundings. Warm-blooded animals are able to maintain a nearly constant body temperature, in almost any environment.",
                 "examples": "Reptiles, Amphibians, Fish and Insects are cold-blooded. Mammals, birds, and some fish and insects are warm-blooded."
             },
             {
@@ -274,7 +274,7 @@
             {
                 "number": 7,
                 "image_url": "../Images/photosynthesis.png",
-                "front_text": "Photosynthesis is the process by which plants turn water, sunlight, and carbon dioxide into water, oxygen, and simple sugars",
+                "front_text": "Photosynthesis is the process by which plants turn water, sunlight, and carbon dioxide into water, oxygen, and simple sugars.",
                 "examples": "The diagram shows the process of photosynthesis in more detail."
             },
             {
@@ -301,7 +301,7 @@
             {
                 "number": 1,
                 "image_url": "../Images/circulatory_sys.png",
-                "front_text": "The circulatory system consists of the heart, the blood and the blood vessels. It transports oxygen, digested food and water to the different parts of the body and at the same time, transports carbon dioxide and waste away from the different parts of the body for removal.",
+                "front_text": "The circulatory system consists of the heart, the blood and the blood vessels. It transports oxygen, digested food and water around the body and carbon dixode out of the body",
                 "examples": "The diagram shows different parts of the circulatory system."
             },
             {
