@@ -31,12 +31,13 @@
             <div v-for="qn of questions">
                 <h1>{{qn.number}}. {{qn.question}}</h1>
                 <label v-for="ans in qn.answers"><input type="radio" :value="ans" :name="qn.number" required>{{ans}}<br></label>
+                <p id="correct_ans">The correct answer is: {{qn.correct_answer}}</p>
             </div>
             <br>
-            <button id='submit' @click="submit" style="background-color: #008000; color: white; margin:auto">Submit</button>
+            <button id='submit' @click="submit" style="background-color: #008000; color: white; margin-right:20px">Submit</button>
             <br>
             
-            <button id="back" @click="$router.go(-1)" style="background-color: blue; color: white;margin:auto">Back</button>
+            <button id="back" @click="$router.go(-1)" style="background-color: blue; color: white;">Back</button>
             <br>
 
             <p id="mark" style="display: none;">Your Score= {{score}}/{{questions.length}}</p>
