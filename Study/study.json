@@ -297,22 +297,22 @@
             }
             
         ],
-        "body systems, fungi and bacteria": [
+                "body systems, fungi and bacteria": [
             {
                 "number": 1,
                 "image_url": "../Images/circulatory_sys.png",
-                "front_text": "The circulatory system consists of the heart, the blood and the blood vessels. It transports oxygen, digested food and water around the body and carbon dixode out of the body",
+                "front_text": "The circulatory system consists of the heart, the blood and the blood vessels. It transports oxygen, digested food and water to the different parts of the body and at the same time, transports carbon dioxide and waste away from the different parts of the body for removal.",
                 "examples": "The diagram shows different parts of the circulatory system."
             },
             {
                 "number": 2,
-                "image_url": "../Images/skeletal_sys.png",
+                "image_url": "../Images/skeletal_sys.jpg",
                 "front_text": "The skeletal system consists of all the bones in our body. It provides support to our body, protects our important organs and work together with the muscular system to enable movement. ",
                 "examples": "The diagram shows how the skeletal system looks like."
             },
             {
                 "number": 3,
-                "image_url": "../Images/respiratory_sys.PNG",
+                "image_url": "../Images/respiratory_sys.JPG",
                 "front_text": "The respiratory system consists of the nose, windpipe and the lungs. It helps take in oxygen that our body needs for survival, and give out carbon dioxide",
                 "examples": "The diagram shows the different parts of the respiratory system."
             },
@@ -342,7 +342,7 @@
             },
             {
                 "number": 8,
-                "image_url": "../Images/fungi_decomposer.jpeg",
+                "image_url": "../Images/fungi_decomposer.jpg",
                 "front_text": "Fungi are a type of decomposer. They obtain food by breaking down dead organisms into simpler substances though decomposition and absorb the simple substances as food.",
                 "examples": "The picture shows the very important role fungi play in an ecosystem."
             },
