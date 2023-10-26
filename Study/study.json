@@ -1,6 +1,6 @@
 {
     "english":{
-        "grammar":[
+       "grammar":[
             {
                 "number": 1,
                 "image_url": "../Images/study_nouns.jpg",
@@ -34,8 +34,8 @@
             },
             {
                 "number": 5,
-                "image_url": "../Images/study_adverbs.png",
-                "front_text": "Adverbs describe verbs, adjectives, or even a whole sentence. Adverbs often end with the suffix -ly. Some look the same as their adjective forms, however, such as fast. Watch out for these exceptions!",
+                "image_url": "../Images/study_adverbs.jpg",
+                "front_text": "Adverbs describe verbs, adjectives, or even a whole sentence. Adverbs often end with the suffix -ly.",
                 "examples": "He did <strong>badly</strong> for his test. I <strong>strongly</strong> disagreed with her."
             },
             {
@@ -47,7 +47,7 @@
             },
             {
                 "number": 7,
-                "image_url": "../Images/study_prepositions.png",
+                "image_url": "../Images/study_prepositions.jpg",
                 "front_text": "Prepositions are little words that tell where or when something is."
                   ,
                 "examples": "The monkey is <strong>on</strong> his back. The glue is <strong>behind</strong> the board. "
