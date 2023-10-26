@@ -66,10 +66,11 @@ const app = Vue.createApp({
 
             }
             document.getElementById('mark').style.display='block'
+            document.getElementById('submit').style.display='none'
             //document.getElementById("mark").setAttribute('value',score)
-        //});  
-//});
-    }
+    },
+
+    
     
     } 
 })
