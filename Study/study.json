@@ -234,7 +234,7 @@
         
     },    
     "science":{
-       "Plants and Animals": [
+       "plants and Animals": [
             {
                 "number": 1,
                 "image_url": "../Images/study_3stagelifecycle.jpg",
@@ -297,159 +297,76 @@
             }
             
         ],
-        "light": [
+        "body systems, fungi and bacteria": [
             {
                 "number": 1,
-                "image_url": "What is the process by which green plants make their own food using sunlight?",
-                "front_text": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-                "examples": 2
+                "image_url": "../Images/circulatory_sys.jpg",
+                "front_text": "The circulatory system consists of the heart, the blood and the blood vessels. It transports oxygen, digested food and water to the different parts of the body and at the same time, transports carbon dioxide and waste away from the different parts of the body for removal.",
+                "examples": "The diagram shows the functions of different parts of the circulatory system."
             },
             {
                 "number": 2,
-                "image_url": "What is the chemical formula for the compound known as hydrogen peroxide?",
-                "front_text": ["H2O2", "HO2", "H3O", "H2O3"],
-                "examples": 1
+                "image_url": "../Images/skeletal_sys.jpg",
+                "front_text": "The skeletal system consists of all the bones in our body. It provides support to our body, protects our important organs and work together with the muscular system to enable movement. ",
+                "examples": "The diagram shows the different parts of the skeletal system."
             },
             {
                 "number": 3,
-                "image_url": "Which gas is responsible for the Earth's ozone layer and protects us from harmful ultraviolet (UV) radiation?",
-                "front_text": ["Carbon dioxide", "Oxygen", "Ozone", "Methane"],
-                "examples": 3
+                "image_url": "../Images/respiratory_sys.jpg",
+                "front_text": "The respiratory system consists of the nose, windpipe and the lungs. It helps take in oxygen that our body needs for survival, and give out carbon dioxide",
+                "examples": "The diagram shows the functions of different parts of the respiratory system."
             },
             {
                 "number": 4,
-                "image_url": "What is the chemical formula for table salt (sodium chloride)?",
-                "front_text": ["H2O", "NaCl", "CO2", "O2"],
-                "examples": 2
+                "image_url": "../Images/muscular_sys.jpg",
+                "front_text": "The muscular system is made of different types of muscles.  Some muscles, like the muscles that are found on our arms and legs, can be controlled to enable movement. However, some muscles, such as those that make up our heart and stomach, cannot be controlled.",
+                "examples": "The diagram shows the functions of different parts of the muscular system. Muscles work in pairs to enable movement.As one muscle contracts, the other muscle relaxes."
             },
             {
                 "number": 5,
-                "image_url": "Which planet is known as the 'Red Planet'?",
-                "front_text": ["Earth", "Mars", "Venus", "Saturn"],
-                "examples": 2
+                "image_url": "../Images/digestive_sys.jpg",
+                "front_text": "The digestive system digests food into simpler substances and absorbs the digested food into the bloodstream. It consists of the mouth, the gullet, the stomach, the small intestine, the large intestine and the anus.",
+                "examples": "The diagram shows the different parts of the digestive system."
             },
             {
                 "number": 6,
-                "image_url": "What is the chemical formula for methane gas?",
-                "front_text": ["CH4", "CO2", "H2O", "O2"],
-                "examples": 1
+                "image_url": "../Images/fungi.jpg",
+                "front_text": "Fungi are not plants as they do not have roots, stems or leaves.  A fungus is unable to make its own food as it does not have chlorophyll to trap sunlight for photosynthesis.",
+                "examples": "The diagram shows examples of fungi."
             },
             {
                 "number": 7,
-                "image_url": "What is the process by which living organisms break down food to release energy?",
-                "front_text": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
-                "examples": 4
+                "image_url": "../Images/microfungi.jpg",
+                "front_text": "There are some types of fungi we cannot see unless we use a microscope, such as yeast and mould.",
+                "examples": "The picture shows yeast and mould look under a microscope."
             },
             {
                 "number": 8,
-                "image_url": "What is the molecular formula for water?",
-                "front_text": ["H2O", "CO2", "O2", "NaCl"],
-                "examples": 1
+                "image_url": "../Images/fungi_decomposer.jpeg",
+                "front_text": "Fungi are a type of decomposer. They obtain food by breaking down dead organisms into simpler substances though decomposition and absorb the simple substances as food.",
+                "examples": "The picture shows the very important role fungi play in an ecosystem."
             },
             {
                 "number": 9,
-                "image_url": "Which gas do plants absorb from the atmosphere and use for photosynthesis?",
-                "front_text": ["Carbon monoxide", "Oxygen", "Carbon dioxide", "Nitrogen"],
-                "examples": 3
+                "image_url": "../Images/bacteria.jpg",
+                "front_text": "Bacteria are microorganisms that we cannot usually see, unless we use a microscope. Some bacteria are helpful to us, while some are harmful to us.",
+                "examples": "The picture shows e-coli, a bacteria that causes us to fall sick."
             },
             {
                 "number": 10,
-                "image_url": "What is the chemical formula for carbon dioxide?",
-                "front_text": ["H2O", "NaCl", "CO2", "O2"],
-                "examples": 3
+                "image_url": "../Images/bacteria_decomposition.png",
+                "front_text": "As with what we learned earlier about decomposers, bacteria are actually also decomposers, just like fungi!",
+                "examples": "After decomposition, nutrients are returned to the soil, so that plants can absorb those nutrients."
             },
             {
                 "number": 11,
-                "image_url": "What is the chemical formula for oxygen gas?",
-                "front_text": ["H2O", "NaCl", "CO2", "O2"],
-                "examples": 4
-            },
-            {
-                "number": 12,
-                "image_url": "What is the chemical formula for carbon monoxide?",
-                "front_text": ["H2O", "NaCl", "CO2", "CO"],
-                "examples": 4
-            },
-            {
-                "number": 13,
-                "image_url": "What gas is released during photosynthesis and absorbed during respiration?",
-                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-                "examples": 1
-            },
-            {
-                "number": 14,
-                "image_url": "What is the chemical formula for sulfuric acid?",
-                "front_text": ["H2SO4", "HCl", "HNO3", "H3PO4"],
-                "examples": 1
-            },
-            {
-                "number": 15,
-                "image_url": "What gas is responsible for the greenhouse effect on Earth?",
-                "front_text": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
-                "examples": 2
-            },
-            {
-                "number": 16,
-                "image_url": "What is the chemical formula for ammonia?",
-                "front_text": ["NH4", "NH3", "NO2", "N2"],
-                "examples": 2
-            },
-            {
-                "number": 17,
-                "image_url": "What gas do humans breathe in to support respiration?",
-                "front_text": ["Carbon dioxide", "Oxygen", "Nitrogen", "Methane"],
-                "examples": 2
-            },
-            {
-                "number": 18,
-                "image_url": "What is the chemical formula for hydrochloric acid?",
-                "front_text": ["H2O", "NaCl", "HCl", "CO2"],
-                "examples": 3
-            },
-            {
-                "number": 19,
-                "image_url": "What is the chemical formula for nitric acid?",
-                "front_text": ["HNO3", "HCl", "H2SO4", "H3PO4"],
-                "examples": 1
-            },
-            {
-                "number": 20,
-                "image_url": "What is the chemical formula for acetic acid, which is found in vinegar?",
-                "front_text": ["CH4", "H2SO4", "H3PO4", "CH3COOH"],
-                "examples": 4
-            },
-            {
-                "number": 21,
-                "image_url": "What is the chemical formula for citric acid, which is found in citrus fruits?",
-                "front_text": ["C6H12O6", "HCl", "HNO3", "C6H8O7"],
-                "examples": 4
-            },
-            {
-                "number": 22,
-                "image_url": "What gas is used in the process of welding due to its ability to react with metals?",
-                "front_text": ["Helium", "Oxygen", "Argon", "Acetylene"],
-                "examples": 4
-            },
-            {
-                "number": 23,
-                "image_url": "What is the chemical formula for sulfur dioxide, a pollutant released from burning fossil fuels?",
-                "front_text": ["SO2", "CO2", "O2", "NO2"],
-                "examples": 1
-            },
-            {
-                "number": 24,
-                "image_url": "Which element is represented by the chemical symbol 'Fe'?",
-                "front_text": ["Ferrum", "Fluorine", "Iron", "Iodine"],
-                "examples": 3
-            },
-            {
-                "number": 25,
-                "image_url": "What gas is used in balloons to make them float in the air?",
-                "front_text": ["Helium", "Oxygen", "Argon", "Nitrogen"],
-                "examples": 1
+                "image_url": "../Images/fungi_spores.jpeg",
+                "front_text": "Fungi reproduce by spores. For mushrooms, the spores are released from their gill cap.",
+                "examples": "The diagram shows spores of a mushroom in its gill cap."
             }
+            
         ],
-        "magnets": [
+        "matter": [
             {
                 "number": 1,
                 "image_url": "What is the process by which green plants make their own food using sunlight and convert it into chemical energy?",
