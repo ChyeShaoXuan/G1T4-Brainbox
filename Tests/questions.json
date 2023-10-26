@@ -929,7 +929,7 @@
                 "number": 2,
                 "question": "If you have 3 apples and you eat 1, how many apples do you have left?",
                 "answers": [0, 1, 2, 3],
-                "correct_answer": 1
+                "correct_answer": 2
             },
             {
                 "number": 3,
@@ -939,15 +939,15 @@
             },
             {
                 "number": 4,
-                "question": "If you have 10 fingers, how many fingers do you have on one hand?",
-                "answers": [1, 5, 10, 20],
-                "correct_answer": 3
+                "question": "If you had 10 oranges at first, gave away 4, how many oranges do you have now?",
+                "answers": [6, 8, 10, 14],
+                "correct_answer": 1
             },
             {
                 "number": 5,
                 "question": "What is 9 minus 4?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 3
+                "correct_answer": 4
             },
             {
                 "number": 6,
@@ -958,8 +958,8 @@
             {
                 "number": 7,
                 "question": "What is the next number in the sequence: 2, 4, 6, __?",
-                "answers": [7, 8, 9, 10],
-                "correct_answer": 4
+                "answers": [5, 7, 8, 9],
+                "correct_answer": 3
             },
             {
                 "number": 8,
@@ -971,7 +971,7 @@
                 "number": 9,
                 "question": "What is 7 plus 3?",
                 "answers": [9, 10, 11, 12],
-                "correct_answer": 3
+                "correct_answer": 2
             },
             {
                 "number": 10,
@@ -987,9 +987,9 @@
             },
             {
                 "number": 12,
-                "question": "If you have 8 legs, how many legs do you have left if you lose 2?",
+                "question": "If you have 8 candies, how many candies do you have left if you ate 2 candies?",
                 "answers": [4, 6, 8, 10],
-                "correct_answer": 4
+                "correct_answer": 2
             },
             {
                 "number": 13,
@@ -1025,7 +1025,7 @@
                 "number": 18,
                 "question": "If you have 20 candies and you eat 8, how many candies do you have left?",
                 "answers": [8, 10, 12, 15],
-                "correct_answer": 1
+                "correct_answer": 3
             },
             {
                 "number": 19,
@@ -1042,14 +1042,14 @@
             {
                 "number": 21,
                 "question": "What is the next number in the sequence: 3, 6, 9, __?",
-                "answers": [10, 11, 12, 15],
-                "correct_answer": 4
+                "answers": [10, 11, 12, 13],
+                "correct_answer": 3
             },
             {
                 "number": 22,
-                "question": "If you have 4 quarters, how much money do you have?",
-                "answers": ["$1", "$0.25", "$0.50", "$1.25"],
-                "correct_answer": 1
+                "question": "If you have 4 10-cents coins, how much money do you have?",
+                "answers": ["$4", "$0.40", "$0.30", "$0.04"],
+                "correct_answer": 2
             },
             {
                 "number": 23,
@@ -1067,7 +1067,7 @@
                 "number": 25,
                 "question": "What is 7 minus 3?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 2
+                "correct_answer": 3
             }
         ],
         "Medium": [
@@ -1075,7 +1075,7 @@
                 "number": 1,
                 "question": "What is 12 divided by 4?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 3
+                "correct_answer": 2
             },
             {
                 "number": 2,
@@ -1105,19 +1105,19 @@
                 "number": 6,
                 "question": "What is 1/4 of 20?",
                 "answers": [2, 4, 5, 6],
-                "correct_answer": 4
+                "correct_answer": 3
             },
             {
                 "number": 7,
                 "question": "If you have 5 siblings, and you are the 3rd oldest, how many siblings are younger than you?",
                 "answers": [0, 1, 2, 4],
-                "correct_answer": 2
+                "correct_answer": 3
             },
             {
                 "number": 8,
                 "question": "What is the next number in the sequence: 5, 10, 15, __?",
-                "answers": [18, 20, 25, 30],
-                "correct_answer": 3
+                "answers": [18, 20, 22, 24],
+                "correct_answer": 2
             },
             {
                 "number": 9,
@@ -1129,7 +1129,7 @@
                 "number": 10,
                 "question": "If you have 24 marbles and you give away half of them, how many marbles do you have left?",
                 "answers": [6, 8, 12, 18],
-                "correct_answer": 4
+                "correct_answer": 3
             },
             {
                 "number": 11,
@@ -1199,9 +1199,9 @@
             },
             {
                 "number": 22,
-                "question": "What is the difference between 15 and 1/3?",
+                "question": "What is the difference between 14 and 1/3?",
                 "answers": [13.5, 13.67, 14, 14.5],
-                "correct_answer": 1
+                "correct_answer": 2
             },
             {
                 "number": 23,
@@ -1212,14 +1212,14 @@
             {
                 "number": 24,
                 "question": "What is the product of 3 and 3/4?",
-                "answers": [2.25, 3, 9, 12],
-                "correct_answer": 3
+                "answers": [2.25, 3.75, 4, 12.5],
+                "correct_answer": 1
             },
             {
                 "number": 25,
                 "question": "If a book costs $25 and it is on sale for 20% off, what is the sale price?",
                 "answers": ["$5", "$10", "$15", "$20"],
-                "correct_answer": 2
+                "correct_answer": 4
             }
         ],
         "Hard": [
@@ -1239,7 +1239,7 @@
                 "number": 3,
                 "question": "What is the square root of 169?",
                 "answers": [10, 11, 12, 13],
-                "correct_answer": 2
+                "correct_answer": 4
             },
             {
                 "number": 4,
@@ -1250,8 +1250,8 @@
             {
                 "number": 5,
                 "question": "Solve for 'x' in the equation 4x - 7 = 5x + 3.",
-                "answers": [10, 8, 6, 4],
-                "correct_answer": 2
+                "answers": [-10, 8, 4, 10],
+                "correct_answer": 1
             },
             {
                 "number": 6,
@@ -1262,7 +1262,7 @@
             {
                 "number": 7,
                 "question": "Solve for 'y' in the equation 3y + 2 = 2y - 5.",
-                "answers": [4, 7, 9, 12],
+                "answers": [4, -7, 9, -12],
                 "correct_answer": 2
             },
             {
@@ -1291,7 +1291,7 @@
             },
             {
                 "number": 12,
-                "question": "What is the result of 7 divided by 2, expressed as a mixed number or fraction?",
+                "question": "What is the result of 7 divided by 2, expressed as a mixed fraction?",
                 "answers": ["3.5", "3 1/2", "7/2", "2 7/2"],
                 "correct_answer": 2
             },
@@ -1304,37 +1304,37 @@
             {
                 "number": 14,
                 "question": "Solve for 'x' in the equation (x + 3)(x - 2) = 0.",
-                "answers": [-3, -2, 2, 3],
+                "answers": [-1, -2, 2, 3],
                 "correct_answer": 3
             },
             {
                 "number": 15,
                 "question": "What is the result of 2 to the power of 5 (2^5)?",
                 "answers": [16, 32, 64, 128],
-                "correct_answer": 3
+                "correct_answer": 2
             },
             {
                 "number": 16,
-                "question": "If a bicycle wheel has a diameter of 26 inches, what is its circumference?",
-                "answers": ["26 inches", "52 inches", "65 inches", "78 inches"],
+                "question": "If a bicycle wheel has a diameter of 28 inches, what is its circumference?",
+                "answers": ["26 inches", "52 inches", "65 inches", "88 inches"],
                 "correct_answer": 4
             },
             {
                 "number": 17,
-                "question": "Solve for 'y' in the equation 4y + 9 = 2y - 5.",
+                "question": "Solve for 'y' in the equation 4y - 9 = 2y + 5.",
                 "answers": [7, 10, 14, 18],
                 "correct_answer": 1
             },
             {
                 "number": 18,
-                "question": "What is the result of 3/4 divided by 1/8, expressed as a fraction?",
-                "answers": ["1", "2", "3", "4"],
-                "correct_answer": 2
+                "question": "What is the result of 3/4 divided by 1/8?",
+                "answers": ["3", "5", "6", "8"],
+                "correct_answer": 3
             },
             {
                 "number": 19,
                 "question": "If a box contains 12 red balls, 18 blue balls, and 15 green balls, what is the probability of drawing a green ball at random?",
-                "answers": ["1/5", "1/6", "1/7", "1/8"],
+                "answers": ["1/3", "1/4", "1/5", "1/2"],
                 "correct_answer": 1
             },
             {
@@ -1347,7 +1347,7 @@
                 "number": 21,
                 "question": "What is the result of 4 to the power of 4 (4^4)?",
                 "answers": [64, 256, 1024, 4096],
-                "correct_answer": 4
+                "correct_answer": 2
             },
             {
                 "number": 22,
@@ -1358,8 +1358,8 @@
             {
                 "number": 23,
                 "question": "Solve for 'y' in the equation 6y + 8 = 4y - 12.",
-                "answers": [6, 10, 14, 20],
-                "correct_answer": 1
+                "answers": [6, -10, 14, -20],
+                "correct_answer": 2
             },
             {
                 "number": 24,
@@ -1369,9 +1369,9 @@
             },
             {
                 "number": 25,
-                "question": "If a rectangular box measures 15 inches in length, 8 inches in width, and 6 inches in height, what is its volume?",
-                "answers": ["720 cubic inches", "900 cubic inches", "1080 cubic inches", "1200 cubic inches"],
-                "correct_answer": 1
+                "question": "If a cube measures 15 inches in length, what is its perimeter?",
+                "answers": ["120 inches", "180 inches", "150 inches", "200 inches"],
+                "correct_answer": 2
             }
         ]    
     }
