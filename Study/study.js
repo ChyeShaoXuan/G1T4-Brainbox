@@ -16,7 +16,7 @@ function display_default(){
              <img src="${image}" style="max-width:100%;
              max-height:100%;">
           </div>
-          <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../images/study_grammarbackground.jpeg");background-size:cover;background-repeat:no-repeat;'>
+          <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/study_grammarbackground.jpeg");background-size:cover;background-repeat:no-repeat;'>
                <p class="text-red-900 font-semibold text-md text-align-center m-5">${text}</p>
                <p class="text-gray-600 font-semibold text-md text-align-center">${examples}</p>
                 
@@ -58,7 +58,7 @@ function populate_page(subject,topic){
              <img src="${image}" style="max-width:100%;
              max-height:100%;">
           </div>
-          <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../images/study_grammarbackground.jpeg");background-size:cover;background-repeat: no-repeat;'>
+          <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/study_grammarbackground.jpeg");background-size:cover;background-repeat: no-repeat;'>
                <div class="text-red-900 font-semibold text-md text-align-center m-5">${text}</div>
                <p class="text-gray-600 font-semibold text-md text-align-center">${examples}</p>
                 
