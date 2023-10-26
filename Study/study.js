@@ -18,7 +18,7 @@ function display_default(){
           </div>
           <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../images/study_grammarbackground.jpeg");background-size:cover;background-repeat:no-repeat;'>
                <p class="text-red-900 font-semibold text-md text-align-center m-5">${text}</p>
-               <p class="text-blue-400 font-semibold text-md text-align-center">${examples}</p>
+               <p class="text-gray-400 font-semibold text-md text-align-center">${examples}</p>
                 
           </div>
 
@@ -60,7 +60,7 @@ function populate_page(subject,topic){
           </div>
           <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../images/study_grammarbackground.jpeg");background-size:cover;background-repeat: no-repeat;'>
                <div class="text-red-900 font-semibold text-md text-align-center m-5">${text}</div>
-               <p class="text-blue-400 font-semibold text-md text-align-center">${examples}</p>
+               <p class="text-gray-400 font-semibold text-md text-align-center">${examples}</p>
                 
           </div>
 
