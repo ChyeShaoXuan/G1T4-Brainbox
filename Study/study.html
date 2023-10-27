@@ -168,80 +168,33 @@
     <div class="cube"></div>
     <div class="cube"></div>
 
-    <div class="container m-auto text-center px-6 opacity-100 ">
-
-        <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4"><a href="../Tests.test.html" id="animated-text">Ready for a test?</a></h2>
-            
-        <button class=" relative bg-gradient-to-r from-red-300 via-blue-200 to-purple-400 font-bold 
-        rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-red-700 
-        hover:bg-gray-800 transition-all shadow-lg animate__animated animate__bounceInDown ">Click for more</button>
-
-        
-       
-
-
-
+    <div class="container mx-auto text-center px-6 opacity-100">
+      <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4"><a href="../Tests.test.html" id="animated-text">Ready for a test?</a></h2>
+      <button class=" relative bg-gradient-to-r from-red-300 via-blue-200 to-purple-400 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-red-700 hover:bg-gray-800 transition-all shadow-lg animate__animated animate__bounceInDown ">Click for more</button>
     </div>
-    
   </div>
 
-  
-    
-
-  <div class="container mx-auto ms-0 mt-5">
+  <div class="container mx-auto mt-5">
     <div class="w-full md:1/4">
-      
     </div>
     <div class="flex flex-wrap">
-      
-       
-        <div class="w-full md:1/4"></div>
-        
-    
-        <div class="w-full md:w-3/4 mx-auto" id="content_section" class="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100" >
-          
-            
-            
-            
-            <div class="w-full mt-4" id="contents" class="w-full">
-              
-              
-                <!-- <div class="dropdown-center text-center d-grid mx-auto col-6 mb-5">
-                  <button class="btn btn-lg font-semibold btn-secondary text-black py-3 dropdown-toggle bg-gradient-to-r from-yellow-200 via-purple-200 to-green-100 hover:bg-green-800 shadow-lg rounded-full"  type="button" data-bs-toggle="dropdown" aria-expanded="false" >
-                    Choose a topic!
-                  </button>
-                  <ul class="dropdown-menu bg-blue-100" style="width:100%;">
-                    <li><a class="dropdown-item text-center text-md">Plants and Animals</a></li>
-                    <li><a class="dropdown-item text-center text-md" >Matter</a></li>
-                    <li><a class="dropdown-item text-center text-md" >Science - Body systems, fungi and bacteria</a></li>
-                    <li><a class="dropdown-item text-center text-md" >Grammar</a></li>
-                    <li><a class="dropdown-item text-center text-md" >Vocabulary</a></li>
-                    <li><a class="dropdown-item text-center text-md" href="#">Something else here</a></li>
-                    <li><a class="dropdown-item text-center text-md" href="#">Something else here</a></li>
-                    <li><a class="dropdown-item text-center text-md" href="#">Something else here</a></li>
-                  </ul>
-                </div> -->
-              
-              <div class="d-grid mx-auto col-5">
-                
-                <div class="fs-3 font-bold text-center animate__animated animate__bounce animate__infinite text-red-600 mb-2">Choose your topic!</div>
-                <select class="form-select mb-3 rounded-full font-semibold text-red-900 " id="dropdown_topics" onchange="populate_page()">
-                  <option selected class="text-center font-semibold" value="english-grammar">Grammar</option>
-                  <!-- <option value="1" class="text-center">Vocabulary</option> -->
-                  <option  class="text-center font-semibold" value="science-plants and animals" >Plants and Animals</option>
-                  <option  class="text-center font-semibold" value="science-body systems, fungi and bacteria" >Body systems, fungi and bacteria</option>
-                  <option  class="text-center font-semibold" value="science-matter" >Matter</option>
-                  
-                </select>
-                </div>
-                <div id="notes" class="mt-5"></div>
-
-              
+      <div class="w-full md:1/4"></div>
+      <div class="w-full md:w-3/4 mx-auto text-center" id="content_section" class="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
+        <div class="w-full mt-4" id="contents" class="w-full">
+          <div class="d-grid mx-auto col-5">
+            <div class="fs-3 font-bold text-center animate__animated animate__bounce animate__infinite text-red-600 mb-2">Choose your topic!</div>
+            <select class="form-select mb-3 rounded-full font-semibold text-red-900 " id="dropdown_topics" onchange="populate_page()">
+              <option selected class="text-center font-semibold" value="english-grammar">Grammar</option>
+              <option class="text-center font-semibold" value="science-plants and animals">Plants and Animals</option>
+              <option class="text-center font-semibold" value="science-body systems, fungi and bacteria">Body systems, fungi and bacteria</option>
+              <option class="text-center font-semibold" value="science-matter">Matter</option>
+            </select>
           </div>
+          <div id="notes" class="mt-5"></div>
+        </div>
       </div>
     </div>
   </div>
-
 
   <!-- Bottom -->
   <section class="bg-white">
