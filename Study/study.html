@@ -39,18 +39,6 @@
                 transform: translateY(-5px);
             }
         }
-               
-        .background {
-          background: linear-gradient(132deg, #7ee9f5, #df934d, #fcfefc);
-          background-size: 400% 400%;
-          animation: Gradient 15s ease infinite;
-          position: relative;
-          
-          width: 100%;
-          overflow: hidden;
-          padding:0;
-          margin:0px;
-        }
 
         @keyframes cube {
           from {
@@ -175,7 +163,7 @@
   </section>
 
   <!-- Discover -->
-  <div class="py-10 bg-cover bg-no-repeat bg-fixed relative background">
+  <div class="py-10 bg-cover bg-no-repeat bg-fixed relative">
     <div class="cube"></div>
     <div class="cube"></div>
     <div class="cube"></div>
@@ -191,27 +179,29 @@
   </div>
 
   <!-- Study Content -->
-  <div class="container mx-auto mt-5">
-    <div class="w-full md:1/4">
-    </div>
+  <div class="container mx-auto">
+    <div class="w-full md:1/4"></div>
     <div class="flex flex-wrap">
-      <div class="w-full md:1/4"></div>
-      <div class="w-full md:w-3/4 mx-auto text-center" id="content_section" class="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
-        <div class="w-full mt-4" id="contents" class="w-full">
-          <div class="d-grid mx-auto col-5">
-            <div class="fs-3 font-bold text-center animate__animated animate__bounce animate__infinite text-red-600 mb-2">Choose your topic!</div>
-            <select class="form-select mb-3 rounded-full font-semibold text-red-900 " id="dropdown_topics" onchange="populate_page()">
-              <option selected class="text-center font-semibold" value="english-grammar">Grammar</option>
-              <option class="text-center font-semibold" value="science-plants and animals">Plants and Animals</option>
-              <option class="text-center font-semibold" value="science-body systems, fungi and bacteria">Body systems, fungi and bacteria</option>
-              <option class="text-center font-semibold" value="science-matter">Matter</option>
-            </select>
-          </div>
-          <div id="notes" class="mt-5"></div>
+        <div class="w-full md:1/4"></div>
+        <div class="w-full md:w-3/4 mx-auto text-center">
+            <div class="bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100 p-4 rounded-lg">
+                <div class="w-full mt-4">
+                    <div class="d-grid mx-auto col-5 bg-white bg-opacity-50 backdrop-blur-md rounded-lg p-4">
+                        <div class="fs-3 font-bold text-center animate__animated animate__bounce animate__infinite text-red-600 mb-2">Choose your topic!</div>
+                        <select class="form-select mb-3 rounded-full font-semibold text-red-900 w-full" id="dropdown_topics" onchange="populate_page()">
+                            <option selected class="text-center font-semibold" value="english-grammar">Grammar</option>
+                            <option class="text-center font-semibold" value="science-plants and animals">Plants and Animals</option>
+                            <option class="text-center font-semibold" value="science-body systems, fungi and bacteria">Body systems, fungi and bacteria</option>
+                            <option class="text-center font-semibold" value="science-matter">Matter</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="notes" class="mt-5"></div>
         </div>
-      </div>
     </div>
   </div>
+
 
   <!-- Bottom -->
   <section>
