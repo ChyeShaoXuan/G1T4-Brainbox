@@ -41,7 +41,7 @@
                             <input type="radio" :value="ans" :name="qn.number" required>
                             {{ ans }}
                         </label>
-                        <div v-if="{{show}}==true" >
+                        <div v-if="show==true" >
                             <p id="correct_ans" style="display: block;"  class="text-green-500">The correct answer is: {{ qn.correct_answer }}</p>
                         </div>
                         
