@@ -37,7 +37,7 @@
                             <input type="radio" :value="ans" :name="qn.number" required>
                             {{ ans }}
                         </label>
-                        <p id="correct_ans" class="text-green-500">The correct answer is: {{ qn.correct_answer }}</p>
+                        <p id="correct_ans" style="display: none;" class="text-green-500">The correct answer is: {{ qn.correct_answer }}</p>
                     </div>
                     <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                         <button id="submit" @click="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Submit</button>
