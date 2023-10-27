@@ -183,7 +183,7 @@
     <div class="cube"></div>
 
     <div class="container mx-auto text-center px-6 opacity-100">
-      <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4"><p id="animated-text">Ready for a test?</p></h2>
+      <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4" id="typing-text"></h2>
       <a href="../Tests.test.html">
         <button class=" relative bg-gradient-to-r from-red-300 via-blue-200 to-purple-400 font-bold rounded-full py-4 px-8 shadow-lg uppercase tracking-wider hover:border-transparent hover:text-red-700 hover:bg-gray-800 transition-all shadow-lg animate__animated animate__bounceInDown ">Test Here!</button>
       </a>
@@ -222,12 +222,23 @@
     </div>
   </section>
 
-  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"  
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const options = {
+        strings: ["Ready for a test?"],
+        typeSpeed: 75,
+        showCursor: true, 
+      };
+  
+      const typed = new Typed("#typing-text", options);
+    });
+  </script>
 
-    <script src="study.js"></script>
-  </body>
-  </html>
+  <script src="https://unpkg.com/flowbite@1.3.4/dist/flowbite.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"  
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+  <script src="study.js"></script>
+</body>
+</html>
