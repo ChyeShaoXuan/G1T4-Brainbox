@@ -7,7 +7,8 @@ const app = Vue.createApp({
         return {
             questions: [],
             answers:[],
-            score: 0
+            score: 0,
+            show: false
         }
     },
     mounted() {
@@ -65,7 +66,7 @@ const app = Vue.createApp({
             }
             document.getElementById('mark').style.display='block'
             document.getElementById('submit').style.display='none'
-            document.getElementById('correct_ans').style.display='block'
+            this.show=true
             //document.getElementById("mark").setAttribute('value',score)
     },
         
