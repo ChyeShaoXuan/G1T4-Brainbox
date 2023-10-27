@@ -456,19 +456,31 @@
                 "front_text": "When you add two negative numbers, you will add both numbers just like adding positive numbers, but the result will have the 'negative' sign",
                 "examples": "(-1) + (-2) = -3"
             },
+            {
+                "number": 6,
+                "image_url": "What is 9 minus 4?",
+                "front_text": "When you subtract any number with a negative number, you will add both numbers",
+                "examples": "1 - (-2) = 1 + 2 = 3"
+            },
+            {
+                "number": 7,
+                "image_url": "What is 9 minus 4?",
+                "front_text": "Addition and Substraction are both 'Commutative', meaning changing the order of the operands does not change the result",
+                "examples": "1 + 2 = 2 + 1"
+            }
         ],
         "division and multiplication": [
             {
                 "number": 1,
                 "image_url": "What is 12 divided by 4?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 3
+                "front_text": "Multiplication is the process of calculating the product of two or more numbers",
+                "examples": "2 x 2 = 4"
             },
             {
                 "number": 2,
-                "image_url": "If a book costs $15 and you have $20, how much change will you get?",
-                "front_text": ["$5", "$10", "$15", "$20"],
-                "examples": 1
+                "image_url": "",
+                "front_text": "Division is a mathematical operation which involves the sharing of an amount into equal-sized groups",
+                "examples": "6 / 3 = 2"
             },
             {
                 "number": 3,
