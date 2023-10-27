@@ -1,6 +1,5 @@
-{
-    "english":{
-       "grammar":[
+"english":{
+        "grammar":[
             {
                 "number": 1,
                 "image_url": "../Images/study_nouns.jpg",
@@ -62,9 +61,9 @@
             },
             {
                 "number": 9,
-                "image_url": "../Images/study_tenses.jpg",
-                "front_text":"Verbs come in past, present, and future tenses. Past tense describes things that already happened, present tense for things that are happening right now, and future tense for things that have yet to happen.",
-                "examples": "Past tense - I lived here when I was ten. Present tense - I live here now. Future tense - I will live there when I am retired."
+                "image_url": "../Images/study_tenses.png",
+                "front_text":"Verbs come in different tenses. Past tense - things that already happened, present tense - things that are currently happening, and future tense - things that haven't happened yet.",
+                "examples": "Past tense - I lived here. Present tense - I live here now. Future tense - I will live there soon."
             },
             
             {
@@ -79,7 +78,7 @@
             
             
             ],
-        "vocabulary": "vocabulary": [
+        "vocabulary": [
             {
                 "number": 1,
                 "image_url": "../Images/vocab_one.jpg",
@@ -145,7 +144,7 @@
         
     },    
     "science":{
-       "plants and animals": [
+        "plants and animals": [
             {
                 "number": 1,
                 "image_url": "../Images/study_3stagelifecycle.jpg",
@@ -161,7 +160,7 @@
             {
                 "number": 3,
                 "image_url": "../Images/cold_hotblooded.jpg",
-                "front_text": "Cold-blooded animals are unable to regulate their body's temperature according to the temperature of the surroundings. Warm-blooded animals are able to maintain a nearly constant body temperature, in almost any environment.",
+                "front_text": "Cold-blooded animals are unable to regulate their body's temperature. Warm-blooded animals are able to maintain their body temperature, in most environments.",
                 "examples": "Reptiles, Amphibians, Fish and Insects are cold-blooded. Mammals, birds, and some fish and insects are warm-blooded."
             },
             {
@@ -180,12 +179,12 @@
                 "number": 6,
                 "image_url": "../Images/plant_parts.jpg",
                 "front_text": "A plant has many parts that perform different functions. The picture shows the different functions of these parts.",
-                "examples": "The leaves help the plant make food, the flower helps the plant reproduced, the root helps the plant take in water, the stem supports the plant and the fruit contains the plant's seeds."
+                "examples": ""
             },
             {
                 "number": 7,
                 "image_url": "../Images/photosynthesis.png",
-                "front_text": "Photosynthesis is the process by which plants turn water, sunlight, and carbon dioxide into water, oxygen, and simple sugars.",
+                "front_text": "Photosynthesis is the process by which plants turn water, sunlight, and carbon dioxide into water, oxygen, and simple sugars",
                 "examples": "The diagram shows the process of photosynthesis in more detail."
             },
             {
@@ -208,11 +207,11 @@
             }
             
         ],
-                "body systems, fungi and bacteria": [
+        "body systems, fungi and bacteria": [
             {
                 "number": 1,
                 "image_url": "../Images/circulatory_sys.png",
-                "front_text": "The circulatory system consists of the heart, the blood and the blood vessels. It transports oxygen, digested food and water to the different parts of the body and at the same time, transports carbon dioxide and waste away from the different parts of the body for removal.",
+                "front_text": "The circulatory system consists of the heart, the blood and the blood vessels. It transports oxygen, digested food and water to the different parts of the body.",
                 "examples": "The diagram shows different parts of the circulatory system."
             },
             {
@@ -255,7 +254,7 @@
                 "number": 8,
                 "image_url": "../Images/fungi_decomposer.jpg",
                 "front_text": "Fungi are a type of decomposer. They obtain food by breaking down dead organisms into simpler substances though decomposition and absorb the simple substances as food.",
-                "examples": "The picture shows the very important role fungi play in an ecosystem."
+                "examples": "The picture shows the important roles fungi play in an ecosystem."
             },
             {
                 "number": 9,
@@ -294,7 +293,7 @@
                 "number": 3,
                 "image_url": "../Images/volume.jpg",
                 "front_text": "The volume of an object refers to the amount of space the object occupies.",
-                "examples": "It can be measured by a beaker, measuring cylinder, conical flask and other equipment as well."
+                "examples": "It can be measured by a beaker, test tube, conical flask and other equipment as well."
             },
             {
                 "number": 4,
@@ -336,62 +335,170 @@
         ]
     },
     "math":{
-        "addition and subtraction": [
+        "easy": [
             {
                 "number": 1,
-                "image_url": "",
-                "front_text": "Addition is a process of combining two or more numbers",
-                "examples": "1 + 1 = 2"
+                "image_url": "What is 2 + 2?",
+                "front_text": [3, 4, 5, 6],
+                "examples": 2
             },
             {
                 "number": 2,
-                "image_url": "",
-                "front_text": "Subtraction is a process of of finding the difference between two numbers",
-                "examples": "2 - 1 = 0"
+                "image_url": "If you have 3 apples and you eat 1, how many apples do you have left?",
+                "front_text": [0, 1, 2, 3],
+                "examples": 1
             },
             {
                 "number": 3,
                 "image_url": "What is 5 multiplied by 3?",
-                "front_text": "When you add a larger positive number with a smaller negative number, you will subtract the larger number with the smaller number",
-                "examples": "3 + (-2) = 3 - 2 = 1"
+                "front_text": [10, 15, 20, 25],
+                "examples": 2
             },
             {
                 "number": 4,
-                "image_url": "",
-                "front_text": "When you add a larger negative number with a smaller positive number, you will subtract the larger number with the smaller number, the result will have the 'negative' sign",
-                "examples": "(-3) + 2 = -1"
+                "image_url": "If you have 10 fingers, how many fingers do you have on one hand?",
+                "front_text": [1, 5, 10, 20],
+                "examples": 3
             },
             {
                 "number": 5,
                 "image_url": "What is 9 minus 4?",
-                "front_text": "When you add two negative numbers, you will add both numbers just like adding positive numbers, but the result will have the 'negative' sign",
-                "examples": "(-1) + (-2) = -3"
+                "front_text": [2, 3, 4, 5],
+                "examples": 3
             },
             {
                 "number": 6,
-                "image_url": "What is 9 minus 4?",
-                "front_text": "When you subtract any number with a negative number, you will add both numbers",
-                "examples": "1 - (-2) = 1 + 2 = 3"
+                "image_url": "How many sides does a triangle have?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 2
             },
             {
                 "number": 7,
-                "image_url": "What is 9 minus 4?",
-                "front_text": "Addition and Substraction are both 'Commutative', meaning changing the order of the operands does not change the result",
-                "examples": "1 + 2 = 2 + 1"
+                "image_url": "What is the next number in the sequence: 2, 4, 6, __?",
+                "front_text": [7, 8, 9, 10],
+                "examples": 4
+            },
+            {
+                "number": 8,
+                "image_url": "If you have 5 fingers on one hand, how many fingers do you have on both hands?",
+                "front_text": [5, 10, 15, 20],
+                "examples": 2
+            },
+            {
+                "number": 9,
+                "image_url": "What is 7 plus 3?",
+                "front_text": [9, 10, 11, 12],
+                "examples": 3
+            },
+            {
+                "number": 10,
+                "image_url": "If you have 4 quarters, how much money do you have?",
+                "front_text": ["$1", "$0.25", "$0.50", "$1.25"],
+                "examples": 1
+            },
+            {
+                "number": 11,
+                "image_url": "What is the result of 6 divided by 2?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 2
+            },
+            {
+                "number": 12,
+                "image_url": "If you have 8 legs, how many legs do you have left if you lose 2?",
+                "front_text": [4, 6, 8, 10],
+                "examples": 4
+            },
+            {
+                "number": 13,
+                "image_url": "What is the value of 'x' in the equation 2x + 3 = 7?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 1
+            },
+            {
+                "number": 14,
+                "image_url": "How many sides does a square have?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 3
+            },
+            {
+                "number": 15,
+                "image_url": "What is 8 minus 5?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 2
+            },
+            {
+                "number": 16,
+                "image_url": "If you have 12 months in a year, how many months are there in 2 years?",
+                "front_text": [12, 18, 24, 36],
+                "examples": 3
+            },
+            {
+                "number": 17,
+                "image_url": "What is the sum of 9 and 6?",
+                "front_text": [12, 13, 14, 15],
+                "examples": 4
+            },
+            {
+                "number": 18,
+                "image_url": "If you have 20 candies and you eat 8, how many candies do you have left?",
+                "front_text": [8, 10, 12, 15],
+                "examples": 1
+            },
+            {
+                "number": 19,
+                "image_url": "What is 4 times 5?",
+                "front_text": [15, 18, 20, 25],
+                "examples": 3
+            },
+            {
+                "number": 20,
+                "image_url": "How many days are there in a week?",
+                "front_text": [5, 6, 7, 8],
+                "examples": 3
+            },
+            {
+                "number": 21,
+                "image_url": "What is the next number in the sequence: 3, 6, 9, __?",
+                "front_text": [10, 11, 12, 15],
+                "examples": 4
+            },
+            {
+                "number": 22,
+                "image_url": "If you have 4 quarters, how much money do you have?",
+                "front_text": ["$1", "$0.25", "$0.50", "$1.25"],
+                "examples": 1
+            },
+            {
+                "number": 23,
+                "image_url": "What is 10 plus 2?",
+                "front_text": [11, 12, 13, 14],
+                "examples": 2
+            },
+            {
+                "number": 24,
+                "image_url": "How many fingers are there on one hand?",
+                "front_text": [2, 5, 10, 20],
+                "examples": 2
+            },
+            {
+                "number": 25,
+                "image_url": "What is 7 minus 3?",
+                "front_text": [2, 3, 4, 5],
+                "examples": 2
             }
         ],
-        "division and multiplication": [
+        "normal": [
             {
                 "number": 1,
                 "image_url": "What is 12 divided by 4?",
-                "front_text": "Multiplication is the process of calculating the product of two or more numbers",
-                "examples": "2 x 2 = 4"
+                "front_text": [2, 3, 4, 5],
+                "examples": 3
             },
             {
                 "number": 2,
-                "image_url": "",
-                "front_text": "Division is a mathematical operation which involves the sharing of an amount into equal-sized groups",
-                "examples": "6 / 3 = 2"
+                "image_url": "If a book costs $15 and you have $20, how much change will you get?",
+                "front_text": ["$5", "$10", "$15", "$20"],
+                "examples": 1
             },
             {
                 "number": 3,
@@ -532,7 +639,7 @@
                 "examples": 2
             }
         ],
-        "advanced multiplication": [
+        "hard": [
             {
                 "number": 1,
                 "image_url": "What is the value of 'x' in the equation 3x + 5 = 17?",
