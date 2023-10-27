@@ -5,7 +5,7 @@ function display_default(){
 
     axios.get(api_endpoint_url)
     .then(response => {  
-      let default_data_arr=(response.data.english.grammar)
+      let default_data_arr=(response.data['english']['grammar'])
       console.log(response.data.english);
       new_html=``;
     for (let i=0; i<default_data_arr.length;i++){
