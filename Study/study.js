@@ -4,9 +4,10 @@ function display_default(){
   let api_endpoint_url = "study.json"
 
     axios.get(api_endpoint_url)
-    .then(response => {  
-      let default_data_arr=(response.data['english']['grammar'])
+    .then(response => { 
       console.log(response.data.english);
+      let default_data_arr=(response.data['english']['grammar'])
+      
       new_html=``;
     for (let i=0; i<default_data_arr.length;i++){
       let image=default_data_arr[i].image_url;
