@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Content</title>
-    
+
     <!-- Add the link to the Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
@@ -15,37 +15,43 @@
     <script src="https://unpkg.com/vue@next"></script>
 
     <style>
-        .correct{
+        .correct {
             color: green;
+            font-weight: bold;
         }
-        .error{
+        .error {
             color: red;
+            font-weight: bold;
+            font-size: 20px;
         }
     </style>
 
 </head>
-<body>
-    <div id="test">
-        <div id="app">
-            <!-- Vue.js template will be rendered here -->
-            <div v-for="qn of questions">
-                <h1>{{qn.number}}. {{qn.question}}</h1>
-                <label v-for="ans in qn.answers"><input type="radio" :value="ans" :name="qn.number" required>{{ans}}<br></label>
-                <p id="correct_ans">The correct answer is: {{qn.correct_answer}}</p>
+<body class="bg-gray-200">
+    <div class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8">
+        <div class="w-full p-4 bg-white shadow-md rounded-lg">
+            <div id="test">
+                <div id="app">
+                    <!-- Vue.js template will be rendered here -->
+                    <div v-for="qn of questions" class="mb-6">
+                        <h1 class="text-2xl font-bold mb-4">Q{{ qn.number }}. {{ qn.question }}</h1>
+                        <label v-for="ans in qn.answers" class="block mb-2">
+                            <input type="radio" :value="ans" :name="qn.number" required>
+                            {{ ans }}
+                        </label>
+                        <p id="correct_ans" class="text-green-500">The correct answer is: {{ qn.correct_answer }}</p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <button id="submit" @click="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Submit</button>
+                        <button id="back" @click="window.history.back()" class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-700">Back</button>
+                    </div>
+                    <p id="mark" class="hidden text-center text-2xl font-bold mt-4">Your Score= {{ score }}/{{ questions.length }}</p>
+                </div>
             </div>
-            <br>
-            <button id='submit' @click="submit" style="background-color: #008000; color: white; margin-right:20px">Submit</button>
-            
-            
-            <button id="back" @click="window.history.back()" style="background-color: blue; color: white;">Back</button>
-            <br>
-
-            <p id="mark" style="display: none;">Your Score= {{score}}/{{questions.length}}</p>
-            
-            <br>
-         </div>
+        </div>
     </div>
-        
+
     <script src="test-content.js"></script>
 </body>
 </html>
+
