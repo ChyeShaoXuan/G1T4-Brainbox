@@ -336,311 +336,101 @@
         ]
     },
     "math":{
-        "easy": [
+        "addition and subtraction": [
             {
                 "number": 1,
-                "image_url": "What is 2 + 2?",
-                "front_text": [3, 4, 5, 6],
-                "examples": 2
+                "image_url": "",
+                "front_text": "Addition is a process of combining two or more numbers",
+                "examples": "1 + 1 = 2"
             },
             {
                 "number": 2,
-                "image_url": "If you have 3 apples and you eat 1, how many apples do you have left?",
-                "front_text": [0, 1, 2, 3],
-                "examples": 1
+                "image_url": "",
+                "front_text": "Subtraction is a process of of finding the difference between two numbers",
+                "examples": "2 - 1 = 0"
             },
             {
                 "number": 3,
                 "image_url": "What is 5 multiplied by 3?",
-                "front_text": [10, 15, 20, 25],
-                "examples": 2
+                "front_text": "When you add a larger positive number with a smaller negative number, you will subtract the larger number with the smaller number",
+                "examples": "3 + (-2) = 3 - 2 = 1"
             },
             {
                 "number": 4,
-                "image_url": "If you have 10 fingers, how many fingers do you have on one hand?",
-                "front_text": [1, 5, 10, 20],
-                "examples": 3
+                "image_url": "",
+                "front_text": "When you add a larger negative number with a smaller positive number, you will subtract the larger number with the smaller number, the result will have the 'negative' sign",
+                "examples": "(-3) + 2 = -1"
             },
             {
                 "number": 5,
                 "image_url": "What is 9 minus 4?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 3
+                "front_text": "When you add two negative numbers, you will add both numbers just like adding positive numbers, but the result will have the 'negative' sign",
+                "examples": "(-1) + (-2) = -3"
             },
             {
                 "number": 6,
-                "image_url": "How many sides does a triangle have?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 2
+                "image_url": "What is 9 minus 4?",
+                "front_text": "When you subtract any number with a negative number, you will add both numbers",
+                "examples": "1 - (-2) = 1 + 2 = 3"
             },
             {
                 "number": 7,
-                "image_url": "What is the next number in the sequence: 2, 4, 6, __?",
-                "front_text": [7, 8, 9, 10],
-                "examples": 4
-            },
-            {
-                "number": 8,
-                "image_url": "If you have 5 fingers on one hand, how many fingers do you have on both hands?",
-                "front_text": [5, 10, 15, 20],
-                "examples": 2
-            },
-            {
-                "number": 9,
-                "image_url": "What is 7 plus 3?",
-                "front_text": [9, 10, 11, 12],
-                "examples": 3
-            },
-            {
-                "number": 10,
-                "image_url": "If you have 4 quarters, how much money do you have?",
-                "front_text": ["$1", "$0.25", "$0.50", "$1.25"],
-                "examples": 1
-            },
-            {
-                "number": 11,
-                "image_url": "What is the result of 6 divided by 2?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 2
-            },
-            {
-                "number": 12,
-                "image_url": "If you have 8 legs, how many legs do you have left if you lose 2?",
-                "front_text": [4, 6, 8, 10],
-                "examples": 4
-            },
-            {
-                "number": 13,
-                "image_url": "What is the value of 'x' in the equation 2x + 3 = 7?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 1
-            },
-            {
-                "number": 14,
-                "image_url": "How many sides does a square have?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 3
-            },
-            {
-                "number": 15,
-                "image_url": "What is 8 minus 5?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 2
-            },
-            {
-                "number": 16,
-                "image_url": "If you have 12 months in a year, how many months are there in 2 years?",
-                "front_text": [12, 18, 24, 36],
-                "examples": 3
-            },
-            {
-                "number": 17,
-                "image_url": "What is the sum of 9 and 6?",
-                "front_text": [12, 13, 14, 15],
-                "examples": 4
-            },
-            {
-                "number": 18,
-                "image_url": "If you have 20 candies and you eat 8, how many candies do you have left?",
-                "front_text": [8, 10, 12, 15],
-                "examples": 1
-            },
-            {
-                "number": 19,
-                "image_url": "What is 4 times 5?",
-                "front_text": [15, 18, 20, 25],
-                "examples": 3
-            },
-            {
-                "number": 20,
-                "image_url": "How many days are there in a week?",
-                "front_text": [5, 6, 7, 8],
-                "examples": 3
-            },
-            {
-                "number": 21,
-                "image_url": "What is the next number in the sequence: 3, 6, 9, __?",
-                "front_text": [10, 11, 12, 15],
-                "examples": 4
-            },
-            {
-                "number": 22,
-                "image_url": "If you have 4 quarters, how much money do you have?",
-                "front_text": ["$1", "$0.25", "$0.50", "$1.25"],
-                "examples": 1
-            },
-            {
-                "number": 23,
-                "image_url": "What is 10 plus 2?",
-                "front_text": [11, 12, 13, 14],
-                "examples": 2
-            },
-            {
-                "number": 24,
-                "image_url": "How many fingers are there on one hand?",
-                "front_text": [2, 5, 10, 20],
-                "examples": 2
-            },
-            {
-                "number": 25,
-                "image_url": "What is 7 minus 3?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 2
+                "image_url": "What is 9 minus 4?",
+                "front_text": "Addition and Substraction are both 'Commutative', meaning changing the order of the operands does not change the result",
+                "examples": "1 + 2 = 2 + 1"
             }
         ],
-        "normal": [
+        "division and multiplication": [
             {
                 "number": 1,
                 "image_url": "What is 12 divided by 4?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 3
+                "front_text": "Multiplication is the process of calculating the product of two or more numbers",
+                "examples": "2 x 2 = 4"
             },
             {
                 "number": 2,
                 "image_url": "If a book costs $15 and you have $20, how much change will you get?",
-                "front_text": ["$5", "$10", "$15", "$20"],
-                "examples": 1
+                "front_text": "Division is a mathematical operation which involves the sharing of an amount into equal-sized groups",
+                "examples": "6 / 3 = 2"
             },
             {
                 "number": 3,
                 "image_url": "What is 3 squared (3^2)?",
-                "front_text": [6, 9, 12, 15],
-                "examples": 2
+                "front_text": "When you multiply a <strong>positive</strong> number with a <strong>negative</strong> number, the result will have the 'negative' sign",
+                "examples": "2 x (-3) = -6"
             },
             {
                 "number": 4,
                 "image_url": "If you have 30 pencils and you give away 8, how many pencils do you have left?",
-                "front_text": [10, 15, 20, 22],
-                "examples": 4
+                "front_text": "When you multiply a <strong>negative</strong> number with a <strong>negative</strong> number, the result will be a positive number",
+                "examples": "(-2) x (-3) = 6"
             },
             {
                 "number": 5,
                 "image_url": "What is the result of 8 multiplied by 7?",
-                "front_text": [48, 56, 64, 72],
-                "examples": 2
+                "front_text": "The same concept of multiplying positive and negative numbers applies to division",
+                "examples": "6 / (-3) = -2 & (-6) / (-3) = 2"
             },
             {
                 "number": 6,
                 "image_url": "What is 1/4 of 20?",
-                "front_text": [2, 4, 5, 6],
-                "examples": 4
+                "front_text": "Just like Addition, Multiplication is 'Commutative'",
+                "examples": "1 x 2 = 2 x 1"
             },
             {
                 "number": 7,
-                "image_url": "If you have 5 siblings, and you are the 3rd oldest, how many siblings are younger than you?",
-                "front_text": [0, 1, 2, 4],
-                "examples": 2
+                "image_url": "What is 1/4 of 20?",
+                "front_text": "Multiplication is also 'Distributive', meaning when a factor is multiplied by the addition/substraction of two terms, it is essential to multiply each of the two numbers by the factor, and finally perform the addition/substraction operation",
+                "examples": "2 x (1 + 3) = (2 x 1) + (2 x 3) = 2 + 6 = 8"
             },
             {
                 "number": 8,
-                "image_url": "What is the next number in the sequence: 5, 10, 15, __?",
-                "front_text": [18, 20, 25, 30],
-                "examples": 3
-            },
-            {
-                "number": 9,
-                "image_url": "What is 40% of 80?",
-                "front_text": [16, 32, 40, 64],
-                "examples": 2
-            },
-            {
-                "number": 10,
-                "image_url": "If you have 24 marbles and you give away half of them, how many marbles do you have left?",
-                "front_text": [6, 8, 12, 18],
-                "examples": 4
-            },
-            {
-                "number": 11,
-                "image_url": "What is the sum of 5 and 1/4?",
-                "front_text": [5.25, 5.5, 5.75, 6],
-                "examples": 1
-            },
-            {
-                "number": 12,
-                "image_url": "If a square has a side length of 6 inches, what is its area?",
-                "front_text": ["6 square inches", "12 square inches", "24 square inches", "36 square inches"],
-                "examples": 4
-            },
-            {
-                "number": 13,
-                "image_url": "What is 15% of 200?",
-                "front_text": [20, 30, 40, 50],
-                "examples": 2
-            },
-            {
-                "number": 14,
-                "image_url": "If a rectangle has a length of 8 units and a width of 5 units, what is its perimeter?",
-                "front_text": ["13 units", "18 units", "26 units", "40 units"],
-                "examples": 3
-            },
-            {
-                "number": 15,
-                "image_url": "What is the product of 7 and 1/2?",
-                "front_text": [3.5, 5, 7, 14],
-                "examples": 1
-            },
-            {
-                "number": 16,
-                "image_url": "If you have $50, and you spend $20, how much money do you have left?",
-                "front_text": ["$30", "$20", "$10", "$5"],
-                "examples": 1
-            },
-            {
-                "number": 17,
-                "image_url": "What is 2/3 of 18?",
-                "front_text": [4, 8, 12, 16],
-                "examples": 3
-            },
-            {
-                "number": 18,
-                "image_url": "If you have 60 candies and you give away one-third of them, how many candies do you have left?",
-                "front_text": [10, 20, 30, 40],
-                "examples": 4
-            },
-            {
-                "number": 19,
-                "image_url": "What is the next number in the sequence: 8, 16, 32, __?",
-                "front_text": [48, 64, 72, 80],
-                "examples": 2
-            },
-            {
-                "number": 20,
-                "image_url": "What is 5 divided by 1/5?",
-                "front_text": [1, 5, 10, 25],
-                "examples": 4
-            },
-            {
-                "number": 21,
-                "image_url": "If a box contains 25 red balls, 30 blue balls, and 15 green balls, what is the total number of balls in the box?",
-                "front_text": [50, 70, 75, 100],
-                "examples": 2
-            },
-            {
-                "number": 22,
-                "image_url": "What is the difference between 15 and 1/3?",
-                "front_text": [13.5, 13.67, 14, 14.5],
-                "examples": 1
-            },
-            {
-                "number": 23,
-                "image_url": "If a car travels at a speed of 60 miles per hour, how far will it travel in 4 hours?",
-                "front_text": ["120 miles", "180 miles", "240 miles", "300 miles"],
-                "examples": 3
-            },
-            {
-                "number": 24,
-                "image_url": "What is the product of 3 and 3/4?",
-                "front_text": [2.25, 3, 9, 12],
-                "examples": 3
-            },
-            {
-                "number": 25,
-                "image_url": "If a book costs $25 and it is on sale for 20% off, what is the sale price?",
-                "front_text": ["$5", "$10", "$15", "$20"],
-                "examples": 2
+                "image_url": "If you have 5 siblings, and you are the 3rd oldest, how many siblings are younger than you?",
+                "front_text": "However, Division is <strong>NOT</strong> 'Commutative'",
+                "examples": "6 / 3 != 3 / 6"
             }
         ],
-        "hard": [
+        "advanced multiplication": [
             {
                 "number": 1,
                 "image_url": "What is the value of 'x' in the equation 3x + 5 = 17?",
