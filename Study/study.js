@@ -49,7 +49,7 @@ function populate_page(){
       let string_arr= value.split("-");
       let subject=string_arr[0];
       let topic=string_arr[1];
-      console.log(response.data[`${subject`])
+      console.log(response.data[`${subject]`)
       let data_arr=(response.data[`${subject}`][`${topic}`])
       console.log(data_arr)
       new_html=``;
