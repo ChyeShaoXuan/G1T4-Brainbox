@@ -79,157 +79,68 @@
             
             
             ],
-        "vocabulary": [
+        "vocabulary": "vocabulary": [
             {
                 "number": 1,
-                "image_url": "Which word is an antonym of 'verbose'?",
-                "front_text": ["Talkative", "Concise", "Loquacious", "Garrulous"],
-                "examples": 2
+                "image_url": "../Images/vocab_one.jpg",
+                "front_text": "Can you tell what these words actually mean?",
+                "examples": "You can use any dictionary to find out!"
             },
             {
                 "number": 2,
-                "image_url": "What is the correct plural form of 'child'?",
-                "front_text": ["Childs", "Childes", "Childs", "Children"],
-                "examples": 4
+                "image_url": "../Images/vocab_synonyms.jpg",
+                "front_text": "2 words are synonyms of each other, when they both have the same meaning.",
+                "examples": "The picture shows synonyms for words we use everyday. Try using them in both your conversations with other people, and writing!"
             },
             {
                 "number": 3,
-                "image_url": "Choose the word that best completes the sentence: 'She is _____ at playing the piano.'",
-                "front_text": ["Bad", "Terrible", "Good", "Excellent"],
-                "examples": 3
+                "image_url": "../Images/vocab_antonyms.jpg",
+                "front_text": "2 words are antonyms of each other, when they have opposite meanings.",
+                "examples": "The picture shows antonyms for words we use everyday. Try matching more words together if you can!"
             },
             {
                 "number": 4,
-                "image_url": "Which of the following is a synonym for 'ubiquitous'?",
-                "front_text": ["Rare", "Common", "Elusive", "Scarce"],
-                "examples": 2
+                "image_url": "../Images/vocab_antonyms2.png",
+                "front_text": "More antonyms for different words. Can you match these words to more than just the antonym in the picture? ",
+                "examples": ""
             },
             {
                 "number": 5,
-                "image_url": "Identify the correct tense of the verb in the sentence: 'She will have completed her project by next Friday.'",
-                "front_text": ["Present", "Past", "Future", "Present Perfect"],
-                "examples": 4
+                "image_url": "../Images/vocab_idioms1.png",
+                "front_text": "Let's learn about idioms, which are phrases that are special. They don't actually follow their literal meaning!",
+                "examples": "What does this idiom actually mean?"
             },
             {
                 "number": 6,
-                "image_url": "What is the plural form of 'cactus'?",
-                "front_text": ["Cacti", "Cactuses", "Cactus", "Cactees"],
-                "examples": 1
+                "image_url": "../Images/vocab_idioms2.jpg",
+                "front_text": "Here are more idioms and their meanings.",
+                "examples": "Use these to improve your writing skills!"
             },
             {
                 "number": 7,
-                "image_url": "Which sentence is in the passive voice?",
-                "front_text": ["John baked a delicious cake.", "The delicious cake was baked by John.", "Mary sings beautifully.", "The cat chased the mouse."],
-                "examples": 2
+                "image_url": "../Images/vocab_similes.jpg",
+                "front_text": "Similes are used in the 'as ... as ...' format, and are used to compare one thing with another, usually to make describe something better!",
+                "examples": "Can you come up with some similes? Try using the format above. Here's one - as brave as a lion."
             },
             {
                 "number": 8,
-                "image_url": "Choose the word that best fits in the blank: 'He was ____ tired that he fell asleep immediately.'",
-                "front_text": ["So", "Such", "Very", "Too"],
-                "examples": 1
+                "image_url": "../Images/vocab_similes2.png",
+                "front_text": "Here are more similes for you to use in your writing.",
+                "examples": "Using similes and idioms help you relate words to each other too!"
             },
             {
                 "number": 9,
-                "image_url": "What part of speech is the word 'quickly' in the sentence: 'She ran quickly to catch the bus.'",
-                "front_text": ["Adjective", "Noun", "Adverb", "Verb"],
-                "examples": 3
+                "image_url": "../Images/vocab_personification.png",
+                "front_text": "Personification is when something is described as though it's a person.",
+                "examples": "This example personifies the sun. Use personification to add more emotion to your writing!"
             },
             {
                 "number": 10,
-                "image_url": "Which sentence is grammatically correct?",
-                "front_text": ["He don't like coffee.", "She haven't been to the library.", "They doesn't want to go.", "I haven't seen him today."],
-                "examples": 4
-            },
-            {
-                "number": 11,
-                "image_url": "What is the meaning of the word 'benevolent'?",
-                "front_text": ["Hostile", "Kind", "Indifferent", "Apathetic"],
-                "examples": 2
-            },
-            {
-                "number": 12,
-                "image_url": "Identify the conjunction in the following sentence: 'I wanted to go to the party, but I was feeling unwell.'",
-                "front_text": ["I", "To", "But", "Feeling"],
-                "examples": 3
-            },
-            {
-                "number": 13,
-                "image_url": "Which of the following words is a homonym for 'flower'?",
-                "front_text": ["Flour", "Floor", "Flaw", "Flew"],
-                "examples": 1
-            },
-            {
-                "number": 14,
-                "image_url": "What is the correct comparative form of 'good'?",
-                "front_text": ["Best", "Gooder", "Better", "Well"],
-                "examples": 3
-            },
-            {
-                "number": 15,
-                "image_url": "Choose the word that best completes the sentence: 'He couldn't buy the car because it was ____ expensive.'",
-                "front_text": ["Too", "Very", "Much", "So"],
-                "examples": 1
-            },
-            {
-                "number": 16,
-                "image_url": "What is the correct superlative form of 'beautiful'?",
-                "front_text": ["Beautifuler", "Beautifully", "Beautifulist", "Most beautiful"],
-                "examples": 4
-            },
-            {
-                "number": 17,
-                "image_url": "Which word is an antonym of 'generous'?",
-                "front_text": ["Selfish", "Kind", "Altruistic", "Charitable"],
-                "examples": 1
-            },
-            {
-                "number": 18,
-                "image_url": "Identify the figure of speech in the sentence: 'Her smile is as bright as the sun.'",
-                "front_text": ["Metaphor", "Simile", "Hyperbole", "Alliteration"],
-                "examples": 2
-            },
-            {
-                "number": 19,
-                "image_url": "What is the past participle of 'break'?",
-                "front_text": ["Breaking", "Broke", "Broken", "Breaken"],
-                "examples": 3
-            },
-            {
-                "number": 20,
-                "image_url": "Choose the correct spelling of the word 'necessary.'",
-                "front_text": ["Necesary", "Necessery", "Neccessary", "Necessary"],
-                "examples": 4
-            },
-            {
-                "number": 21,
-                "image_url": "Which word means the opposite of 'accept'?",
-                "front_text": ["Refuse", "Agree", "Acknowledge", "Consent"],
-                "examples": 1
-            },
-            {
-                "number": 22,
-                "image_url": "What is the plural form of 'mouse'?",
-                "front_text": ["Mouses", "Mice", "Micees", "Mousez"],
-                "examples": 2
-            },
-            {
-                "number": 23,
-                "image_url": "Choose the word that best completes the sentence: 'She felt ____ when she received the award.'",
-                "front_text": ["Proud", "Proudly", "Proudness", "Proudest"],
-                "examples": 1
-            },
-            {
-                "number": 24,
-                "image_url": "What is the opposite of 'calm'?",
-                "front_text": ["Stormy", "Quiet", "Serene", "Peaceful"],
-                "examples": 1
-            },
-            {
-                "number": 25,
-                "image_url": "What is the plural form of 'man'?",
-                "front_text": ["Men", "Mans", "Mens", "Manies"],
-                "examples": 1
+                "image_url": "../Images/vocab_personification2.jpg",
+                "front_text": "Here's how to personify the moon, by using actions the moon wouldn't usually do. ",
+                "examples": "Can you think of more ways to personify things? Try personifying grass. What actions can be used to describe it as a person?"
             }
+            
         ]
         
     },    
