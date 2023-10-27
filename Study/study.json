@@ -428,154 +428,34 @@
         "addition and subtraction": [
             {
                 "number": 1,
-                "image_url": "What is 2 + 2?",
-                "front_text": [3, 4, 5, 6],
-                "examples": 2
+                "image_url": "",
+                "front_text": "Addition is a process of combining two or more numbers",
+                "examples": "1 + 1 = 2"
             },
             {
                 "number": 2,
-                "image_url": "If you have 3 apples and you eat 1, how many apples do you have left?",
-                "front_text": [0, 1, 2, 3],
-                "examples": 1
+                "image_url": "",
+                "front_text": "Subtraction is a process of of finding the difference between two numbers",
+                "examples": "2 - 1 = 0"
             },
             {
                 "number": 3,
                 "image_url": "What is 5 multiplied by 3?",
-                "front_text": [10, 15, 20, 25],
-                "examples": 2
+                "front_text": "When you add a larger positive number with a smaller negative number, you will subtract the larger number with the smaller number",
+                "examples": "3 + (-2) = 3 - 2 = 1"
             },
             {
                 "number": 4,
-                "image_url": "If you have 10 fingers, how many fingers do you have on one hand?",
-                "front_text": [1, 5, 10, 20],
-                "examples": 3
+                "image_url": "",
+                "front_text": "When you add a larger negative number with a smaller positive number, you will subtract the larger number with the smaller number, the result will have the 'negative' sign",
+                "examples": "(-3) + 2 = -1"
             },
             {
                 "number": 5,
                 "image_url": "What is 9 minus 4?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 3
+                "front_text": "When you add two negative numbers, you will add both numbers just like adding positive numbers, but the result will have the 'negative' sign",
+                "examples": "(-1) + (-2) = -3"
             },
-            {
-                "number": 6,
-                "image_url": "How many sides does a triangle have?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 2
-            },
-            {
-                "number": 7,
-                "image_url": "What is the next number in the sequence: 2, 4, 6, __?",
-                "front_text": [7, 8, 9, 10],
-                "examples": 4
-            },
-            {
-                "number": 8,
-                "image_url": "If you have 5 fingers on one hand, how many fingers do you have on both hands?",
-                "front_text": [5, 10, 15, 20],
-                "examples": 2
-            },
-            {
-                "number": 9,
-                "image_url": "What is 7 plus 3?",
-                "front_text": [9, 10, 11, 12],
-                "examples": 3
-            },
-            {
-                "number": 10,
-                "image_url": "If you have 4 quarters, how much money do you have?",
-                "front_text": ["$1", "$0.25", "$0.50", "$1.25"],
-                "examples": 1
-            },
-            {
-                "number": 11,
-                "image_url": "What is the result of 6 divided by 2?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 2
-            },
-            {
-                "number": 12,
-                "image_url": "If you have 8 legs, how many legs do you have left if you lose 2?",
-                "front_text": [4, 6, 8, 10],
-                "examples": 4
-            },
-            {
-                "number": 13,
-                "image_url": "What is the value of 'x' in the equation 2x + 3 = 7?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 1
-            },
-            {
-                "number": 14,
-                "image_url": "How many sides does a square have?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 3
-            },
-            {
-                "number": 15,
-                "image_url": "What is 8 minus 5?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 2
-            },
-            {
-                "number": 16,
-                "image_url": "If you have 12 months in a year, how many months are there in 2 years?",
-                "front_text": [12, 18, 24, 36],
-                "examples": 3
-            },
-            {
-                "number": 17,
-                "image_url": "What is the sum of 9 and 6?",
-                "front_text": [12, 13, 14, 15],
-                "examples": 4
-            },
-            {
-                "number": 18,
-                "image_url": "If you have 20 candies and you eat 8, how many candies do you have left?",
-                "front_text": [8, 10, 12, 15],
-                "examples": 1
-            },
-            {
-                "number": 19,
-                "image_url": "What is 4 times 5?",
-                "front_text": [15, 18, 20, 25],
-                "examples": 3
-            },
-            {
-                "number": 20,
-                "image_url": "How many days are there in a week?",
-                "front_text": [5, 6, 7, 8],
-                "examples": 3
-            },
-            {
-                "number": 21,
-                "image_url": "What is the next number in the sequence: 3, 6, 9, __?",
-                "front_text": [10, 11, 12, 15],
-                "examples": 4
-            },
-            {
-                "number": 22,
-                "image_url": "If you have 4 quarters, how much money do you have?",
-                "front_text": ["$1", "$0.25", "$0.50", "$1.25"],
-                "examples": 1
-            },
-            {
-                "number": 23,
-                "image_url": "What is 10 plus 2?",
-                "front_text": [11, 12, 13, 14],
-                "examples": 2
-            },
-            {
-                "number": 24,
-                "image_url": "How many fingers are there on one hand?",
-                "front_text": [2, 5, 10, 20],
-                "examples": 2
-            },
-            {
-                "number": 25,
-                "image_url": "What is 7 minus 3?",
-                "front_text": [2, 3, 4, 5],
-                "examples": 2
-            }
         ],
         "division and multiplication": [
             {
