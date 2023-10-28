@@ -21,7 +21,7 @@ const app = Vue.createApp({
                 for (let i=0;i<10;i++){
                     let radnum=Math.floor(Math.random()*(this.questions.length))
                     let spliced_qns=this.questions.splice(radnum,1)[0]
-                    ran_qns.push(spliced_qns)
+                    this.ran_qns.push(spliced_qns)
                 }
                 
                 console.log(this.ran_qns)
