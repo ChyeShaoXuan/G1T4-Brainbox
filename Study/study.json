@@ -339,96 +339,102 @@
         "addition and subtraction": [
             {
                 "number": 1,
-                "image_url": "",
+                "image_url": "../Images/MathAddSub1.jpg",
                 "front_text": "Addition is a process of combining two or more numbers",
                 "examples": "1 + 1 = 2"
             },
             {
                 "number": 2,
-                "image_url": "",
+                "image_url": "../Images/MathAddSub2.jpg",
                 "front_text": "Subtraction is a process of of finding the difference between two numbers",
                 "examples": "2 - 1 = 0"
             },
             {
                 "number": 3,
-                "image_url": "What is 5 multiplied by 3?",
+                "image_url": "../Images/MathAddSub3.jpg",
                 "front_text": "When you add a larger positive number with a smaller negative number, you will subtract the larger number with the smaller number",
                 "examples": "3 + (-2) = 3 - 2 = 1"
             },
             {
                 "number": 4,
-                "image_url": "",
+                "image_url": "../Images/MathAddSub4.jpg",
                 "front_text": "When you add a larger negative number with a smaller positive number, you will subtract the larger number with the smaller number, the result will have the 'negative' sign",
                 "examples": "(-3) + 2 = -1"
             },
             {
                 "number": 5,
-                "image_url": "What is 9 minus 4?",
+                "image_url": "../Images/MathAddSub5.jpg",
                 "front_text": "When you add two negative numbers, you will add both numbers just like adding positive numbers, but the result will have the 'negative' sign",
                 "examples": "(-1) + (-2) = -3"
             },
             {
                 "number": 6,
-                "image_url": "What is 9 minus 4?",
+                "image_url": "../Images/MathAddSub6.jpg",
                 "front_text": "When you subtract any number with a negative number, you will add both numbers",
                 "examples": "1 - (-2) = 1 + 2 = 3"
             },
             {
                 "number": 7,
-                "image_url": "What is 9 minus 4?",
-                "front_text": "Addition and Substraction are both 'Commutative', meaning changing the order of the operands does not change the result",
+                "image_url": "../Images/MathAddSub7.jpg",
+                "front_text": "Addition is 'Commutative', meaning changing the order of the operands does not change the result",
                 "examples": "1 + 2 = 2 + 1"
+            },
+            {
+                "number": 8,
+                "image_url": "../Images/MathAddSub8.jpg",
+                "front_text": "Subtraction is <strong>NOT</strong> 'Commutative'",
+                "examples": "2 - 1 != 1 - 2"
             }
         ],
-        "division and multiplication": [
+        "multiplication and division": [
             {
                 "number": 1,
-                "image_url": "What is 12 divided by 4?",
+                "image_url": "../Images/MathMulDiv1.jpg",
                 "front_text": "Multiplication is the process of calculating the product of two or more numbers",
                 "examples": "2 x 2 = 4"
             },
             {
                 "number": 2,
-                "image_url": "If a book costs $15 and you have $20, how much change will you get?",
+                "image_url": "../Images/MathMulDiv2.jpg",
                 "front_text": "Division is a mathematical operation which involves the sharing of an amount into equal-sized groups",
                 "examples": "6 / 3 = 2"
             },
             {
                 "number": 3,
-                "image_url": "What is 3 squared (3^2)?",
+                "image_url": "../Images/MathMulDiv3.jpg",
                 "front_text": "When you multiply a <strong>positive</strong> number with a <strong>negative</strong> number, the result will have the 'negative' sign",
                 "examples": "2 x (-3) = -6"
             },
             {
                 "number": 4,
-                "image_url": "If you have 30 pencils and you give away 8, how many pencils do you have left?",
+                "image_url": "../Images/MathMulDiv4.jpg",
                 "front_text": "When you multiply a <strong>negative</strong> number with a <strong>negative</strong> number, the result will be a positive number",
                 "examples": "(-2) x (-3) = 6"
             },
             {
                 "number": 5,
-                "image_url": "What is the result of 8 multiplied by 7?",
+                "image_url": "../Images/MathMulDiv5.jpg",
                 "front_text": "The same concept of multiplying positive and negative numbers applies to division",
                 "examples": "6 / (-3) = -2 & (-6) / (-3) = 2"
             },
             {
                 "number": 6,
-                "image_url": "What is 1/4 of 20?",
+                "image_url": "../Images/MathMulDiv6.jpg",
                 "front_text": "Just like Addition, Multiplication is 'Commutative'",
                 "examples": "1 x 2 = 2 x 1"
             },
             {
                 "number": 7,
-                "image_url": "What is 1/4 of 20?",
-                "front_text": "Multiplication is also 'Distributive', meaning when a factor is multiplied by the addition/substraction of two terms, it is essential to multiply each of the two numbers by the factor, and finally perform the addition/substraction operation",
-                "examples": "2 x (1 + 3) = (2 x 1) + (2 x 3) = 2 + 6 = 8"
+                "image_url": "../Images/MathMulDiv7.jpg",
+                "front_text": "Just like Subtraction, Division is <strong>NOT</strong> 'Commutative'",
+                "examples": "6 / 3 != 3 / 6"
             },
             {
                 "number": 8,
-                "image_url": "If you have 5 siblings, and you are the 3rd oldest, how many siblings are younger than you?",
-                "front_text": "However, Division is <strong>NOT</strong> 'Commutative'",
-                "examples": "6 / 3 != 3 / 6"
-            }
+                "image_url": "../Images/MathMulDiv8.jpg",
+                "front_text": "Multiplication and Division are also 'Distributive', meaning when a factor is multiplied by the addition/substraction of two terms, it is essential to multiply each of the two numbers by the factor, and finally perform the addition/substraction operation",
+                "examples": "2 x (1 + 3) = (2 x 1) + (2 x 3) = 2 + 6 = 8"
+            }            
         ],
         "advanced multiplication": [
             {
