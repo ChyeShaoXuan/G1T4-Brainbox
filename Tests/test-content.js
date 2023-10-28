@@ -6,6 +6,7 @@ const app = Vue.createApp({
     data() {
         return {
             questions: [],
+            ran_qns:[],
             answers:[],
             score: 0,
             show: false
@@ -18,15 +19,15 @@ const app = Vue.createApp({
                 for(let i=0;i<5;i++) {
                     this.questions.push(something[i])
                 }
-                // this.questions = response.data[testSub][testDif];
-                console.log(this.questions)
-                // console.log(response.data[testSub][testDif])
-                // console.log(this.questions[testSub][testDif][0].question)
-                // this.questions[testSub][testDif].forEach(element => {
-                    // console.log(element)
-                    // counter++;
-                    // this.questions.push({number:counter,question:element.question})
-                // });
+
+                // random 10 qns
+                for (let i=0;i<10;i++){
+                    let radnum=Math.floor(Math.random()*this.questions.length)
+                    let spliced_qns=questions.splice(radnum,1)[0]
+                    ran_qns.push(spliced_qns)
+                }
+                
+                console.log(this.ran_qns)
                 
                 this.questions.forEach(element => {
                     this.answers.push(element.correct_answer)
