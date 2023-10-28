@@ -15,10 +15,7 @@ const app = Vue.createApp({
     mounted() {
         axios.get('questions.json')
             .then((response) => {
-                let something = response.data[testSub][testDif]
-                for(let i=0;i<5;i++) {
-                    this.questions.push(something[i])
-                }
+                this.questions= response.data[testSub][testDif]
 
                 // random 10 qns
                 for (let i=0;i<10;i++){
