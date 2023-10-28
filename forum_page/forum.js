@@ -22,7 +22,7 @@ let newStr = ''
 let postsList = []
 let uid = ''
 const userRef = ref(db,'users')
-const currSub = 'english'
+let currSub = 'english'
 let currPost = null
 let currPage = 2
 function showSearch() {
@@ -148,6 +148,7 @@ document.addEventListener('DOMContentLoaded', showSearch)
 document.getElementById('english').addEventListener('click', () => {
     postsRef = ref(db, 'posts/english');
     currPage = 2
+    currSub = 'english'
     showSearch()
     displayPage(1)
 })
@@ -155,6 +156,7 @@ document.getElementById('english').addEventListener('click', () => {
 document.getElementById('math').addEventListener('click', () => {
     postsRef = ref(db, 'posts/math');
     currPage = 2
+    currSub = 'math'
     showSearch()
     displayPage(1)
 })
@@ -162,6 +164,7 @@ document.getElementById('math').addEventListener('click', () => {
 document.getElementById('science').addEventListener('click', () => {
     postsRef = ref(db, 'posts/science');
     currPage = 2
+    currSub = 'science'
     showSearch()
     displayPage(1)
 })
