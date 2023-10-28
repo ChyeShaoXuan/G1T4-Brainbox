@@ -339,49 +339,49 @@
         "addition and subtraction": [
             {
                 "number": 1,
-                "image_url": "",
+                "image_url": "../Images/MathAddSub1.jpg",
                 "front_text": "Addition is a process of combining two or more numbers",
                 "examples": "1 + 1 = 2"
             },
             {
                 "number": 2,
-                "image_url": "",
+                "image_url": "../Images/MathAddSub2.jpg",
                 "front_text": "Subtraction is a process of of finding the difference between two numbers",
                 "examples": "2 - 1 = 0"
             },
             {
                 "number": 3,
-                "image_url": "What is 5 multiplied by 3?",
+                "image_url": "../Images/MathAddSub3.jpg",
                 "front_text": "When you add a larger positive number with a smaller negative number, you will subtract the larger number with the smaller number",
                 "examples": "3 + (-2) = 3 - 2 = 1"
             },
             {
                 "number": 4,
-                "image_url": "",
+                "image_url": "../Images/MathAddSub4.jpg",
                 "front_text": "When you add a larger negative number with a smaller positive number, you will subtract the larger number with the smaller number, the result will have the 'negative' sign",
                 "examples": "(-3) + 2 = -1"
             },
             {
                 "number": 5,
-                "image_url": "What is 9 minus 4?",
+                "image_url": "../Images/MathAddSub5.jpg",
                 "front_text": "When you add two negative numbers, you will add both numbers just like adding positive numbers, but the result will have the 'negative' sign",
                 "examples": "(-1) + (-2) = -3"
             },
             {
                 "number": 6,
-                "image_url": "What is 9 minus 4?",
+                "image_url": "../Images/MathAddSub6.jpg",
                 "front_text": "When you subtract any number with a negative number, you will add both numbers",
                 "examples": "1 - (-2) = 1 + 2 = 3"
             },
             {
                 "number": 7,
-                "image_url": "What is 9 minus 4?",
+                "image_url": "../Images/MathAddSub7.jpg",
                 "front_text": "Addition is 'Commutative', meaning changing the order of the operands does not change the result",
                 "examples": "1 + 2 = 2 + 1"
             },
             {
                 "number": 8,
-                "image_url": "What is 9 minus 4?",
+                "image_url": "../Images/MathAddSub8.jpg",
                 "front_text": "Substraction is <strong>NOT</strong> 'Commutative'",
                 "examples": "2 - 1 != 1 - 2"
             }
