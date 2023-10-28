@@ -13,11 +13,28 @@
     <!-- animate.css cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
+    <style>
+        #pagesection {
+            animation: sectionBackground 120s infinite;
+            background-size: cover;
+            background-image: url("../Images/snow.jpg")
+        }
+
+        @keyframes sectionBackground {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+    </style>
 </head>
-<body>
+
+<body id="pagesection">
     
     <!-- Navbar -->
-    <section class="bg-aliceblue text-gray-700">
+    <section class="text-gray-700 bg-white bg-opacity-50 backdrop-blur-md">
         <div class="container mx-auto py-5 md:py-8">
             <div class="flex flex-col md:flex-row justify-center items-center">
                 <div class="flex flex-col md:flex-row items-center">
@@ -68,7 +85,7 @@
     <!-- end of navbar -->
     
     <!-- Animated Text and Background -->
-    <div class="py-20 bg-cover bg-no-repeat bg-fixed relative" style="background-image: url(../Images/snow.jpg)">
+    <div class="py-5 bg-no-repeat bg-fixed relative">
         <div class="container m-auto text-center px-6 opacity-100">
         <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4"><span id="animated-text"></span></h2>
             <a href="../Study/study.html">
@@ -80,9 +97,11 @@
     </div>
 
     <!-- Test Selection -->
-    <section class="bg-gradient-to-r from-sky-300 to-blue-500 py-8">
+    <section class="py-5">
         <div class="container mx-auto flex justify-center items-center">
             <div class="w-full md:w-1/2 bg-white rounded-lg p-6 shadow-md transform scale-105 hover:scale-100 transition-transform">
+                <p class="text-center text-2xl text-blue-500 mb-4">Let's do a test now!</p>
+                
                 <form action="test-content.html" method="GET" class="space-y-4">
                     <div class="mb-4">
                         <label for="subject" class="block text-gray-700 text-sm font-medium mb-2 text-blue-500">Select a Subject:</label>
@@ -95,7 +114,7 @@
                         </div>
                     </div>
                     <div class="mb-4">
-                        <label for="difficulty" class="block text-gray-700 text-sm font-medium mb-2 text-blue-500">Select a Difficulty:</label>
+                        <label for "difficulty" class="block text-gray-700 text-sm font-medium mb-2 text-blue-500">Select a Difficulty:</label>
                         <div class="relative">
                             <select name="difficulty" id="difficulty" class="w-full p-3 border border-blue-500 rounded-lg focus:outline-none focus:ring focus:border-blue-300 appearance-none text-gray-800">
                                 <option value="Easy">Easy</option>
@@ -113,9 +132,9 @@
     </section>
 
   <!-- Bottom -->
-  <section>
+  <section class="bg-white bg-opacity-50 backdrop-blur-md">
     <div class="max-w-screen-xl px-4 py-3 mx-auto space-y-8 text-center">
-        <p class="text-2xl text-white leading-6 animated-text">
+        <p class="text-2xl text-black leading-6 animated-text">
             &copy; 2023 AY2023/2024 Semester 1 - IS216 G1T4 - Team BrainBox
         </p>
     </div>
