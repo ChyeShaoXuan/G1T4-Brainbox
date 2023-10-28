@@ -57,4 +57,6 @@ const root = Vue.createApp({
         
 })
 
-root.mount("#root")
+        document.addEventListener('DOMContentLoaded', () => {
+            root.mount("#root");
+        });
