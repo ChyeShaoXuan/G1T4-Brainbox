@@ -26,7 +26,7 @@ const app = Vue.createApp({
                 
                 console.log(this.ran_qns)
                 
-                this.questions.forEach(element => {
+                this.ran_qns.forEach(element => {
                     this.answers.push(element.correct_answer)
                 });
                 

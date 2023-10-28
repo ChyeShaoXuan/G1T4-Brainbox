@@ -35,7 +35,7 @@
             <div id="test">
                 <div id="app">
                     <!-- Vue.js do here -->
-                    <div v-for="qn of questions" class="mb-6">
+                    <div v-for="qn of ran_qns" class="mb-6">
                         <h1 class="text-2xl font-bold mb-4">Q{{ qn.number }}. {{ qn.question }}</h1>
                         <label v-for="ans in qn.answers" class="block mb-2">
                             <input type="radio" :value="ans" :name="qn.number" required>
