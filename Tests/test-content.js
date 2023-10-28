@@ -43,7 +43,7 @@ const app = Vue.createApp({
             var rads, test; // need to be set after load
             test = document.getElementById("test");
             rads = test.querySelectorAll("input[type=radio]"); // all radios in the quiz
-            
+            //this.$refs.test.submit()
             let counter = 0
             for (var i=0;i<rads.length;i++) { // loop over all radios in the form
                 var rad = rads[i];
