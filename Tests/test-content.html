@@ -17,13 +17,22 @@
             color: green;
             font-weight: bold;
         }
+        .correct::after{
+            content: "✅";
+        }
         .error {
             color: red;
             font-weight: bold;
             font-size: 20px;
         }
+        .error::after{
+            content: "❌";
+        }
         #correct_ans{
             display: none;
+        }
+        #header{
+            text-align: center;
         }
         
     </style>
@@ -34,6 +43,8 @@
         <div class="w-full p-4 bg-white shadow-md rounded-lg">
             <div id="test">
                 <div id="app">
+                    <h1 class="text-4xl font-bold mb-2" id="header">
+                    </h1>
                     <!-- Vue.js do here -->
                     <div v-for="qn of ran_qns" class="mb-6">
                         <h1 class="text-2xl font-bold mb-4">Q{{ qn.number }}. {{ qn.question }}</h1>

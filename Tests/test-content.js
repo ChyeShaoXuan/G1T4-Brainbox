@@ -18,7 +18,7 @@ const app = Vue.createApp({
             .then((response) => {
                 this.questions= response.data[testSub][testDif]
                 console.log(this.questions);
-
+                document.getElementById('header').innerText= "This test is for " + testDif +" "+ testSub 
                 // random 10 qns
                 for (let i=0;i<10;i++){
                     let radnum=Math.floor(Math.random()*(this.questions.length))
@@ -62,6 +62,7 @@ const app = Vue.createApp({
 
                     if (correct){
                         rad.closest("label").classList.toggle("correct");
+
                         this.score+=1
                     }
                     else{
