@@ -32,3 +32,33 @@ function insertName() {
 }
 
 document.addEventListener('DOMContentLoaded',insertName)
+
+const root = Vue.createApp({
+
+    data() {
+        return {
+
+            displayed_bio: "[ABOUT ME]",
+            input_bio: "",
+            isEditing: false,
+               
+        }
+    },
+
+    methods: {
+
+        editBio() {
+            this.input_bio = this.displayed_bio; // Initialize input with current bio
+            this.isEditing = true;
+        },
+        saveBio() {
+            this.displayed_bio = this.input_bio; // Update displayed bio
+            this.isEditing = false;
+
+        }
+    }
+        
+
+})
+
+root.mount("#root")
