@@ -17,24 +17,36 @@
             color: green;
             font-weight: bold;
         }
+        .correct::after{
+            content: "✅";
+        }
         .error {
             color: red;
             font-weight: bold;
             font-size: 20px;
         }
+        .error::after{
+            content: "❌";
+        }
         #correct_ans{
             display: none;
+        }
+        #header{
+            text-align: center;
+            color: blue;
+            text-decoration: underline;
         }
         
     </style>
 
 </head>
 <body class="bg-gray-200">
-<form ref="test">
     <div class="min-h-screen flex flex-col items-center justify-center px-4 sm:px-8">
         <div class="w-full p-4 bg-white shadow-md rounded-lg">
             <div id="test">
                 <div id="app">
+                    <h1 class="text-4xl font-bold pb-6" id="header">
+                    </h1>
                     <!-- Vue.js do here -->
                     <div v-for="qn of ran_qns" class="mb-6">
                         <h1 class="text-2xl font-bold mb-4">Q{{ qn.number }}. {{ qn.question }}</h1>
@@ -54,13 +66,12 @@
                             <button id="back" class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-700">Back</button>
                         </a>
                         
+                    </div v-if="show">
+                        <p id="mark" class="hidden text-center text-2xl font-bold mt-4">Your Score= {{ score }}/{{ ran_qns.length }}</p>
                     </div>
-                    <p id="mark" class="hidden text-center text-2xl font-bold mt-4">Your Score= {{ score }}/{{ questions.length }}</p>
-                </div>
             </div>
         </div>
     </div>
-</form>
 
     <script src="test-content.js"></script>
 </body>
