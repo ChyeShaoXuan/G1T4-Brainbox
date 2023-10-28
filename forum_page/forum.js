@@ -24,7 +24,7 @@ let uid = ''
 const userRef = ref(db,'users')
 let currSub = 'english'
 let currPost = null
-let currPage = 2
+let currPage = 1
 function showSearch() {
     let postsLength = 0
     onValue(postsRef,(snapshot) => {
@@ -60,7 +60,7 @@ function showSearch() {
     document.getElementById('pagesBar').innerHTML = newStr
     for (let thisPage of document.getElementsByClassName('page')) {
         let pageNum = thisPage.innerText
-        console.log(pageNum)
+        // console.log(pageNum)
         document.getElementById('p'+ pageNum).addEventListener('click', () => {
             displayPage(Number(pageNum))
         })
@@ -122,8 +122,10 @@ function displayPage(page) {
                                             </li>`
                 }
                 document.getElementById('posts').innerHTML = newStr
-                document.getElementById('p'+page).setAttribute('class','relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 page')
+                console.log(page,currPage)
                 document.getElementById('p'+currPage).setAttribute('class','relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 page')
+                document.getElementById('p'+page).setAttribute('class','relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 page')
+
                 currPage = page
             } else {
                 document.getElementById('posts').innerHTML = ''
@@ -147,7 +149,7 @@ document.addEventListener('DOMContentLoaded', showSearch)
 
 document.getElementById('english').addEventListener('click', () => {
     postsRef = ref(db, 'posts/english');
-    currPage = 2
+    currPage = 1
     currSub = 'english'
     showSearch()
     displayPage(1)
@@ -155,7 +157,7 @@ document.getElementById('english').addEventListener('click', () => {
 
 document.getElementById('math').addEventListener('click', () => {
     postsRef = ref(db, 'posts/math');
-    currPage = 2
+    currPage = 1
     currSub = 'math'
     showSearch()
     displayPage(1)
@@ -163,7 +165,7 @@ document.getElementById('math').addEventListener('click', () => {
 
 document.getElementById('science').addEventListener('click', () => {
     postsRef = ref(db, 'posts/science');
-    currPage = 2
+    currPage = 1
     currSub = 'science'
     showSearch()
     displayPage(1)
