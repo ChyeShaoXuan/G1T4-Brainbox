@@ -10,6 +10,7 @@ const app = Vue.createApp({
             answers:[],
             score: 0,
             show: false
+
         }
     },
     mounted() {
@@ -21,16 +22,17 @@ const app = Vue.createApp({
                 for (let i=0;i<10;i++){
                     let radnum=Math.floor(Math.random()*(this.questions.length))
                     let spliced_qns=this.questions.splice(radnum,1)[0]
+                    spliced_qns.number=i+1
                     this.ran_qns.push(spliced_qns)
                 }
                 
-                console.log(this.ran_qns)
+                //console.log(this.ran_qns)
                 
                 this.ran_qns.forEach(element => {
                     this.answers.push(element.correct_answer)
                 });
                 
-                console.log(this.answers)
+                //console.log(this.answers)
             })
             .catch((error) => {
                 console.error('Error loading questions:', error);
@@ -58,6 +60,7 @@ const app = Vue.createApp({
                     else{
                         rad.closest("label").classList.toggle("error")
                     }  
+                    //console.log(counter);
                     counter++
                 }
 
