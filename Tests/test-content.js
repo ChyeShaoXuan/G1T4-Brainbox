@@ -44,7 +44,6 @@ const app = Vue.createApp({
             test = document.getElementById("test");
             rads = test.querySelectorAll("input[type=radio]"); // all radios in the quiz
             //this.$refs.test.submit()
-            console.log(test);
             let counter = 0
             for (var i=0;i<rads.length;i++) { // loop over all radios in the form
                 var rad = rads[i];
@@ -66,10 +65,10 @@ const app = Vue.createApp({
                 }
 
             }
-
             document.getElementById('mark').style.display='block'
             document.getElementById('submit').style.display='none'
             this.show=true
+            //document.getElementById("mark").setAttribute('value',score)
     },
         
 
