@@ -382,7 +382,7 @@
             {
                 "number": 8,
                 "image_url": "../Images/MathAddSub8.jpg",
-                "front_text": "Substraction is <strong>NOT</strong> 'Commutative'",
+                "front_text": "Subtraction is <strong>NOT</strong> 'Commutative'",
                 "examples": "2 - 1 != 1 - 2"
             }
         ],
@@ -426,7 +426,7 @@
             {
                 "number": 7,
                 "image_url": "../Images/MathMulDiv7.jpg",
-                "front_text": "Division is <strong>NOT</strong> 'Commutative'",
+                "front_text": "Just like Subtraction, Division is <strong>NOT</strong> 'Commutative'",
                 "examples": "6 / 3 != 3 / 6"
             },
             {
