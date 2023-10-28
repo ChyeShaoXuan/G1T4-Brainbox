@@ -20,7 +20,7 @@ const app = Vue.createApp({
                 console.log(this.questions);
 
                 // random 10 qns
-                for (let i=0;i<5;i++){
+                for (let i=0;i<10;i++){
                     let radnum=Math.floor(Math.random()*(this.questions.length))
                     let spliced_qns=this.questions.splice(radnum,1)[0]
                     spliced_qns.number=i+1
@@ -44,12 +44,7 @@ const app = Vue.createApp({
             var rads, test; // need to be set after load
             test = document.getElementById("test");
             rads = test.querySelectorAll("input[type=radio]"); // all radios in the quiz
-<<<<<<< Updated upstream
-            //this.$refs.test.submit()
-=======
-            checked_rads=[] // radios user checked
-            
->>>>>>> Stashed changes
+            checked_rads=[]
             let counter = 0
 
             for (var i=0;i<rads.length;i++){
@@ -78,25 +73,19 @@ const app = Vue.createApp({
                 
                 document.getElementById('submit').style.display='none'
                 document.getElementById('mark').style.display='block'
+                this.show=true
+
             }
-<<<<<<< Updated upstream
-            document.getElementById('mark').style.display='block'
-            document.getElementById('submit').style.display='none'
-            this.show=true
-            //document.getElementById("mark").setAttribute('value',score)
-=======
             else{
-                alert
+                alert("Please answer all the questions!")
             }
-                 
-                
->>>>>>> Stashed changes
+            
     },
         
 
     
     
-    } 
+}
 })
 
     
