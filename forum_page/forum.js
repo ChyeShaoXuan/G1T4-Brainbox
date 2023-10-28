@@ -81,7 +81,7 @@ function displayPage(page) {
                 const childKey = childSnapshot.key;
                 const postDetails = childSnapshot.val();
                 uid = postDetails.uid
-                postsList.push([childKey,postDetails,users[postDetails.uid].image,users[postDetails.uid].username])
+                postsList.push([childKey,postDetails,users[uid].image,users[uid].username])
             });
             if (postsList.length != 0) {
                 postsList = postsList.reverse()

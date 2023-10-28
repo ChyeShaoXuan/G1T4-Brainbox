@@ -12,17 +12,35 @@
             padding: 0;
         }
     </style>
-</head>
-<body class="bg-light d-flex align-items-center justify-content-center">
-    <div class="container text-center p-4">
-        <h1 id="title" class="bg-black text-white p-4 rounded shadow mb-4 text-center font-weight-bold">
-        </h1>
-        <h5 id="content" class="bg-white p-4 rounded shadow text-left">
-        </h5>
-        <a href="forum.html" class="btn btn-primary m-4 mb-4">Back to Forum</a> 
-    </div>
-    
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+<body >
+    <div id="root" class="bg-light d-flex align-items-center justify-content-center">
+        <div class="container text-center p-4">
+            <h1 id="title" class="bg-black text-white p-4 rounded shadow text-center font-weight-bold"> 
+                {{ retTitle }}
+            </h1>
+            <h5 class="bg-white p-4 rounded shadow text-left">
+                {{ retContent }}
+            </h5>
+            <h5 v-for='comment of commentsList' class="bg-white p-4 rounded shadow text-left">
+                <!-- <span> -->
+                    <img style='width:50px' class="img-thumbnail" :src="'../Images/' + comment[2]">
+                    <span class="p-3 text-start"> {{ comment[3] }} </span>
+                    {{ comment[1].text }}
+                <!-- </span> -->
+
+            </h5>
+            <h5 class="bg-white p-4 rounded shadow text-left">
+                <textarea v-model="commentText" cols="50" rows="10"></textarea>
+                <button v-on:click='submit' type="button">Submit</button>
+            </h5>
+            <a href="forum.html" class="btn btn-primary m-4 mb-4">Back to Forum</a> 
+        </div>
+    
+    </div>
     <script type="module" src="post.js"></script>
 </body>
 </html>
