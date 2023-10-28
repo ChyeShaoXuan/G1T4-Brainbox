@@ -433,9 +433,9 @@
         "advanced multiplication": [
             {
                 "number": 1,
-                "image_url": "What is the value of 'x' in the equation 3x + 5 = 17?",
-                "front_text": [4, 6, 7, 8],
-                "examples": 1
+                "image_url": "",
+                "front_text": "When multiplying with double-digit (or higher) number, it is best to break down the numbers down (i.e. tens and ones for double-digit numbers, etc.), then use the 'Commutative' method",
+                "examples": "11 x 12 = 11 x (10 + 2) = 110 + 22 = 132"
             },
             {
                 "number": 2,
@@ -460,126 +460,6 @@
                 "image_url": "Solve for 'x' in the equation 4x - 7 = 5x + 3.",
                 "front_text": [10, 8, 6, 4],
                 "examples": 2
-            },
-            {
-                "number": 6,
-                "image_url": "What is the area of a triangle with a base of 8 inches and a height of 10 inches?",
-                "front_text": ["40 square inches", "48 square inches", "60 square inches", "80 square inches"],
-                "examples": 1
-            },
-            {
-                "number": 7,
-                "image_url": "Solve for 'y' in the equation 3y + 2 = 2y - 5.",
-                "front_text": [4, 7, 9, 12],
-                "examples": 2
-            },
-            {
-                "number": 8,
-                "image_url": "What is the result of 5 to the power of 3 (5^3)?",
-                "front_text": [100, 125, 150, 175],
-                "examples": 2
-            },
-            {
-                "number": 9,
-                "image_url": "If a car travels at a speed of 60 kilometers per hour, how long will it take to travel 180 kilometers?",
-                "front_text": ["2 hours", "3 hours", "4 hours", "5 hours"],
-                "examples": 3
-            },
-            {
-                "number": 10,
-                "image_url": "What is the volume of a cube with edges of length 4 inches?",
-                "front_text": ["16 cubic inches", "32 cubic inches", "48 cubic inches", "64 cubic inches"],
-                "examples": 4
-            },
-            {
-                "number": 11,
-                "image_url": "Solve for 'x' in the equation 2x^2 - 5x - 3 = 0.",
-                "front_text": [-3, -2, 1, 3],
-                "examples": 4
-            },
-            {
-                "number": 12,
-                "image_url": "What is the result of 7 divided by 2, expressed as a mixed number or fraction?",
-                "front_text": ["3.5", "3 1/2", "7/2", "2 7/2"],
-                "examples": 2
-            },
-            {
-                "number": 13,
-                "image_url": "If a rectangular room measures 12 feet in length, 10 feet in width, and 8 feet in height, what is its volume?",
-                "front_text": ["960 cubic feet", "1000 cubic feet", "1080 cubic feet", "1200 cubic feet"],
-                "examples": 1
-            },
-            {
-                "number": 14,
-                "image_url": "Solve for 'x' in the equation (x + 3)(x - 2) = 0.",
-                "front_text": [-3, -2, 2, 3],
-                "examples": 3
-            },
-            {
-                "number": 15,
-                "image_url": "What is the result of 2 to the power of 5 (2^5)?",
-                "front_text": [16, 32, 64, 128],
-                "examples": 3
-            },
-            {
-                "number": 16,
-                "image_url": "If a bicycle wheel has a diameter of 26 inches, what is its circumference?",
-                "front_text": ["26 inches", "52 inches", "65 inches", "78 inches"],
-                "examples": 4
-            },
-            {
-                "number": 17,
-                "image_url": "Solve for 'y' in the equation 4y + 9 = 2y - 5.",
-                "front_text": [7, 10, 14, 18],
-                "examples": 1
-            },
-            {
-                "number": 18,
-                "image_url": "What is the result of 3/4 divided by 1/8, expressed as a fraction?",
-                "front_text": ["1", "2", "3", "4"],
-                "examples": 2
-            },
-            {
-                "number": 19,
-                "image_url": "If a box contains 12 red balls, 18 blue balls, and 15 green balls, what is the probability of drawing a green ball at random?",
-                "front_text": ["1/5", "1/6", "1/7", "1/8"],
-                "examples": 1
-            },
-            {
-                "number": 20,
-                "image_url": "Solve for 'x' in the equation 5x - 2 = 3x + 10.",
-                "front_text": [3, 6, 7, 12],
-                "examples": 2
-            },
-            {
-                "number": 21,
-                "image_url": "What is the result of 4 to the power of 4 (4^4)?",
-                "front_text": [64, 256, 1024, 4096],
-                "examples": 4
-            },
-            {
-                "number": 22,
-                "image_url": "If a train travels at a speed of 100 kilometers per hour, how long will it take to travel 400 kilometers?",
-                "front_text": ["2 hours", "3 hours", "4 hours", "5 hours"],
-                "examples": 3
-            },
-            {
-                "number": 23,
-                "image_url": "Solve for 'y' in the equation 6y + 8 = 4y - 12.",
-                "front_text": [6, 10, 14, 20],
-                "examples": 1
-            },
-            {
-                "number": 24,
-                "image_url": "What is the result of 9 squared (9^2)?",
-                "front_text": [72, 81, 90, 99],
-                "examples": 2
-            },
-            {
-                "number": 25,
-                "image_url": "If a rectangular box measures 15 inches in length, 8 inches in width, and 6 inches in height, what is its volume?",
-                "front_text": ["720 cubic inches", "900 cubic inches", "1080 cubic inches", "1200 cubic inches"],
-                "examples": 1
             }
         ]    
     }
