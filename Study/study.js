@@ -148,6 +148,9 @@ function populate_page(){
       let string_arr= value.split("-");
       let subject=string_arr[0];
       let topic=string_arr[1];
+      if(subject=='english' && topic=='vocabulary'){
+        show_dictionary();
+      }
       let data_arr=(response.data[`${subject}`][`${topic}`])
       console.log(data_arr)
       new_html=``;
@@ -170,6 +173,7 @@ function populate_page(){
 
  </div>`
     }
+    
     let contents= document.getElementById('notes')
     contents.innerHTML=new_html
     
