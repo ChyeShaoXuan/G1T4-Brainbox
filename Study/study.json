@@ -386,7 +386,7 @@
                 "examples": "2 - 1 != 1 - 2"
             }
         ],
-        "division and multiplication": [
+        "multiplication and division": [
             {
                 "number": 1,
                 "image_url": "../Images/MathMulDiv1.jpg",
