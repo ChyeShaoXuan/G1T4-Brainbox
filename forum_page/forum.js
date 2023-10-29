@@ -74,14 +74,19 @@ function displayPage(page) {
     postsList = []
     let positionStr = ''
     let newStr = ''
+    document.getElementById('subjectCaption').innerText = currSub.charAt(0).toUpperCase() + currSub.slice(1)
     onValue(userRef, (snapshot) => {
         const users = snapshot.val()
         onValue(postsRef,(snapshot2) => {
             snapshot2.forEach((childSnapshot) => {
                 const childKey = childSnapshot.key;
+                let date = new Date(Number(childKey))
+                let dateStr = date.toLocaleDateString("en-SG")
+                let timeStr = date.toLocaleTimeString("en-SG")
+                let dateTime = dateStr + " " + timeStr
                 const postDetails = childSnapshot.val();
                 uid = postDetails.uid
-                postsList.push([childKey,postDetails,users[uid].image,users[uid].username])
+                postsList.push([childKey,postDetails,users[uid].image,users[uid].username,dateTime])
             });
             if (postsList.length != 0) {
                 postsList = postsList.reverse()
@@ -117,6 +122,9 @@ function displayPage(page) {
                                                     </div>
                                                     <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
                                                         Views: ${currPost[1].views}
+                                                    </div>
+                                                    <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
+                                                        Timestamp: ${currPost[4]}
                                                     </div>
                                                 </div>
                                             </li>`
