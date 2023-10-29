@@ -53,6 +53,10 @@ const root = Vue.createApp({
             this.displayed_bio = this.input_bio; // Update displayed bio
             this.isEditing = false;
         }
+    },
+
+    created() {
+        
     }
         
 })
