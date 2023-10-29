@@ -562,12 +562,7 @@
                 "answers": ["Broad leaves", "Waxy cuticle", "Coniferous needles", "None of the above"],
                 "correct_answer": "Coniferous needles"
             },
-            {
-                "number": 18,
-                "question": "What is the largest planet in our solar system?",
-                "answers": ["Earth", "Venus", "Jupiter", "Mars"],
-                "correct_answer": "Jupiter"
-            },
+
             {
                 "number": 19,
                 "question": "Which of the following is a body system responsible for filtering waste from the blood?",
@@ -702,12 +697,7 @@
                 "answers": ["Broad leaves", "Waxy cuticle", "Coniferous needles", "None of the above"],
                 "correct_answer": "Coniferous needles"
             },
-            {
-                "number": 16,
-                "question": "What is the largest planet in our solar system?",
-                "answers": ["Earth", "Venus", "Jupiter", "Mars"],
-                "correct_answer": "Jupiter"
-            },
+            
             {
                 "number": 17,
                 "question": "Which of the following is a body system responsible for filtering waste from the blood?",
