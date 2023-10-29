@@ -20,7 +20,7 @@ function display_default(){
              <img src="${image}" style="max-width:100%;
              max-height:100%;">
           </div>
-          <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/study_content_frame.jpg");background-size:cover;background-repeat: no-repeat;'>
+          <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/gif_background.gif");background-size:cover;background-repeat: no-repeat;'>
                <p class="text-yellow-400 font-semibold text-md text-align-center m-5">${text}</p>
                <p class="text-orange-500 font-semibold text-md text-align-center m-5">${examples}</p>
                 
@@ -180,7 +180,7 @@ function populate_page(){
          <img src="${image}" style="max-width:100%;
          max-height:100%;z-index:-1">
       </div>
-      <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/study_content_frame.jpg");background-size:cover;background-repeat: no-repeat;'>
+      <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/gif_background.gif");background-size:cover;background-repeat: no-repeat;'>
            <p class="text-yellow-400 font-semibold text-md  text-align-center m-5">${text}</p>
            <p class="text-orange-500 font-semibold text-md text-align-center m-5">${examples}</p>
             
