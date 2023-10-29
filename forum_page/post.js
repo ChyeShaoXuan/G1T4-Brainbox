@@ -34,6 +34,7 @@ const root = Vue.createApp({
             commentsList: [],
             authorName: '',
             authorPic: '',
+            authorTime: '',
         }
     },
     methods: {
@@ -82,15 +83,14 @@ const root = Vue.createApp({
                         const childKey = childSnapshot.key;
                         const commentsDet = childSnapshot.val();
                         let uid = commentsDet.uid
-                        newCommentsList.push([childKey,commentsDet,users[uid].image,users[uid].username])
-                        for(let comment of newCommentsList) {
-                            console.log(comment)
-                        }
+                        let timeStamp = Number(childKey)
+                        let date = new Date(timeStamp);
+                        let dateStr = date.toLocaleDateString("en-SG")
+                        let timeStr = date.toLocaleTimeString("en-SG")
+                        let dateTime = "Posted: " + dateStr + " " + timeStr
+                        newCommentsList.push([childKey,commentsDet,users[uid].image,users[uid].username,dateTime])
                     });
-                    if (newCommentsList.length != 0) {
-                        newCommentsList = newCommentsList.reverse()
-                        this.commentsList = newCommentsList
-                    } 
+                    this.commentsList = newCommentsList
                 },{
                     onlyOnce:true
                 });
@@ -117,6 +117,11 @@ const root = Vue.createApp({
                 this.authorName = userContent.username
                 this.authorPic = userContent.image
             })
+            let timeStamp = Number(postID)
+            let date = new Date(timeStamp);
+            let dateStr = date.toLocaleDateString("en-SG")
+            let timeStr = date.toLocaleTimeString("en-SG")
+            this.authorTime = "Posted: " + dateStr + " " + timeStr
             // document.getElementById('title').innerText = postContent.title
             // document.getElementById('content').innerText = postContent.content
             
