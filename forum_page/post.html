@@ -16,19 +16,26 @@
 <body>
     <div id="root" class="bg-light d-flex align-items-center justify-content-center">
         <div class="container text-center p-4">
+
+            <!-- For Ziming -->
+            <div class="bg-danger p-4 rounded text-white text-left">
+                <h3 style="text-decoration:underline" class="mb-4">Author:</h3>
+                <img :src="">
+                <h5> Username </h5>
+            </div>
             
             <div class="bg-black p-4 rounded text-white text-left">
-                <h4 style="text-decoration:underline" class="mb-4">Title:</h1>
+                <h3 style="text-decoration:underline" class="mb-4">Title:</h3>
                 <h5 class="">{{ retTitle }}</h3>
             </div>
 
             <div class="bg-light p-4 rounded shadow text-left">
-                <h4 style="text-decoration:underline" class="mb-4">Content:</h1>
+                <h3 style="text-decoration:underline" class="mb-4">Content:</h3>
                 <h5 class="">{{ retContent }}</h3>
             </div>
 
             <div class="bg-white p-4 rounded shadow text-left mt-4">
-                <h4 class="mb-4">Reply to this post!</h4>
+                <h3 class="mb-4">Reply to this post!</h3>
                 <div class="form-group">
                     <textarea v-model="commentText" class="form-control" rows="4"></textarea>
                 </div>
@@ -37,9 +44,9 @@
 
             <div class="container">
                 <div class="bg-white p-4 rounded shadow text-left mt-4">
-                    <h4 class="display-5 mb-4">
+                    <h3 class="display-3 mb-4">
                         Replies:
-                    </h4>
+                    </h3>
                     <div v-for="comment of commentsList" class="media mb-4">
                         <img style="width: 50px;" class="img-thumbnail mr-3" :src="'../Images/' + comment[2]" alt="User Image">
                         <div class="media-body">
