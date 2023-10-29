@@ -150,7 +150,12 @@ function populate_page(){
       let topic=string_arr[1];
       if(subject=='english' && topic=='vocabulary'){
         show_dictionary();
+      }  
+      else {
+        let dictionary_section = document.getElementById('dictionary_section');
+        dictionary_section.innerHTML = ''; 
       }
+
       let data_arr=(response.data[`${subject}`][`${topic}`])
       console.log(data_arr)
       new_html=``;
