@@ -69,6 +69,23 @@
             }
         }
 
+        .avatar-carousel {
+            text-align: center;
+        }
+
+        .avatar-list {
+            display: flex;
+            justify-content: space-between;
+            max-width: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .avatar-thumbnail {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body id="section1">
@@ -187,19 +204,39 @@
         <div class="container mx-auto px-4">
             <div class="md:w-1/2 mx-auto">
                 <div class="profile-card p-6 text-center text-white" style='background-image:url("../Images/profile_backgroundcopped.gif"); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;'>
-                    <!-- In the future, allow an option to change profile picture to pre-selected Avatars choice -->
-                    <img src="../Images/avatar4.jpg" alt="Your Name" class="rounded-full w-32 h-32 mx-auto mb-4">   
+                    <!-- Profile picture -->
+                    <div class="profile-picture">
+                        <img id="avatar-image" src="../Images/avatar4.jpg" alt="Your Name" class="rounded-full w-32 h-32 mx-auto mb-4">
+                    </div>
+
                     <h2 class="text-2xl font-semibold text-white" id="name">[INSERT MY NAME HERE]</h2>
 
                     <div id="root">
+
+                        <!-- Avatar selection carousel -->
+                        <div class="avatar-carousel">
+                            <div class="avatar-list" id="avatar-list">
+                                <img src="../Images/avatar1.jpg" alt="Avatar 1" class="avatar-thumbnail" data-src="../Images/avatar1.jpg" style="display:none">
+                                <img src="../Images/avatar2.jpg" alt="Avatar 2" class="avatar-thumbnail" data-src="../Images/avatar2.jpg" style="display:none">
+                                <img src="../Images/avatar3.jpg" alt="Avatar 3" class="avatar-thumbnail" data-src="../Images/avatar3.jpg" style="display:none">
+                                <img src="../Images/avatar4.jpg" alt="Avatar 4" class="avatar-thumbnail" data-src="../Images/avatar4.jpg" style="display:none">
+                                <img src="../Images/avatar5.jpg" alt="Avatar 5" class="avatar-thumbnail" data-src="../Images/avatar5.jpg" style="display:none">
+                                <img src="../Images/avatar6.jpg" alt="Avatar 6" class="avatar-thumbnail" data-src="../Images/avatar6.jpg" style="display:none">
+                                <img src="../Images/avatar7.jpg" alt="Avatar 7" class="avatar-thumbnail" data-src="../Images/avatar7.jpg" style="display:none">
+                                <img src="../Images/avatar8.jpg" alt="Avatar 8" class="avatar-thumbnail" data-src="../Images/avatar8.jpg" style="display:none">
+                                <img src="../Images/avatar9.jpg" alt="Avatar 9" class="avatar-thumbnail" data-src="../Images/avatar9.jpg" style="display:none">
+                                <img src="../Images/avatar10.jpg" alt="Avatar 10" class="avatar-thumbnail" data-src="../Images/avatar10.jpg" style="display:none">
+                            </div>
+                            <button id="prev-avatar" class="avatar-button bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Previous Avatar</button>
+                            <button id="next-avatar" class="avatar-button bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">Next Avatar</button>
+                            <button id="confirm-avatar" class="avatar-button bg-green-500 text-white p-2 rounded-lg hover:bg-green-600">Confirm Avatar</button>
+                        </div>
 
                         <p class="mb-1">{{ displayed_bio }}</p>
                         <input type="text" class="rounded-full me-2 pl-3 text-black" v-model="input_bio" v-if="isEditing">
                         <button v-if="isEditing" @click="saveBio" class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Save Changes</button>
                         <button v-else @click="editBio" class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center my-2">Edit Bio</button>
-
                     </div>
-
                 </div>
             </div>
         </div>

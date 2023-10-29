@@ -57,6 +57,38 @@ const root = Vue.createApp({
         
 })
 
-        document.addEventListener('DOMContentLoaded', () => {
-            root.mount("#root");
+document.addEventListener('DOMContentLoaded', () => {
+    root.mount("#root");
+});
+
+        // JavaScript for avatar selection carousel
+        document.addEventListener("DOMContentLoaded", function () {
+            const avatarList = document.getElementById("avatar-list");
+            const avatarImage = document.getElementById("avatar-image");
+            const avatarThumbnails = document.querySelectorAll(".avatar-thumbnail");
+            const prevButton = document.getElementById("prev-avatar");
+            const nextButton = document.getElementById("next-avatar");
+            const confirmButton = document.getElementById("confirm-avatar");
+            let currentAvatarIndex = 0;
+
+            function showAvatar(index) {
+                avatarImage.src = avatarThumbnails[index].getAttribute("data-src");
+            }
+
+            showAvatar(currentAvatarIndex);
+
+            prevButton.addEventListener("click", function () {
+                currentAvatarIndex = (currentAvatarIndex - 1 + avatarThumbnails.length) % avatarThumbnails.length;
+                showAvatar(currentAvatarIndex);
+            });
+
+            nextButton.addEventListener("click", function () {
+                currentAvatarIndex = (currentAvatarIndex + 1) % avatarThumbnails.length;
+                showAvatar(currentAvatarIndex);
+            });
+
+            confirmButton.addEventListener("click", function () {
+                // Handle confirmation logic here
+                alert("Avatar Confirmed!");
+            });
         });
