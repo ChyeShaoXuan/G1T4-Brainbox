@@ -27,21 +27,24 @@ let currPost = null
 let currPage = 1
 function showSearch() {
     let postsLength = 0
+    let commentsNum = 0
     onValue(postsRef,(snapshot) => {
         newStr = `<nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
-        <a href="#" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
+        <a href="#" id="prevButton" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0" disabled>
           <span class="sr-only">Previous</span>
           <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
           </svg>
         </a>`
-        snapshot.forEach(() => {
+        snapshot.forEach(snapshot => {
             postsLength++
+            commentsNum += Number(snapshot.val().comments)
         });
         document.getElementById('firstPage').innerText = '1'
         document.getElementById('lastPage').innerText = '5'
         document.getElementById('totalnumresults').innerText = postsLength
         document.getElementById('threads').innerText = 'Threads: ' + postsLength
+        document.getElementById('comments').innerText = 'Comments: ' + commentsNum
         let noOfPages = Math.ceil(postsLength/5)
         for (let i=1;i<=noOfPages;i++) {
             if (i==1) {
@@ -58,6 +61,8 @@ function showSearch() {
       </a>
     </nav>`
     document.getElementById('pagesBar').innerHTML = newStr
+    // document.getElementById("prevButton").disabled = true
+    // prevButton.classList.add("disabled");
     for (let thisPage of document.getElementsByClassName('page')) {
         let pageNum = thisPage.innerText
         // console.log(pageNum)
@@ -71,6 +76,11 @@ function showSearch() {
 }
 
 function displayPage(page) {
+    if (page != 1) {
+        document.getElementById('prevButton').disabled = false
+    } else {
+        document.getElementById('prevButton').disabled = true
+    }
     postsList = []
     let positionStr = ''
     let newStr = ''
@@ -101,6 +111,7 @@ function displayPage(page) {
                     document.getElementById('firstPage').innerText = firstPage+1
                     document.getElementById('lastPage').innerText = lastPage
                     currPost = postsList[i]
+
                     newStr+= `
                         <li class="list-group-item p-3">
                                                 <div class="flex flex-col items-center md:flex-row">
@@ -181,5 +192,9 @@ document.getElementById('science').addEventListener('click', () => {
 
 document.getElementById('create').addEventListener('click', function() {
     window.location.href = 'create.html';
+})
+
+document.getElementById("prevButton").addEventListener('click', function() {
+    console.log('test')
 })
 
