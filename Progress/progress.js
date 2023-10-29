@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // JavaScript for avatar selection carousel
 document.addEventListener("DOMContentLoaded", function () {
-    const avatarList = document.getElementById("avatar-list");
     const avatarImage = document.getElementById("avatar-image");
     const avatarThumbnails = document.querySelectorAll(".avatar-thumbnail");
     const prevButton = document.getElementById("prev-avatar");
