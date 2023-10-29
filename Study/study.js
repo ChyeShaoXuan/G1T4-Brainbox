@@ -157,6 +157,7 @@ function populate_page(){
         removeCalculator();
       }
 
+        // Dictionary if english and vocab selected
       if(subject=='english' && topic=='vocabulary'){
         show_dictionary();
       }  
