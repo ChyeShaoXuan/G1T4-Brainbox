@@ -21,11 +21,11 @@ const db = getDatabase()
 
 
 
-const logout = async() => {
-    await signOut(auth)
-}
+// const logout = async() => {
+//     await signOut(auth)
+// }
 
-document.getElementById('logout').addEventListener('click',logout);
+// document.getElementById('logout').addEventListener('click',logout);
 
 document.addEventListener("DOMContentLoaded", function () {
     onAuthStateChanged(auth, user => {
