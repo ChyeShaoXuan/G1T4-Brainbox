@@ -124,7 +124,7 @@ function displayPage(page) {
                                                         Views: ${currPost[1].views}
                                                     </div>
                                                     <div style="margin-top:1px;" class="w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
-                                                        Timestamp: ${currPost[4]}
+                                                        Posted: ${currPost[4]}
                                                     </div>
                                                 </div>
                                             </li>`
