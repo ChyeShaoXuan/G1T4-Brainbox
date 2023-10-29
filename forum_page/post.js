@@ -32,6 +32,8 @@ const root = Vue.createApp({
             retContent:'',
             commentText: '',
             commentsList: [],
+            authorName: '',
+            authorPic: '',
         }
     },
     methods: {
@@ -109,7 +111,12 @@ const root = Vue.createApp({
         
             this.retTitle = postContent.title
             this.retContent = postContent.content
-
+            const userDetailsRef = ref(db,'users/' + postContent.uid)
+            onValue(userDetailsRef, (snapshot2) => {
+                const userContent = snapshot2.val()
+                this.authorName = userContent.username
+                this.authorPic = userContent.image
+            })
             // document.getElementById('title').innerText = postContent.title
             // document.getElementById('content').innerText = postContent.content
             
