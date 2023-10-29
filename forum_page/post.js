@@ -133,11 +133,4 @@ const root = Vue.createApp({
     }
 })
 
-
-
-
-
-
-
-
 root.mount('#root')
