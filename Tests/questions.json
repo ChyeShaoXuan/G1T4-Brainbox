@@ -1,461 +1,460 @@
 {
     "English":{
-        "Easy":[
+        "Easy": [
             {
                 "number": 1,
-                "question": "My classmates stayed back ____ lunchtime to discuss their school project.",
-                "answers": [
-                    "in", "on", "during", "into"
-                  ],
-                "correct_answer": "during"
+                "question": "What is the plural form of 'cat'?",
+                "answers": ["cats", "caties", "cat's", "cats'"],
+                "correct_answer": "cats"
             },
             {
                 "number": 2,
-                "question": "At the concert last week, the students ___ so excited that they could not stop talking.",
-                "answers": ["is", "was", "are","were"],
-                "correct_answer": "were"
+                "question": "Which word is a pronoun?",
+                "answers": ["House", "She", "Jump", "Delicious"],
+                "correct_answer": "She"
             },
             {
                 "number": 3,
-                "question": "You ____ so kind when you helped the teacher carry the heavy books to the classroom.",
-                "answers": ["is", "are", "was","were"],
-                "correct_answer": "were"
+                "question": "What is the opposite of 'happy'?",
+                "answers": ["Joyful", "Sad", "Excited", "Funny"],
+                "correct_answer": "Sad"
             },
             {
                 "number": 4,
-                "question": "The manager is busy. He ___ to a customer now.",
-                "answers": ["talk", "talked", "is talking","has talked"],
-                "correct_answer": "is talking"
+                "question": "Complete the sentence: The sun _____ in the sky.",
+                "answers": ["shine", "shines", "shining", "shone"],
+                "correct_answer": "shines"
             },
             {
                 "number": 5,
-                "question": "Yesterday, we ___ some books from the bookshop before going to tuition.",
-                "answers": ["have bought", "were buying", "bought", "buy"],
-                "correct_answer":"bought"
+                "question": "What is a synonym for 'big'?",
+                "answers": ["Large", "Small", "Tall", "Fast"],
+                "correct_answer": "Large"
             },
             {
                 "number": 6,
-                "question": "While you ____ in the kitchen, i heard a knock on the door.",
-                "answers":["were cooking", "have cooked", "will cook","cook"],
-                "correct_answer": "were cooking"
+                "question": "Which word is a verb? \nA) School \nB) Read \nC) Blue \nD) Fish",
+                "answers": ["School", "Read", "Blue", "Fish"],
+                "correct_answer": "B"
             },
             {
                 "number": 7,
-                "question": "___ girl on the swing has short hair.",
-                "answers": ["were cooking", "have cooked", "will cook","cook"],
-                "correct_answer": "were cooking"
+                "question": "What do you call a young dog?",
+                "answers": ["Kitten", "Cub", "Puppy", "Fawn"],
+                "correct_answer": "Puppy"
             },
             {
                 "number": 8,
-                "question": "She likes waffles ___ not pancakes.",
-                "answers": ["because", "then", "but", "or"],
-                "correct_answer": "but"
+                "question": "Which word means the opposite of 'dark'?",
+                "answers": ["Night", "Shadow", "Bright", "Dusk"],
+                "correct_answer": "Bright"
             },
             {
                 "number": 9,
-                "question": "I decided not to buy the book as there were ___ people in the queue.",
-                "answers": ["many","much","few","some"],
-                "correct_answer": "many"
+                "question": "Choose the correct spelling:",
+                "answers": ["Acheive", "Achive", "Achieve", "Acheeve"],
+                "correct_answer": "C"
             },
             {
                 "number": 10,
-                "question": "My friend needed ___ help with her work, so i stayed back to assist her.",
-                "answers": ["much", "a lot of", "no","much"],
-                "correct_answer": "a lot of"
+                "question": "What is the past tense of 'eat'?",
+                "answers": ["Eats", "Eating", "Ate", "Eated"],
+                "correct_answer": "Ate"
             },
             {
                 "number": 11,
-                "question": "The young boy waited by the door ___ a long time.",
-                "answers": ["in", "by", "for","on"],
-                "correct_answer": "for"
+                "question": "Which word is a preposition?",
+                "answers": ["Jump", "Under", "Book", "Happy"],
+                "correct_answer": "B"
             },
             {
                 "number": 12,
-                "question": "Many buildings ___ destroyed by the tsunami last year.",
-                "answers":["was", "were", "is","are"],
-                "correct_answer": "were"
+                "question": "What is the opposite of 'fast'?",
+                "answers": ["Slow", "Quick", "Rapid", "Speedy"],
+                "correct_answer": "Slow"
             },
             {
                 "number": 13,
-                "question": "Jun Wei __  unwell, so he is absent from school today.",
-                "answers": ["is", "are", "was", "were"],
-                "correct_answer": "is"
+                "question": "Complete the sentence: She ______ a book.",
+                "answers": ["is reading", "reads", "read", "will read"],
+                "correct_answer": "is reading"
             },
             {
                 "number": 14,
-                "question":  "Mrs Tan ____ the rules of the test now.",
-                "answers": ["explained", "explain", "is explaining","has explained"],
-                "correct_answer": "is explaining"
+                "question": "What is a synonym for 'happy'?",
+                "answers": ["Sad", "Angry", "Joyful", "Tired"],
+                "correct_answer": "Joyful"
             },
             {
                 "number": 15,
-                "question": "15. in 2019, Singapore ____ wearing masks compulsory due to COVID-19.",
-                "answers": ["were making", "has made", "make","made"],
-                "correct_answer": "made"
+                "question": "Which word is an adjective?",
+                "answers": ["Run", "Blue", "Sky", "Play"],
+                "correct_answer": "B"
             },
             {
                 "number": 16,
-                "question": " Amy _____ the piano when the doorbell rang.",
-                "answers": ["were playing", "was playing", "played","has played"],
-                "correct_answer": "was playing"
+                "question": "What do you call a female sibling?",
+                "answers": ["Brother", "Sister", "Cousin", "Aunt"],
+                "correct_answer": "Sister"
             },
             {
                 "number": 17,
-                "question": "The Lim family visited ____ local attractions in Singapore during the holidays, instead of travelling overseas.",
-                "answers":["many", "much", "no","any"],
-                "correct_answer": "many"
+                "question": "What is a synonym for 'cold'?",
+                "answers": ["Hot", "Warm", "Freezing", "Cool"],
+                "correct_answer": "Freezing"
             },
             {
                 "number": 18,
-                "question": "My father said : ' Use ____ two dollar note to buy bread from the store nearby.",
-                "answers": ["that", "those", "this","these"],
-                "correct_answer":  "this"
+                "question": "Complete the sentence: They ______ to the park yesterday.",
+                "answers": ["is going", "goes", "went", "will go"],
+                "correct_answer": "went"
             },
             {
                 "number": 19,
-                "question": "He was respected _____ he did his work efficiently",
-                "answers": ["because", "or", "after", "then"],
-                "correct_answer":"because"
+                "question": "Which word is a conjunction?",
+                "answers": ["Dog", "And", "Moon", "Yellow"],
+                "correct_answer": "B"
             },
             {
                 "number": 20,
-                "question": "Our teacher gave us ___ advice on how to do better in exams.",
-                "answers": ["much", "a few", "some","many"],
-                "correct_answer": "some"
+                "question": "What is the opposite of 'noisy'?",
+                "answers": ["Loud", "Quiet", "Singing", "Happy"],
+                "correct_answer": "Quiet"
             },
             {
                 "number": 21,
-                "question": "Distribute these chocolates among ______ ",
-                "answers": ["yourselves", "ourselves", "themselves", "himself"],
-                "correct_answer": "yourselves"
+                "question": "Choose the correct spelling:",
+                "answers": ["Receive", "Recieve", "Receeve", "Recive"],
+                "correct_answer": "A"
             },
             {
                 "number": 22,
-                "question": "One week ago, We ____ the museum before it closed for renovations.",
-                "answers":["visit", "had visited", "visited","were visiting"],
-                "correct_answer": "visited"
+                "question": "What is the past tense of 'run'?",
+                "answers": ["Running", "Ran", "Runned", "Runs"],
+                "correct_answer": "Ran"
             },
             {
                 "number": 23,
-                "question": "Last Sunday, i ____ happy to meet my favorite celebrity at the mall.",
-                "answers":["were", "is", "was","are"],
-                "correct_answer": "was"
+                "question": "Which word is an adverb?",
+                "answers": ["Happy", "Slow", "Quickly", "Tree"],
+                "correct_answer": "C"
             },
             {
                 "number": 24,
-                "question": "___ books stacked in the corner are dusty.",
-                "answers": ["These", "Those", "This","That"],
-                "correct_answer": "Those"
+                "question": "What do you call a young sheep?",
+                "answers": ["Lamb", "Calf", "Piglet", "Foal"],
+                "correct_answer": "Lamb"
             },
             {
                 "number": 25,
-                "question": "Aunt Mary is my neighbour that lives ___ units away from me.",
-                "answers": ["a lot", "little", "a few","little"],
-                "correct_answer": "a few"
+                "question": "Which word means the opposite of 'big'?",
+                "answers": ["Huge", "Tiny", "Giant", "Massive"],
+                "correct_answer": "Tiny"
             }
+
         ],
         "Medium": [
             {
                 "number": 1,
-                "question": "The ____ took out their phones to record the fight in the supermarket.",
-                "answers": ["audience", "onlookers", "spectators", "competitors"],
-                "correct_answer": "spectators"
+                "question": "What is the plural form of 'child'?",
+                "answers": ["children", "childs", "child's", "children's"],
+                "correct_answer": "children"
             },
             {
                 "number": 2,
-                "question": "The ____ child refused to listen to the teachers and got into trouble again.",
-                "answers": ["wilful", "ferocious", "ungrateful","ignorant"],
-                "correct_answer": "wilful"
+                "question": "Choose the correct homophone:",
+                "answers": ["To", "Too", "Two", "Tooo"],
+                "correct_answer": "Too"
             },
             {
                 "number": 3,
-                "question": "The students ___ their books into their bags in a hurry before leaving.",
-                "answers": ["strived", "shoved", "sieved","swerved"],
-                "correct_answer": "shoved"
+                "question": "What is the synonym for 'brave'?",
+                "answers": ["Scared", "Fearless", "Cautious", "Timid"],
+                "correct_answer": "Fearless"
             },
             {
                 "number": 4,
-                "question": "All the houses were destroyed by the ___ earthquake.",
-                "answers": ["fiery", "bizarre", "chaotic","devastating"],
-                "correct_answer":"devastating"
+                "question": "Identify the adverb in the sentence: 'She sang beautifully.'",
+                "answers": ["She", "sang", "beautifully", "sang beautifully"],
+                "correct_answer": "beautifully"
             },
             {
                 "number": 5,
-                "question": "Her careless caused her unfortunate ____ of having to move around in crutches.",
-                "answers": ["predicament", "resentment", "accomplishment", "embarrassment"],
-                "correct_answer": "predicament?"
+                "question": "Which word is an adjective?",
+                "answers": ["Run", "Blue", "Sky", "Play"],
+                "correct_answer": "B"
             },
             {
                 "number": 6,
-                "question": "The timid boy _____ in the face of danger.",
-                "answers": ["cowered", "brightened", "numbed","discouraged"],
-                "correct_answer": "cowered"
+                "question": "What is the antonym of 'generous'?",
+                "answers": ["Greedy", "Kind", "Selfish", "Charitable"],
+                "correct_answer": "Greedy"
             },
             {
                 "number": 7,
-                "question": "Jay ____ to the manager of the restaurant for serving him raw food.",
-                "answers": ["responded", "commented", "commended","complained"],
-                "correct_answer":"complained"
+                "question": "Choose the correct spelling:",
+                "answers": ["Occasion", "Occassion", "Ocation", "Occasionn"],
+                "correct_answer": "Occasion"
             },
             {
                 "number": 8,
-                "question": "The earthquake ____ was visibly shaken as he recounted his experience.",
-                "answers":["survivor", "refugee", "resident", "lifeguard"],
-                "correct_answer": "survivor"
+                "question": "What is the past tense of 'begin'?",
+                "answers": ["Begun", "Begining", "Began", "Begined"],
+                "correct_answer": "Began"
             },
             {
                 "number": 9,
-                "question": "The survival of leatherback turtles is due to ____ caused by human activities.",
-                "answers": ["progressing","pollution","pandemic","programme"],
-                "correct_answer":  "pollution"
+                "question": "What is the synonym for 'honest'?",
+                "answers": ["Dishonest", "Trustworthy", "Deceitful", "Truthful"],
+                "correct_answer": "Truthful"
             },
             {
                 "number": 10,
-                "question": "10. We ____ our conflict by flipping a coin.",
-                "answers": ["intensified", "assisted", "resolved","navigated"],
-                "correct_answer": "resolved"
+                "question": "Identify the preposition in the sentence: 'The book is on the table.'",
+                "answers": ["book", "table", "is", "on"],
+                "correct_answer": "on"
             },
             {
                 "number": 11,
-                "question": "Many passers-by were ____ to the cyclist who had fallen and did not help him.",
-                "answers": ["inefficient", "inactive", "helpful","indifferent"],
-                "correct_answer":"indifferent"
+                "question": "What is the opposite of 'victory'?",
+                "answers": ["Loss", "Win", "Triumph", "Achievement"],
+                "correct_answer": "Loss"
             },
             {
                 "number": 12,
-                "question": "The ___ cars were recalled by the company for having many problems.",
-                "answers": ["faulty", "perfect", "fancy","fussy"],
-                "correct_answer": "faulty"
+                "question": "Choose the correct homophone:",
+                "answers": ["Your", "You're", "Yore", "Ur"],
+                "correct_answer": "You're"
             },
             {
                 "number": 13,
-                "question": "I am _____ from all the running i did today.",
-                "answers": ["energised", "enriched", "exhausted", "exhumed"],
-                "correct_answer": "exhausted"
+                "question": "What is the collective noun for a group of sheep?",
+                "answers": ["Herd", "Flock", "Pack", "School"],
+                "correct_answer": "Flock"
             },
             {
                 "number": 14,
-                "question": "All my friends claimed that the test was ______, and they could not complete many questions.",
-                "answers": ["difficult", "taxing", "exhilarating","boring"],
-                "correct_answer": "difficult"
+                "question": "Identify the conjunction in the sentence: 'She studied hard so she passed the test.'",
+                "answers": ["She", "studied", "hard", "so"],
+                "correct_answer": "so"
             },
             {
                 "number": 15,
-                "question": "Wearing masks was ____ during the pandemic. Not wearing one had severe consequences.",
-                "answers": ["mandatory", "option", "interesting","significant"],
-                "correct_answer": "mandatory"
+                "question": "What is the synonym for 'explore'?",
+                "answers": ["Discover", "Stay", "Hide", "Wander"],
+                "correct_answer": "Discover"
             },
             {
                 "number": 16,
-                "question": "You can conserve the environment by _______ plastic bottles.",
-                "answers": ["wasting", "engraving", "recycling","seeking"],
-                "correct_answer":"recycling"
+                "question": "Choose the correct spelling:",
+                "answers": ["Exciting", "Exsiting", "Exciteing", "Exsitinng"],
+                "correct_answer": "Exciting"
             },
             {
                 "number": 17,
-                "question": "Plants play a _____ role in maintaining Earth's oxygen level.",
-                "answers": ["serious", "crucial", "inactive","culling"],
-                "correct_answer": "many"
+                "question": "What is the past tense of 'drink'?",
+                "answers": ["Drunk", "Drinked", "Drank", "Drinken"],
+                "correct_answer": "Drank"
             },
             {
                 "number": 18,
-                "question": "The bread tasted _____.",
-                "answers": ["windy", "delicious", "taxing","decorative"],
-                "correct_answer": "delicious"
+                "question": "Identify the adverb in the sentence: 'He sings very loudly.'",
+                "answers": ["He", "sings", "very", "sings very loudly"],
+                "correct_answer": "very"
             },
             {
                 "number": 19,
-                "question": "His work was not up to _____.",
-                "answers":  ["guideline", "timeline", "standard", "barren"],
-                "correct_answer":"standard"
+                "question": "What is the antonym of 'courage'?",
+                "answers": ["Fear", "Bravery", "Strength", "Boldness"],
+                "correct_answer": "Fear"
             },
             {
                 "number": 20,
-                "question": "I am ____ for the upcoming football match.",
-                "answers": ["existing", "excited", "famished", "delayed"],
-                "correct_answer": "excited"
+                "question": "Choose the correct homophone:",
+                "answers": ["Their", "There", "They're", "Their"],
+                "correct_answer": "B"
             },
             {
                 "number": 21,
-                "question": "Our project _____ is approaching soon. We have to submit all our work before then.",
-                "answers": ["deadline", "deliverable", "schedule","complement"],
-                "correct_answer": "deadline"
+                "question": "What is the collective noun for a group of birds?",
+                "answers": ["Herd", "Flock", "Pack", "School"],
+                "correct_answer": "Flock"
             },
             {
                 "number": 22,
-                "question": "The mouse ____ into the hole.",
-                "answers": ["scampered", "flipped", "wrangled", "decayed"],
-                "correct_answer": "scampered"
+                "question": "Identify the conjunction in the sentence: 'I wanted to go, but it was raining.'",
+                "answers": ["I", "wanted", "to", "but"],
+                "correct_answer": "but"
             },
             {
                 "number": 23,
-                "question": "She felt ____ that she received the award.",
-                "answers": ["Proud", "Fear", "Coignizant", "Nauseous"],
-                "correct_answer": "Proud"
+                "question": "What is the antonym of 'victory'?",
+                "answers": ["Loss", "Win", "Triumph", "Achievement"],
+                "correct_answer": "Loss"
             },
             {
                 "number": 24,
-                "question": "The weather is ____ ,with heavy rain today.",
-                "answers": ["Hampered", "Quiet", "Stormy", "Peaceful"],
-                "correct_answer": "Stormy"
+                "question": "Choose the correct spelling:",
+                "answers": ["Believe", "Belive", "Beleive", "Beleave"],
+                "correct_answer": "A"
             },
             {
                 "number": 25,
-                "question": "I will _____ the present from the post office tomorrow.",
-                "answers": ["press", "observe", "ready", "collect"],
-                "correct_answer": "collect"
+                "question": "What is the synonym for 'angry'?",
+                "answers": ["Calm", "Mad", "Furious", "Happy"],
+                "correct_answer": "Mad"
             }
         ],
         "Hard": [
             {
                 "number": 1,
-                "question": "What is the term for a word that is spelled the same way forwards and backwards?",
-                "answers": ["Palindrome", "Antonym", "Anagram", "Synonym"],
-                "correct_answer": 1
+                "question": "What is the plural form of 'cactus'?",
+                "answers": ["cactuses", "cacti", "cactus'", "cacti's"],
+                "correct_answer": "cacti"
             },
             {
                 "number": 2,
-                "question": "In the sentence 'The quick brown fox jumps over the lazy dog,' what is the verb?",
-                "answers": ["quick", "jumps", "over", "the"],
-                "correct_answer": 2
+                "question": "Choose the correct homophone:",
+                "answers": ["Flour", "Flower", "Flare", "Floor"],
+                "correct_answer": "D"
             },
             {
                 "number": 3,
-                "question": "Which figure of speech involves an exaggerated statement or claim not meant to be taken literally?",
-                "answers": ["Simile", "Metaphor", "Hyperbole", "Onomatopoeia"],
-                "correct_answer": 3
+                "question": "What is the synonym for 'ubiquitous'?",
+                "answers": ["Rare", "Everywhere", "Abundant", "Scarce"],
+                "correct_answer": "Everywhere"
             },
             {
                 "number": 4,
-                "question": "Identify the word in the sentence: 'She diligently studied for her exams.'",
-                "answers": ["She", "diligently", "studied", "exams"],
-                "correct_answer": 2
+                "question": "Identify the appositive in the sentence: 'My friend Alex, a talented artist, painted a mural.'",
+                "answers": ["My", "friend", "Alex", "a talented artist"],
+                "correct_answer": "a talented artist"
             },
             {
                 "number": 5,
-                "question": "What is the term for a word that imitates the sound it represents, such as 'buzz' or 'meow'?",
-                "answers": ["Palindrome", "Antonym", "Anagram", "Onomatopoeia"],
-                "correct_answer": 4
+                "question": "Which word is an adverb?",
+                "answers": ["Breakfast", "Suddenly", "Ocean", "Elephant"],
+                "correct_answer": "B"
             },
             {
                 "number": 6,
-                "question": "Which of the following sentences uses the subjunctive mood correctly?",
-                "answers": ["If he was here, he would help.", "I wish she was coming to the party.", "If I were you, I would go.", "She will come if it was sunny."],
-                "correct_answer": 3
+                "question": "What is the antonym of 'ephemeral'?",
+                "answers": ["Enduring", "Brief", "Temporary", "Transient"],
+                "correct_answer": "Enduring"
             },
             {
                 "number": 7,
-                "question": "What is the correct plural form of 'datum'?",
-                "answers": ["Data", "Datas", "Datums", "Dati"],
-                "correct_answer": 1
+                "question": "Choose the correct spelling:",
+                "answers": ["Conscientious", "Conscienctious", "Concientious", "Concientcious"],
+                "correct_answer": "Conscientious"
             },
             {
                 "number": 8,
-                "question": "In the sentence 'The painting is exquisite,' what part of speech is 'exquisite'?",
-                "answers": ["Adjective", "Noun", "Verb", "Adverb"],
-                "correct_answer": 1
+                "question": "What is the past participle of 'swim'?",
+                "answers": ["Swum", "Swam", "Swimming", "Swemed"],
+                "correct_answer": "Swum"
             },
             {
                 "number": 9,
-                "question": "Which word is a synonym for 'ubiquitous'?",
-                "answers": ["Rare", "Pervasive", "Infrequent", "Scant"],
-                "correct_answer": 2
+                "question": "What is the synonym for 'punctilious'?",
+                "answers": ["Careless", "Precise", "Sloppy", "Inattentive"],
+                "correct_answer": "Precise"
             },
             {
                 "number": 10,
-                "question": "Identify the correct form of the verb in the sentence: 'She has been singing beautifully.'",
-                "answers": ["Has", "Singing", "Beautifully", "Been"],
-                "correct_answer": 2
+                "question": "Identify the gerund in the sentence: 'Hiking is his favorite outdoor activity.'",
+                "answers": ["Hiking", "is", "his", "favorite"],
+                "correct_answer": "Hiking"
             },
             {
                 "number": 11,
-                "question": "What is the term for a group of words that expresses a complete thought and contains a subject and a predicate?",
-                "answers": ["Phrase", "Clause", "Paragraph", "Sentence"],
-                "correct_answer": 4
+                "question": "What is the opposite of 'ephemeral'?",
+                "answers": ["Enduring", "Brief", "Temporary", "Transient"],
+                "correct_answer": "Enduring"
             },
             {
                 "number": 12,
-                "question": "In the sentence 'The stormy sea roared loudly,' what is the adverb?",
-                "answers": ["stormy", "sea", "roared", "loudly"],
-                "correct_answer": 4
+                "question": "Choose the correct homophone:",
+                "answers": ["Principle", "Principal", "Princippal", "Prinnciple"],
+                "correct_answer": "Principal"
             },
             {
                 "number": 13,
-                "question": "Which literary device involves giving human characteristics to non-human entities?",
-                "answers": ["Alliteration", "Irony", "Simile", "Personification"],
-                "correct_answer": 4
+                "question": "What is the collective noun for a group of wolves?",
+                "answers": ["Herd", "Flock", "Pack", "Pod"],
+                "correct_answer": "Pack"
             },
             {
                 "number": 14,
-                "question": "What is the term for a word that sounds like the noise it describes, such as 'hiss' or 'clang'?",
-                "answers": ["Palindrome", "Antonym", "Onomatopoeia", "Homophone"],
-                "correct_answer": 3
+                "question": "Identify the anaphora in the sentence: 'He loves chocolate. He eats it every day.'",
+                "answers": ["He", "loves", "chocolate", "it every day"],
+                "correct_answer": "He"
             },
             {
                 "number": 15,
-                "question": "Identify the figure of speech in the sentence: 'The world is a stage, and we are all actors.'",
-                "answers": ["Simile", "Metaphor", "Hyperbole", "Personification"],
-                "correct_answer": 2
+                "question": "What is the synonym for 'loquacious'?",
+                "answers": ["Quiet", "Talkative", "Reticent", "Reserved"],
+                "correct_answer": "Talkative"
             },
             {
                 "number": 16,
-                "question": "What is the term for a word that sounds like another word, such as 'bare' and 'bear'?",
-                "answers": ["Palindrome", "Antonym", "Homonym", "Synonym"],
-                "correct_answer": 3
+                "question": "Choose the correct spelling:",
+                "answers": ["Miscellaneous", "Miscellanous", "Miscellaneus", "Miscelaneous"],
+                "correct_answer": "A"
             },
             {
                 "number": 17,
-                "question": "Identify the subject in the sentence: 'The diligent student aced the exam.'",
-                "answers": ["The", "diligent", "student", "aced"],
-                "correct_answer": 3
+                "question": "What is the past participle of 'drink'?",
+                "answers": ["Drunk", "Drinked", "Drank", "Drinken"],
+                "correct_answer": "Drunk"
             },
             {
                 "number": 18,
-                "question": "Which of the following sentences uses an oxymoron?",
-                "answers": ["The bright darkness consumed the room.", "She spoke in a clear and concise manner.", "The cat lazily stretched in the warm sunlight.", "He quickly ran to catch the bus."],
-                "correct_answer": 1
+                "question": "Identify the oxymoron in the sentence: 'The deafening silence was unsettling.'",
+                "answers": ["The", "deafening", "silence", "unsettling"],
+                "correct_answer": "deafening silence"
             },
             {
                 "number": 19,
-                "question": "What is the term for a statement that contradicts itself and yet might be true?",
-                "answers": ["Paradox", "Hyperbole", "Irony", "Simile"],
-                "correct_answer": 1
+                "question": "What is the antonym of 'innocuous'?",
+                "answers": ["Harmless", "Hurtful", "Inoffensive", "Beneficial"],
+                "correct_answer": "Hurtful"
             },
             {
                 "number": 20,
-                "question": "Identify the word in the sentence: 'The singing birds filled the air with melody.'",
-                "answers": ["The", "singing", "birds", "melody"],
-                "correct_answer": 2
+                "question": "Choose the correct homophone:",
+                "answers": ["Complement", "Compliment", "Complementt", "Complimment"],
+                "correct_answer": "B"
             },
             {
                 "number": 21,
-                "question": "Which word is an antonym for 'loquacious'?",
-                "answers": ["Silent", "Talkative", "Loquacious", "Eloquent"],
-                "correct_answer": 1
+                "question": "What is the collective noun for a group of bees?",
+                "answers": ["Herd", "Flock", "Swarm", "Cluster"],
+                "correct_answer": "Swarm"
             },
             {
                 "number": 22,
-                "question": "What is the term for a phrase that consists of words with opposite meanings, such as 'bittersweet'?",
-                "answers": ["Simile", "Oxymoron", "Antonym", "Metaphor"],
-                "correct_answer": 2
+                "question": "Identify the anaphora in the sentence: 'The book is on the shelf. The shelf is old.'",
+                "answers": ["The", "book", "shelf", "is old"],
+                "correct_answer": "The"
             },
             {
                 "number": 23,
-                "question": "Identify the conjunction in the following sentence: 'I wanted to go to the store, but I had no money.'",
-                "answers": ["I", "to", "but", "money"],
-                "correct_answer": 3
+                "question": "What is the antonym of 'venerate'?",
+                "answers": ["Revere", "Respect", "Admire", "Despise"],
+                "correct_answer": "Despise"
             },
             {
                 "number": 24,
-                "question": "What is the term for a word or phrase that reads the same way forwards and backwards, like 'racecar' or 'madam'?",
-                "answers": ["Palindrome", "Antonym", "Anagram", "Synonym"],
-                "correct_answer": 1
+                "question": "Choose the correct spelling:",
+                "answers": ["Acquaintance", "Aquaintance", "Acquaintence", "Aquaintence"],
+                "correct_answer": "Acquaintance"
             },
             {
                 "number": 25,
-                "question": "Identify the word in the sentence: 'The teacher commended the hardworking students.'",
-                "answers": ["The", "teacher", "commended", "students"],
-                "correct_answer": 3
+                "question": "What is the synonym for 'perfidious'?",
+                "answers": ["Loyal", "Trustworthy", "Deceitful", "Unfaithful"],
+                "correct_answer": "Deceitful"
             }
         ]
     },    
@@ -463,462 +462,602 @@
         "Easy": [
             {
                 "number": 1,
-                "question": "What statement is correct about Yeast?",
-                "answers": ["It is a type of bacteria.", "It is used to make bread", "It can make its own food", "It is not a micro-organism."],
-                "correct_answer": "It is used to make bread"
+                "question": "Which of these is a mammal?",
+                "answers": ["Crocodile", "Sparrow", "Frog", "Dog"],
+                "correct_answer": "Dog"
             },
             {
                 "number": 2,
-                "question": "How many stages are there in a grasshopper's life cycle?",
-                "answers": ["1", "2", "3", "4"],
-                "correct_answer": "3"
+                "question": "What is the main function of the lungs?",
+                "answers": ["Pumping blood", "Breathing oxygen", "Digesting food", "Filtering water"],
+                "correct_answer": "Breathing oxygen"
             },
             {
                 "number": 3,
-                "question": "What is the process by which plants make their own food using sunlight?",
-                "answers": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-                "correct_answer": "Photosynthesis"
+                "question": "Which of the following is a plant?",
+                "answers": ["Cat", "Oak tree", "Salmon", "Parrot"],
+                "correct_answer": "Oak tree"
             },
             {
                 "number": 4,
-                "question": "How do coconuts disperse their seeds?",
-                "answers": ["By water", "By wind", "By Animals", "By Gravity"],
-                "correct_answer": "By water"
+                "question": "What is the process by which plants make their own food using sunlight?",
+                "answers": ["Respiration", "Photosynthesis", "Digestion", "Germination"],
+                "correct_answer": "Photosynthesis"
             },
             {
                 "number": 5,
-                "question": "What state of matter is steam in?",
-                "answers": ["Liquid", "Solid", "Gas", "Dormant"],
-                "correct_answer": "Gas"
+                "question": "Which of these is a decomposer?",
+                "answers": ["Bear", "Mushroom", "Snake", "Eagle"],
+                "correct_answer": "Mushroom"
             },
             {
                 "number": 6,
-                "question": "What is a method used to increase the magnetic strength of a bar magnet?",
-                "answers": ["Placing it over a fire", "Dropping it from a height", "Stroking it using the north pole of another magnet", "Bringing it nearer to another magnet"],
-                "correct_answer": "Stroking it using the north pole of another magnet"
+                "question": "What is the basic unit of life?",
+                "answers": ["Atom", "Cell", "Molecule", "Tissue"],
+                "correct_answer": "Cell"
             },
             {
                 "number": 7,
-                "question": "What is the process by which living organisms break down food to release energy?",
-                "answers": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
-                "correct_answer": "Digestion"
+                "question": "What gas do plants absorb from the air during photosynthesis?",
+                "answers": ["Carbon dioxide", "Oxygen", "Nitrogen", "Hydrogen"],
+                "correct_answer": "Carbon dioxide"
             },
             {
                 "number": 8,
-                "question": "Which body system has a function of circulating blood around the body?",
-                "answers": ["Digestive system", "Respiratory system", "Skeletal system", "Circulatory system"],
-                "correct_answer": "Circulatory system"
+                "question": "Which of the following is NOT a mammal?",
+                "answers": ["Elephant", "Dolphin", "Crocodile", "Kangaroo"],
+                "correct_answer": "Crocodile"
             },
             {
                 "number": 9,
-                "question": "Which body system is the mouth a part of?",
-                "answers": ["Digestive system", "Respiratory system", "Skeletal system", "Circulatory system"],
-                "correct_answer": "Digestive system"
+                "question": "What is the body's largest organ?",
+                "answers": ["Heart", "Liver", "Skin", "Lungs"],
+                "correct_answer": "Skin"
             },
             {
                 "number": 10,
-                "question": "Which part of the plant takes in water?",
-                "answers": ["Roots", "Leaves", "Stem", "Flowers"],
-                "correct_answer": "Roots"
+                "question": "Which of the following is a non-living thing?",
+                "answers": ["Dog", "Rock", "Tree", "Fish"],
+                "correct_answer": "Rock"
             },
             {
                 "number": 11,
-                "question": "What is the powerhouse of the cell?",
-                "answers": ["Mitochondria", "Cytoplasm", "Cell wall", "Cell membrane"],
-                "correct_answer": "Mitochondria"
+                "question": "What is the main function of the heart?",
+                "answers": ["Breathing", "Pumping blood", "Digesting food", "Filtering water"],
+                "correct_answer": "Pumping blood"
             },
             {
                 "number": 12,
-                "question": "What characteristic does a gas have?",
-                "answers": ["It cannot be compressed", "It has a definite shape", "It has a definite volume", "It cannot expand"],
-                "correct_answer": "It cannot be compressed"
+                "question": "Which of the following is a fungus?",
+                "answers": ["Apple", "Rose", "Mushroom", "Banana"],
+                "correct_answer": "Mushroom"
             },
             {
                 "number": 13,
-                "question": "What is the freezing point of water in degrees Fahrenheit?",
-                "answers": ["32°F", "0°F", "50°F", "100°F"],
-                "correct_answer": 1
+                "question": "Where do plants get water and minerals from?",
+                "answers": ["Soil", "Air", "Sun", "Other plants"],
+                "correct_answer": "Soil"
             },
             {
                 "number": 14,
-                "question": "What is the process by which plants convert light energy into chemical energy in the form of glucose?",
-                "answers": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-                "correct_answer": 2
+                "question": "Which of the following is a function of bacteria?",
+                "answers": ["Decompose", "Respiration", "Photosynthesis", "Digestion"],
+                "correct_answer": "Decompose"
             },
             {
                 "number": 15,
-                "question": "What is the primary source of energy for the Earth?",
-                "answers": ["Wind", "Solar", "Fossil Fuels", "Hydropower"],
-                "correct_answer": 2
+                "question": "What is the process of a liquid turning into a gas called?",
+                "answers": ["Freezing", "Melting", "Boiling", "Condensation"],
+                "correct_answer": "Boiling"
             },
             {
                 "number": 16,
-                "question": "What is the main function of leaves on a plant?",
-                "answers": ["To anchor the plant", "To store water", "To absorb sunlight", "To pump blood"],
-                "correct_answer": 3
+                "question": "What is the primary function of the stomach in the digestive system?",
+                "answers": ["Absorb nutrients", "Break down food", "Pump blood", "Filter air"],
+                "correct_answer": "Break down food"
             },
             {
                 "number": 17,
-                "question": "What is the primary gas responsible for the blue color of the Earth's sky?",
-                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Ozone"],
-                "correct_answer": 3
+                "question": "Which of the following is a plant adaptation for survival in hot, arid environments?",
+                "answers": ["Broad leaves", "Waxy cuticle", "Coniferous needles", "None of the above"],
+                "correct_answer": "Coniferous needles"
             },
             {
                 "number": 18,
-                "question": "What is the chemical symbol for carbon?",
-                "answers": ["Ca", "Co", "C", "Cu"],
-                "correct_answer": 3
+                "question": "What is the largest planet in our solar system?",
+                "answers": ["Earth", "Venus", "Jupiter", "Mars"],
+                "correct_answer": "Jupiter"
             },
             {
                 "number": 19,
-                "question": "What is the largest organ in the human body?",
-                "answers": ["Heart", "Liver", "Brain", "Skin"],
-                "correct_answer": 4
+                "question": "Which of the following is a body system responsible for filtering waste from the blood?",
+                "answers": ["Nervous system", "Skeletal system", "Immune system", "Urinary system"],
+                "correct_answer": "Urinary system"
             },
             {
                 "number": 20,
-                "question": "What is the chemical symbol for sodium?",
-                "answers": ["Na", "No", "Ne", "Ni"],
-                "correct_answer": 1
+                "question": "What is the process of plants releasing water vapor into the air called?",
+                "answers": ["Transpiration", "Perspiration", "Respiration", "Expiration"],
+                "correct_answer": "Transpiration"
             },
             {
                 "number": 21,
-                "question": "What is the process by which living organisms produce energy from food?",
-                "answers": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
-                "correct_answer": 4
+                "question": "Which gas do humans primarily exhale when breathing?",
+                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+                "correct_answer": "Carbon dioxide"
             },
             {
                 "number": 22,
-                "question": "What is the main function of the heart in the human body?",
-                "answers": ["To think", "To pump blood", "To digest food", "To breathe"],
-                "correct_answer": 2
+                "question": "What part of the plant anchors it in the soil and absorbs water and nutrients?",
+                "answers": ["Leaves", "Flowers", "Roots", "Stem"],
+                "correct_answer": "Roots"
             },
             {
                 "number": 23,
-                "question": "What gas is released during photosynthesis and absorbed during respiration?",
-                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-                "correct_answer": 2
+                "question": "Which of the following is NOT a primary color?",
+                "answers": ["Red", "Green", "Blue", "Yellow"],
+                "correct_answer": "Yellow"
             },
             {
                 "number": 24,
-                "question": "What is the main function of the brain in the human body?",
-                "answers": ["To filter water", "To pump blood", "To think and process information", "To digest food"],
-                "correct_answer": 3
+                "question": "What is the role of white blood cells in the immune system?",
+                "answers": ["Pump blood", "Carry oxygen", "Fight infections", "Transport nutrients"],
+                "correct_answer": "Fight infections"
             },
             {
                 "number": 25,
-                "question": "What is the main function of the lungs in the human body?",
-                "answers": ["To pump blood", "To digest food", "To breathe and exchange oxygen and carbon dioxide", "To think"],
-                "correct_answer": 3
+                "question": "Which state of matter has a definite shape and volume?",
+                "answers": ["Solid", "Liquid", "Gas", "Plasma"],
+                "correct_answer": "Solid"
             }
         ],
         "Medium": [
             {
                 "number": 1,
-                "question": "What is the process by which green plants make their own food using sunlight?",
-                "answers": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-                "correct_answer": 2
+                "question": "What gas do plants release during photosynthesis?",
+                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+                "correct_answer": "Oxygen"
             },
             {
                 "number": 2,
-                "question": "What is the chemical formula for the compound known as hydrogen peroxide?",
-                "answers": ["H2O2", "HO2", "H3O", "H2O3"],
-                "correct_answer": 1
+                "question": "Which body system is responsible for pumping blood throughout the body?",
+                "answers": ["Digestive system", "Circulatory system", "Nervous system", "Respiratory system"],
+                "correct_answer": "Circulatory system"
             },
             {
                 "number": 3,
-                "question": "Which gas is responsible for the Earth's ozone layer and protects us from harmful ultraviolet (UV) radiation?",
-                "answers": ["Carbon dioxide", "Oxygen", "Ozone", "Methane"],
-                "correct_answer": 3
+                "question": "What is the process of a liquid turning into a solid called?",
+                "answers": ["Vaporization", "Melting", "Condensation", "Freezing"],
+                "correct_answer": "Freezing"
             },
             {
                 "number": 4,
-                "question": "What is the chemical formula for table salt (sodium chloride)?",
-                "answers": ["H2O", "NaCl", "CO2", "O2"],
-                "correct_answer": 2
+                "question": "Which of the following is a warm-blooded animal?",
+                "answers": ["Fish", "Snake", "Frog", "Bird"],
+                "correct_answer": "Bird"
             },
             {
                 "number": 5,
-                "question": "Which planet is known as the 'Red Planet'?",
-                "answers": ["Earth", "Mars", "Venus", "Saturn"],
-                "correct_answer": 2
+                "question": "What is the primary function of the brain in the human body?",
+                "answers": ["Digestion", "Filtering water", "Thought and coordination", "Pumping blood"],
+                "correct_answer": "Thought and coordination"
             },
             {
                 "number": 6,
-                "question": "What is the chemical formula for methane gas?",
-                "answers": ["CH4", "CO2", "H2O", "O2"],
-                "correct_answer": 1
+                "question": "Which gas is responsible for the Earth's greenhouse effect?",
+                "answers": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+                "correct_answer": "Carbon dioxide"
             },
             {
                 "number": 7,
-                "question": "What is the process by which living organisms break down food to release energy?",
-                "answers": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
-                "correct_answer": 4
+                "question": "What is the process of a gas turning into a liquid called?",
+                "answers": ["Vaporization", "Melting", "Condensation", "Freezing"],
+                "correct_answer": "Condensation"
             },
             {
                 "number": 8,
-                "question": "What is the molecular formula for water?",
-                "answers": ["H2O", "CO2", "O2", "NaCl"],
-                "correct_answer": 1
+                "question": "Which of the following is a consumer in the food chain?",
+                "answers": ["Producer", "Herbivore", "Decomposer", "Autotroph"],
+                "correct_answer": "Herbivore"
             },
             {
                 "number": 9,
-                "question": "Which gas do plants absorb from the atmosphere and use for photosynthesis?",
-                "answers": ["Carbon monoxide", "Oxygen", "Carbon dioxide", "Nitrogen"],
-                "correct_answer": 3
+                "question": "What is the role of red blood cells in the human body?",
+                "answers": ["Carry oxygen", "Fight infections", "Digest food", "Control movement"],
+                "correct_answer": "Carry oxygen"
             },
             {
                 "number": 10,
-                "question": "What is the chemical formula for carbon dioxide?",
-                "answers": ["H2O", "NaCl", "CO2", "O2"],
-                "correct_answer": 3
+                "question": "Which of the following is a type of fungus?",
+                "answers": ["Lily", "Rose", "Mushroom", "Tulip"],
+                "correct_answer": "Mushroom"
             },
             {
                 "number": 11,
-                "question": "What is the chemical formula for oxygen gas?",
-                "answers": ["H2O", "NaCl", "CO2", "O2"],
-                "correct_answer": 4
+                "question": "What is the process of a solid turning directly into a gas called?",
+                "answers": ["Sublimation", "Vaporization", "Melting", "Condensation"],
+                "correct_answer": "Sublimation"
             },
             {
                 "number": 12,
-                "question": "What is the chemical formula for carbon monoxide?",
-                "answers": ["H2O", "NaCl", "CO2", "CO"],
-                "correct_answer": 4
+                "question": "Which body system is responsible for filtering the blood, removing waste, and producing urine?",
+                "answers": ["Nervous system", "Skeletal system", "Immune system", "Urinary system"],
+                "correct_answer": "Urinary system"
             },
             {
                 "number": 13,
-                "question": "What gas is released during photosynthesis and absorbed during respiration?",
-                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-                "correct_answer": 1
+                "question": "What is the primary function of the liver in the human body?",
+                "answers": ["Pumping blood", "Breaking down toxins", "Digesting food", "Transporting oxygen"],
+                "correct_answer": "Breaking down toxins"
             },
             {
                 "number": 14,
-                "question": "What is the chemical formula for sulfuric acid?",
-                "answers": ["H2SO4", "HCl", "HNO3", "H3PO4"],
-                "correct_answer": 1
+                "question": "What is the process of a liquid turning into a gas called?",
+                "answers": ["Freezing", "Melting", "Boiling", "Condensation"],
+                "correct_answer": "Boiling"
             },
             {
                 "number": 15,
-                "question": "What gas is responsible for the greenhouse effect on Earth?",
-                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
-                "correct_answer": 2
+                "question": "Which of the following is a plant adaptation for survival in hot, arid environments?",
+                "answers": ["Broad leaves", "Waxy cuticle", "Coniferous needles", "None of the above"],
+                "correct_answer": "Coniferous needles"
             },
             {
                 "number": 16,
-                "question": "What is the chemical formula for ammonia?",
-                "answers": ["NH4", "NH3", "NO2", "N2"],
-                "correct_answer": 2
+                "question": "What is the largest planet in our solar system?",
+                "answers": ["Earth", "Venus", "Jupiter", "Mars"],
+                "correct_answer": "Jupiter"
             },
             {
                 "number": 17,
-                "question": "What gas do humans breathe in to support respiration?",
-                "answers": ["Carbon dioxide", "Oxygen", "Nitrogen", "Methane"],
-                "correct_answer": 2
+                "question": "Which of the following is a body system responsible for filtering waste from the blood?",
+                "answers": ["Nervous system", "Skeletal system", "Immune system", "Urinary system"],
+                "correct_answer": "Urinary system"
             },
             {
                 "number": 18,
-                "question": "What is the chemical formula for hydrochloric acid?",
-                "answers": ["H2O", "NaCl", "HCl", "CO2"],
-                "correct_answer": 3
+                "question": "What is the process of plants releasing water vapor into the air called?",
+                "answers": ["Transpiration", "Perspiration", "Respiration", "Expiration"],
+                "correct_answer": "Transpiration"
             },
             {
                 "number": 19,
-                "question": "What is the chemical formula for nitric acid?",
-                "answers": ["HNO3", "HCl", "H2SO4", "H3PO4"],
-                "correct_answer": 1
+                "question": "Which gas do humans primarily exhale when breathing?",
+                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+                "correct_answer": "Carbon dioxide"
             },
             {
                 "number": 20,
-                "question": "What is the chemical formula for acetic acid, which is found in vinegar?",
-                "answers": ["CH4", "H2SO4", "H3PO4", "CH3COOH"],
-                "correct_answer": 4
+                "question": "What part of the plant anchors it in the soil and absorbs water and nutrients?",
+                "answers": ["Leaves", "Flowers", "Roots", "Stem"],
+                "correct_answer": "Roots"
             },
             {
                 "number": 21,
-                "question": "What is the chemical formula for citric acid, which is found in citrus fruits?",
-                "answers": ["C6H12O6", "HCl", "HNO3", "C6H8O7"],
-                "correct_answer": 4
+                "question": "Which of the following is NOT a primary color?",
+                "answers": ["Red", "Green", "Blue", "Yellow"],
+                "correct_answer": "Yellow"
             },
             {
                 "number": 22,
-                "question": "What gas is used in the process of welding due to its ability to react with metals?",
-                "answers": ["Helium", "Oxygen", "Argon", "Acetylene"],
-                "correct_answer": 4
+                "question": "What is the role of white blood cells in the immune system?",
+                "answers": ["Pump blood", "Carry oxygen", "Fight infections", "Transport nutrients"],
+                "correct_answer": "Fight infections"
             },
             {
                 "number": 23,
-                "question": "What is the chemical formula for sulfur dioxide, a pollutant released from burning fossil fuels?",
-                "answers": ["SO2", "CO2", "O2", "NO2"],
-                "correct_answer": 1
-            },
-            {
-                "number": 24,
-                "question": "Which element is represented by the chemical symbol 'Fe'?",
-                "answers": ["Ferrum", "Fluorine", "Iron", "Iodine"],
-                "correct_answer": 3
-            },
-            {
-                "number": 25,
-                "question": "What gas is used in balloons to make them float in the air?",
-                "answers": ["Helium", "Oxygen", "Argon", "Nitrogen"],
-                "correct_answer": 1
+                "question": "Which state of matter has a definite shape and volume?",
+                "answers": ["Solid", "Liquid", "Gas", "Plasma"],
+                "correct_answer": "Solid"
             }
         ],
         "Hard": [
             {
                 "number": 1,
-                "question": "What is the process by which green plants make their own food using sunlight and convert it into chemical energy?",
-                "answers": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
-                "correct_answer": 2
+                "question": "What is the role of mitochondria in a cell?",
+                "answers": ["Energy production", "Food digestion", "Waste removal", "Cell division"],
+                "correct_answer": "Energy production"
             },
             {
                 "number": 2,
-                "question": "What is the chemical formula for the compound known as sodium bicarbonate?",
-                "answers": ["NaOH", "Na2CO3", "NaCl", "Na2SO4"],
-                "correct_answer": 2
+                "question": "Which gas is most abundant in the Earth's atmosphere?",
+                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+                "correct_answer": "Nitrogen"
             },
             {
                 "number": 3,
-                "question": "Which gas is the most abundant in Earth's atmosphere?",
-                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
-                "correct_answer": 3
+                "question": "What is the function of chlorophyll in plant cells?",
+                "answers": ["Absorbing water", "Producing energy", "Storing nutrients", "Providing structure"],
+                "correct_answer": "Producing energy"
             },
             {
                 "number": 4,
-                "question": "What is the chemical formula for acetic acid, which is a key component of vinegar?",
-                "answers": ["H2O2", "HO2", "CH3COOH", "H2O3"],
-                "correct_answer": 3
+                "question": "In the food chain, what are primary consumers also known as?",
+                "answers": ["Herbivores", "Producers", "Decomposers", "Predators"],
+                "correct_answer": "Herbivores"
             },
             {
                 "number": 5,
-                "question": "What is the chemical formula for methane gas?",
-                "answers": ["CH4", "CO2", "H2O", "O2"],
-                "correct_answer": 1
+                "question": "What is the process of a gas turning directly into a solid called?",
+                "answers": ["Sublimation", "Vaporization", "Deposition", "Ionization"],
+                "correct_answer": "Deposition"
             },
             {
                 "number": 6,
-                "question": "What is the process by which living organisms break down glucose to release energy and produce carbon dioxide and water as byproducts?",
-                "answers": ["Photosynthesis", "Digestion", "Fermentation", "Respiration"],
-                "correct_answer": 4
+                "question": "Which of the following is NOT a body system in the human body?",
+                "answers": ["Nervous system", "Endocrine system", "Immune system", "Digestive system"],
+                "correct_answer": "Immune system"
             },
             {
                 "number": 7,
-                "question": "What is the molecular formula for water?",
-                "answers": ["H2O", "CO2", "O2", "NaCl"],
-                "correct_answer": 1
+                "question": "What is the function of the alveoli in the respiratory system?",
+                "answers": ["Pumping blood", "Exchanging gases", "Filtering air", "Producing mucus"],
+                "correct_answer": "Exchanging gases"
             },
             {
                 "number": 8,
-                "question": "Which gas is responsible for the Earth's greenhouse effect?",
-                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Methane"],
-                "correct_answer": 2
+                "question": "Which of the following is a classification of matter as a pure substance?",
+                "answers": ["Element", "Mixture", "Compound", "Solution"],
+                "correct_answer": "Element"
             },
             {
                 "number": 9,
-                "question": "What is the chemical formula for sulfuric acid?",
-                "answers": ["H2SO4", "HCl", "HNO3", "H3PO4"],
-                "correct_answer": 1
+                "question": "What is the primary function of the ribcage in the human body?",
+                "answers": ["Digestion", "Protection of organs", "Pumping blood", "Respiration"],
+                "correct_answer": "Protection of organs"
             },
             {
                 "number": 10,
-                "question": "What is the chemical formula for ammonia?",
-                "answers": ["NH4", "NH3", "NO2", "N2"],
-                "correct_answer": 2
+                "question": "What is the process of the human body breaking down food into nutrients called?",
+                "answers": ["Digestion", "Respiration", "Circulation", "Excretion"],
+                "correct_answer": "Digestion"
             },
             {
                 "number": 11,
-                "question": "Which gas do humans breathe in to support cellular respiration?",
-                "answers": ["Carbon dioxide", "Oxygen", "Nitrogen", "Methane"],
-                "correct_answer": 2
+                "question": "What is the role of antibodies in the immune system?",
+                "answers": ["Pumping blood", "Transporting nutrients", "Fighting infections", "Regulating temperature"],
+                "correct_answer": "Fighting infections"
             },
             {
                 "number": 12,
-                "question": "What is the chemical formula for hydrochloric acid?",
-                "answers": ["H2O", "NaCl", "HCl", "CO2"],
-                "correct_answer": 3
+                "question": "What is the process of a solid turning directly into a gas called?",
+                "answers": ["Sublimation", "Vaporization", "Melting", "Condensation"],
+                "correct_answer": "Sublimation"
             },
             {
                 "number": 13,
-                "question": "What is the chemical formula for nitric acid?",
-                "answers": ["HNO3", "HCl", "H2SO4", "H3PO4"],
-                "correct_answer": 1
+                "question": "Which gas is responsible for the greenhouse effect on Earth?",
+                "answers": ["Oxygen", "Carbon dioxide", "Methane", "Nitrogen"],
+                "correct_answer": "Carbon dioxide"
             },
             {
                 "number": 14,
-                "question": "What gas is used in the process of welding due to its ability to react with metals?",
-                "answers": ["Helium", "Oxygen", "Argon", "Acetylene"],
-                "correct_answer": 4
+                "question": "What is the function of the nucleus in a cell?",
+                "answers": ["Energy production", "Cell division", "Food digestion", "Waste removal"],
+                "correct_answer": "Cell division"
             },
             {
                 "number": 15,
-                "question": "What is the chemical formula for hydrogen peroxide?",
-                "answers": ["H2O2", "HO2", "H3O", "H2O3"],
-                "correct_answer": 1
+                "question": "Which of the following is a type of microscopic fungi?",
+                "answers": ["Mold", "Mushroom", "Yeast", "Algae"],
+                "correct_answer": "Yeast"
             },
             {
                 "number": 16,
-                "question": "What is the chemical formula for carbon tetrachloride?",
-                "answers": ["CCl4", "CH4", "H2O", "CO2"],
-                "correct_answer": 1
+                "question": "What is the function of white blood cells in the immune system?",
+                "answers": ["Carry oxygen", "Fight infections", "Digest food", "Control movement"],
+                "correct_answer": "Fight infections"
             },
             {
                 "number": 17,
-                "question": "What gas is responsible for the distinct smell of rotten eggs?",
-                "answers": ["Hydrogen", "Oxygen", "Sulfur dioxide", "Methane"],
-                "correct_answer": 3
+                "question": "What is the process of a liquid turning into a solid called?",
+                "answers": ["Vaporization", "Melting", "Condensation", "Freezing"],
+                "correct_answer": "Freezing"
             },
             {
                 "number": 18,
-                "question": "What is the chemical formula for hydrofluoric acid, which can etch glass?",
-                "answers": ["HF", "HCl", "HNO3", "H2SO4"],
-                "correct_answer": 1
+                "question": "Which of the following is NOT a method of heat transfer?",
+                "answers": ["Conduction", "Convection", "Emission", "Radiation"],
+                "correct_answer": "Emission"
             },
             {
                 "number": 19,
-                "question": "What is the chemical formula for hydrogen sulfide, a toxic gas with a foul odor?",
-                "answers": ["H2S", "HSO4", "HNO3", "H2SO4"],
-                "correct_answer": 1
+                "question": "What is the process by which plants take in water through their roots called?",
+                "answers": ["Photosynthesis", "Respiration", "Transpiration", "Hydration"],
+                "correct_answer": "Transpiration"
             },
             {
                 "number": 20,
-                "question": "What is the chemical formula for carbon disulfide, a volatile and flammable liquid?",
-                "answers": ["CS2", "CO2", "H2O", "C2H4"],
-                "correct_answer": 1
+                "question": "Which gas is essential for respiration in humans?",
+                "answers": ["Oxygen", "Carbon dioxide", "Methane", "Hydrogen"],
+                "correct_answer": "Oxygen"
             },
             {
                 "number": 21,
-                "question": "What gas is used in balloons to make them float in the air?",
-                "answers": ["Helium", "Oxygen", "Argon", "Nitrogen"],
-                "correct_answer": 1
+                "question": "What is the process of plants releasing water vapor into the air called?",
+                "answers": ["Transpiration", "Perspiration", "Respiration", "Expiration"],
+                "correct_answer": "Transpiration"
             },
             {
                 "number": 22,
-                "question": "What is the molecular formula for glucose?",
-                "answers": ["C6H12O6", "HCl", "HNO3", "C6H8O7"],
-                "correct_answer": 1
+                "question": "What is the largest organ in the human body?",
+                "answers": ["Heart", "Liver", "Skin", "Lungs"],
+                "correct_answer": "Skin"
             },
             {
                 "number": 23,
-                "question": "What is the chemical formula for phosphoric acid, a common food additive?",
-                "answers": ["H3PO4", "HCl", "HNO3", "H2SO4"],
-                "correct_answer": 1
+                "question": "What is the function of the small intestine in the digestive system?",
+                "answers": ["Absorb nutrients", "Break down food", "Pump blood", "Filter air"],
+                "correct_answer": "Absorb nutrients"
             },
             {
                 "number": 24,
-                "question": "What is the chemical formula for sulfur hexafluoride, a potent greenhouse gas?",
-                "answers": ["SF6", "SO2", "SiF4", "SH2"],
-                "correct_answer": 1
+                "question": "Which gas do plants absorb during photosynthesis?",
+                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+                "correct_answer": "Carbon dioxide"
             },
             {
                 "number": 25,
-                "question": "Which gas is commonly used in fire extinguishers due to its ability to displace oxygen and cool the fire?",
-                "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Halothane"],
-                "correct_answer": 2
+                "question": "What is the process of a gas turning into a liquid called?",
+                "answers": ["Vaporization", "Melting", "Condensation", "Freezing"],
+                "correct_answer": "Condensation"
             }
         ]
     },
     "Math":{
-        "Easy": [
+        "Easy":[
+            {
+                "number": 1,
+                "question": "What is 3 + 4?",
+                "answers": ["5", "6", "7", "8"],
+                "correct_answer": "7"
+            },
+            {
+                "number": 2,
+                "question": "What is 8 - 2?",
+                "answers": ["3", "4", "5", "6"],
+                "correct_answer": "6"
+            },
+            {
+                "number": 3,
+                "question": "What is 5 X 2?",
+                "answers": ["8", "9", "10", "11"],
+                "correct_answer": "10"
+            },
+            {
+                "number": 4,
+                "question": "What is 9 ÷ 3?",
+                "answers": ["2", "3", "4", "5"],
+                "correct_answer": "3"
+            },
+            {
+                "number": 5,
+                "question": "What is 6 + 1?",
+                "answers": ["6", "7", "8", "9"],
+                "correct_answer": "7"
+            },
+            {
+                "number": 6,
+                "question": "What is 4 - 3?",
+                "answers": ["0", "1", "2", "3"],
+                "correct_answer": "1"
+            },
+            {
+                "number": 7,
+                "question": "What is 3 X 3?",
+                "answers": ["6", "7", "8", "9"],
+                "correct_answer": "9"
+            },
+            {
+                "number": 8,
+                "question": "What is 8 ÷ 2?",
+                "answers": ["2", "3", "4", "5"],
+                "correct_answer": "4"
+            },
+            {
+                "number": 9,
+                "question": "What is 2 + 6?",
+                "answers": ["6", "7", "8", "9"],
+                "correct_answer": "8"
+            },
+            {
+                "number": 10,
+                "question": "What is 7 - 5?",
+                "answers": ["1", "2", "3", "4"],
+                "correct_answer": "2"
+            },
+            {
+                "number": 11,
+                "question": "What is 4 X 1?",
+                "answers": ["3", "4", "5", "6"],
+                "correct_answer": "4"
+            },
+            {
+                "number": 12,
+                "question": "What is 9 ÷ 1?",
+                "answers": ["1", "2", "3", "4"],
+                "correct_answer": "9"
+            },
+            {
+                "number": 13,
+                "question": "What is 5 + 2?",
+                "answers": ["6", "7", "8", "9"],
+                "correct_answer": "7"
+            },
+            {
+                "number": 14,
+                "question": "What is 8 - 4?",
+                "answers": ["2", "3", "4", "5"],
+                "correct_answer": "4"
+            },
+            {
+                "number": 15,
+                "question": "What is 3 X 4?",
+                "answers": ["9", "10", "11", "12"],
+                "correct_answer": "12"
+            },
+            {
+                "number": 16,
+                "question": "What is 6 ÷ 3?",
+                "answers": ["1", "2", "3", "4"],
+                "correct_answer": "2"
+            },
+            {
+                "number": 17,
+                "question": "What is 7 + 3?",
+                "answers": ["9", "10", "11", "12"],
+                "correct_answer": "10"
+            },
+            {
+                "number": 18,
+                "question": "What is 5 - 1?",
+                "answers": ["2", "3", "4", "5"],
+                "correct_answer": "4"
+            },
+            {
+                "number": 19,
+                "question": "What is 2 X 5?",
+                "answers": ["8", "9", "10", "11"],
+                "correct_answer": "10"
+            },
+            {
+                "number": 20,
+                "question": "What is 8 ÷ 4?",
+                "answers": ["1", "2", "3", "4"],
+                "correct_answer": "2"
+            },
+            {
+                "number": 21,
+                "question": "What is 6 + 4?",
+                "answers": ["10", "11", "12", "13"],
+                "correct_answer": "10"
+            },
+            {
+                "number": 22,
+                "question": "What is 7 - 2?",
+                "answers": ["3", "4", "5", "6"],
+                "correct_answer": "5"
+            },
+            {
+                "number": 23,
+                "question": "What is 3 X 2?",
+                "answers": ["5", "6", "7", "8"],
+                "correct_answer": "6"
+            },
+            {
+                "number": 24,
+                "question": "What is 4 ÷ 2?",
+                "answers": ["1", "2", "3", "4"],
+                "correct_answer": "2"
+            },
+            {
+                "number": 25,
+                "question": "What is 5 + 5?",
+                "answers": ["9", "10", "11", "12"],
+                "correct_answer": "10"
+            }
+        ],
+        "Medium": [
             {
                 "number": 1,
                 "question": "What is 2 + 2?",
@@ -1070,7 +1209,7 @@
                 "correct_answer": 3
             }
         ],
-        "Medium": [
+        "Hard": [
             {
                 "number": 1,
                 "question": "What is 12 divided by 4?",
@@ -1221,159 +1360,7 @@
                 "answers": ["$5", "$10", "$15", "$20"],
                 "correct_answer": 4
             }
-        ],
-        "Hard": [
-            {
-                "number": 1,
-                "question": "What is the value of 'x' in the equation 3x + 5 = 17?",
-                "answers": [4, 6, 7, 8],
-                "correct_answer": 1
-            },
-            {
-                "number": 2,
-                "question": "Solve for 'y' in the equation 2y - 3 = 11.",
-                "answers": [2, 4, 5, 7],
-                "correct_answer": 4
-            },
-            {
-                "number": 3,
-                "question": "What is the square root of 169?",
-                "answers": [10, 11, 12, 13],
-                "correct_answer": 4
-            },
-            {
-                "number": 4,
-                "question": "If a train travels at a speed of 80 miles per hour, how long will it take to travel 160 miles?",
-                "answers": ["1 hour", "2 hours", "3 hours", "4 hours"],
-                "correct_answer": 2
-            },
-            {
-                "number": 5,
-                "question": "Solve for 'x' in the equation 4x - 7 = 5x + 3.",
-                "answers": [-10, 8, 4, 10],
-                "correct_answer": 1
-            },
-            {
-                "number": 6,
-                "question": "What is the area of a triangle with a base of 8 inches and a height of 10 inches?",
-                "answers": ["40 square inches", "48 square inches", "60 square inches", "80 square inches"],
-                "correct_answer": 1
-            },
-            {
-                "number": 7,
-                "question": "Solve for 'y' in the equation 3y + 2 = 2y - 5.",
-                "answers": [4, -7, 9, -12],
-                "correct_answer": 2
-            },
-            {
-                "number": 8,
-                "question": "What is the result of 5 to the power of 3 (5^3)?",
-                "answers": [100, 125, 150, 175],
-                "correct_answer": 2
-            },
-            {
-                "number": 9,
-                "question": "If a car travels at a speed of 60 kilometers per hour, how long will it take to travel 180 kilometers?",
-                "answers": ["2 hours", "3 hours", "4 hours", "5 hours"],
-                "correct_answer": 3
-            },
-            {
-                "number": 10,
-                "question": "What is the volume of a cube with edges of length 4 inches?",
-                "answers": ["16 cubic inches", "32 cubic inches", "48 cubic inches", "64 cubic inches"],
-                "correct_answer": 4
-            },
-            {
-                "number": 11,
-                "question": "Solve for 'x' in the equation 2x^2 - 5x - 3 = 0.",
-                "answers": [-3, -2, 1, 3],
-                "correct_answer": 4
-            },
-            {
-                "number": 12,
-                "question": "What is the result of 7 divided by 2, expressed as a mixed fraction?",
-                "answers": ["3.5", "3 1/2", "7/2", "2 7/2"],
-                "correct_answer": 2
-            },
-            {
-                "number": 13,
-                "question": "If a rectangular room measures 12 feet in length, 10 feet in width, and 8 feet in height, what is its volume?",
-                "answers": ["960 cubic feet", "1000 cubic feet", "1080 cubic feet", "1200 cubic feet"],
-                "correct_answer": 1
-            },
-            {
-                "number": 14,
-                "question": "Solve for 'x' in the equation (x + 3)(x - 2) = 0.",
-                "answers": [-1, -2, 2, 3],
-                "correct_answer": 3
-            },
-            {
-                "number": 15,
-                "question": "What is the result of 2 to the power of 5 (2^5)?",
-                "answers": [16, 32, 64, 128],
-                "correct_answer": 2
-            },
-            {
-                "number": 16,
-                "question": "If a bicycle wheel has a diameter of 28 inches, what is its circumference?",
-                "answers": ["26 inches", "52 inches", "65 inches", "88 inches"],
-                "correct_answer": 4
-            },
-            {
-                "number": 17,
-                "question": "Solve for 'y' in the equation 4y - 9 = 2y + 5.",
-                "answers": [7, 10, 14, 18],
-                "correct_answer": 1
-            },
-            {
-                "number": 18,
-                "question": "What is the result of 3/4 divided by 1/8?",
-                "answers": ["3", "5", "6", "8"],
-                "correct_answer": 3
-            },
-            {
-                "number": 19,
-                "question": "If a box contains 12 red balls, 18 blue balls, and 15 green balls, what is the probability of drawing a green ball at random?",
-                "answers": ["1/3", "1/4", "1/5", "1/2"],
-                "correct_answer": 1
-            },
-            {
-                "number": 20,
-                "question": "Solve for 'x' in the equation 5x - 2 = 3x + 10.",
-                "answers": [3, 6, 7, 12],
-                "correct_answer": 2
-            },
-            {
-                "number": 21,
-                "question": "What is the result of 4 to the power of 4 (4^4)?",
-                "answers": [64, 256, 1024, 4096],
-                "correct_answer": 2
-            },
-            {
-                "number": 22,
-                "question": "If a train travels at a speed of 100 kilometers per hour, how long will it take to travel 400 kilometers?",
-                "answers": ["2 hours", "3 hours", "4 hours", "5 hours"],
-                "correct_answer": 3
-            },
-            {
-                "number": 23,
-                "question": "Solve for 'y' in the equation 6y + 8 = 4y - 12.",
-                "answers": [6, -10, 14, -20],
-                "correct_answer": 2
-            },
-            {
-                "number": 24,
-                "question": "What is the result of 9 squared (9^2)?",
-                "answers": [72, 81, 90, 99],
-                "correct_answer": 2
-            },
-            {
-                "number": 25,
-                "question": "If a cube measures 15 inches in length, what is its perimeter?",
-                "answers": ["120 inches", "180 inches", "150 inches", "200 inches"],
-                "correct_answer": 2
-            }
-        ]    
+        ]   
     }
         
 }
