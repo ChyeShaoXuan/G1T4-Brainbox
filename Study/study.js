@@ -148,6 +148,15 @@ function populate_page(){
       let string_arr= value.split("-");
       let subject=string_arr[0];
       let topic=string_arr[1];
+
+      if (subject === 'math') {
+        // Add the calculator section
+        addCalculator();
+      } else {
+        // remove caculator if not math
+        removeCalculator();
+      }
+
       if(subject=='english' && topic=='vocabulary'){
         show_dictionary();
       }  
@@ -159,7 +168,7 @@ function populate_page(){
       let data_arr=(response.data[`${subject}`][`${topic}`])
       console.log(data_arr)
       new_html=``;
-    for (let i=0; i<data_arr.length;i++){
+      for (let i=0; i<data_arr.length;i++){
       let image=data_arr[i].image_url;
       let text=data_arr[i].front_text;
       let examples=data_arr[i].examples;
@@ -193,3 +202,83 @@ function populate_page(){
 
 
 }
+
+// Declaration 
+let displayValue = '';
+
+// Calculator display addons
+function appendToDisplay(value) {
+  displayValue += value;
+  updateDisplay();
+}
+
+// clear calculator display
+function clearDisplay() {
+  displayValue = '';
+  updateDisplay();
+}
+
+// calculator display
+function updateDisplay() {
+  document.getElementById('display').value = displayValue;
+}
+
+// calcualtor tabulator
+function calculateResult() {
+  try {
+    displayValue = eval(displayValue);
+    updateDisplay();
+  } catch (error) {
+    displayValue = 'Error';
+    updateDisplay();
+  }
+}
+
+// add calculator when math
+function addCalculator() {
+  const calculatorSection = document.getElementById('calculator_section');
+  calculatorSection.innerHTML = calculatorHTML;
+}
+
+// remove calculator when not math
+function removeCalculator() {
+  const calculatorSection = document.getElementById('calculator_section');
+  calculatorSection.innerHTML = ''; 
+}
+
+// For appending de calculator
+const calculatorHTML = `
+<h1 class="text-4xl text-center mt-5 font-bold">Feel free to use this calculator!</h1>
+<div id="calculator_section" class="text-center mt-5">
+  <div class="calculator">
+    <input type="text" id="display" readonly class="text-4xl bg-gray-900 text-white p-2 w-full mb-4 rounded-lg font-mono">
+    <div class="calculator-buttons">
+      <div id="row">
+        <button onclick="clearDisplay()" class="calculator-button bg-gray-300">C</button>
+        <button onclick="appendToDisplay('7')" class="calculator-button">7</button>
+        <button onclick="appendToDisplay('8')" class="calculator-button">8</button>
+        <button onclick="appendToDisplay('9')" class="calculator-button">9</button>
+        <button onclick="appendToDisplay('/')" class="calculator-button bg-yellow-300">/</button>
+      </div>
+      <div id="row">
+        <button onclick="appendToDisplay('4')" class="calculator-button">4</button>
+        <button onclick="appendToDisplay('5')" class="calculator-button">5</button>
+        <button onclick="appendToDisplay('6')" class="calculator-button">6</button>
+        <button onclick="appendToDisplay('*')" class="calculator-button bg-yellow-300">*</button>
+      </div>
+      <div id="row">
+        <button onclick="appendToDisplay('1')" class="calculator-button">1</button>
+        <button onclick="appendToDisplay('2')" class="calculator-button">2</button>
+        <button onclick="appendToDisplay('3')" class="calculator-button">3</button>
+        <button onclick="appendToDisplay('-')" class="calculator-button bg-yellow-300">-</button>
+      </div>
+      <div id="row">
+        <button onclick="appendToDisplay('0')" class="calculator-button">0</button>
+        <button onclick="appendToDisplay('.')" class="calculator-button">.</button>
+        <button onclick="calculateResult()" class="calculator-button bg-green-300">=</button>
+        <button onclick="appendToDisplay('+')" class="calculator-button bg-yellow-300">+</button>
+      </div>
+    </div>
+  </div>
+</div>
+`

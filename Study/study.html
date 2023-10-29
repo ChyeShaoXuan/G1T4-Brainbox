@@ -106,6 +106,41 @@
             }
         }
 
+        .calculator {
+          background: #444;
+          border: 2px solid #333;
+          border-radius: 10px;
+          padding: 20px;
+          max-width: 300px;
+          margin: 0 auto;
+        }
+
+        .calculator-buttons {
+          display: flex;
+          flex-direction: column;
+        }
+
+        #row {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .calculator-button {
+          flex: 1;
+          padding: 10px;
+          font-size: 1.5rem;
+          border: 1px solid #333;
+          border-radius: 5px;
+          background: #666;
+          color: white;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+
+        .calculator-button:hover {
+          background: #888;
+        }
+
     </style>
 </head>
 
@@ -201,9 +236,14 @@
                 </div>
             </div>
             <div class="row" id="dictionary_section">
-<!--for dictionary when called -->
-          
-          </div>
+              <!--for dictionary when called -->
+            </div>
+
+            <div id="calculator_section">
+              <!-- This is where the calculator will appear -->
+            </div>
+
+
             <div id="notes" class="mt-5"></div>
         </div>
     </div>
