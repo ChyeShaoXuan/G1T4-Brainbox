@@ -16,11 +16,11 @@ function display_default(){
       new_html+=
       `<div class='row mb-3 gap-0'>
           <div class='col-sm-1'></div>
-          <div class='col-sm-5 hover:scale-125' style='transition: transform .2s'>
+          <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto hover:scale-125' style='transition: transform .2s'>
              <img src="${image}" style="max-width:100%;
              max-height:100%;">
           </div>
-          <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/gif_background.gif");background-size:cover;background-repeat: no-repeat;'>
+          <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/gif_background.gif");background-size:cover;background-repeat: no-repeat;'>
                <p class="text-yellow-400 font-semibold text-md text-align-center m-5">${text}</p>
                <p class="text-white font-semibold text-md text-align-center m-5">${examples}</p>
                 
@@ -178,11 +178,11 @@ function populate_page(){
       new_html+=
       `<div class='row mb-3 gap-0'>
       <div class='col-sm-1'></div>
-      <div class='col-sm-5 hover:scale-125' style='transition: transform .2s'>
+      <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto hover:scale-125' style='transition: transform .2s'>
          <img src="${image}" style="max-width:100%;
          max-height:100%;z-index:-1">
       </div>
-      <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/gif_background.gif");background-size:cover;background-repeat: no-repeat;'>
+      <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/gif_background.gif");background-size:cover;background-repeat: no-repeat;'>
            <p class="text-yellow-400 font-semibold text-md  text-align-center m-5">${text}</p>
            <p class="text-white font-semibold text-md text-align-center m-5">${examples}</p>
             
