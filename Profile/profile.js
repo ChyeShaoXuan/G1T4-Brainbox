@@ -45,7 +45,7 @@ const root = Vue.createApp({
     methods: {
       editBio() {
         // Switch to editing mode
-        this.input_bio = this.displayed_bio;
+        this.input_bio = '';
         this.isEditing = true;
       },
       saveBio() {
