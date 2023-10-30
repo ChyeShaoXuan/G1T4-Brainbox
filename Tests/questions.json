@@ -222,7 +222,7 @@
             },
             {
                 "number": 12,
-                "question": "Choose the correct homophone:",
+                "question": "Complete the sentence : _____ one step ahead of me.",
                 "answers": ["Your", "You're", "Yore", "Ur"],
                 "correct_answer": "You're"
             },
@@ -270,9 +270,9 @@
             },
             {
                 "number": 20,
-                "question": "Choose the correct homophone:",
-                "answers": ["Their", "There", "They're", "Their"],
-                "correct_answer": "There"
+                "question": "Complete the sentence : You can't see him? But he's right _____ !",
+                "answers": ["their", "there", "they're", "their"],
+                "correct_answer": "there"
             },
             {
                 "number": 21,
@@ -314,7 +314,7 @@
             },
             {
                 "number": 2,
-                "question": "Choose the correct homophone:",
+                "question": "Complete the sentence: I left the book on the ______ .",
                 "answers": ["Flour", "Flower", "Flare", "Floor"],
                 "correct_answer": "Floor"
             },
@@ -326,9 +326,9 @@
             },
             {
                 "number": 4,
-                "question": "Identify the appositive in the sentence: 'My friend Alex, a talented artist, painted a mural.'",
-                "answers": ["My", "friend", "Alex", "a talented artist"],
-                "correct_answer": "a talented artist"
+                "question": "Complete the sentence: 'My friend Alex, a talented artist, painted a mural.'",
+                "answers": ["border", "epitome", "uprising", "mural"],
+                "correct_answer": "mural"
             },
             {
                 "number": 5,
@@ -386,9 +386,9 @@
             },
             {
                 "number": 14,
-                "question": "Identify the anaphora in the sentence: 'He loves chocolate. He eats it every day.'",
+                "question": "Identify the verb in the sentence: 'He loves chocolate. He eats it every day.'",
                 "answers": ["He", "loves", "chocolate", "it every day"],
-                "correct_answer": "He"
+                "correct_answer": "loves"
             },
             {
                 "number": 15,
@@ -410,9 +410,9 @@
             },
             {
                 "number": 18,
-                "question": "Identify the oxymoron in the sentence: 'The deafening silence was unsettling.'",
+                "question": "Identify the adjective in the sentence: 'The deafening silence was unsettling.'",
                 "answers": ["The", "deafening", "silence", "unsettling"],
-                "correct_answer": "deafening silence"
+                "correct_answer": "deafening"
             },
             {
                 "number": 19,
@@ -422,9 +422,9 @@
             },
             {
                 "number": 20,
-                "question": "Choose the correct homophone:",
-                "answers": ["Complement", "Compliment", "Complementt", "Complimment"],
-                "correct_answer": "Compliment"
+                "question": "Complete the sentence: I received a ____ from Miss Anne for helping others.",
+                "answers": ["complement", "compliment", "complementt", "complimment"],
+                "correct_answer": "compliment"
             },
             {
                 "number": 21,
@@ -434,9 +434,9 @@
             },
             {
                 "number": 22,
-                "question": "Identify the anaphora in the sentence: 'The book is on the shelf. The shelf is old.'",
+                "question": "Identify the first noun that appears in the sentence: 'The book is on the shelf. The shelf is old.'",
                 "answers": ["The", "book", "shelf", "is old"],
-                "correct_answer": "The"
+                "correct_answer": "book"
             },
             {
                 "number": 23,
