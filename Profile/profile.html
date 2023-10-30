@@ -87,6 +87,11 @@
             height: 60px;
             cursor: pointer;
         }
+
+        .hover-expand {
+            transform: scale(1.1); 
+            transition: transform 0.2s ease; 
+        }
     </style>
 </head>
 <body id="section1">
@@ -236,10 +241,10 @@
                         </div>
 
                         <p>{{ displayed_bio }}</p>
-                        <button v-if="!isEditing" @click="editBio" class="bg-yellow-500 text-white p-2 rounded-lg m-2 hover:bg-yellow-600">Edit Bio</button>
+                        <button v-if="!isEditing" @click="editBio" class="bg-yellow-500 text-white p-2 rounded-lg m-2 hover:bg-yellow-600 hover-expand">Edit Bio</button>
                         <input v-model="input_bio" v-if="isEditing" type="text" placeholder="Enter new bio" class="text-black bg-white p-2 rounded-lg m-2">
-                        <button v-if="isEditing" @click="saveBio" class="bg-yellow-500 text-white p-2 rounded-lg m-2 hover:bg-yellow-600">Save Changes</button>
-                        
+                        <button v-if="isEditing" @click="saveBio" class="bg-yellow-500 text-white p-2 rounded-lg m-2 hover:bg-yellow-600 hover-expand">Save Changes</button>
+
                     </div>
                 </div>
             </div>
