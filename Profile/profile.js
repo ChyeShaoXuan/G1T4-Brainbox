@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     prevButton.addEventListener("click", function () {
         currentAvatarIndex = (currentAvatarIndex - 1 + avatarThumbnails.length) % avatarThumbnails.length;
         showAvatar(currentAvatarIndex);
+        console.log("prev");
     });
 
     nextButton.addEventListener("click", function () {
