@@ -67,9 +67,12 @@
                         <button id="submit" @click="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Submit</button>
 
                         
-                    </div v-if="show">
-                        <p id="mark" class="hidden text-center text-2xl font-bold mt-4">Your Score= {{ score }}/{{ ran_qns.length }}</p>
+                    <div v-if="show" class="text-center mt-4">
+                        <p id="mark" class="text-2xl font-bold">
+                            Your Score = {{ score }}/{{ ran_qns.length }}
+                        </p>
                     </div>
+                        
             </div>
         </div>
     </div>
