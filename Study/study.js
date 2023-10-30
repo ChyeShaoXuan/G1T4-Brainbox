@@ -16,7 +16,7 @@ function display_default(){
       new_html+=
       `<div class='row mb-3 gap-0'>
           <div class='col-sm-1'></div>
-          <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto focus:scale-125' style='transition: transform .2s'>
+          <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3 rounded mx-auto focus:scale-125' style='transition: transform .2s'>
              <img src="${image}" style="max-width:100%;
              max-height:100%;" class="img-fluid mx-auto">
           </div>
@@ -178,7 +178,7 @@ function populate_page(){
       new_html+=
       `<div class='row mb-3 gap-0'>
       <div class='col-sm-1'></div>
-      <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto focus:scale-125' style='transition: transform .2s'>
+      <div class='col-sm-12 col-md-12 col-lg-12 col-xl-12 mb-3 rounded mx-auto focus:scale-125' style='transition: transform .2s'>
          <img src="${image}" style="max-width:100%;
          max-height:100%;z-index:-1" class="img-fluid mx-auto">
       </div>
