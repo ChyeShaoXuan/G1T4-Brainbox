@@ -29,7 +29,7 @@ function display_default(){
      </div>`
     }
       // complete button
-    new_html+=`<div><button class="bg-green-500 mt-3 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded"> I have completed everything!</button></div>`;
+    
     let contents= document.getElementById('notes')
     contents.innerHTML=new_html
       
@@ -191,7 +191,7 @@ function populate_page(){
  </div>`
     }
       //new complete button
-   new_html+=`<div><button class="bg-green-500 mt-3 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded"> I have completed everything! </button></div>`;
+  
     
     let contents= document.getElementById('notes')
     contents.innerHTML=new_html
