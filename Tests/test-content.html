@@ -61,10 +61,11 @@
                     </div>
 
                     <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                        <button id="submit" @click="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Submit</button>
                         <a href="test.html">
                             <button id="back" class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-700">Back</button>
                         </a>
+                        <button id="submit" @click="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Submit</button>
+
                         
                     </div v-if="show">
                         <p id="mark" class="hidden text-center text-2xl font-bold mt-4">Your Score= {{ score }}/{{ ran_qns.length }}</p>
