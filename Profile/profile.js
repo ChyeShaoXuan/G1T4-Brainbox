@@ -39,7 +39,8 @@ const root = Vue.createApp({
         return {
             displayed_bio: "[ABOUT ME]",
             input_bio: "",
-            isEditing: false,    
+            isEditing: false,
+            isSelecting: false
         }
     },
 
@@ -52,6 +53,12 @@ const root = Vue.createApp({
         saveBio() {
             this.displayed_bio = this.input_bio; // Update displayed bio
             this.isEditing = false;
+        }
+        editAvatar(){
+            this.isSelecting = true;
+        }
+        saveAvatar(){
+            this.isSelecting = false;
         }
     },
 
