@@ -53,7 +53,7 @@
                 "number": 9,
                 "question": "Choose the correct spelling:",
                 "answers": ["Acheive", "Achive", "Achieve", "Acheeve"],
-                "correct_answer": "C"
+                "correct_answer": "Achieve"
             },
             {
                 "number": 10,
@@ -65,7 +65,7 @@
                 "number": 11,
                 "question": "Which word is a preposition?",
                 "answers": ["Jump", "Under", "Book", "Happy"],
-                "correct_answer": "B"
+                "correct_answer": "Under"
             },
             {
                 "number": 12,
@@ -89,7 +89,7 @@
                 "number": 15,
                 "question": "Which word is an adjective?",
                 "answers": ["Run", "Blue", "Sky", "Play"],
-                "correct_answer": "B"
+                "correct_answer": "Blue"
             },
             {
                 "number": 16,
@@ -113,7 +113,7 @@
                 "number": 19,
                 "question": "Which word is a conjunction?",
                 "answers": ["Dog", "And", "Moon", "Yellow"],
-                "correct_answer": "B"
+                "correct_answer": "And"
             },
             {
                 "number": 20,
@@ -125,7 +125,7 @@
                 "number": 21,
                 "question": "Choose the correct spelling:",
                 "answers": ["Receive", "Recieve", "Receeve", "Recive"],
-                "correct_answer": "A"
+                "correct_answer": "Receive"
             },
             {
                 "number": 22,
@@ -137,7 +137,7 @@
                 "number": 23,
                 "question": "Which word is an adverb?",
                 "answers": ["Happy", "Slow", "Quickly", "Tree"],
-                "correct_answer": "C"
+                "correct_answer": "Quickly"
             },
             {
                 "number": 24,
@@ -182,7 +182,7 @@
                 "number": 5,
                 "question": "Which word is an adjective?",
                 "answers": ["Run", "Blue", "Sky", "Play"],
-                "correct_answer": "B"
+                "correct_answer": "Blue"
             },
             {
                 "number": 6,
@@ -272,7 +272,7 @@
                 "number": 20,
                 "question": "Choose the correct homophone:",
                 "answers": ["Their", "There", "They're", "Their"],
-                "correct_answer": "B"
+                "correct_answer": "There"
             },
             {
                 "number": 21,
@@ -296,7 +296,7 @@
                 "number": 24,
                 "question": "Choose the correct spelling:",
                 "answers": ["Believe", "Belive", "Beleive", "Beleave"],
-                "correct_answer": "A"
+                "correct_answer": "Believe"
             },
             {
                 "number": 25,
@@ -316,7 +316,7 @@
                 "number": 2,
                 "question": "Choose the correct homophone:",
                 "answers": ["Flour", "Flower", "Flare", "Floor"],
-                "correct_answer": "D"
+                "correct_answer": "Floor"
             },
             {
                 "number": 3,
@@ -334,7 +334,7 @@
                 "number": 5,
                 "question": "Which word is an adverb?",
                 "answers": ["Breakfast", "Suddenly", "Ocean", "Elephant"],
-                "correct_answer": "B"
+                "correct_answer": "Suddenly"
             },
             {
                 "number": 6,
@@ -400,7 +400,7 @@
                 "number": 16,
                 "question": "Choose the correct spelling:",
                 "answers": ["Miscellaneous", "Miscellanous", "Miscellaneus", "Miscelaneous"],
-                "correct_answer": "A"
+                "correct_answer": "Miscellaneous"
             },
             {
                 "number": 17,
@@ -424,7 +424,7 @@
                 "number": 20,
                 "question": "Choose the correct homophone:",
                 "answers": ["Complement", "Compliment", "Complementt", "Complimment"],
-                "correct_answer": "B"
+                "correct_answer": "Compliment"
             },
             {
                 "number": 21,
