@@ -235,9 +235,10 @@
                         </div>
 
                         <p>{{ displayed_bio }}</p>
-                        <button v-if="!isEditing" @click="editBio">Edit Bio</button>
-                        <input v-model="input_bio" v-if="isEditing" type="text" placeholder="Enter new bio">
-                        <button v-if="isEditing" @click="saveBio">Save Changes</button>
+                        <button v-if="!isEditing" @click="editBio" class="bg-yellow-500 text-white p-2 rounded-lg m-2 hover:bg-yellow-600">Edit Bio</button>
+                        <input v-model="input_bio" v-if="isEditing" type="text" placeholder="Enter new bio" class="text-black bg-white p-2 rounded-lg m-2">
+                        <button v-if="isEditing" @click="saveBio" class="bg-yellow-500 text-white p-2 rounded-lg m-2 hover:bg-yellow-600">Save Changes</button>
+                        
                     </div>
                 </div>
             </div>
