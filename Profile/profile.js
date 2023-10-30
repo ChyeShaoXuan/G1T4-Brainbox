@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded',insertName)
 const root = Vue.createApp({
     data() {
       return {
-        displayed_bio: "[ABOUT ME]",
+        displayed_bio: localStorage.getItem('bio') ||"[ABOUT ME]",
         input_bio: "",
         isEditing: false,
         isSelecting: false
@@ -52,6 +52,8 @@ const root = Vue.createApp({
         // Save the changes and switch back to viewing mode
         this.displayed_bio = this.input_bio;
         this.isEditing = false;
+
+        localStorage.setItem('bio', this.displayed_bio)
       },
       editAvatar() {
         this.isSelecting = true;
