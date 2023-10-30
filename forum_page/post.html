@@ -128,7 +128,7 @@
                 <h5>{{ retContent }}</h5>
             </div>
 
-            <div class="replies-container animate__animated animate__fadeInUp">
+            <div  v-if="commentsList.length!=0" class="replies-container animate__animated animate__fadeInUp">
                 <h3 class="mb-5">Post Replies:</h3>
                 <div v-for="comment in commentsList" class="comment">
                     <div class="media-body">
@@ -150,6 +150,7 @@
             </div>
 
             <a href="forum.html" class="btn btn-forum m-4 mb-4 animate__animated animate__fadeIn">Back to Forum</a>
+            <a v-if='deleteButton' id="deleteButton" v-on:click="deletePost()" class="btn btn-forum m-4 mb-4 animate__animated animate__fadeIn">Delete Post</a>
         </div>
     </div>
     <script type="module" src="post.js"></script>

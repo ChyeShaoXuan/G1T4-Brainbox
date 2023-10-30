@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-import { getDatabase, ref, onValue, update, set} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
+import { getDatabase, ref, onValue, update, set, remove} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
 import {getAuth, signOut, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
 
 const firebaseConfig = {
@@ -35,6 +35,7 @@ const root = Vue.createApp({
             authorName: '',
             authorPic: '',
             authorTime: '',
+            deleteButton: false,
         }
     },
     methods: {
@@ -54,6 +55,7 @@ const root = Vue.createApp({
                     }).catch(error => {
                         console.log(error.message)
                     })
+                    this.commentText = ''
                 } else {
                     console.log('not logged in')
                 }
@@ -97,6 +99,21 @@ const root = Vue.createApp({
             }, {
                 onlyOnce:true
             });
+        },
+
+        deletePost() {
+            if(confirm("Are you sure?")) {
+                const postDeleteRef = ref(db,'posts/' + postSub)
+                const commentDeleteRef = ref(db,'comments/')
+                let deleteUpdate = {}
+                deleteUpdate[postID] = null
+                update(postDeleteRef,deleteUpdate)
+                update(commentDeleteRef,deleteUpdate)
+                .then(() => {
+                    window.location.href = "forum.html"
+                })
+                // commentsDeleteRef.remove()
+            }
         }
     },
     
@@ -108,7 +125,16 @@ const root = Vue.createApp({
                 views: currViews
             }
             update(ref(db,'posts/'+ postSub + '/' + postID),updates)
-        
+            onAuthStateChanged(auth, user => {
+                if (user) {
+                    if(user.uid == postContent.uid) {
+                        console.log('yes')
+                        this.deleteButton = true;
+                    }
+                } else {
+                    console.log('something')
+                }
+            })
             this.retTitle = postContent.title
             this.retContent = postContent.content
             const userDetailsRef = ref(db,'users/' + postContent.uid)
