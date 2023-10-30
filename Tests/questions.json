@@ -469,8 +469,8 @@
             {
                 "number": 2,
                 "question": "What is the main function of the lungs?",
-                "answers": ["Pumping blood", "Breathing oxygen", "Digesting food", "Filtering water"],
-                "correct_answer": "Breathing oxygen"
+                "answers": ["Pumping blood", "Taking in oxygen", "Digesting food", "Filtering water"],
+                "correct_answer": "Taking in oxygen"
             },
             {
                 "number": 3,
@@ -492,9 +492,9 @@
             },
             {
                 "number": 6,
-                "question": "What is the basic unit of life?",
-                "answers": ["Atom", "Cell", "Molecule", "Tissue"],
-                "correct_answer": "Cell"
+                "question": "What body system helps break down food?",
+                "answers": ["Digestive system", "Skeletal system", "Respiratory system", "Muscular system"],
+                "correct_answer": "Digestive system"
             },
             {
                 "number": 7,
@@ -510,9 +510,9 @@
             },
             {
                 "number": 9,
-                "question": "What is the body's largest organ?",
-                "answers": ["Heart", "Liver", "Skin", "Lungs"],
-                "correct_answer": "Skin"
+                "question": "Which organ removes water from undigested food?",
+                "answers": ["Large intestine", "Liver", "Skin", "Lungs"],
+                "correct_answer": "Large intestine"
             },
             {
                 "number": 10,
@@ -534,15 +534,15 @@
             },
             {
                 "number": 13,
-                "question": "Where do plants get water and minerals from?",
-                "answers": ["Soil", "Air", "Sun", "Other plants"],
-                "correct_answer": "Soil"
+                "question": "Which part of the plant helps it take in water?",
+                "answers": ["Flower", "Leaves", "Roots", "Shoot"],
+                "correct_answer": "Roots"
             },
             {
                 "number": 14,
-                "question": "Which of the following is a function of bacteria?",
-                "answers": ["Decompose", "Respiration", "Photosynthesis", "Digestion"],
-                "correct_answer": "Decompose"
+                "question": "Which of the following the role of bacteria in an ecosystem?",
+                "answers": ["Decomposer", "Predator", "Foodmaker", "Prey"],
+                "correct_answer": "Decomposer"
             },
             {
                 "number": 15,
@@ -565,15 +565,15 @@
 
             {
                 "number": 19,
-                "question": "Which of the following is a body system responsible for filtering waste from the blood?",
-                "answers": ["Nervous system", "Skeletal system", "Immune system", "Urinary system"],
-                "correct_answer": "Urinary system"
+                "question": "Which of the following is a body system responsible for allowing us to move around?",
+                "answers": ["Respiratory", "Skeletal system", "Muscular system", "Digestive system"],
+                "correct_answer": "Muscular system"
             },
             {
                 "number": 20,
-                "question": "What is the process of plants releasing water vapor into the air called?",
-                "answers": ["Transpiration", "Perspiration", "Respiration", "Expiration"],
-                "correct_answer": "Transpiration"
+                "question": "What is the process of plants spreading their seeds called?",
+                "answers": ["Dispersal", "Respiration", "Photosynthesis", "Expiration"],
+                "correct_answer": "Dispersal"
             },
             {
                 "number": 21,
@@ -589,15 +589,15 @@
             },
             {
                 "number": 23,
-                "question": "Which of the following is NOT a primary color?",
-                "answers": ["Red", "Green", "Blue", "Yellow"],
-                "correct_answer": "Yellow"
+                "question": "Which of the following is NOT a fungi?",
+                "answers": ["Mushroom", "Yeast", "Mould", "Bird"],
+                "correct_answer": "Bird"
             },
             {
                 "number": 24,
-                "question": "What is the role of white blood cells in the immune system?",
-                "answers": ["Pump blood", "Carry oxygen", "Fight infections", "Transport nutrients"],
-                "correct_answer": "Fight infections"
+                "question": "What is the role of the mouth in the digestive system?",
+                "answers": ["Pump blood", "Partially digest food", "Fight infections", "Transport nutrients"],
+                "correct_answer": "Partially digest food"
             },
             {
                 "number": 25,
@@ -633,7 +633,7 @@
             },
             {
                 "number": 5,
-                "question": "What is the primary function of the brain in the human body?",
+                "question": "What is the primary function of the  in the human body?",
                 "answers": ["Digestion", "Filtering water", "Thought and coordination", "Pumping blood"],
                 "correct_answer": "Thought and coordination"
             },
@@ -657,9 +657,9 @@
             },
             {
                 "number": 9,
-                "question": "What is the role of red blood cells in the human body?",
-                "answers": ["Carry oxygen", "Fight infections", "Digest food", "Control movement"],
-                "correct_answer": "Carry oxygen"
+                "question": "Complete the sentence - mass is the ______ an object",
+                "answers": ["space occupied by", "amount of matter in", "amount of air", "amount of space"],
+                "correct_answer": "amount of matter"
             },
             {
                 "number": 10,
@@ -693,22 +693,22 @@
             },
             {
                 "number": 15,
-                "question": "Which of the following is a plant adaptation for survival in hot, arid environments?",
-                "answers": ["Broad leaves", "Waxy cuticle", "Coniferous needles", "None of the above"],
-                "correct_answer": "Coniferous needles"
+                "question": "Which of the following is a property of a solid?",
+                "answers": ["No definite volume", "No definite shape", "Definite shape", "Can be compressed"],
+                "correct_answer": "Definite shape"
             },
             
             {
                 "number": 17,
-                "question": "Which of the following is a body system responsible for filtering waste from the blood?",
-                "answers": ["Nervous system", "Skeletal system", "Immune system", "Urinary system"],
-                "correct_answer": "Urinary system"
+                "question": "Which of the following is a body system responsible for receiving oxygen and releasing carbon dixode?",
+                "answers": ["Nervous system", "Skeletal system", "Circulatory system", "Respiratory system"],
+                "correct_answer": "Respiratory system"
             },
             {
                 "number": 18,
-                "question": "What is the process of plants releasing water vapor into the air called?",
-                "answers": ["Transpiration", "Perspiration", "Respiration", "Expiration"],
-                "correct_answer": "Transpiration"
+                "question": "Which word describes a rabbit",
+                "answers": ["Herbivore", "Carnivore", "Omnivore", "Piscivore"],
+                "correct_answer": "Herbivore"
             },
             {
                 "number": 19,
@@ -724,15 +724,15 @@
             },
             {
                 "number": 21,
-                "question": "Which of the following is NOT a primary color?",
-                "answers": ["Red", "Green", "Blue", "Yellow"],
-                "correct_answer": "Yellow"
+                "question": "Which of the following is NOT a fish?",
+                "answers": ["Dolphin", "Shark", "Eel", "Barracuda"],
+                "correct_answer": "Dolphin"
             },
             {
                 "number": 22,
-                "question": "What is the role of white blood cells in the immune system?",
+                "question": "What is the role of the heart in the circulatory system?",
                 "answers": ["Pump blood", "Carry oxygen", "Fight infections", "Transport nutrients"],
-                "correct_answer": "Fight infections"
+                "correct_answer": "Pump blood"
             },
             {
                 "number": 23,
@@ -744,15 +744,15 @@
         "Hard": [
             {
                 "number": 1,
-                "question": "What is the role of mitochondria in a cell?",
-                "answers": ["Energy production", "Food digestion", "Waste removal", "Cell division"],
-                "correct_answer": "Energy production"
+                "question": "What is the role of a lion in a food chain?",
+                "answers": ["Predator", "Prey", "Decomposer", "Foodmaker"],
+                "correct_answer": "Predator"
             },
             {
                 "number": 2,
-                "question": "Which gas is most abundant in the Earth's atmosphere?",
+                "question": "Which gas do humans expel during respiration?",
                 "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-                "correct_answer": "Nitrogen"
+                "correct_answer": "Carbon dixode"
             },
             {
                 "number": 3,
@@ -780,15 +780,15 @@
             },
             {
                 "number": 7,
-                "question": "What is the function of the alveoli in the respiratory system?",
-                "answers": ["Pumping blood", "Exchanging gases", "Filtering air", "Producing mucus"],
-                "correct_answer": "Exchanging gases"
+                "question": "What is the function of the windpipe in the respiratory system?",
+                "answers": ["Pumping blood", "Exchanging gases", "Carrying air in and out of lungs", "Producing mucus"],
+                "correct_answer": "Carrying air in and out of lungs"
             },
             {
                 "number": 8,
-                "question": "Which of the following is a classification of matter as a pure substance?",
-                "answers": ["Element", "Mixture", "Compound", "Solution"],
-                "correct_answer": "Element"
+                "question": "Which of the following is the state of matter of steam?",
+                "answers": ["Gas", "Mixture", "Compound", "Liquid"],
+                "correct_answer": "Gas"
             },
             {
                 "number": 9,
@@ -804,9 +804,9 @@
             },
             {
                 "number": 11,
-                "question": "What is the role of antibodies in the immune system?",
-                "answers": ["Pumping blood", "Transporting nutrients", "Fighting infections", "Regulating temperature"],
-                "correct_answer": "Fighting infections"
+                "question": "What is the role of the rectum?",
+                "answers": ["Expelling undigested food", "Transporting nutrients", "Fighting infections", "Regulating temperature"],
+                "correct_answer": "Expelling undigested food"
             },
             {
                 "number": 12,
@@ -858,7 +858,7 @@
             },
             {
                 "number": 20,
-                "question": "Which gas is essential for respiration in humans?",
+                "question": "Which gas is inhaled by humans?",
                 "answers": ["Oxygen", "Carbon dioxide", "Methane", "Hydrogen"],
                 "correct_answer": "Oxygen"
             },
@@ -870,9 +870,9 @@
             },
             {
                 "number": 22,
-                "question": "What is the largest organ in the human body?",
+                "question": "Which of the following is an organ in the respiratory system?",
                 "answers": ["Heart", "Liver", "Skin", "Lungs"],
-                "correct_answer": "Skin"
+                "correct_answer": "Lungs"
             },
             {
                 "number": 23,
