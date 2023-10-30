@@ -34,43 +34,37 @@ function insertName() {
 document.addEventListener('DOMContentLoaded',insertName)
 
 const root = Vue.createApp({
-
     data() {
-        return {
-            displayed_bio: "[ABOUT ME]",
-            input_bio: "",
-            isEditing: false,
-            isSelecting: false
-        }
+      return {
+        displayed_bio: "[ABOUT ME]",
+        input_bio: "",
+        isEditing: false,
+        isSelecting: false
+      }
     },
-
     methods: {
-
-        editBio() {
-            this.input_bio = this.displayed_bio; // Initialize input with current bio
-            this.isEditing = true;
-        },
-        saveBio() {
-            this.displayed_bio = this.input_bio; // Update displayed bio
-            this.isEditing = false;
-        }
-        editAvatar(){
-            this.isSelecting = true;
-        }
-        saveAvatar(){
-            this.isSelecting = false;
-        }
-    },
-
-    created() {
-        
+      editBio() {
+        // Switch to editing mode
+        this.input_bio = this.displayed_bio;
+        this.isEditing = true;
+      },
+      saveBio() {
+        // Save the changes and switch back to viewing mode
+        this.displayed_bio = this.input_bio;
+        this.isEditing = false;
+      },
+      editAvatar() {
+        this.isSelecting = true;
+      },
+      saveAvatar() {
+        this.isSelecting = false;
+      }
     }
-        
-})
-
-document.addEventListener('DOMContentLoaded', () => {
+  });
+  
+  document.addEventListener('DOMContentLoaded', () => {
     root.mount("#root");
-});
+  });
 
 // JavaScript for avatar selection carousel
 document.addEventListener("DOMContentLoaded", function () {
