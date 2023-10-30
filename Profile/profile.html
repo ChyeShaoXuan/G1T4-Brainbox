@@ -204,17 +204,19 @@
         <div class="container mx-auto px-4">
             <div class="md:w-1/2 mx-auto">
                 <div class="profile-card p-6 text-center text-white" style='background-image:url("../Images/profile_backgroundcopped.gif"); background-size: 100% 100%; background-position: center; background-repeat: no-repeat;'>
-                    <!-- Profile picture -->
-                    <div class="profile-picture">
-                        <img id="avatar-image" src="../Images/avatar4.jpg" alt="Your Name" class="rounded-full w-32 h-32 mx-auto mb-4">
-                    </div>
-
-                    <h2 class="text-2xl font-semibold text-white" id="name">[INSERT MY NAME HERE]</h2>
 
                     <div id="root">
 
+                        <!-- Profile picture -->
+                        <div class="profile-picture flex" >
+                            <img id="avatar-image" src="../Images/avatar4.jpg" alt="Your Name" class="rounded-full w-32 h-32 mx-auto mb-4">
+                            <i class="fa-duotone fa-pen-to-square fa-xl" @click="editAvatar"></i>
+                        </div>
+    
+                        <h2 class="text-2xl font-semibold text-white" id="name">[INSERT MY NAME HERE]</h2>
+                        
                         <!-- Avatar selection carousel -->
-                        <div class="avatar-carousel">
+                        <div class="avatar-carousel" v-if="isSelecting">
                             <div class="avatar-list" id="avatar-list">
                                 <img src="../Images/avatar1.jpg" alt="Avatar 1" class="avatar-thumbnail" data-src="../Images/avatar1.jpg" style="display:none">
                                 <img src="../Images/avatar2.jpg" alt="Avatar 2" class="avatar-thumbnail" data-src="../Images/avatar2.jpg" style="display:none">
@@ -229,7 +231,7 @@
                             </div>
                             <button id="prev-avatar" class="avatar-button bg-blue-500 text-white p-4 rounded-lg m-2 hover:bg-blue-600">Previous Avatar</button>
                             <button id="next-avatar" class="avatar-button bg-blue-500 text-white p-4 rounded-lg m-2 hover:bg-blue-600">Next Avatar</button>
-                            <button id="confirm-avatar" class="avatar-button bg-green-500 text-white p-4 rounded-lg m-2 hover:bg-green-600">Confirm Avatar</button>
+                            <button id="confirm-avatar" class="avatar-button bg-green-500 text-white p-4 rounded-lg m-2 hover:bg-green-600" @click="saveAvatar">Confirm Avatar</button>
                         </div>
 
                         <p class="mb-1">{{ displayed_bio }}</p>
