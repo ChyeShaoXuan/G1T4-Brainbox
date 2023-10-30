@@ -1052,151 +1052,151 @@
                 "number": 1,
                 "question": "What is 2 + 2?",
                 "answers": [3, 4, 5, 6],
-                "correct_answer": 2
+                "correct_answer": 4
             },
             {
                 "number": 2,
                 "question": "If you have 3 apples and you eat 1, how many apples do you have left?",
                 "answers": [0, 1, 2, 3],
-                "correct_answer": 2
+                "correct_answer": 1
             },
             {
                 "number": 3,
                 "question": "What is 5 multiplied by 3?",
                 "answers": [10, 15, 20, 25],
-                "correct_answer": 2
+                "correct_answer": 15
             },
             {
                 "number": 4,
                 "question": "If you had 10 oranges at first, gave away 4, how many oranges do you have now?",
                 "answers": [6, 8, 10, 14],
-                "correct_answer": 1
+                "correct_answer": 6
             },
             {
                 "number": 5,
                 "question": "What is 9 minus 4?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 4
+                "correct_answer": 5
             },
             {
                 "number": 6,
                 "question": "How many sides does a triangle have?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 2
+                "correct_answer": 3
             },
             {
                 "number": 7,
                 "question": "What is the next number in the sequence: 2, 4, 6, __?",
                 "answers": [5, 7, 8, 9],
-                "correct_answer": 3
+                "correct_answer": 8
             },
             {
                 "number": 8,
                 "question": "If you have 5 fingers on one hand, how many fingers do you have on both hands?",
                 "answers": [5, 10, 15, 20],
-                "correct_answer": 2
+                "correct_answer": 10
             },
             {
                 "number": 9,
                 "question": "What is 7 plus 3?",
                 "answers": [9, 10, 11, 12],
-                "correct_answer": 2
+                "correct_answer": 10
             },
             {
                 "number": 10,
                 "question": "If you have 4 quarters, how much money do you have?",
                 "answers": ["$1", "$0.25", "$0.50", "$1.25"],
-                "correct_answer": 1
+                "correct_answer": "$1"
             },
             {
                 "number": 11,
                 "question": "What is the result of 6 divided by 2?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 2
+                "correct_answer": 3
             },
             {
                 "number": 12,
                 "question": "If you have 8 candies, how many candies do you have left if you ate 2 candies?",
                 "answers": [4, 6, 8, 10],
-                "correct_answer": 2
+                "correct_answer": 6
             },
             {
                 "number": 13,
                 "question": "What is the value of 'x' in the equation 2x + 3 = 7?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 1
+                "correct_answer": 2
             },
             {
                 "number": 14,
                 "question": "How many sides does a square have?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 3
+                "correct_answer": 4
             },
             {
                 "number": 15,
                 "question": "What is 8 minus 5?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 2
+                "correct_answer": 3
             },
             {
                 "number": 16,
                 "question": "If you have 12 months in a year, how many months are there in 2 years?",
                 "answers": [12, 18, 24, 36],
-                "correct_answer": 3
+                "correct_answer": 24
             },
             {
                 "number": 17,
                 "question": "What is the sum of 9 and 6?",
                 "answers": [12, 13, 14, 15],
-                "correct_answer": 4
+                "correct_answer": 15
             },
             {
                 "number": 18,
                 "question": "If you have 20 candies and you eat 8, how many candies do you have left?",
                 "answers": [8, 10, 12, 15],
-                "correct_answer": 3
+                "correct_answer": 12
             },
             {
                 "number": 19,
                 "question": "What is 4 times 5?",
                 "answers": [15, 18, 20, 25],
-                "correct_answer": 3
+                "correct_answer": 20
             },
             {
                 "number": 20,
                 "question": "How many days are there in a week?",
                 "answers": [5, 6, 7, 8],
-                "correct_answer": 3
+                "correct_answer": 7
             },
             {
                 "number": 21,
                 "question": "What is the next number in the sequence: 3, 6, 9, __?",
                 "answers": [10, 11, 12, 13],
-                "correct_answer": 3
+                "correct_answer": 12
             },
             {
                 "number": 22,
                 "question": "If you have 4 10-cents coins, how much money do you have?",
                 "answers": ["$4", "$0.40", "$0.30", "$0.04"],
-                "correct_answer": 2
+                "correct_answer": "$0.40"
             },
             {
                 "number": 23,
                 "question": "What is 10 plus 2?",
                 "answers": [11, 12, 13, 14],
-                "correct_answer": 2
+                "correct_answer": 12
             },
             {
                 "number": 24,
                 "question": "How many fingers are there on one hand?",
                 "answers": [2, 5, 10, 20],
-                "correct_answer": 2
+                "correct_answer": 5
             },
             {
                 "number": 25,
                 "question": "What is 7 minus 3?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 3
+                "correct_answer": 4
             }
         ],
         "Hard": [
@@ -1204,151 +1204,141 @@
                 "number": 1,
                 "question": "What is 12 divided by 4?",
                 "answers": [2, 3, 4, 5],
-                "correct_answer": 2
+                "correct_answer": 3
             },
             {
                 "number": 2,
                 "question": "If a book costs $15 and you have $20, how much change will you get?",
                 "answers": ["$5", "$10", "$15", "$20"],
-                "correct_answer": 1
+                "correct_answer": "$5"
             },
             {
                 "number": 3,
                 "question": "What is 3 squared (3^2)?",
                 "answers": [6, 9, 12, 15],
-                "correct_answer": 2
+                "correct_answer": 9
             },
             {
                 "number": 4,
                 "question": "If you have 30 pencils and you give away 8, how many pencils do you have left?",
                 "answers": [10, 15, 20, 22],
-                "correct_answer": 4
+                "correct_answer": 22
             },
             {
                 "number": 5,
                 "question": "What is the result of 8 multiplied by 7?",
                 "answers": [48, 56, 64, 72],
-                "correct_answer": 2
+                "correct_answer": 56
             },
             {
                 "number": 6,
                 "question": "What is 1/4 of 20?",
                 "answers": [2, 4, 5, 6],
-                "correct_answer": 3
+                "correct_answer": 5
             },
             {
                 "number": 7,
                 "question": "If you have 5 siblings, and you are the 3rd oldest, how many siblings are younger than you?",
                 "answers": [0, 1, 2, 4],
-                "correct_answer": 3
+                "correct_answer": 2
             },
             {
                 "number": 8,
                 "question": "What is the next number in the sequence: 5, 10, 15, __?",
                 "answers": [18, 20, 22, 24],
-                "correct_answer": 2
+                "correct_answer": 20
             },
             {
                 "number": 9,
                 "question": "What is 40% of 80?",
                 "answers": [16, 32, 40, 64],
-                "correct_answer": 2
+                "correct_answer": 32
             },
             {
                 "number": 10,
                 "question": "If you have 24 marbles and you give away half of them, how many marbles do you have left?",
                 "answers": [6, 8, 12, 18],
-                "correct_answer": 3
+                "correct_answer": 12
             },
             {
                 "number": 11,
                 "question": "What is the sum of 5 and 1/4?",
                 "answers": [5.25, 5.5, 5.75, 6],
-                "correct_answer": 1
+                "correct_answer": 5.25
             },
-            {
-                "number": 12,
-                "question": "If a square has a side length of 6 inches, what is its area?",
-                "answers": ["6 square inches", "12 square inches", "24 square inches", "36 square inches"],
-                "correct_answer": 4
-            },
+            
             {
                 "number": 13,
                 "question": "What is 15% of 200?",
                 "answers": [20, 30, 40, 50],
-                "correct_answer": 2
+                "correct_answer": 30
             },
             {
                 "number": 14,
                 "question": "If a rectangle has a length of 8 units and a width of 5 units, what is its perimeter?",
                 "answers": ["13 units", "18 units", "26 units", "40 units"],
-                "correct_answer": 3
+                "correct_answer": "26 units"
             },
             {
                 "number": 15,
                 "question": "What is the product of 7 and 1/2?",
                 "answers": [3.5, 5, 7, 14],
-                "correct_answer": 1
+                "correct_answer": 3.5
             },
             {
                 "number": 16,
                 "question": "If you have $50, and you spend $20, how much money do you have left?",
                 "answers": ["$30", "$20", "$10", "$5"],
-                "correct_answer": 1
+                "correct_answer": "$30"
             },
             {
                 "number": 17,
                 "question": "What is 2/3 of 18?",
                 "answers": [4, 8, 12, 16],
-                "correct_answer": 3
+                "correct_answer": 12
             },
             {
                 "number": 18,
                 "question": "If you have 60 candies and you give away one-third of them, how many candies do you have left?",
                 "answers": [10, 20, 30, 40],
-                "correct_answer": 4
+                "correct_answer": 40
             },
             {
                 "number": 19,
                 "question": "What is the next number in the sequence: 8, 16, 32, __?",
                 "answers": [48, 64, 72, 80],
-                "correct_answer": 2
+                "correct_answer": 64
             },
             {
                 "number": 20,
                 "question": "What is 5 divided by 1/5?",
                 "answers": [1, 5, 10, 25],
-                "correct_answer": 4
+                "correct_answer": 25
             },
             {
                 "number": 21,
                 "question": "If a box contains 25 red balls, 30 blue balls, and 15 green balls, what is the total number of balls in the box?",
                 "answers": [50, 70, 75, 100],
-                "correct_answer": 2
+                "correct_answer": 70
             },
             {
                 "number": 22,
                 "question": "What is the difference between 14 and 1/3?",
                 "answers": [13.5, 13.67, 14, 14.5],
-                "correct_answer": 2
+                "correct_answer": 13.67
             },
-            {
-                "number": 23,
-                "question": "If a car travels at a speed of 60 miles per hour, how far will it travel in 4 hours?",
-                "answers": ["120 miles", "180 miles", "240 miles", "300 miles"],
-                "correct_answer": 3
-            },
+            
             {
                 "number": 24,
                 "question": "What is the product of 3 and 3/4?",
                 "answers": [2.25, 3.75, 4, 12.5],
-                "correct_answer": 1
+                "correct_answer": 2.25
             },
             {
                 "number": 25,
                 "question": "If a book costs $25 and it is on sale for 20% off, what is the sale price?",
                 "answers": ["$5", "$10", "$15", "$20"],
-                "correct_answer": 4
+                "correct_answer": "$20"
             }
         ]   
     }
