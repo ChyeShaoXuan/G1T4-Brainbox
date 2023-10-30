@@ -73,8 +73,8 @@ const app = Vue.createApp({
                 }
                 
                 document.getElementById('submit').style.display='none'
-                document.getElementById('mark').style.display='block'
                 this.show=true
+                //console.log(this.show)
 
             }
             else{
