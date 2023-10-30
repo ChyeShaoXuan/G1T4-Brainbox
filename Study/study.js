@@ -22,7 +22,7 @@ function display_default(){
           </div>
           <div class='col-sm-5 text-center rounded  ms-0 hover:scale-125' style='transition: transform .2s;background-image:url("../Images/gif_background.gif");background-size:cover;background-repeat: no-repeat;'>
                <p class="text-yellow-400 font-semibold text-md text-align-center m-5">${text}</p>
-               <p class="text-orange-500 font-semibold text-md text-align-center m-5">${examples}</p>
+               <p class="text-white font-semibold text-md text-align-center m-5">${examples}</p>
                 
           </div>
 
