@@ -15,8 +15,15 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
-function monitorAuthState() {
+let hasRun = false
+function unsubscribe() {
     onAuthStateChanged(auth, user => {
+        console.log('testersee')
+        if (hasRun) {
+            return
+        }
+        hasRun = true;
+        console.log(hasRun)
         breakme: {
         if (user) {
             if (document.URL.includes('Login/index.html')) {
@@ -41,5 +48,5 @@ function monitorAuthState() {
 
 
 
-window.addEventListener('load',monitorAuthState)
+unsubscribe()
 

@@ -5,7 +5,7 @@ const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
 import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
-import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
+import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
 
 
 
@@ -60,71 +60,78 @@ const firebaseConfig = {
   
 
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const auth = getAuth(app)
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app)
+// onAuthStateChanged(auth, user => {
+//   if(user) {
+//     window.location.replace('../Home/home.html')
+//   } else {
+//     document.getElementById('contentBlock').removeAttribute('style')
+//     console.log('test2')
+//   }
+// })
+const signupEmailPassword = async () => { 
+  
+  const signupEmail = document.getElementById('signupEmail').value.toLowerCase();
+  const signupPassword = document.getElementById('signupPassword').value;
+  const signupName = document.getElementById('name').value;
+  console.log(signupEmail,signupPassword)
+  console.log(document.querySelector("[name='agree']").checked)
 
-  const signupEmailPassword = async () => { 
-    
-    const signupEmail = document.getElementById('signupEmail').value.toLowerCase();
-    const signupPassword = document.getElementById('signupPassword').value;
-    const signupName = document.getElementById('name').value;
-    console.log(signupEmail,signupPassword)
-    console.log(document.querySelector("[name='agree']").checked)
+  if (signupName.length == 0 || signupEmail.length == 0 || signupPassword.length == 0) {
+    showSignUpError('blank')
+  } else if (signupPassword.length <6) {
+    showSignUpError('short')
+  } else if (!document.querySelector("[name='agree']").checked) {
+    showSignUpError('checkbox')
+  } else {
+    showSignUpError('none')
+    try {
 
-    if (signupName.length == 0 || signupEmail.length == 0 || signupPassword.length == 0) {
-      showSignUpError('blank')
-    } else if (signupPassword.length <6) {
-      showSignUpError('short')
-    } else if (!document.querySelector("[name='agree']").checked) {
-      showSignUpError('checkbox')
+      const userCredential = await createUserWithEmailAndPassword(auth, signupEmail, signupPassword)
+      const db = getDatabase();
+      const user = userCredential.user
+      const reference = ref(db, 'users/' + user.uid)
+      user.displayName = signupName
+      console.log(user)
+      set(reference, {
+        username: signupName,
+        email:signupEmail,
+        })
+      
+
+      document.getElementById('signinMessage').innerText="You have successfully signed up!"
+      document.getElementById('signinMessage').setAttribute("style","color:green")
+      clearFields()
+      main.classList.toggle("sign-up-mode")
+
+
+
+    }
+    catch(error) {
+      console.log(error);
+      showSignUpError(error.code);
+    }
+  }}
+
+  const loginEmailPassword = async () => {
+    const loginEmail = document.getElementById('loginEmail').value;
+    const loginPassword = document.getElementById('loginPassword').value;
+    if (loginEmail == '' || loginPassword == '') {
+      showLogInError('blank');
     } else {
-      showSignUpError('none')
+      console.log(loginEmail,loginPassword)
       try {
-
-        const userCredential = await createUserWithEmailAndPassword(auth, signupEmail, signupPassword)
-        const db = getDatabase();
-        const user = userCredential.user
-        const reference = ref(db, 'users/' + user.uid)
-        user.displayName = signupName
-        console.log(user)
-        set(reference, {
-          username: signupName,
-          email:signupEmail,
-          })
-        
-
-        document.getElementById('signinMessage').innerText="You have successfully signed up!"
-        document.getElementById('signinMessage').setAttribute("style","color:green")
-        clearFields()
-        main.classList.toggle("sign-up-mode")
-
-
-
+      const loginCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword)
+      window.location.href = "../Home/home.html"
       }
       catch(error) {
         console.log(error);
-        showSignUpError(error.code);
-      }
-    }}
-
-    const loginEmailPassword = async () => {
-      const loginEmail = document.getElementById('loginEmail').value;
-      const loginPassword = document.getElementById('loginPassword').value;
-      if (loginEmail == '' || loginPassword == '') {
-        showLogInError('blank');
-      } else {
-        console.log(loginEmail,loginPassword)
-        try {
-        const loginCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword)
-        window.location.href = "../Home/home.html"
-        }
-        catch(error) {
-          console.log(error);
-          showLogInError('invalid')
-        }
+        showLogInError('invalid')
       }
     }
+  }
 
     // const monitorAuthState = async () => {
     //   onAuthStateChanged(auth, user => {
