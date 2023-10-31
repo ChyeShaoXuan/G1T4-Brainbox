@@ -98,6 +98,7 @@ const signupEmailPassword = async () => {
       set(reference, {
         username: signupName,
         email:signupEmail,
+        image:'avatar1.jpg'
         })
       
 
