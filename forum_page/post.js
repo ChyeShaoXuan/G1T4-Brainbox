@@ -93,11 +93,7 @@ const root = Vue.createApp({
                         newCommentsList.push([childKey,commentsDet,users[uid].image,users[uid].username,dateTime])
                     });
                     this.commentsList = newCommentsList
-                },{
-                    onlyOnce:true
                 });
-            }, {
-                onlyOnce:true
             });
         },
 
