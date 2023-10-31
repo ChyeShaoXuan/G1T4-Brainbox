@@ -24,8 +24,9 @@ const root = Vue.createApp({
             scores: {},
             images: {},
             names: {},
-            top3: [],
-            test: 'asdawdawd'
+            rankedUsers: [],
+            top5: [],
+            currUser: 0,
         }
     },
 
@@ -35,24 +36,34 @@ const root = Vue.createApp({
     created() {
         onValue(userRef, (snapshot) => {
             let usersArr = []
-            let userDet = ''
-            // console.log(snapshot.val())
-
             onValue(testRef, (snapshot2) => {
                 snapshot2.forEach((user) => {
                     if (user.key != "total") {
-                        // console.log(user.key)
                         usersArr.push([user.key,user.val()])
                     }
                 })
                 usersArr.sort((a, b) => b[1].totalScore - a[1].totalScore)
-                // console.log(usersArr)
-                for (let i=0;i<3;i++) {
-                    let userDet = snapshot.val()[usersArr[i][0]]
-                    console.log(userDet)
-                    this.top3.push([userDet.username,userDet.image])
+
+                usersArr.forEach((user) => {
+                    let userDet = snapshot.val()[user[0]]
+                    this.rankedUsers.push({
+                        username:userDet.username,
+                        image:userDet.image,
+                        score:user[1].totalScore,
+                        uid:user[0]
+                    })
+                }) 
+
+                if (this.rankedUsers.length < 5) {
+                    this.top5 = this.rankedUsers
+                } else {
+                    this.top5 = this.rankedUsers.splice(0,5)
                 }
-                console.log(this.top3)
+                
+                onAuthStateChanged(auth, (user) => {
+                    this.currUser = this.rankedUsers.findIndex(person => person.uid === user.uid)
+                })
+
             })
         })
     }

@@ -100,17 +100,17 @@
   </div>
   <div id="root">
   <!-- Top 3 Profile Picture Display for MR WUUUUUUUUUUUUUUUUUUUU ziMINGGo -->
-  <div class="flex justify-center mt-10">
+  <div v-if="rankedUsers.length>=3" class="flex justify-center mt-10">
       
     <div class="flex justify-end items-center flex-col w-1/6">
         <p class="mb-2">
             2nd
         </p>
         <div>
-            <img src="../Images/avatar2.jpg" class="w-12 h-12 md:w-20 md:h-20 rounded-full">
+            <img :src="'../Images/' + rankedUsers[1].image" class="w-12 h-12 md:w-20 md:h-20 rounded-full">
         </div>
         <div class="mt-2">
-            <p class="text-xs text-center md:text-lg"> {{ (top3[1])[0] }}</p>
+            <p class="text-xs text-center md:text-lg"> {{ rankedUsers[1].username }}</p>
         </div>
     </div>
       
@@ -120,10 +120,10 @@
             1st
         </p>
         <div>
-            <img src="../Images/avatar1.jpg" class="w-16 h-16 md:w-28 md:h-28 rounded-full">
+            <img :src="'../Images/' + rankedUsers[0].image" class="w-16 h-16 md:w-28 md:h-28 rounded-full">
         </div>
         <div class="mt-2">
-            <p class="text-xs text-center font-bold md:text-xl"> {{ (top3[0])[0] }}</p>
+            <p class="text-xs text-center font-bold md:text-xl"> {{ rankedUsers[0].username }}</p>
         </div>
     </div>
       
@@ -132,10 +132,10 @@
             3rd
         </p>
         <div>
-            <img src="../Images/avatar3.jpg" class="w-12 h-12 md:w-20 md:h-20 rounded-full">
+            <img :src="'../Images/' + rankedUsers[2].image" class="w-12 h-12 md:w-20 md:h-20 rounded-full">
         </div>
         <div class="mt-2">
-            <p class="text-xs text-center md:text-lg"> {{ (top3[2])[0] }}</p>
+            <p class="text-xs text-center md:text-lg"> {{ rankedUsers[2].username }}</p>
         </div>
     </div>
     
@@ -143,7 +143,7 @@
 
     
   <!-- Leaderboard Top 5 Ranking for MR WUUUUUUUUUUU ZIMING-->
-  <div class="w-3/5 text-center mt-4 mx-auto pb-10">
+  <div v-if="rankedUsers.length != 0" class="w-3/5 text-center mt-4 mx-auto pb-10">
     <div class="card" id="post2">
         <div class="card-header bg-gradient-to-r from-pink-400 to-blue-300 text-xl font-bold">
             Global Top 5
@@ -151,22 +151,22 @@
         <!-- Check database and push top 5 here dynamically -->
         <ul class="list-group list-group-flush">
             <li class="list-group-item p-3">
-                <div class="flex flex-row items-center justify-center">
+                <div v-for="(user,index) of top5" class="flex flex-row items-center justify-center">
                     <div class="w-1/4 md:w-1/6">
-                        1
+                        {{ index + 1 }}
                     </div>
                     <div class="w-1/2 md:w-1/4">
                         <div class="flex items-center">
                             <div class="w-1/2">
-                                <img src="../Images/avatar1.jpg" class="w-10 h-10 rounded-full">
+                                <img :src="'../Images/' + user.image" class="w-10 h-10 rounded-full">
                             </div>
                             <div class="w-1/2">
-                                <span class="text-sm">Kylian Mbappi</span>
+                                <span class="text-sm">{{ user.username }}</span>
                             </div>
                         </div>
                     </div>
                     <div style="margin-top:1px;" class="w-1/4 md:mt-0">
-                        1080 pts
+                        {{ user.score }} pts
                     </div>
                 </div>
             </li>
@@ -177,7 +177,7 @@
   <!-- End of Leaderboard Top 5 Ranking -->
 
   <!-- Leaderboard FOR LOGGED IN USER Ranking for MR WUUUUUUUUUUU ZIMING-->
-  <div class="w-3/5 text-center mt-4 mx-auto pb-10">
+  <div v-if="rankedUsers.length != 0" class="w-3/5 text-center mt-4 mx-auto pb-10">
     <div class="card" id="post2">
         <div class="card-header bg-gradient-to-r from-blue-400 to-pink-300 text-xl font-bold">
             Your Current Position
@@ -187,20 +187,20 @@
             <li class="list-group-item p-3">
                 <div class="flex flex-row items-center justify-center">
                     <div class="w-1/4 md:w-1/6">
-                        1
+                        {{ currUser + 1 }}
                     </div>
                     <div class="w-1/2 md:w-1/4">
                         <div class="flex items-center">
                             <div class="w-1/2">
-                                <img src="../Images/avatar1.jpg" class="w-10 h-10 rounded-full">
+                                <img :src="'../Images/' + rankedUsers[currUser].image" class="w-10 h-10 rounded-full">
                             </div>
                             <div class="w-1/2">
-                                <span class="text-sm">Kylian Mbappi</span>
+                                <span class="text-sm">{{rankedUsers[currUser].username}}</span>
                             </div>
                         </div>
                     </div>
                     <div style="margin-top:1px;" class="w-1/4 md:mt-0">
-                        1080 pts
+                        {{ rankedUsers[currUser].score }} pts
                     </div>
                 </div>
             </li>
