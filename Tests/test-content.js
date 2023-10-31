@@ -1,3 +1,23 @@
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+import { getDatabase, ref, onValue, get, set, update} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
+import {getAuth, signOut, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCEjW5Rq4jgHbSS1GCJy0pl6hpPrFQ9pUI",
+    authDomain: "wad2-4fc9e.firebaseapp.com",
+    projectId: "wad2-4fc9e",
+    storageBucket: "wad2-4fc9e.appspot.com",
+    messagingSenderId: "83590678050",
+    appId: "1:83590678050:web:6c98cdb011612eb4f5ac7b",
+    measurementId: "G-NY0ZMNMQLZ",
+    databaseURL: "https://wad2-4fc9e-default-rtdb.asia-southeast1.firebasedatabase.app"
+    };
+  
+
+const firebaseApp = initializeApp(firebaseConfig);
+const db = getDatabase()
+const auth = getAuth(firebaseApp)
 const urlParams = new URLSearchParams(window.location.search)
 const testSub = urlParams.get('subject')
 const testDif = urlParams.get('difficulty')
@@ -44,7 +64,7 @@ const app = Vue.createApp({
             var rads, test; // need to be set after load
             test = document.getElementById("test");
             rads = test.querySelectorAll("input[type=radio]"); // all radios in the quiz
-            checked_rads=[]
+            let checked_rads=[]
             let counter = 0
 
             for (var i=0;i<rads.length;i++){
@@ -76,11 +96,26 @@ const app = Vue.createApp({
                 this.show=true
                 //console.log(this.show)
 
+                onAuthStateChanged(auth, user => {
+                    const completeRef = ref(db, 'testCompletion/' + user.uid)
+                    let value = testSub+testDif
+                    let updates = {}
+                    updates[value] = [true,this.score];
+                    onValue(completeRef, (snapshot) => {
+                        console.log(snapshot.val())
+                        update(completeRef, updates)
+                        console.log('submitted')
+                    }, {
+                        onlyOnce:true
+                    })
+                })
+
             }
             else{
                 alert("Please answer all the questions!")
             }
             
+
     },
         
 
