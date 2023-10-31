@@ -100,7 +100,7 @@ const app = Vue.createApp({
                     const completeRef = ref(db, 'testCompletion/' + user.uid)
                     let value = testSub+testDif
                     let updates = {}
-                    updates[value] = [true,this.score];
+                    updates[value] = [this.score];
                     onValue(completeRef, (snapshot) => {
                         console.log(snapshot.val())
                         update(completeRef, updates)
