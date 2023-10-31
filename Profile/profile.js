@@ -18,28 +18,14 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const db = getDatabase()
 
-function insertName() {
-    onAuthStateChanged(auth, user => {
-        if (user) {
-            const userRef = ref(db, 'users/'+ user.uid)
-            onValue(userRef, (snapshot) => {
-                document.getElementById('name').innerText = snapshot.val().username
-            })
-        } else {
-            window.location.replace("../Login/index.html")
-        }
-    })
-}
-
-document.addEventListener('DOMContentLoaded',insertName)
-
 const root = Vue.createApp({
     data() {
       return {
         displayed_bio: localStorage.getItem('bio') ||"[ABOUT ME]",
         input_bio: "",
         isEditing: false,
-        isSelecting: false
+        isSelecting: false,
+        username: '',
       }
     },
     methods: {
@@ -61,12 +47,82 @@ const root = Vue.createApp({
       saveAvatar() {
         this.isSelecting = false;
       }
+    }, 
+    created() {
+      onAuthStateChanged(auth, user => {
+        const userRef = ref(db, 'users/'+ user.uid)
+        onValue(userRef, (snapshot) => {
+            this.username = snapshot.val().username
+        })
+    })
     }
   });
   
   document.addEventListener('DOMContentLoaded', () => {
     root.mount("#root");
   });
+
+
+const progress = Vue.createApp({
+  data() {
+    return {
+      studyWidth: '',
+      testWidth: '',
+      studyCompleted: '',
+      testCompleted: '',
+      username: '',
+    }
+  },
+  methods: {
+
+  },
+  created() {
+    onAuthStateChanged(auth, user => {
+      const studyRef = ref(db, 'studyCompletion/' + user.uid)
+      const studyTotal = ref(db,'studyCompletion/total')
+      const testRef = ref(db, 'testCompletion/' + user.uid)
+      const testTotal = ref(db,'testCompletion/total')
+      onValue(studyTotal, (snapshot) => {
+        let totalStudies = snapshot.val()
+        let count = 0
+        onValue(studyRef, (snapshot2) => {
+          snapshot2.forEach(() => {
+            count++
+          })
+          this.studyCompleted = count + '/' + totalStudies
+          let percentage = Math.floor((Number(count)/Number(totalStudies))*100)
+          this.studyWidth = "width:" + percentage + "%"
+        }, {
+          onlyOnce: true
+        })
+      }, {
+        onlyOnce: true
+      })
+
+      onValue(testTotal, (snapshot) => {
+        let totalTests = snapshot.val()
+        let count = 0
+        onValue(testRef, (snapshot2) => {
+          snapshot2.forEach(() => {
+            count++
+          })
+          this.testCompleted = count + '/' + totalTests
+          let percentage = Math.floor((Number(count)/Number(totalTests))*100)
+          this.testWidth = "width:" + percentage + "%"
+        }, {
+          onlyOnce:true
+        })
+      }, {
+        onlyOnce:true
+      })
+    })
+  }
+})
+
+  
+
+
+progress.mount("#progress")
 
 // JavaScript for avatar selection carousel
 document.addEventListener("DOMContentLoaded", function () {
@@ -99,3 +155,4 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Avatar Confirmed!");
     });
 });
+
