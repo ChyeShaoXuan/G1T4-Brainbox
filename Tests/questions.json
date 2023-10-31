@@ -700,7 +700,7 @@
             
             {
                 "number": 17,
-                "question": "Which of the following is a body system responsible for receiving oxygen and releasing carbon dixode?",
+                "question": "Which of the following is a body system responsible for receiving oxygen and releasing carbon dioxode?",
                 "answers": ["Nervous system", "Skeletal system", "Circulatory system", "Respiratory system"],
                 "correct_answer": "Respiratory system"
             },
@@ -752,7 +752,7 @@
                 "number": 2,
                 "question": "Which gas do humans expel during respiration?",
                 "answers": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
-                "correct_answer": "Carbon dixode"
+                "correct_answer": "Carbon dioxode"
             },
             {
                 "number": 3,
