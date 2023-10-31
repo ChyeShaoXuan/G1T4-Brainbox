@@ -42,38 +42,39 @@ const root = Vue.createApp({
         submit() {
             if (this.commentText.length == 0) {
                 alert("Please fill up comment!")
+            } else {
+                let current = new Date()
+                let currentCommentRef = ref(db,'comments/' + postID + '/' + current.getTime())
+                onAuthStateChanged(auth, user => {
+                    if (user) {
+                        set(currentCommentRef, {
+                            uid:user.uid,
+                            text:this.commentText,
+                        }).then(() => {
+                            console.log('submitted')
+                        }).catch(error => {
+                            console.log(error.message)
+                        })
+                        this.commentText = ''
+                    } else {
+                        console.log('not logged in')
+                    }
+                })
+
+                
+                onValue(postRef, (snapshot) => {
+                    const postContent = snapshot.val()
+                    let replies = postContent.comments + 1
+                    const updates = {
+                        comments: replies
+                    }
+                    update(ref(db, 'posts/' + postSub + '/' + postID),updates)
+                }, {
+                    onlyOnce:true
+                })
+
+                this.display()
             }
-            let current = new Date()
-            let currentCommentRef = ref(db,'comments/' + postID + '/' + current.getTime())
-            onAuthStateChanged(auth, user => {
-                if (user) {
-                    set(currentCommentRef, {
-                        uid:user.uid,
-                        text:this.commentText,
-                    }).then(() => {
-                        console.log('submitted')
-                    }).catch(error => {
-                        console.log(error.message)
-                    })
-                    this.commentText = ''
-                } else {
-                    console.log('not logged in')
-                }
-            })
-
-            
-            onValue(postRef, (snapshot) => {
-                const postContent = snapshot.val()
-                let replies = postContent.comments + 1
-                const updates = {
-                    comments: replies
-                }
-                update(ref(db, 'posts/' + postSub + '/' + postID),updates)
-            }, {
-                onlyOnce:true
-            })
-
-            this.display()
         },
 
         display() {
