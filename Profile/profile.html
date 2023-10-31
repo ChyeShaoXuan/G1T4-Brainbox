@@ -231,9 +231,12 @@
                                 <img src="../Images/avatar9.jpg" alt="Avatar 9" class="avatar-thumbnail" data-src="../Images/avatar9.jpg" style="display:none">
                                 <img src="../Images/avatar10.jpg" alt="Avatar 10" class="avatar-thumbnail" data-src="../Images/avatar10.jpg" style="display:none">
                             </div>
-                            <button id="prev-avatar" class="avatar-button bg-red-500 text-white p-4 rounded-lg m-2 hover:bg-blue-600">Previous Avatar</button>
-                            <button id="next-avatar" class="avatar-button bg-blue-500 text-white p-4 rounded-lg m-2 hover:bg-blue-600">Next Avatar</button>
-                            <button id="confirm-avatar" class="avatar-button bg-green-500 text-white p-4 rounded-lg m-2 hover:bg-green-600" @click="saveAvatar">Confirm Avatar</button>
+                            <div class="flex">
+                                <button id="prev-avatar" class="avatar-button bg-red-500 text-white p-4 m-2 rounded-lg hover:bg-blue-600 w-1/3">Previous Avatar</button>
+                                <button id="confirm-avatar" class="avatar-button bg-green-500 text-white p-4 m-2 rounded-lg hover:bg-green-600 w-1/3" @click="saveAvatar">Confirm Avatar</button>
+                                <button id="next-avatar" class="avatar-button bg-blue-500 text-white p-4 m-2 rounded-lg hover:bg-blue-600 w-1/3">Next Avatar</button>
+                            </div>
+                            
                         </div>
 
                         <!-- <p>{{ displayed_bio }}</p>
