@@ -42,7 +42,6 @@
 </head>
 
 <body id="pagesection">
-  
   <!-- Nav Bar -->
   <section class="text-gray-700 bg-white bg-opacity-50 backdrop-blur-md">
     <div class="container mx-auto py-5 md:py-8">
@@ -99,7 +98,7 @@
         <h2 class="text-4xl font-bold mb-2 text-black bg-white bg-opacity-50 backdrop-blur-md p-4"><span id="animated-text"></span></h2>
     </div>
   </div>
-
+  <div id="root">
   <!-- Top 3 Profile Picture Display for MR WUUUUUUUUUUUUUUUUUUUU ziMINGGo -->
   <div class="flex justify-center mt-10">
       
@@ -111,7 +110,7 @@
             <img src="../Images/avatar2.jpg" class="w-12 h-12 md:w-20 md:h-20 rounded-full">
         </div>
         <div class="mt-2">
-            <p class="text-xs text-center md:text-lg">Imani Adisa</p>
+            <p class="text-xs text-center md:text-lg"> {{ (top3[1])[0] }}</p>
         </div>
     </div>
       
@@ -124,7 +123,7 @@
             <img src="../Images/avatar1.jpg" class="w-16 h-16 md:w-28 md:h-28 rounded-full">
         </div>
         <div class="mt-2">
-            <p class="text-xs text-center font-bold md:text-xl">Kylian Mbappi</p>
+            <p class="text-xs text-center font-bold md:text-xl"> {{ (top3[0])[0] }}</p>
         </div>
     </div>
       
@@ -136,7 +135,7 @@
             <img src="../Images/avatar3.jpg" class="w-12 h-12 md:w-20 md:h-20 rounded-full">
         </div>
         <div class="mt-2">
-            <p class="text-xs text-center md:text-lg">Touchemi</p>
+            <p class="text-xs text-center md:text-lg"> {{ (top3[2])[0] }}</p>
         </div>
     </div>
     
@@ -209,7 +208,7 @@
     </div>
   </div>
   <!-- End of Your Ranking -->
-    
+</div>
   <!-- Bottom -->
   <section class="bg-white bg-opacity-50 backdrop-blur-md">
     <div class="max-w-screen-xl px-4 py-3 mx-auto space-y-8 text-center">
@@ -218,7 +217,7 @@
         </p>
     </div>
   </section>
-    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {

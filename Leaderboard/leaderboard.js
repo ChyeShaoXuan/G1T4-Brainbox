@@ -16,21 +16,46 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase()
 const auth = getAuth(app)
-
-const pagesection = Vue.createApp({
+const testRef = ref(db, 'testCompletion')
+const userRef = ref(db, 'users')
+const root = Vue.createApp({
     data() {
         return {
             scores: {},
             images: {},
             names: {},
+            top3: [],
+            test: 'asdawdawd'
         }
     },
 
     methods: {
-
+        
     },
-
     created() {
+        onValue(userRef, (snapshot) => {
+            let usersArr = []
+            let userDet = ''
+            // console.log(snapshot.val())
 
+            onValue(testRef, (snapshot2) => {
+                snapshot2.forEach((user) => {
+                    if (user.key != "total") {
+                        // console.log(user.key)
+                        usersArr.push([user.key,user.val()])
+                    }
+                })
+                usersArr.sort((a, b) => b[1].totalScore - a[1].totalScore)
+                // console.log(usersArr)
+                for (let i=0;i<3;i++) {
+                    let userDet = snapshot.val()[usersArr[i][0]]
+                    console.log(userDet)
+                    this.top3.push([userDet.username,userDet.image])
+                }
+                console.log(this.top3)
+            })
+        })
     }
 })
+
+root.mount("#root")
