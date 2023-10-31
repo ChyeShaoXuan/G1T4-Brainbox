@@ -102,19 +102,18 @@ const app = Vue.createApp({
 
                     let updates = {}
                     onValue(completeRef, (snapshot) => {
+
+                        if (testDif == "Medium") {
+                            this.score = Number(this.score) * 2
+                        } else if (testDif == "Hard") {
+                            this.score = Number(this.score) * 3
+                        }
                         if (snapshot.val() == null) {
                             console.log('nulltest')
-                            updates.totalScore = Number(this.score)
-                        } else if (testDif == "Easy") {
-                            console.log('easy')
-                            updates.totalScore = Number(this.score) + snapshot.val().totalScore;
-                        } else if (testDif == "Medium") {
-                            console.log('med')
-                            updates.totalScore = (2 * Number(this.score) + snapshot.val().totalScore);
-                        } else if (testDif == "Hard") {
-                            console.log('hard')
-                            updates.totalScore = (3 * Number(this.score) + snapshot.val().totalScore);
-                        }
+                            updates.totalScore = this.score
+                        } else {
+                            updates.totalScore = this.score + snapshot.val().totalScore
+                        } 
                         update(completeRef, updates)
                         console.log('submitted')
                     }, {
