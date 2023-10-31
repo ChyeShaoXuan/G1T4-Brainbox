@@ -99,10 +99,22 @@ const app = Vue.createApp({
                 onAuthStateChanged(auth, user => {
                     const completeRef = ref(db, 'testCompletion/' + user.uid)
                     let value = testSub+testDif
+
                     let updates = {}
-                    updates[value] = this.score;
                     onValue(completeRef, (snapshot) => {
-                        console.log(snapshot.val())
+                        if (snapshot.val() == null) {
+                            console.log('nulltest')
+                            updates.totalScore = Number(this.score)
+                        } else if (testDif == "Easy") {
+                            console.log('easy')
+                            updates.totalScore = Number(this.score) + snapshot.val().totalScore;
+                        } else if (testDif == "Medium") {
+                            console.log('med')
+                            updates.totalScore = (2 * Number(this.score) + snapshot.val().totalScore);
+                        } else if (testDif == "Hard") {
+                            console.log('hard')
+                            updates.totalScore = (3 * Number(this.score) + snapshot.val().totalScore);
+                        }
                         update(completeRef, updates)
                         console.log('submitted')
                     }, {
