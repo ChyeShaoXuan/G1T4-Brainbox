@@ -33,9 +33,9 @@
             },
             {
                 "number": 6,
-                "question": "Which word is a verb? \nA) School \nB) Read \nC) Blue \nD) Fish",
+                "question": "Which word is a verb?",
                 "answers": ["School", "Read", "Blue", "Fish"],
-                "correct_answer": "B"
+                "correct_answer": "Read"
             },
             {
                 "number": 7,
