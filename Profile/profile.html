@@ -210,10 +210,10 @@
                     <div id="root">
 
                         <!-- Profile picture -->
-                        <div class="profile-picture flex justify-center" >
+                        <div class="profile-picture flex justify-center">
                             <img id="avatar-image" src="../Images/avatar4.jpg" alt="Your Name" class="rounded-full w-32 h-32 mb-4" style="transform: translateX(10%)">
-                            <i class="fa-regular fa-pen-to-square fa-lg" @click="editAvatar"></i>
-                        </div>
+                            <i class="fa-regular fa-pen-to-square fa-lg transform scale-100 hover:scale-110 transition-transform cursor-pointer" @click="editAvatar"></i>
+                        </div>                                             
     
                         <h2 class="text-2xl font-semibold text-white">{{ username }}</h2>
                         
@@ -236,10 +236,10 @@
                             <button id="confirm-avatar" class="avatar-button bg-green-500 text-white p-4 rounded-lg m-2 hover:bg-green-600" @click="saveAvatar">Confirm Avatar</button>
                         </div>
 
-                        <p>{{ displayed_bio }}</p>
+                        <!-- <p>{{ displayed_bio }}</p>
                         <button v-if="!isEditing" @click="editBio" class="bg-yellow-500 text-white p-2 rounded-lg m-2 hover:bg-yellow-600 hover:scale-110 hover:shadow-xl">Edit Bio</button>
                         <input v-model="input_bio" v-if="isEditing" type="text" placeholder="Enter new bio" class="text-black bg-white p-2 rounded-lg m-2">
-                        <button v-if="isEditing" @click="saveBio" class="bg-yellow-500 text-white p-2 rounded-lg m-2 hover:bg-yellow-600 hover:scale-110 hover:shadow-xl">Save Changes</button>
+                        <button v-if="isEditing" @click="saveBio" class="bg-yellow-500 text-white p-2 rounded-lg m-2 hover:bg-yellow-600 hover:scale-110 hover:shadow-xl">Save Changes</button> -->
 
                     </div>
                 </div>
