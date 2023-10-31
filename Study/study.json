@@ -173,14 +173,14 @@
             {
                 "number": 5,
                 "image_url": "../Images/seed_germination.jpg",
-                "front_text": "After seed germination, the roots, then shoot grows out. The seedling depends on the seed coat for food before developing leaves. ",
+                "front_text": "A seed needs sufficient water, warmth and oxygen to germinate.After seed germination, the roots, then shoot grows out. The seedling depends on the seed coat for food before developing leaves. ",
                 "examples": "In the picture, the development of a seed to a young plant is shown."
             },
             {
                 "number": 6,
                 "image_url": "../Images/plant_parts.jpg",
                 "front_text": "A plant has many parts that perform different functions. The picture shows the different functions of these parts.",
-                "examples": ""
+                "examples": "The flower helps the plant reproduce, the fruit protects the seeds dispersed by the plant and the leaves take in oxygen to make food. The root takes in water and the shoot supports the plant!"
             },
             {
                 "number": 7,
@@ -204,7 +204,7 @@
                 "number": 10,
                 "image_url": "../Images/food_chain.png",
                 "front_text": "In a food chain, there are food producers, organisms that make their own food, and food consumers, that consume food. A herbivore eats plants, an omnivore eats both plants and animals and a carnivore eats animals.",
-                "examples": "The diagram shows a simple example of a food chain."
+                "examples": "The diagram shows a simple example of a food chain. Can you guess what the grass is classified as?"
             }
             
         ],
@@ -213,19 +213,19 @@
                 "number": 1,
                 "image_url": "../Images/circulatory_sys.png",
                 "front_text": "The circulatory system consists of the heart, the blood and the blood vessels. It transports oxygen, digested food and water to the different parts of the body.",
-                "examples": "The diagram shows different parts of the circulatory system."
+                "examples": "The diagram shows different parts of the circulatory system. The heart pumps blood to the rest of the body. For blood vessels, the arteries carry blood away from the heart and veins carry blood towards the heart. "
             },
             {
                 "number": 2,
                 "image_url": "../Images/skeletal_sys.jpg",
                 "front_text": "The skeletal system consists of all the bones in our body. It provides support to our body, protects our important organs and work together with the muscular system to enable movement. ",
-                "examples": "The diagram shows how the skeletal system looks like."
+                "examples": "The diagram shows how the skeletal system looks like. The ribcage protects our vital organs such as the heart and lungs, and the skull protects our head. Can you guess what the spine does?"
             },
             {
                 "number": 3,
                 "image_url": "../Images/respiratory_sys.JPG",
                 "front_text": "The respiratory system consists of the nose, windpipe and the lungs. It helps take in oxygen that our body needs for survival, and give out carbon dioxide",
-                "examples": "The diagram shows the different parts of the respiratory system."
+                "examples": "The diagram shows the different parts of the respiratory system. The nose allows air to enter your body, then filters debris and warms and moistens the air. The windpipe carries air in and out of your lungs, and the lungs take in oxygen and remove carbon dioxide from the body."
             },
             {
                 "number": 4,
@@ -237,7 +237,7 @@
                 "number": 5,
                 "image_url": "../Images/digestive_sys.jpg",
                 "front_text": "The digestive system digests food into simpler substances and absorbs the digested food into the bloodstream. It consists of the mouth, the gullet, the stomach, the small intestine, the large intestine and the anus.",
-                "examples": "The diagram shows the different parts of the digestive system."
+                "examples": "The diagram shows the different parts of the digestive system. The mouth breaks down food into smaller particles, the gullet transfers partially digested food from the mouth to the stomach, the stomach digests food, the small intestine absorbs nutrients from digested food into the bloodstream, the large intestine removes water from undigested food and the anus expels food waste."
             },
             {
                 "number": 6,
@@ -261,13 +261,13 @@
                 "number": 9,
                 "image_url": "../Images/bacteria.jpg",
                 "front_text": "Bacteria are microorganisms that we cannot usually see, unless we use a microscope. Some bacteria are helpful to us, while some are harmful to us.",
-                "examples": "The picture shows e-coli, a bacteria that causes us to fall sick."
+                "examples": "The picture shows e-coli, a bacteria that causes us to fall sick. What are some other bacteria that can make us fall ill?"
             },
             {
                 "number": 10,
                 "image_url": "../Images/bacteria_decomposition.png",
                 "front_text": "As with what we learned earlier about decomposers, bacteria are actually also decomposers, just like fungi!",
-                "examples": "After decomposition, nutrients are returned to the soil, so that plants can absorb those nutrients."
+                "examples": "After decomposition, nutrients are returned to the soil, so that other organisms like plants can absorb those nutrients."
             },
             {
                 "number": 11,
