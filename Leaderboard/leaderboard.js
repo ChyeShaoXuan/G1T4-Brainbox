@@ -64,7 +64,11 @@ const root = Vue.createApp({
                     this.currUser = this.rankedUsers.findIndex(person => person.uid === user.uid)
                 })
 
+            }, {
+                onlyOnce:true
             })
+        }, {
+            onlyOnce:true
         })
     }
 })
