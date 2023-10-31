@@ -89,7 +89,6 @@ const progress = Vue.createApp({
           snapshot2.forEach(() => {
             count++
           })
-          count--
           this.studyCompleted = count + '/' + totalStudies
           let percentage = Math.floor((Number(count)/Number(totalStudies))*100)
           this.studyWidth = "width:" + percentage + "%"
@@ -107,6 +106,7 @@ const progress = Vue.createApp({
           snapshot2.forEach(() => {
             count++
           })
+          count--
           this.testCompleted = count + '/' + totalTests
           let percentage = Math.floor((Number(count)/Number(totalTests))*100)
           this.testWidth = "width:" + percentage + "%"
