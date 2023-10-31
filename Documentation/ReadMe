@@ -1,3 +1,71 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
 --- IS216 AY2324S1 G1T4 Brainbox Documentation --- 
 
---- Below is a breakdown 
+Made By: Chin Ler | Marco | Ren Yi | Shao Xuan | Wesley | Zi Ming
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+--- Technologies Utilised ---
+
+Frontend (Main): HTML, CSS
+Frontend-Libraries: TailwindCSS, Bootstrap, AnimateCSS, FlowbiteCSS, FontAwesomeCSS
+Backend (Main): JavaScript
+Backend-Libraries: VueJs, Axios, Typed.Js, Anime.Js, GSAP
+Database: Firebase
+Prototyping: Figma (Link: https://www.figma.com/file/b88q3WXySWoQfn28m61EoS/Prototype?type=design&node-id=0%3A1&mode=design&t=7X0c18V5g69cm0Cg-1)
+Collaboration: Git
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+========================================================================
+--- Below is a breakdown of the BrainBox App Working Functionalities ---
+========================================================================
+
+Database | Authentication -> 
+  1. Via Firebase, data unique to each account is stored on Firebase. 
+  2. Users not login-ed to an account will be re-directed to the login page.
+
+Generic -> 
+  1. Navbars all work, providing easy page navigability. Includes logout button.
+  2. Secret credits page hidden behind BrainBox Logo.
+
+Login -> 
+  1. Create account.
+  2. Login via created/existing account. 
+  3. Forget Password (Shoots registered email address a link to reset password).
+
+Home ->
+  1. Generic Home Page with buttons leading to Study / Test Pages.
+
+Leaderboard ->
+  1. Dynamic leaderboard for users to track their position in tests with respect to other users. 
+
+Profile -> 
+  1. All users are auto assigned a default profile picture, however we will allow a user to choose from 10 existing pre-set wallpapers. 
+  2. Progress Bar.
+    - Track User Progress on Study, see whether they have attempted a test at least once.
+    - Track User Progress on Test, see whether they have attempted a test at least once.
+
+Study -> 
+  1. Working button to redirect to test if users are ready.
+  2. Dropdown bar with seperate study topics. At the bottom of each study topic page is a button to indicate content has been covered by user.
+    - English - Vocabulary will generate an API dictionary (API 1) with a working audio setting to pronouce words.
+    - Math - will generate a working calculator.
+    - Each topic's content is generated from a mock JSON file through API calls to simulate an actual API due to no existing API online. (API 2)
+
+Test ->
+  1. Dropdowns to select test subject and difficulty, will lead to a test page with 10 randomly generated questions from a mock JSON file through API call. (API 3)
+  2. Whether a user has attempted the test (english-easy for example) at least once is recorded and shown under Profile Page.
+  3. A user's total test score collated from all attempts in various tests is summed up and shown under the Leaderboard Page for ranking.
+  4. A button leading back to study page is available. 
+
+Forum ->
+  1. A user can view forum posts in various subjects, ranked according to the latest post which will be at the top. 
+  2. There can be more than 1 page of posts for a particular subject, also sorted in order according to the latest post.
+  3. Create a Post. 
+  4. Reply a post - Live Feature. All replies are live and do not require a hard refresh. 
+    - Replies are also sorted by the first reply to the last reply. 
+  5. Delete a post - ONLY the user that created the post can delete the post. 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
