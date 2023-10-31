@@ -1058,7 +1058,7 @@
                 "number": 2,
                 "question": "If you have 3 apples and you eat 1, how many apples do you have left?",
                 "answers": [0, 1, 2, 3],
-                "correct_answer": 1
+                "correct_answer": 2
             },
             {
                 "number": 3,
