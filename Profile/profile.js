@@ -154,6 +154,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     confirmButton.addEventListener("click", function () {
         // Handle confirmation logic here
+
+        // To retrieve selected image file
         var avatar_chosen = document.getElementById("avatar-image").src
         var image_file = avatar_chosen.split("Images/")[1]
         console.log(image_file)
