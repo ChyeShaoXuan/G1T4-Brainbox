@@ -58,6 +58,7 @@ Test ->
   1. Dropdowns to select test subject and difficulty, will lead to a test page with 10 randomly generated questions from a mock JSON file through API call. (API 3)
   2. Whether a user has attempted the test (english-easy for example) at least once is recorded and shown under Profile Page.
   3. A user's total test score collated from all attempts in various tests is summed up and shown under the Leaderboard Page for ranking.
+    - To encourage a fair scoring system, each correct answer for an Easy test is awarded 1 Mark, Medium test is awarded 2 Marks and Hard test is awarded 3 Marks. 
   4. A button leading back to study page is available. 
 
 Forum ->
