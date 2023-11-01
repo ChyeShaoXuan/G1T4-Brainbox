@@ -122,7 +122,7 @@ function displayPage(page) {
                                 </div>
                                 <div class="w-1/2">
                                     <div class="flex items-center">
-                                        <div class="w-full md:w-1/3 p-2 md:p-0 flex justify-end items-center">
+                                        <div class="w-full md:w-1/2 p-2 md:p-0 flex justify-end items-center">
                                             <img src="../Images/${currPost[2]}" class="w-14 h-14 rounded-full">
                                         </div>
                                         <div class="w-full md:w-1/2 p-2 md:p-0 text-md md:text-lg justify-center">
