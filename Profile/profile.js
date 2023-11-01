@@ -140,6 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showAvatar(currentAvatarIndex);
 
+
     prevButton.addEventListener("click", function () {
         currentAvatarIndex = (currentAvatarIndex - 1 + avatarThumbnails.length) % avatarThumbnails.length;
         showAvatar(currentAvatarIndex);
@@ -153,7 +154,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     confirmButton.addEventListener("click", function () {
         // Handle confirmation logic here
-        alert("Avatar Confirmed!");
+        var avatar_chosen = document.getElementById("avatar-image").src
+        var image_file = avatar_chosen.split("Images/")[1]
+        console.log(image_file)
     });
 });
 
