@@ -45,20 +45,21 @@ const root = Vue.createApp({
                 usersArr.sort((a, b) => b[1].totalScore - a[1].totalScore)
                 console.log(usersArr)
                 usersArr.forEach((user) => {
-                    let userDet = snapshot.val()[user[0]]
-                    console.log(userDet)
+                    var userDet = snapshot.val()[user[0]]
+                    console.log(userDet,user)
                     this.rankedUsers.push({
                         username:userDet.username,
                         image:userDet.image,
                         score:user[1].totalScore,
                         uid:user[0]
                     })
+                    console.log(this.rankedUsers)
                 }) 
 
                 if (this.rankedUsers.length < 5) {
                     this.top5 = this.rankedUsers
                 } else {
-                    this.top5 = this.rankedUsers.splice(0,5)
+                    this.top5 = this.rankedUsers.slice(0,5)
                 }
                 
                 onAuthStateChanged(auth, (user) => {
