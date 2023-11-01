@@ -145,7 +145,7 @@
 
     
   <!-- Leaderboard Top 5 Ranking for MR WUUUUUUUUUUU ZIMING-->
-  <div v-if="rankedUsers.length != 0" class="w-3/5 text-center mt-4 mx-auto pb-10">
+  <div v-if="rankedUsers.length != 0" class="w-4/5 md:w-3/5 text-center mt-4 mx-auto pb-10">
     <div class="card" id="post2">
         <div class="card-header bg-gradient-to-r from-pink-400 to-blue-300 text-xl font-bold">
             Global Top 5
@@ -159,7 +159,7 @@
                     </div>
                     <div class="w-1/2 md:w-1/4">
                         <div class="flex items-center">
-                            <div class="w-1/2">
+                            <div class="w-2/5 md:w-1/2">
                                 <img :src="'../Images/' + user.image" class="w-10 h-10 rounded-full">
                             </div>
                             <div class="w-1/2">
@@ -179,7 +179,7 @@
   <!-- End of Leaderboard Top 5 Ranking -->
 
   <!-- Leaderboard FOR LOGGED IN USER Ranking for MR WUUUUUUUUUUU ZIMING-->
-  <div v-if="currUser != -1" class="w-3/5 text-center mt-4 mx-auto pb-10">
+  <div v-if="currUser != -1" class="w-4/5 md:w-3/5 text-center mt-4 mx-auto pb-10">
     <div class="card" id="post2">
         <div class="card-header bg-gradient-to-r from-blue-400 to-pink-300 text-xl font-bold">
             Your Current Position
@@ -193,7 +193,7 @@
                     </div>
                     <div class="w-1/2 md:w-1/4">
                         <div class="flex items-center">
-                            <div class="w-1/2">
+                            <div class="w-2/5 md:w-1/2">
                                 <img :src="'../Images/' + rankedUsers[currUser].image" class="w-10 h-10 rounded-full">
                             </div>
                             <div class="w-1/2">
