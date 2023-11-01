@@ -30,7 +30,7 @@ function unsubscribe() {
                 window.location.replace("../Home/home.html")
                 break breakme
             }
-            document.getElementById('contentBlock').removeAttribute('style')
+            document.getElementById('contentBlock').style.display = null
             console.log('user logged in')
             console.log(user.uid)
 
@@ -39,7 +39,7 @@ function unsubscribe() {
                 window.location.replace("../Login/index.html")
                 break breakme
             }
-            document.getElementById('contentBlock').removeAttribute('style')
+            document.getElementById('contentBlock').style.display = null
             console.log('test2')
         }
     }
