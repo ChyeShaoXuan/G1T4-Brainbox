@@ -26,7 +26,7 @@ const root = Vue.createApp({
             names: {},
             rankedUsers: [],
             top5: [],
-            currUser: 0,
+            currUser: -1,
         }
     },
 
@@ -43,9 +43,10 @@ const root = Vue.createApp({
                     }
                 })
                 usersArr.sort((a, b) => b[1].totalScore - a[1].totalScore)
-
+                console.log(usersArr)
                 usersArr.forEach((user) => {
                     let userDet = snapshot.val()[user[0]]
+                    console.log(userDet)
                     this.rankedUsers.push({
                         username:userDet.username,
                         image:userDet.image,

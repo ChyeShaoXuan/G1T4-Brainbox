@@ -4,7 +4,7 @@ const main = document.querySelector("main");
 const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
+import { getDatabase, ref, set, update } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
 import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
 
 
@@ -93,6 +93,7 @@ const signupEmailPassword = async () => {
       const db = getDatabase();
       const user = userCredential.user
       const reference = ref(db, 'users/' + user.uid)
+      const testRef = ref(db,'testCompletion/' + user.uid)
       user.displayName = signupName
       console.log(user)
       set(reference, {
@@ -100,7 +101,7 @@ const signupEmailPassword = async () => {
         email:signupEmail,
         image:'avatar1.jpg'
         })
-      
+      update(testRef, {totalScore:0})
 
       document.getElementById('signinMessage').innerText="You have successfully signed up!"
       document.getElementById('signinMessage').setAttribute("style","color:green")
