@@ -69,6 +69,19 @@ form {
   transition: opacity 0.02s 0.4s;
 }
 
+#centraliseform {
+  max-width: 260px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  transition: opacity 0.02s 0.4s;
+}
+
 form.sign-up-form {
   opacity: 0;
   pointer-events: none;
