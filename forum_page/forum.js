@@ -118,25 +118,25 @@ function displayPage(page) {
                         <li class="list-group-item p-3 bg-blue-100">
                                                 <div class="flex flex-col items-center md:flex-row">
                                                     <div class="w-full md:w-1/2 md:mb-0 text-center">
-                                                        <a href="post.html?postID=${currPost[0]}&subject=${currSub}" class="text-blue-900 text-md md:text-xl font-semibold hover:text-red-900">${currPost[1].title}</a>
+                                                        <a href="post.html?postID=${currPost[0]}&subject=${currSub}" class="text-blue-900 text-md md:text-lg font-semibold hover:text-red-900">${currPost[1].title}</a>
                                                     </div>
                                                     <div class="w-1/2 md:w-1/8 md:w-1/4">
                                                         <div class="flex items-center">
-                                                            <div class="w-1/2">
+                                                            <div class="w-full md:w-1/2 p-2 md:p-0">
                                                                 <img src="../Images/${currPost[2]}" class="w-10 h-10 rounded-full">
                                                             </div>
-                                                            <div class="w-1/2 text-md md:text-xl">
+                                                            <div class="w-full md:w-1/2 p-2 md:p-0 text-md md:text-lg">
                                                                 <span>${currPost[3]}</span>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="text-center mb-3 mt-3 text-md md:text-xl md:mb-0 md:mt-0 w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
+                                                    <div class="text-center mb-3 mt-3 text-md md:text-lg md:mb-0 md:mt-0 w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
                                                         Replies: ${currPost[1].comments}
                                                     </div>
-                                                    <div class="text-center mb-3 mt-3 text-md md:text-xl md:mb-0 md:mt-0 w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
+                                                    <div class="text-center mb-3 mt-3 text-md md:text-lg md:mb-0 md:mt-0 w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
                                                         Views: ${currPost[1].views}
                                                     </div>
-                                                    <div class="text-center mb-3 mt-3 text-md md:text-xl md:mb-0 md:mt-0 w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
+                                                    <div class="text-center mb-3 mt-3 text-md md:text-lg md:mb-0 md:mt-0 w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
                                                         Posted: ${currPost[4]}
                                                     </div>
                                                 </div>
