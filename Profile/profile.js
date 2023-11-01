@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
+import { getDatabase, ref, onValue, update } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"
 import {getAuth, onAuthStateChanged} from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"
 
 const firebaseConfig = {
@@ -17,6 +17,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const db = getDatabase()
+const avatarImage = document.getElementById("avatar-image");
+const avatarThumbnails = document.querySelectorAll(".avatar-thumbnail");
+const prevButton = document.getElementById("prev-avatar");
+const nextButton = document.getElementById("next-avatar");
+const confirmButton = document.getElementById("confirm-avatar");
+
 
 const root = Vue.createApp({
     data() {
@@ -26,6 +32,8 @@ const root = Vue.createApp({
         isEditing: false,
         isSelecting: false,
         username: '',
+        currentAvatarIndex: 0,
+        currentAvatar: ''
       }
     },
     methods: {
@@ -42,17 +50,48 @@ const root = Vue.createApp({
         localStorage.setItem('bio', this.displayed_bio)
       },
       editAvatar() {
-        this.isSelecting = true;
+        this.isSelecting = !this.isSelecting;
       },
-      saveAvatar() {
-        this.isSelecting = false;
+      showAvatar(index) {
+        avatarImage.src = avatarThumbnails[index].src;
+      },
+      movePrev() {
+        this.currentAvatarIndex = (this.currentAvatarIndex - 1 + avatarThumbnails.length) % avatarThumbnails.length;
+        console.log("prev");
+        this.currentAvatar = "../" + avatarThumbnails[this.currentAvatarIndex].src.split("Brainbox/")[1]
+      },
+      moveNext() {
+        this.currentAvatarIndex = (this.currentAvatarIndex + 1) % avatarThumbnails.length;
+        console.log("next");
+        this.currentAvatar = "../" + avatarThumbnails[this.currentAvatarIndex].src.split("Brainbox/")[1]
+      },
+      confirmAvatar() {
+        this.isSelecting = !this.isSelecting;
+        var avatar_chosen = document.getElementById("avatar-image").src
+        var image_file = avatar_chosen.split("Images/")[1]
+        onAuthStateChanged(auth, user => {
+          const userRef = ref(db, 'users/' + user.uid)
+            let updates = {
+              image: image_file
+            }
+            update(userRef, updates)
+        })
       }
     }, 
     created() {
       onAuthStateChanged(auth, user => {
-        const userRef = ref(db, 'users/'+ user.uid)
+        const userRef = ref(db, 'users/' + user.uid)
         onValue(userRef, (snapshot) => {
             this.username = snapshot.val().username
+            if (Number(snapshot.val().image[6]) == 0) {
+              this.currentAvatarIndex = 0
+            } else {
+              this.currentAvatarIndex = Number(snapshot.val().image[6]) - 1 
+            }
+            this.currentAvatar = "../" + avatarThumbnails[this.currentAvatarIndex].src.split("Brainbox/")[1]
+            console.log(this.currentAvatar)
+        }, {
+          onlyOnce:true
         })
     })
     }
@@ -61,7 +100,6 @@ const root = Vue.createApp({
   document.addEventListener('DOMContentLoaded', () => {
     root.mount("#root");
   });
-
 
 const progress = Vue.createApp({
   data() {
@@ -120,45 +158,4 @@ const progress = Vue.createApp({
   }
 })
 
-  
-
-
 progress.mount("#progress")
-
-// JavaScript for avatar selection carousel
-document.addEventListener("DOMContentLoaded", function () {
-    const avatarImage = document.getElementById("avatar-image");
-    const avatarThumbnails = document.querySelectorAll(".avatar-thumbnail");
-    const prevButton = document.getElementById("prev-avatar");
-    const nextButton = document.getElementById("next-avatar");
-    const confirmButton = document.getElementById("confirm-avatar");
-    let currentAvatarIndex = 0;
-
-    function showAvatar(index) {
-        avatarImage.src = avatarThumbnails[index].getAttribute("data-src");
-    }
-
-    showAvatar(currentAvatarIndex);
-
-
-    prevButton.addEventListener("click", function () {
-        currentAvatarIndex = (currentAvatarIndex - 1 + avatarThumbnails.length) % avatarThumbnails.length;
-        showAvatar(currentAvatarIndex);
-        console.log("prev");
-    });
-
-    nextButton.addEventListener("click", function () {
-        currentAvatarIndex = (currentAvatarIndex + 1) % avatarThumbnails.length;
-        showAvatar(currentAvatarIndex);
-    });
-
-    confirmButton.addEventListener("click", function () {
-        // Handle confirmation logic here
-
-        // To retrieve selected image file
-        var avatar_chosen = document.getElementById("avatar-image").src
-        var image_file = avatar_chosen.split("Images/")[1]
-        console.log(image_file)
-    });
-});
-
