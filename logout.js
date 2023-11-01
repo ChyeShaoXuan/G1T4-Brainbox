@@ -19,8 +19,9 @@ const auth = getAuth(app)
 
 const logout = async() => {
     console.log('test')
-    // window.location.href = '../Login/index.html'
-    await signOut(auth)
+    signOut(auth).then(
+        window.location.href = '../Login/index.html'
+    )
 }
 
 document.getElementById('logout').addEventListener('click',logout);
