@@ -136,7 +136,7 @@ function displayPage(page) {
                                 <div class="text-center mt-3 md:mb-3 text-md md:text-lg w-1/4">
                                     Views: ${currPost[1].views}
                                 </div>
-                                <div class="text-center mt-3 md:mb-3 text-md md:text-lg w-1/4">
+                                <div class="text-center mt-3 md:mb-3 text-md md:text-lg md:w-1/4">
                                     Posted: ${currPost[4]}
                                 </div>
                             </div>
