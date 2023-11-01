@@ -36,7 +36,7 @@ const app = Vue.createApp({
     mounted() {
         axios.get('questions.json')
             .then((response) => {
-                this.questions= response.data[testSub][testDif]
+                this.questions = response.data[testSub][testDif]
                 console.log(this.questions);
                 document.getElementById('header').innerText= "This test is for " + testDif.toLowerCase() +" "+ testSub.toLowerCase() +"."
                 // random 10 qns

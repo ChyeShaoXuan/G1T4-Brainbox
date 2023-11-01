@@ -1063,8 +1063,8 @@
             {
                 "number": 3,
                 "question": "What is 5 multiplied by 3?",
-                "answers": ['10', '15', '20', '25'],
-                "correct_answer": '15'
+                "answers": ["10", "15", "20", "25"],
+                "correct_answer": "15"
             },
             {
                 "number": 4,
