@@ -123,20 +123,20 @@ function displayPage(page) {
                                 <div class="w-1/2">
                                     <div class="flex items-center">
                                         <div class="w-full md:w-1/3 p-2 md:p-0 flex justify-end items-center">
-                                            <img src="../Images/${currPost[2]}" class="w-10 h-10 rounded-full">
+                                            <img src="../Images/${currPost[2]}" class="w-14 h-14 rounded-full">
                                         </div>
                                         <div class="w-full md:w-1/2 p-2 md:p-0 text-md md:text-lg justify-center">
                                             <span>${currPost[3]}</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-center mb-3 mt-3 text-md md:text-lg md:mb-0 md:mt-0 w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
+                                <div class="text-center mt-3 md:mb-3 text-md md:text-lg w-1/4">
                                     Replies: ${currPost[1].comments}
                                 </div>
-                                <div class="text-center mb-3 mt-3 text-md md:text-lg md:mb-0 md:mt-0 w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
+                                <div class="text-center mt-3 md:mb-3 text-md md:text-lg w-1/4">
                                     Views: ${currPost[1].views}
                                 </div>
-                                <div class="text-center mb-3 mt-3 text-md md:text-lg md:mb-0 md:mt-0 w-1/2 md:w-1/8 md:w-1/4 md:mt-0">
+                                <div class="text-center mt-3 md:mb-3 text-md md:text-lg w-1/4">
                                     Posted: ${currPost[4]}
                                 </div>
                             </div>
