@@ -147,7 +147,7 @@
                     <a href="forum.html" class="btn btn-primary btn-block">Back to Forum</a>
                 </div>
             </div>
-            <div class="row justify-content-center align-items-center mt-3"> 
+            <div v-if="deleteButton" class="row justify-content-center align-items-center mt-3"> 
                 <div class="col-md-6 text-center">
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#error">
                         Delete Post
@@ -164,17 +164,17 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">You have unfinished questions!</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle">Delete post</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
             <div class="modal-body">
-            Please make sure you have completed all the questions before submission!
+            Are you sure you want to delete post?
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-danger" id="deleteButton" @click="deletePost()"> Are you sure? </button>
+            <button type="button" class="btn btn-danger" id="deleteButton" @click="deletePost()"> Delete </button>
             
             </div>
         </div>

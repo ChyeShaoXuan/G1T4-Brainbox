@@ -99,17 +99,16 @@ const root = Vue.createApp({
         },
 
         deletePost() {
-            
-                const postDeleteRef = ref(db,'posts/' + postSub)
-                const commentDeleteRef = ref(db,'comments/')
-                let deleteUpdate = {}
-                deleteUpdate[postID] = null
-                update(postDeleteRef,deleteUpdate)
-                update(commentDeleteRef,deleteUpdate)
-                .then(() => {
-                    window.location.href = "forum.html"
-                })
-                // commentsDeleteRef.remove()
+            const postDeleteRef = ref(db,'posts/' + postSub)
+            const commentDeleteRef = ref(db,'comments/')
+            let deleteUpdate = {}
+            deleteUpdate[postID] = null
+            update(postDeleteRef,deleteUpdate)
+            update(commentDeleteRef,deleteUpdate)
+            .then(() => {
+                window.location.href = "forum.html"
+            })
+            // commentsDeleteRef.remove()
             
         }
     },
