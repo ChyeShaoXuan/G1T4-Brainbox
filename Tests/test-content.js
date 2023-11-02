@@ -36,7 +36,7 @@ const app = Vue.createApp({
     mounted() {
         axios.get('questions.json')
             .then((response) => {
-                this.questions = response.data[testSub][testDif]
+                this.questions= response.data[testSub][testDif]
                 console.log(this.questions);
                 document.getElementById('header').innerText= "This test is for " + testDif.toLowerCase() +" "+ testSub.toLowerCase() +"."
                 // random 10 qns
@@ -101,22 +101,17 @@ const app = Vue.createApp({
                     let value = 0
 
                     let updates = {}
-                    updates[testSub+testDif] = true
-                    if (testDif == "Medium") {
-                        console.log('medium')
-                        value = Number(this.score) * 2
-                    } else if (testDif == "Hard") {
-                        console.log('hard')
-                        value = Number(this.score) * 3
-                    } else{
-                        value = Number(this.score)
-                    }
-                    onValue(completeRef, (snapshot) => {  
+                    onValue(completeRef, (snapshot) => {
+
+                        if (testDif == "Medium") {
+                            value = Number(this.score) * 2
+                        } else if (testDif == "Hard") {
+                            value = Number(this.score) * 3
+                        }
                         if (snapshot.val() == null) {
                             console.log('nulltest')
                             updates.totalScore = value
                         } else {
-                            console.log('success')
                             updates.totalScore = value + snapshot.val().totalScore
                         } 
                         update(completeRef, updates)
@@ -128,7 +123,15 @@ const app = Vue.createApp({
 
             }
             else{
-                alert("Please answer all the questions!")
+                const toastTrigger = document.getElementById('submit')
+                const toastLiveExample = document.getElementById('liveToast')
+
+                if (true) {
+                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+                toastTrigger.addEventListener('click', () => {
+                    toastBootstrap.show()
+                });
+                };
             }
             
 
