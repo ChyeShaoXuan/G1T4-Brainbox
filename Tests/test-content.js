@@ -123,15 +123,8 @@ const app = Vue.createApp({
 
             }
             else{
-                const toastTrigger = document.getElementById('submit')
-                const toastLiveExample = document.getElementById('liveToast')
-
-                if (true) {
-                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-                toastTrigger.addEventListener('click', () => {
-                    toastBootstrap.show()
-                });
-                };
+                var myModal = new bootstrap.Modal(document.getElementById('error'))
+                myModal.show()
             }
             
 

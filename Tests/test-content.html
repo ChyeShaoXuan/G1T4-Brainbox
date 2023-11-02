@@ -43,6 +43,7 @@
     </style>
 
 </head>
+
 <body class="bg-gray-200">
 <div id="contentBlock" style="display:none;">
 
@@ -53,19 +54,7 @@
                     <h1 class="text-4xl font-bold pb-6" id="header">
                     </h1>
                     <!-- Vue.js do here -->
-                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                          <div class="toast-header">
-                            
-                            <strong class="me-auto">Bootstrap</strong>
-                            <small>11 mins ago</small>
-                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                          </div>
-                          <div class="toast-body">
-                            Hello, world! This is a toast message.
-                          </div>
-                        </div>
-                    </div>
+                    
 
                     <div v-for="qn of ran_qns" class="mb-6">
                         <h1 class="text-2xl font-bold mb-4">Q{{ qn.number }}. {{ qn.question }}</h1>
@@ -89,6 +78,24 @@
                             <button id="back" class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-700" onclick="location.replace('test.html')">Back</button>
                         
                         <button id="submit" @click="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700">Submit</button>             
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="error" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">You have unfinished questions!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                            Please make sure you have completed all the questions before submission!
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                        </div>
                     </div>
         </div>
     </div>
