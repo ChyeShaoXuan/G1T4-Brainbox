@@ -41,7 +41,8 @@ const root = Vue.createApp({
     methods: {
         submit() {
             if (this.commentText.length == 0) {
-                alert("Please fill up comment!")
+                var myModal = new bootstrap.Modal(document.getElementById('error'))
+                myModal.show()
             } else {
                 let current = new Date()
                 let currentCommentRef = ref(db,'comments/' + postID + '/' + current.getTime())
