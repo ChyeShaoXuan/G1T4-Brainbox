@@ -117,7 +117,7 @@ function displayPage(page) {
                     newStr+= `
                         <li class="list-group-item p-3 bg-blue-100">
                             <div class="flex flex-col items-center md:flex-row">
-                                <div class="w-full md:w-1/3 mb-2 text-center">
+                                <div class="w-full md:w-1/3 mb-2 text-center text-2xl">
                                     <a href="post.html?postID=${currPost[0]}&subject=${currSub}" class="text-blue-900 text-md md:text-lg font-semibold hover:text-red-900">${currPost[1].title}</a>
                                 </div>
                                 <div class="w-1/2">
