@@ -99,7 +99,7 @@ const root = Vue.createApp({
         },
 
         deletePost() {
-            if(confirm("Are you sure?")) {
+            
                 const postDeleteRef = ref(db,'posts/' + postSub)
                 const commentDeleteRef = ref(db,'comments/')
                 let deleteUpdate = {}
@@ -110,7 +110,7 @@ const root = Vue.createApp({
                     window.location.href = "forum.html"
                 })
                 // commentsDeleteRef.remove()
-            }
+            
         }
     },
     
