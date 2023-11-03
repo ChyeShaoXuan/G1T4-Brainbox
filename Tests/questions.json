@@ -326,7 +326,7 @@
             },
             {
                 "number": 4,
-                "question": "Complete the sentence: 'My friend Alex, a talented artist, painted a mural.'",
+                "question": "Complete the sentence: 'My friend Alex, a talented artist, painted a ______.'",
                 "answers": ["border", "epitome", "uprising", "mural"],
                 "correct_answer": "mural"
             },
