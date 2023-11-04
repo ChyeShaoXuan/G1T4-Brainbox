@@ -25,5 +25,8 @@ document.getElementById("submitEmail").addEventListener("click", () => {
         console.log('email sent')
     }).catch(error => {
         console.log(error.message)
+        var myModal = new bootstrap.Modal(document.getElementById('error'))
+        myModal.show()
     })
   })
+
