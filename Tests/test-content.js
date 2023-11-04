@@ -14,7 +14,7 @@ const firebaseConfig = {
     databaseURL: "https://wad2-4fc9e-default-rtdb.asia-southeast1.firebasedatabase.app"
     };
   
-
+// Initialize Firebase
 const firebaseApp = initializeApp(firebaseConfig);
 const db = getDatabase()
 const auth = getAuth(firebaseApp)
@@ -22,6 +22,7 @@ const urlParams = new URLSearchParams(window.location.search)
 const testSub = urlParams.get('subject')
 const testDif = urlParams.get('difficulty')
 
+// Vue
 const app = Vue.createApp({
     data() {
         return {
@@ -34,12 +35,13 @@ const app = Vue.createApp({
         }
     },
     mounted() {
+        // Connect to API
         axios.get('questions.json')
             .then((response) => {
                 this.questions= response.data[testSub][testDif]
                 console.log(this.questions);
                 document.getElementById('header').innerText= "This test is for " + testDif.toLowerCase() +" "+ testSub.toLowerCase() +"."
-                // random 10 qns
+                // Generate random 10 qns
                 for (let i=0;i<10;i++){
                     let radnum=Math.floor(Math.random()*(this.questions.length))
                     let spliced_qns=this.questions.splice(radnum,1)[0]
