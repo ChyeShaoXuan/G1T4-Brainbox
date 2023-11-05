@@ -88,10 +88,11 @@ function displayPage(page) {
 
     document.getElementById('subjectCaption').innerText = currSub.charAt(0).toUpperCase() + currSub.slice(1)
     onValue(userRef, (snapshot) => {
-        postsList = []
-        let newStr = ''
+
         const users = snapshot.val()
         onValue(postsRef,(snapshot2) => {
+            postsList = []
+            let newStr = ''
             snapshot2.forEach((childSnapshot) => {
                 const childKey = childSnapshot.key;
                 let date = new Date(Number(childKey))
@@ -155,11 +156,7 @@ function displayPage(page) {
                 document.getElementById('firstPage').innerText = 0
                 document.getElementById('lastPage').innerText = 0
             }
-        },{
-            onlyOnce:true
         });
-    }, {
-        onlyOnce:true
     });
 }
 
