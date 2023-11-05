@@ -63,23 +63,15 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
-// onAuthStateChanged(auth, user => {
-//   if(user) {
-//     window.location.replace('../Home/home.html')
-//   } else {
-//     document.getElementById('contentBlock').removeAttribute('style')
-//     console.log('test2')
-//   }
-// })
-const signupEmailPassword = async () => { 
-  
-  const signupEmail = document.getElementById('signupEmail').value.toLowerCase();
-  const signupPassword = document.getElementById('signupPassword').value;
-  const signupName = document.getElementById('name').value;
-  // console.log(signupEmail,signupPassword)
-  // console.log(document.querySelector("[name='agree']").checked)
 
-  if (signupName.length == 0 || signupEmail.length == 0 || signupPassword.length == 0) {
+const signupEmailPassword = async () => {  
+  
+  const signupEmail = document.getElementById('signupEmail').value.toLowerCase().trim(); // Convert email input into lowercase
+  const signupPassword = document.getElementById('signupPassword').value.trim();
+  const signupName = document.getElementById('name').value.trim();
+
+
+  if (signupName.length == 0 || signupEmail.length == 0 || signupPassword.length == 0) { //Check if any blanks
     showSignUpError('blank')
   } else if (signupPassword.length <6) {
     showSignUpError('short')
