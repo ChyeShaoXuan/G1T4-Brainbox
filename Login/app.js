@@ -76,8 +76,8 @@ const signupEmailPassword = async () => {
   const signupEmail = document.getElementById('signupEmail').value.toLowerCase();
   const signupPassword = document.getElementById('signupPassword').value;
   const signupName = document.getElementById('name').value;
-  console.log(signupEmail,signupPassword)
-  console.log(document.querySelector("[name='agree']").checked)
+  // console.log(signupEmail,signupPassword)
+  // console.log(document.querySelector("[name='agree']").checked)
 
   if (signupName.length == 0 || signupEmail.length == 0 || signupPassword.length == 0) {
     showSignUpError('blank')
@@ -95,7 +95,7 @@ const signupEmailPassword = async () => {
       const reference = ref(db, 'users/' + user.uid)
       const testRef = ref(db,'testCompletion/' + user.uid)
       user.displayName = signupName
-      console.log(user)
+      // console.log(user)
       set(reference, {
         username: signupName,
         email:signupEmail,
@@ -112,7 +112,7 @@ const signupEmailPassword = async () => {
 
     }
     catch(error) {
-      console.log(error);
+      // console.log(error);
       showSignUpError(error.code);
     }
   }}
@@ -123,13 +123,13 @@ const signupEmailPassword = async () => {
     if (loginEmail == '' || loginPassword == '') {
       showLogInError('blank');
     } else {
-      console.log(loginEmail,loginPassword)
+      // console.log(loginEmail,loginPassword)
       try {
       const loginCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword)
       window.location.href = "../Home/home.html"
       }
       catch(error) {
-        console.log(error);
+        // console.log(error);
         showLogInError('invalid')
       }
     }
@@ -147,7 +147,7 @@ const signupEmailPassword = async () => {
     // monitorAuthState();
 
 function showSignUpError(error) {
-      console.log(error)
+      // console.log(error)
       var msgSpace = document.getElementById('signupError')
       if (error == 'auth/email-already-in-use'){
         msgSpace.innerText= 'Email already exists!'
@@ -176,7 +176,7 @@ function showLogInError(error) {
 function clearFields() {
   let fields = document.getElementsByClassName('input-field')
   for (let field of fields) {
-    console.log(field)
+    // console.log(field)
     field.value = ''
   }
   document.querySelector("[name='agree']").checked = false;
