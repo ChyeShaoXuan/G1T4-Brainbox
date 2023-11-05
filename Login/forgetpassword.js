@@ -22,7 +22,9 @@ document.getElementById("submitEmail").addEventListener("click", () => {
     console.log(email)
     sendPasswordResetEmail(auth, email)
     .then(() => {
-        console.log('email sent')
+      var myModal = new bootstrap.Modal(document.getElementById('correct'))
+      myModal.show()
+
     }).catch(error => {
         console.log(error.message)
         var myModal = new bootstrap.Modal(document.getElementById('error'))
