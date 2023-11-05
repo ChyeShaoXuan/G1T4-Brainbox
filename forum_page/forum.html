@@ -179,6 +179,10 @@
                 background-position: 100% 100%;
             }
         }
+
+        .custom-btn {
+                          width: 200px;
+        }
   </style>
   </head>
 
@@ -263,28 +267,29 @@
             <div class="w-full md:w-1/4 p-2 bg-gradient-to-r rounded" style="background-image: url('../Images/sidebar_forum_gif.gif');background-size:cover;background-repeat: no-repeat;background-position:bottom;">
                 <!-- Sidebar -->
                 <div class="p-3 max-h-fit">
-                    <div class="text-2xl font-bold text-center">Subjects</div>
-                    <ul class="nav flex-column mt-4">
-                        <!-- Example item collapsible -->
-                        <li class="nav-item">
-                            <a id="english" data-toggle="collapse" class="nav-link text-2xl text-black hover:text-red-900 text-center font-bold mb-2">
-                                <i class="fas fa-book"></i> English
-                            </a>
-                        </li>
-                        <!-- End of example item -->
-                        
-                        <li class="nav-item">
-                            <a id="math" class="nav-link text-2xl text-black hover:text-red-900 font-bold text-center mb-2">
-                                <i class="fas fa-plus-minus"></i> Math
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                          <a id="science" class="nav-link text-2xl text-black hover:text-red-900 text-center font-bold mb-2">
-                              <i class="fas fa-flask"></i> Science
-                          </a>
+                    <div class="text-2xl font-bold text-center">Select a subject topic below!</div>
+                  
+                  <ul class="nav flex-column mt-4 d-flex">
+                      <!-- English button -->
+                      <li class="nav-item mx-auto">
+                          <button id="english" class="btn btn-danger btn-lg custom-btn text-2xl text-center font-bold mb-2">
+                              <i class="fas fa-book"></i> English
+                          </button>
                       </li>
-                    </ul>
-                    
+                      <!-- Math button -->
+                      <li class="nav-item mx-auto">
+                          <button id="math" class="btn btn-primary btn-lg custom-btn text-2xl text-center font-bold mb-2">
+                              <i class="fas fa-plus-minus"></i> Math
+                          </button>
+                      </li>
+                      <!-- Science button -->
+                      <li class="nav-item mx-auto">
+                          <button id="science" class="btn btn-primary btn-lg custom-btn text-2xl text-center font-bold mb-2">
+                              <i class="fas fa-flask"></i> Science
+                          </button>
+                      </li>
+                  </ul>
+                  
                 </div>
                 <!-- End of hidden sidebar -->
             </div>
