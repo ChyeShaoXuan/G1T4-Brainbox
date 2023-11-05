@@ -39,8 +39,8 @@ const app = Vue.createApp({
         axios.get('questions.json')
             .then((response) => {
                 this.questions= response.data[testSub][testDif]
-                console.log(this.questions);
-                document.getElementById('header').innerText= "This test is for " + testDif.toLowerCase() +" "+ testSub.toLowerCase() +"."
+                // console.log(this.questions);
+                document.getElementById('header').innerText= "This test is for " + testDif.toLowerCase() +" "+ testSub.toLowerCase() +"." //test heading
                 // Generate random 10 qns
                 for (let i=0;i<10;i++){
                     let radnum=Math.floor(Math.random()*(this.questions.length))
@@ -51,7 +51,7 @@ const app = Vue.createApp({
                 
                 //console.log(this.ran_qns)
                 
-                this.ran_qns.forEach(element => {
+                this.ran_qns.forEach(element => { //Push correct answers into ran_qns
                     this.answers.push(element.correct_answer)
                 });
                 
@@ -71,23 +71,23 @@ const app = Vue.createApp({
 
             for (var i=0;i<rads.length;i++){
                 var rad=rads[i]
-                if(rad.checked){
+                if(rad.checked){ //push in checked options of all radio buttons
                     checked_rads.push(rad.value)
                 }
             }
-            console.log(checked_rads)
-            if (checked_rads.length==this.answers.length){
+            // console.log(checked_rads)
+            if (checked_rads.length==this.answers.length){ //If all questions answered
                 for (var i=0;i<rads.length;i++){
                     var rad=rads[i]
-                    if (rad.checked){
+                    if (rad.checked){ //For every checked option, check if correct
                         var correct = (rad.value==this.answers[counter])
 
-                    if (correct){
+                    if (correct){ //Styling for correct answeres
                         rad.closest("label").classList.toggle("correct");
 
                         this.score+=1
                     }
-                    else{
+                    else{ //Styling for wrong answers
                         rad.closest("label").classList.toggle('error')
                     }
                     counter++
@@ -103,32 +103,32 @@ const app = Vue.createApp({
                     let value = 0
 
                     let updates = {}
-                    let testKey = testSub+testDif
-                    updates[testKey] = true
+                    let testKey = testSub+testDif //Set key as test subject and difficulty
+                    updates[testKey] = true //Mark test as completed
                     onValue(completeRef, (snapshot) => {
 
                         if (testDif == "Medium") {
-                            value = Number(this.score) * 2
+                            value = Number(this.score) * 2 //2x multiplier for medium
                         } else if (testDif == "Hard") {
-                            value = Number(this.score) * 3
+                            value = Number(this.score) * 3 //3x multiplier for hard
                         } else {
                             value = Number(this.score)
                         }
-                        if (snapshot.val() == null) {
-                            console.log('nulltest')
+                        if (snapshot.val() == null) { //If user has no testCompletion entry
+                            // console.log('nulltest')
                             updates.totalScore = value
                         } else {
                             updates.totalScore = value + snapshot.val().totalScore
                         } 
-                        update(completeRef, updates)
-                        console.log('submitted')
+                        update(completeRef, updates) //Update user data
+                        // console.log('submitted')
                     }, {
                         onlyOnce:true
                     })
                 })
 
             }
-            else{
+            else{ //Not completed
                 var myModal = new bootstrap.Modal(document.getElementById('error'))
                 myModal.show()
             }

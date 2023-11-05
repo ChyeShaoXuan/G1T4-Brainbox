@@ -17,25 +17,34 @@ const firebaseConfig = {
     databaseURL: "https://wad2-4fc9e-default-rtdb.asia-southeast1.firebasedatabase.app"
     };
   
-
+//Initialise firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const db = getDatabase()
 function monitorAuthState() {
     onAuthStateChanged(auth, user => {
         if (user) {
-
-            let postTitle = document.getElementById('title').value
+            //Retrieve post details
+            let postTitle = document.getElementById('title').value 
             let postContent = document.getElementById('content').value
             const postSubject = document.getElementById('subject').value
+
+            //Trim to remove whitespace
             postTitle = postTitle.trim()
             postContent = postContent.trim()
-            if (postTitle != "" && postContent != "") {
-            console.log(postTitle,postContent,postSubject)
 
+            //Check if input fields empty
+            if (postTitle != "" && postContent != "") {
+
+
+            //User UNIX timestamp as key
             const current = new Date()
             const reference = ref(db, 'posts/' + postSubject + '/' + current.getTime())
+
+
             const userRef = ref(db, 'users/' + user.uid + '/username')
+
+            //Write data into database
             set(reference, {
                 uid: user.uid,
                 title: postTitle,
@@ -43,8 +52,9 @@ function monitorAuthState() {
                 views: 0,
                 comments: 0,
             }).then(() => {
-                console.log('submitted')
-                window.location.href = "forum.html" 
+                // console.log('submitted')
+                
+                window.location.href = "forum.html"  //Redirect to forum page
             }).catch(error => {
                 console.log(error.message)
             })

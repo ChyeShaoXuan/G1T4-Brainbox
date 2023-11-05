@@ -12,35 +12,35 @@ const firebaseConfig = {
     databaseURL: "https://wad2-4fc9e-default-rtdb.asia-southeast1.firebasedatabase.app"
     };
   
-
+//Initialise firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 let hasRun = false
 function unsubscribe() {
     onAuthStateChanged(auth, user => {
-        console.log('testersee')
-        if (hasRun) {
+        // console.log('testersee')
+        if (hasRun) { //If loginstatus has been checked once, don't check again
             return
         }
         hasRun = true;
-        console.log(hasRun)
+        // console.log(hasRun)
         breakme: {
-        if (user) {
-            if (document.URL.includes('Login/index.html')) {
+        if (user) { 
+            if (document.URL.includes('Login/index.html')) { //If logged in user accesses login page, redirect to home
                 window.location.replace("../Home/home.html")
                 break breakme
             }
-            document.getElementById('contentBlock').style.display = null
-            console.log('user logged in')
-            console.log(user.uid)
+            document.getElementById('contentBlock').style.display = null //Display page after authenticated
+            // console.log('user logged in')
+            // console.log(user.uid)
 
         } else {
-            if (!document.URL.includes('Login/index.html')) {
+            if (!document.URL.includes('Login/index.html')) { //If not logged in user accesses any page other than login, redirect to login
                 window.location.replace("../Login/index.html")
                 break breakme
             }
-            document.getElementById('contentBlock').style.display = null
-            console.log('test2')
+            document.getElementById('contentBlock').style.display = null //Display page after authenticated
+            // console.log('test2')
         }
     }
     })

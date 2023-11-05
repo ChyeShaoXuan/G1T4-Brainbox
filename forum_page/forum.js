@@ -13,59 +13,50 @@ const firebaseConfig = {
     databaseURL: "https://wad2-4fc9e-default-rtdb.asia-southeast1.firebasedatabase.app"
     };
   
-
+//Initialise firebase
 const app = initializeApp(firebaseConfig);
 const db = getDatabase()
 let postsRef = ref(db, 'posts/english');
+
 let postsUL = document.getElementById('posts')
 let postsList = []
 let uid = ''
 const userRef = ref(db,'users')
+
 let currSub = 'english'
 let currPost = null
 let currPage = 1
-function showSearch() {
+
+
+function showSearch() { //Show Pagebar
     let newStr = ''
     let postsLength = 0
     let commentsNum = 0
-    onValue(postsRef,(snapshot) => {
-        // newStr = `<nav class="isolate inline-flex -space-x-px rounded-md shadow-sm" aria-label="Pagination">
-        // <a href="#" id="prevButton" class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0" disabled>
-        //   <span class="sr-only">Previous</span>
-        //   <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-        //     <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
-        //   </svg>
-        // </a>`
-        snapshot.forEach(snapshot => {
-            postsLength++
-            commentsNum += Number(snapshot.val().comments)
+    onValue(postsRef,(snapshot) => { //Retrieves from database all posts in specific subject
+        snapshot.forEach(snapshot => { 
+            postsLength++ //No. of posts counter
+            commentsNum += Number(snapshot.val().comments) //No. of comments counter
         });
-        document.getElementById('totalnumresults').innerText = postsLength
+
+        //Information in header bar of posts section
+        document.getElementById('totalnumresults').innerText = postsLength 
         document.getElementById('threads').innerText = 'Threads: ' + postsLength
         document.getElementById('comments').innerText = 'Comments: ' + commentsNum
-        let noOfPages = Math.ceil(postsLength/5)
-        for (let i=1;i<=noOfPages;i++) {
+
+        let noOfPages = Math.ceil(postsLength/5) //5 posts per page
+        for (let i=1;i<=noOfPages;i++) { // Creating page buttons, with unique ids
             if (i==1) {
                 newStr += `<li class="page-item"><a class="page-link bg-info" id="p1">1</a></li>`
-                // newStr += `<a id='p1' aria-current="page" class="relative z-10 inline-flex items-center bg-indigo-600 px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 page">1</a>`
             } else {
-                // newStr += `<a id='p${i}' class="relative inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0 page">${i}</a>`
-                newStr += `<li class="page-item"><a class="page-link" id="p${i}">${i}</a></li>`
+                newStr += `<li class="page-item"><a class="page-link" id="p${i}">${i}</a></li>` 
             }
         }
-    //     newStr += `<a class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0">
-    //     <span class="sr-only">Next</span>
-    //     <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-    //       <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
-    //     </svg>
-    //   </a>
-    // </nav>`
+   
     document.getElementById('pagesBar').innerHTML = newStr
-    // document.getElementById("prevButton").disabled = true
-    // prevButton.classList.add("disabled");
+
+    //Adding event listeners for each page button
     for (let thisPage of document.getElementsByClassName('page-link')) {
-        let pageNum = thisPage.innerText
-        // console.log(pageNum)
+        let pageNum = thisPage.innerText 
         document.getElementById('p'+ pageNum).addEventListener('click', () => {
             displayPage(Number(pageNum))
         })
@@ -75,16 +66,12 @@ function showSearch() {
     })
 }
 
+
 function displayPage(page) {
-    // if (page != 1) {
-    //     document.getElementById('prevButton').disabled = false
-    // } else {
-    //     document.getElementById('prevButton').disabled = true
-    // }
 
     let positionStr = ''
 
-    document.getElementById('subjectCaption').innerText = currSub.charAt(0).toUpperCase() + currSub.slice(1)
+    document.getElementById('subjectCaption').innerText = currSub.charAt(0).toUpperCase() + currSub.slice(1) //Changing subject to first letter uppercase
     onValue(userRef, (snapshot) => {
 
         const users = snapshot.val()
@@ -93,32 +80,40 @@ function displayPage(page) {
             let newStr = ''
             snapshot2.forEach((childSnapshot) => {
                 const childKey = childSnapshot.key;
+
+                 //Timestamp string
                 let date = new Date(Number(childKey))
                 let dateStr = date.toLocaleDateString("en-SG")
                 let timeStr = date.toLocaleTimeString("en-SG")
                 let dateTime = dateStr + " " + timeStr
+
+
                 const postDetails = childSnapshot.val();
                 uid = postDetails.uid
                 postsList.push([childKey,postDetails,users[uid].image,users[uid].username,dateTime])
             });
-            if (postsList.length != 0) {
-                postsList = postsList.reverse()
+            if (postsList.length != 0) { //If at least 1 post,
+                postsList = postsList.reverse() //Arrange in order of newest to oldest
                 let firstPage = (page-1)*5
                 let lastPage = page*5
-                console.log(firstPage,lastPage,postsList.length)
-                for (let i=firstPage;i<lastPage;i++) {
-                    console.log(i,postsList.length)
-                    if (i >= postsList.length) {
-                        console.log('test',firstPage,i)
+                // console.log(firstPage,lastPage,postsList.length)
+
+                // Counter 'i' tracks posts index in the total number of posts. E.g. page 2 will display posts 5-10, thus i will take value 5-10
+                for (let i=firstPage;i<lastPage;i++) {  
+
+                    //For populating "Show posts '1' to '5' of __ posts"
+                    if (i >= postsList.length) { 
+                        // console.log('test',firstPage,i)
                         document.getElementById('firstPage').innerText = firstPage+1
                         document.getElementById('lastPage').innerText = `${i}`
                         break;
                     }
-                    console.log('testradaw')
                     document.getElementById('firstPage').innerText = firstPage+1
                     document.getElementById('lastPage').innerText = lastPage
                     currPost = postsList[i]
 
+
+                    //Populating HTML
                     newStr+= `
                         <li class="list-group-item p-3 bg-blue-100">
                             <div class="flex flex-col items-center md:flex-row">
@@ -148,12 +143,14 @@ function displayPage(page) {
                         </li>`
                 }
                 document.getElementById('posts').innerHTML = newStr
-                console.log(page,currPage)
+                // console.log(page,currPage)
+
+                //Setting styling for selected page
                 document.getElementById('p'+currPage).setAttribute('class','page-link')
                 document.getElementById('p'+page).setAttribute('class','page-link bg-info')
 
                 currPage = page
-            } else {
+            } else { //If no posts in database
                 document.getElementById('posts').innerHTML = ''
                 document.getElementById('firstPage').innerText = 0
                 document.getElementById('lastPage').innerText = 0
@@ -165,14 +162,13 @@ function displayPage(page) {
 }
 
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => { //On load, display the page bar and display whole page
     showSearch()
     displayPage(1)
 })
 
-// document.addEventListener('DOMContentLoaded', showSearch)
-
-document.getElementById('english').addEventListener('click', () => {
+//Start of styling changes and post updates when clicking on subjects
+document.getElementById('english').addEventListener('click', () => { 
     postsRef = ref(db, 'posts/english');
     currPage = 1
     currSub = 'english'
@@ -225,12 +221,11 @@ document.getElementById('science').addEventListener('click', () => {
     showSearch()
     displayPage(1)
 })
+//End of styling changes and post updates when clicking on subjects
 
+//Redirect to create page when clicked on
 document.getElementById('create').addEventListener('click', function() {
     window.location.href = 'create.html';
 })
 
-// document.getElementById("prevButton").addEventListener('click', function() {
-//     console.log('test')
-// })
 

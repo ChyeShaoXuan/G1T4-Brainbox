@@ -13,14 +13,14 @@ const firebaseConfig = {
     databaseURL: "https://wad2-4fc9e-default-rtdb.asia-southeast1.firebasedatabase.app"
     };
   
-
+//Initialise firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 
-const logout = async() => {
+const logout = async() => { //Logout user
     console.log('test')
     signOut(auth).then(
-        window.location.href = '../Login/index.html'
+        window.location.href = '../Login/index.html' //Redirect to login page
     )
 }
 
