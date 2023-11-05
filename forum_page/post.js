@@ -40,6 +40,7 @@ const root = Vue.createApp({
     },
     methods: {
         submit() {
+            this.commentText = this.commentText.trim()
             if (this.commentText.length == 0) {
                 var myModal = new bootstrap.Modal(document.getElementById('error'))
                 myModal.show()
