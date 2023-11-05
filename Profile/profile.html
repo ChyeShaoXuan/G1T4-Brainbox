@@ -122,7 +122,7 @@
     </script>
 
 
-    <!-- Navbar -->
+    <!-- NavBar -->
     <section class="bg-white bg-opacity-50 backdrop-blur-md text-gray-700" style="padding-bottom:4px; padding-top:4px;">
         <div class="container mx-auto py-1 md:py-1">
             <div class="flex flex-col md:flex-row justify-center items-center">
@@ -171,15 +171,16 @@
             </div>
         </div>
     </section>
-    <!-- end of navbar -->
+    <!-- End of NavBar -->
 
-    <!-- AnimeJs Implementation, for the smaller orange banner thingy -->
+    <!-- Header; AnimeJs Implementation, for the smaller orange banner thingy -->
     <div class="animated-background flex items-center justify-center text-center h-3/4" style="background: linear-gradient(45deg, #d9daff96, #ddeceaaf, #a9e4ff8c, #aaebff94); padding-bottom: 10vh; padding-top: 10vh;">
         <div id="animated-text" class="animated-text-container">
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-black    leading-tight">Explore Your Profile & Progress</h1>
             <p class="text-black text-xl sm:text-2xl md:text-3xl font-bold mt-4"><span id="typing-text"></span></p>
         </div>
     </div>
+    <!-- End of Header -->
 
 
     <script> // Animation Scripts
@@ -210,13 +211,13 @@
 
                     <div id="root">
 
-                        <!-- Profile picture and name -->
+                        <!-- Profile Picture and Name -->
                         <div class="profile-picture flex justify-center">
                             <img id="avatar-image" :src="currentAvatar" alt="Your Name" class="rounded-full w-32 h-32 mb-4" style="transform: translateX(10%)">
                             <i class="fa-regular fa-pen-to-square fa-lg transform scale-100 hover:scale-110 transition-transform cursor-pointer" @click="editAvatar"></i>
                         </div>                                             
-    
                         <h2 class="text-2xl font-semibold text-white">{{ username }}</h2>
+                        <!-- End of Profile Picture and Name -->
                         
                         <!-- Avatar selection carousel -->
                         <div class="avatar-carousel" v-show="isSelecting">
@@ -238,10 +239,8 @@
                                 <button id="next-avatar" class="w-1/3 text-white bg-gradient-to-r from-pink-500 to-orange-400  hover:bg-gradient-to-bl font-medium rounded-lg text-sm p-2 text-center m-2" @click="moveNext()">Next Avatar</button>
                                 <button id="confirm-avatar" class="w-1/3 text-white bg-gradient-to-r from-green-600 to-green-400 hover:bg-gradient-to-bl font-medium rounded-lg text-sm p-2 text-center m-2" @click="confirmAvatar">Confirm Avatar</button>
                             </div>
-                            
-                
-                            
                         </div>
+                        <!-- End of Avatar Selection Carousel -->
 
                         <!-- <p>{{ displayed_bio }}</p>
                         <button v-if="!isEditing" @click="editBio" class="bg-yellow-500 text-white p-2 rounded-lg m-2 hover:bg-yellow-600 hover:scale-110 hover:shadow-xl">Edit Bio</button>
@@ -253,46 +252,53 @@
             </div>
         </div>
     </section>
+    <!-- End of Profile Management Section -->
+    
     <!-- Progress View Section + Data All Put Here! -->
     <section id="progress" class="pb-12" >
-    <div class="container mx-auto px-4">
-        <div class="md:w-1/2 mx-auto">
-            <div class="profile-card p-6 bg-cover md:bg-cover" style='background-image:url("../Images/profile_backgroundcopped.gif");background-repeat: no-repeat;background-position: center bottom;'>
-                
-                <h3 class="text-2xl font-bold text-white mb-4">Progress</h3>
-
-                <!--Study Progress Bar-->
-                <div>
-                    <p class="ml-0 text-xl font-bold text-white mb-1">Study</p>
-                    <div class="flex items-center mb-4">
-                        <div class="w-40 h-6 bg-gray-200 rounded-full flex-shrink-0 mr-4">
-                            <div class="progress-bar h-6 rounded-full" :style="studyWidth"></div>
-                        </div>
-                        <div>
-                            <p class="text-white font-bold">{{ studyCompleted }} Completed</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Test Progress Bar-->
-                <div>
-                    <p class="text-xl ml-0 font-bold text-white mb-1">Test</p>
-                    <div class="flex items-center mb-4">
-                        <div class="w-40 h-6 bg-gray-200 rounded-full flex-shrink-0 mr-4">
-                            <div class="progress-bar h-6 rounded-full" :style="testWidth"></div>
-                        </div>
-                        <div>
-                            <p class="text-white font-bold"> {{ testCompleted }} Completed</p>
+        <div class="container mx-auto px-4">
+            <div class="md:w-1/2 mx-auto">
+                <div class="profile-card p-6 bg-cover md:bg-cover" style='background-image:url("../Images/profile_backgroundcopped.gif");background-repeat: no-repeat;background-position: center bottom;'>
+                    
+                    <h3 class="text-2xl font-bold text-white mb-4">Progress</h3>
+    
+                    <!--Study Progress Bar -->
+                    <div>
+                        <p class="ml-0 text-xl font-bold text-white mb-1">Study</p>
+                        <div class="flex items-center mb-4">
+                            <div class="w-40 h-6 bg-gray-200 rounded-full flex-shrink-0 mr-4">
+                                <div class="progress-bar h-6 rounded-full" :style="studyWidth"></div>
+                            </div>
+                            <div>
+                                <p class="text-white font-bold">{{ studyCompleted }} Completed</p>
+                            </div>
                         </div>
                     </div>
+                    <!-- End of Study Progress Bar -->
+    
+                    <!-- Test Progress Bar -->
+                    <div>
+                        <p class="text-xl ml-0 font-bold text-white mb-1">Test</p>
+                        <div class="flex items-center mb-4">
+                            <div class="w-40 h-6 bg-gray-200 rounded-full flex-shrink-0 mr-4">
+                                <div class="progress-bar h-6 rounded-full" :style="testWidth"></div>
+                            </div>
+                            <div>
+                                <p class="text-white font-bold"> {{ testCompleted }} Completed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Test Progress Bar -->
+                    
+                    <!-- In the future, we add in more progress stuff here -->
+                    
                 </div>
-                <!-- In the future, we add in more progress stuff here -->
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- End of Progress View Section -->
 
-    <!-- Bottom -->
+    <!-- Footer -->
     <section class="bg-white bg-opacity-50 backdrop-blur-md">
         <div class="max-w-screen-xl px-4 mx-auto space-y-8 text-center">
           <p class="text-lg leading-6">
@@ -300,8 +306,11 @@
           </p>
         </div>
     </section>
+    <!-- End of Footer -->
     
 </div>
+
+    <!-- Header Animation -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
         const options = {
@@ -313,11 +322,14 @@
         const typed = new Typed("#typing-text", options);
         });
     </script>
+    <!-- End of Header Animation -->
+    
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="../logout.js"></script>
     <script type="module" src="../loginStatus.js"></script>
     <script type="module" src="profile.js"></script>
+    
 </body>
 </html>
 
