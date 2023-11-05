@@ -172,6 +172,16 @@ document.getElementById('english').addEventListener('click', () => {
     postsRef = ref(db, 'posts/english');
     currPage = 1
     currSub = 'english'
+
+    document.getElementById('english').setAttribute("class","btn btn-danger btn-lg custom-btn text-2xl text-center font-bold mb-2")
+    document.getElementById('english').disabled = true
+
+    document.getElementById('math').setAttribute("class","btn btn-primary btn-lg custom-btn text-2xl text-center font-bold mb-2")
+    document.getElementById("math").disabled = false
+
+    document.getElementById('science').setAttribute("class","btn btn-primary btn-lg custom-btn text-2xl text-center font-bold mb-2")
+    document.getElementById("science").disabled = false
+
     showSearch()
     displayPage(1)
 })
@@ -180,6 +190,16 @@ document.getElementById('math').addEventListener('click', () => {
     postsRef = ref(db, 'posts/math');
     currPage = 1
     currSub = 'math'
+
+    document.getElementById('math').setAttribute("class","btn btn-danger btn-lg custom-btn text-2xl text-center font-bold mb-2")
+    document.getElementById('math').disabled = true
+
+    document.getElementById('english').setAttribute("class","btn btn-primary btn-lg custom-btn text-2xl text-center font-bold mb-2")
+    document.getElementById("english").disabled = false
+
+    document.getElementById('science').setAttribute("class","btn btn-primary btn-lg custom-btn text-2xl text-center font-bold mb-2")
+    document.getElementById("science").disabled = false
+
     showSearch()
     displayPage(1)
 })
@@ -188,6 +208,16 @@ document.getElementById('science').addEventListener('click', () => {
     postsRef = ref(db, 'posts/science');
     currPage = 1
     currSub = 'science'
+
+    document.getElementById('science').setAttribute("class","btn btn-danger btn-lg custom-btn text-2xl text-center font-bold mb-2")
+    document.getElementById('science').disabled = true
+
+    document.getElementById('english').setAttribute("class","btn btn-primary btn-lg custom-btn text-2xl text-center font-bold mb-2")
+    document.getElementById("english").disabled = false
+
+    document.getElementById('math').setAttribute("class","btn btn-primary btn-lg custom-btn text-2xl text-center font-bold mb-2")
+    document.getElementById("math").disabled = false
+
     showSearch()
     displayPage(1)
 })
