@@ -2,14 +2,15 @@
 
 function display_default(){
   let api_endpoint_url = "study.json"
-
+    //API CALL
     axios.get(api_endpoint_url)
     .then(response => { 
-      console.log(response.data["english"]);
+      // console.log(response.data["english"]);
       let default_data_arr=(response.data['english']['grammar'])
       
       new_html=``;
-    for (let i=0; i<default_data_arr.length;i++){
+    //Populate page with study material
+    for (let i=0; i<default_data_arr.length;i++){ 
       let image=default_data_arr[i].image_url;
       let text=default_data_arr[i].front_text;
       let examples=default_data_arr[i].examples;
@@ -63,18 +64,18 @@ function show_dictionary(){
 
 
 }
-function play_audio(audio_link){
+function play_audio(audio_link){ //Audio function for dictionary
   var music = new Audio(audio_link);
   music.play();
 
 }
 
-function find_searchword_meaning(){
-  let wordsearch=document.getElementById('wordsearch');
+function find_searchword_meaning(){ 
+  let wordsearch=document.getElementById('wordsearch'); //Retrieving word user inputted
   let word=wordsearch.value;
   if(word!=""){
   
-  let api_endpoint_url= `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
+  let api_endpoint_url= `https://api.dictionaryapi.dev/api/v2/entries/en/${word}` //Dictionary api call
   axios.get(api_endpoint_url)
     .then(response => {  
       let new_html=``
@@ -84,7 +85,7 @@ function find_searchword_meaning(){
       
       // console.log(response.data[0].meanings)
       let meanings=response.data[0].meanings
-      for(meaning of meanings){
+      for(meaning of meanings){ //Populate dictionary section with all meanings of words
         let html_to_add=``
         let wordform=meaning.partOfSpeech;
         let definition_arr=meaning.definitions;
@@ -102,10 +103,10 @@ function find_searchword_meaning(){
 
 
       }
-      console.log(response.data[0].phonetics)
-      let phonetics=response.data[0].phonetics;
+      // console.log(response.data[0].phonetics)
+      let phonetics=response.data[0].phonetics; //Pronunciation audio
       for(phonetic of phonetics){
-        console.log(phonetic.audio)
+        // console.log(phonetic.audio)
         if(phonetic.audio!=''){
           new_html+=`<div class='row'>
           <div class='col-4'></div>
@@ -132,7 +133,7 @@ function find_searchword_meaning(){
 
 }
 else{
-  let searchresultdisplay=document.getElementById('searchresultdisplay');
+  let searchresultdisplay=document.getElementById('searchresultdisplay'); //If user submits empty space
   searchresultdisplay.innerHTML="<span class='mx-auto'>This cannot be empty!</span>"
 }
   
@@ -144,7 +145,7 @@ function populate_page(){
 
     axios.get(api_endpoint_url)
     .then(response => {  
-      let dropdown=document.getElementById('dropdown_topics');
+      let dropdown=document.getElementById('dropdown_topics'); //Get currently selected study topic
       let value=dropdown.value;
       
       let string_arr= value.split("-");
@@ -168,8 +169,8 @@ function populate_page(){
         dictionary_section.innerHTML = ''; 
       }
 
-      let data_arr=(response.data[`${subject}`][`${topic}`])
-      console.log(data_arr)
+      let data_arr=(response.data[`${subject}`][`${topic}`]) //Access mock API data using subject+topic
+      // console.log(data_arr)
       new_html=``;
       for (let i=0; i<data_arr.length;i++){
       let image=data_arr[i].image_url;
@@ -251,7 +252,7 @@ function removeCalculator() {
   calculatorSection.innerHTML = ''; 
 }
 
-// For appending de calculator
+// For appending the calculator
 const calculatorHTML = `
 <h1 class="text-4xl text-center mt-5 font-bold">Feel free to use this calculator!</h1>
 <div id="calculator_section" class="text-center mt-5">
