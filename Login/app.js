@@ -25,6 +25,7 @@ toggle_btn.forEach((btn) => {
   });
 });
 
+// this function moves the sign in tab to the sign up tab onclick
 function moveSlider() {
   let index = this.dataset.value;
 
