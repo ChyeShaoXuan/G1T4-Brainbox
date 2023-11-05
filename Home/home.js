@@ -20,9 +20,6 @@ const auth = getAuth(app)
 const db = getDatabase()
 
 
-
-
-
 document.addEventListener("DOMContentLoaded", function () { //Run on load
     onAuthStateChanged(auth, user => { 
         if (user) { //If logged in
@@ -42,9 +39,11 @@ document.addEventListener("DOMContentLoaded", function () { //Run on load
     })
   });
 
+// Initialise falling emojis, Inspired from same source on Profile Page, modified from there
 document.addEventListener("DOMContentLoaded", function () { //Run on load
     const body = document.body;
-        
+    
+    // Generation of falling objects
     function createFallingObject() {
         const object = document.createElement("div");
         object.className = "falling-object";
@@ -53,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () { //Run on load
         body.appendChild(object);
             
         object.style.top = "-5vh";
-            
+        // Speed
         const animationDuration = Math.random() * 5 + 5 + "s";
         object.style.animationDuration = animationDuration;
         
@@ -61,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () { //Run on load
             body.removeChild(object);
         });
     }
-        
+    // Falling emojis pool
     function getEmoji() {
         const emojis = [
             "😊", "❤️", "⭐", "🌈", "🎈", "🌸", "🐻", "🍭", "🌻", "🐱",
@@ -70,8 +69,9 @@ document.addEventListener("DOMContentLoaded", function () { //Run on load
             "🍇", "🐢", "🌹", "🌍", "🍒", "🍔", "🦉", "🍄", "🌴", "🍎",
             "🌽", "🐷", "🎁", "🌳", "🐦", "🍟", "🐨", "🍕", "🍀", "🌱"
         ];
-                
+    // Random selection of emojis 
     return emojis[Math.floor(Math.random() * emojis.length)];
     }
+    // Frequency
     setInterval(createFallingObject, 2750);
 });
