@@ -1,17 +1,38 @@
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
---- IS216 AY2324S1 G1T4 Brainbox Documentation --- 
+=== IS216 AY2324S1 G1T4 Brainbox Documentation ===
 
 Made By: Chin Ler | Marco | Ren Yi | Shao Xuan | Wesley | Zi Ming
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+========================================================================
+-------------------------- Links & Setting Up -------------------------- 
+========================================================================
+
+Hosted on Git Pages - https://chyeshaoxuan.github.io/WAD-project-G1T4-Brainbox/
+Figma Prototyping - https://www.figma.com/file/b88q3WXySWoQfn28m61EoS/Prototype?type=design&node-id=0%3A1&mode=design&t=7X0c18V5g69cm0Cg-1
+
+Steps for accessing web app:
+  1. Click on link: https://chyeshaoxuan.github.io/WAD-project-G1T4-Brainbox/
+  2. [OPTIONAL] You may choose to create your own account, feel free to use a real email to test out the recover password feature later on
+    - Avoid Organisation emails as the email from firebase to change password might get quarantined.
+  3. [OPTIONAL] Upon creation of an account, you'll be back to the sign in page. Your account would then have been created. 
+  3. A fresh tester account is provided here: [DO NOTE THIS IS NOT A REAL EMAIL AND FORGET PASSWORD WONT WORK]
+    - [THE NAME OF THE ACCOUNT IS 'tester']
+    - Username: haha@gmail.com 
+    - Password: 123456
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 --- Technologies Utilised ---
 
 Frontend (Main): HTML, CSS
-Frontend-Libraries: TailwindCSS, Bootstrap, AnimateCSS, FlowbiteCSS, FontAwesomeCSS
+Main Frontend Framework: Responsive Styling & Design: TailwindCSS, Bootstrap
+Frontend-Libraries: AnimateCSS, FlowbiteCSS, FontAwesomeCSS
 Backend (Main): JavaScript
-Backend-Libraries: VueJs, Axios, Typed.Js, Anime.Js, GSAP
+Main Backend Framework: VueJs
+Backend-Libraries: Axios, Typed.Js, Anime.Js, GSAP
 Database: Firebase
 Prototyping: Figma (Link: https://www.figma.com/file/b88q3WXySWoQfn28m61EoS/Prototype?type=design&node-id=0%3A1&mode=design&t=7X0c18V5g69cm0Cg-1)
 Collaboration: Git
@@ -28,7 +49,7 @@ Database | Authentication ->
 
 Generic -> 
   1. Navbars all work, providing easy page navigability. Includes logout button.
-  2. Secret credits page hidden behind BrainBox Logo.
+  2. Secret credits page hidden behind BrainBox Logo. [ Not part of our project, but if you find it :) ]
 
 Login -> 
   1. Create account.
@@ -40,6 +61,7 @@ Home ->
 
 Leaderboard ->
   1. Dynamic leaderboard for users to track their position in tests with respect to other users. 
+  2. Showcases own position even if one is not in the Top 3 or Top 5. 
 
 Profile -> 
   1. All users are auto assigned a default profile picture, however we will allow a user to choose from 10 existing pre-set wallpapers. 
@@ -65,8 +87,8 @@ Forum ->
   1. A user can view forum posts in various subjects, ranked according to the latest post which will be at the top. 
   2. There can be more than 1 page of posts for a particular subject, also sorted in order according to the latest post.
   3. Create a Post. 
-  4. Reply a post - Live Feature. All replies are live and do not require a hard refresh. 
-    - Replies are also sorted by the first reply to the last reply. 
+  4. Reply a post - Replies are also sorted by the first reply to the last reply. 
   5. Delete a post - ONLY the user that created the post can delete the post. 
+  6. Realtime Feature - All posts/replies are updated realtime and do not require a hard refresh for it to be visible. 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
