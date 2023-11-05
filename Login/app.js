@@ -73,72 +73,62 @@ const signupEmailPassword = async () => {
 
   if (signupName.length == 0 || signupEmail.length == 0 || signupPassword.length == 0) { //Check if any blanks
     showSignUpError('blank')
-  } else if (signupPassword.length <6) {
+  } else if (signupPassword.length <6) { // Check if password less than 6 characters
     showSignUpError('short')
-  } else if (!document.querySelector("[name='agree']").checked) {
+  } else if (!document.querySelector("[name='agree']").checked) { //Check if Terms of services agreed to
     showSignUpError('checkbox')
   } else {
-    showSignUpError('none')
+    showSignUpError('none') // No error
     try {
 
-      const userCredential = await createUserWithEmailAndPassword(auth, signupEmail, signupPassword)
+      const userCredential = await createUserWithEmailAndPassword(auth, signupEmail, signupPassword) //Create account in firebase authentication 
       const db = getDatabase();
       const user = userCredential.user
       const reference = ref(db, 'users/' + user.uid)
       const testRef = ref(db,'testCompletion/' + user.uid)
-      user.displayName = signupName
+      user.displayName = signupName  
       // console.log(user)
-      set(reference, {
+      set(reference, { //Update realtime database with user info
         username: signupName,
         email:signupEmail,
-        image:'avatar1.jpg'
+        image:'avatar1.jpg' //default avatar
         })
-      update(testRef, {totalScore:0})
+      update(testRef, {totalScore:0}) //default score = 0
 
-      document.getElementById('signinMessage').innerText="You have successfully signed up!"
+      document.getElementById('signinMessage').innerText="You have successfully signed up!" 
       document.getElementById('signinMessage').setAttribute("style","color:green")
       clearFields()
-      main.classList.toggle("sign-up-mode")
+      main.classList.toggle("sign-up-mode") //Move screen back to login
 
 
 
     }
     catch(error) {
       // console.log(error);
-      showSignUpError(error.code);
+      showSignUpError(error.code); //Show error code
     }
   }}
 
-  const loginEmailPassword = async () => {
-    const loginEmail = document.getElementById('loginEmail').value;
-    const loginPassword = document.getElementById('loginPassword').value;
-    if (loginEmail == '' || loginPassword == '') {
-      showLogInError('blank');
+  const loginEmailPassword = async () => { //Login user
+    const loginEmail = document.getElementById('loginEmail').value.trim();
+    const loginPassword = document.getElementById('loginPassword').value.trim();
+    if (loginEmail == '' || loginPassword == '') { //Check for blank input
+      showLogInError('blank'); 
     } else {
       // console.log(loginEmail,loginPassword)
       try {
       const loginCredential = await signInWithEmailAndPassword(auth, loginEmail, loginPassword)
-      window.location.href = "../Home/home.html"
+      window.location.href = "../Home/home.html" //Redirect to homepage
       }
-      catch(error) {
+      catch(error) { // Username/password wrong
         // console.log(error);
         showLogInError('invalid')
       }
     }
   }
 
-    // const monitorAuthState = async () => {
-    //   onAuthStateChanged(auth, user => {
-    //     if (user) {
-    //       console.log('true')
-    //     } else {
-    //       console.log('false')
-    //     }
-    //   });
-    // }
-    // monitorAuthState();
 
-function showSignUpError(error) {
+function showSignUpError(error) { //Error code function for signup
       // console.log(error)
       var msgSpace = document.getElementById('signupError')
       if (error == 'auth/email-already-in-use'){
@@ -155,7 +145,7 @@ function showSignUpError(error) {
         
 }
 
-function showLogInError(error) {
+function showLogInError(error) { //Error code function for signin
   var loginMsg = document.getElementById('signinMessage')
   loginMsg.setAttribute('style','color:red')
   if (error == 'blank') {
@@ -165,7 +155,7 @@ function showLogInError(error) {
   }
 }
 
-function clearFields() {
+function clearFields() { //Clear login and sign up fields
   let fields = document.getElementsByClassName('input-field')
   for (let field of fields) {
     // console.log(field)
@@ -180,7 +170,7 @@ document.getElementById('signup').addEventListener('click',signupEmailPassword);
 
 document.getElementById('login').addEventListener('click',loginEmailPassword);
 
-
+//Prevent button from automatically redirecting
 document.getElementById("signup").addEventListener("click", function(event){
   event.preventDefault()
 });
