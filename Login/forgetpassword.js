@@ -17,18 +17,19 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
-document.getElementById("submitEmail").addEventListener("click", () => {
+
+document.getElementById("submitEmail").addEventListener("click", () => { //On click, send password reset
     const email = document.getElementById("email").value
     //  console.log(email)
     sendPasswordResetEmail(auth, email)
     .then(() => {
       // Showing modal
-      var myModal = new bootstrap.Modal(document.getElementById('correct'))
+      var myModal = new bootstrap.Modal(document.getElementById('correct')) //Show confirmation message
       myModal.show()
 
     }).catch(error => {
       // Showing modal
-        var myModal = new bootstrap.Modal(document.getElementById('error'))
+        var myModal = new bootstrap.Modal(document.getElementById('error')) //Show error message
         myModal.show()
     })
   })

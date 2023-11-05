@@ -13,22 +13,18 @@ const firebaseConfig = {
     databaseURL: "https://wad2-4fc9e-default-rtdb.asia-southeast1.firebasedatabase.app"
     };
   
-
+//Initialise firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 const db = getDatabase()
 const avatarImage = document.getElementById("avatar-image");
 const avatarThumbnails = document.querySelectorAll(".avatar-thumbnail");
-const prevButton = document.getElementById("prev-avatar");
-const nextButton = document.getElementById("next-avatar");
-const confirmButton = document.getElementById("confirm-avatar");
 
 
-const root = Vue.createApp({
+
+const root = Vue.createApp({ //Initialise VUE
     data() {
       return {
-        displayed_bio: localStorage.getItem('bio') ||"[ABOUT ME]",
-        input_bio: "",
         isEditing: false,
         isSelecting: false,
         username: '',
@@ -37,40 +33,29 @@ const root = Vue.createApp({
       }
     },
     methods: {
-      editBio() {
-        // Switch to editing mode
-        this.input_bio = '';
-        this.isEditing = true;
-      },
-      saveBio() {
-        // Save the changes and switch back to viewing mode
-        this.displayed_bio = this.input_bio;
-        this.isEditing = false;
-
-        localStorage.setItem('bio', this.displayed_bio)
-      },
-      editAvatar() {
+      editAvatar() { //Toggle showing avatar buttons
         this.isSelecting = !this.isSelecting;
       },
-      showAvatar(index) {
+      showAvatar(index) { // Update image 
         avatarImage.src = avatarThumbnails[index].src;
       },
-      movePrev() {
-        this.currentAvatarIndex = (this.currentAvatarIndex - 1 + avatarThumbnails.length) % avatarThumbnails.length;
-        console.log("prev");
+      movePrev() { 
+        this.currentAvatarIndex = (this.currentAvatarIndex - 1 + avatarThumbnails.length) % avatarThumbnails.length; // Change thumbnail to previous image
+        // console.log("prev");
         this.currentAvatar = "../" + avatarThumbnails[this.currentAvatarIndex].src.split("Brainbox/")[1]
       },
-      moveNext() {
-        this.currentAvatarIndex = (this.currentAvatarIndex + 1) % avatarThumbnails.length;
-        console.log("next");
+      moveNext() { 
+        this.currentAvatarIndex = (this.currentAvatarIndex + 1) % avatarThumbnails.length; //Change thumbnail to next image
+        // console.log("next");
         this.currentAvatar = "../" + avatarThumbnails[this.currentAvatarIndex].src.split("Brainbox/")[1]
       },
       confirmAvatar() {
         this.isSelecting = !this.isSelecting;
         var avatar_chosen = document.getElementById("avatar-image").src
         var image_file = avatar_chosen.split("Images/")[1]
-        onAuthStateChanged(auth, user => {
-          const userRef = ref(db, 'users/' + user.uid)
+        onAuthStateChanged(auth, user => { //Retrieve logged in user info
+          //Update user avatar in database
+          const userRef = ref(db, 'users/' + user.uid) 
             let updates = {
               image: image_file
             }
@@ -78,8 +63,8 @@ const root = Vue.createApp({
         })
       }
     }, 
-    created() {
-      onAuthStateChanged(auth, user => {
+    created() { //On load, display user name and user avatar
+      onAuthStateChanged(auth, user => { //Retrieve logged in user info
         const userRef = ref(db, 'users/' + user.uid)
         onValue(userRef, (snapshot) => {
             this.username = snapshot.val().username
@@ -101,7 +86,7 @@ const root = Vue.createApp({
     root.mount("#root");
   });
 
-const progress = Vue.createApp({
+const progress = Vue.createApp({ //Initialise vue object for progress section
   data() {
     return {
       studyWidth: '',
@@ -114,21 +99,21 @@ const progress = Vue.createApp({
   methods: {
 
   },
-  created() {
-    onAuthStateChanged(auth, user => {
+  created() { // On load
+    onAuthStateChanged(auth, user => { //Retrieve logged in user info
       const studyRef = ref(db, 'studyCompletion/' + user.uid)
       const studyTotal = ref(db,'studyCompletion/total')
       const testRef = ref(db, 'testCompletion/' + user.uid)
       const testTotal = ref(db,'testCompletion/total')
-      onValue(studyTotal, (snapshot) => {
+      onValue(studyTotal, (snapshot) => { //Retrieve total num of study topics
         let totalStudies = snapshot.val()
         let count = 0
-        onValue(studyRef, (snapshot2) => {
+        onValue(studyRef, (snapshot2) => { //Retrieve user's completed study topics
           snapshot2.forEach(() => {
             count++
           })
           this.studyCompleted = count + '/' + totalStudies
-          let percentage = Math.floor((Number(count)/Number(totalStudies))*100)
+          let percentage = Math.floor((Number(count)/Number(totalStudies))*100) //Whole number percentage for styling width
           this.studyWidth = "width:" + percentage + "%"
         }, {
           onlyOnce: true
@@ -137,20 +122,20 @@ const progress = Vue.createApp({
         onlyOnce: true
       })
 
-      onValue(testTotal, (snapshot) => {
+      onValue(testTotal, (snapshot) => { //Retrieve total num of tests
         let totalTests = snapshot.val()
         let count = 0
-        onValue(testRef, (snapshot2) => {
+        onValue(testRef, (snapshot2) => { //Retrieve user completed tests
 
-          snapshot2.forEach(() => {
+          snapshot2.forEach(() => { //Count user's number of completed
             count++
           })
-          count--
-          if (snapshot2.val() == null) {
+          count-- //Account for extra value "total"
+          if (snapshot2.val() == null) { //If user does not have any completed
             count = 0
           }  
           this.testCompleted = count + '/' + totalTests
-          let percentage = Math.floor((Number(count)/Number(totalTests))*100)
+          let percentage = Math.floor((Number(count)/Number(totalTests))*100) //Styling width percentage in whole number
           this.testWidth = "width:" + percentage + "%"
         }, {
           onlyOnce:true
