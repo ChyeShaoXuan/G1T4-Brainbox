@@ -8,11 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 
+    <!-- Generic Background/Button styling -->
     <style>
-
-        body {
-            background-color: #f1c40f;
-        }
         #submit:hover {
             transform: scale(1.1);
             background-color: green;
@@ -25,6 +22,8 @@
 
     </style>
 </head>
+
+<!-- Create a forum post main html content -->
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
 <div id="contentBlock" style="display:none;">
     <div class="w-full max-w-xl p-20 bg-white rounded-lg shadow-lg">
@@ -46,9 +45,9 @@
                     <option value="science">Science</option>
                 </select>
             </div>
-            <button id="submit" type="button" class="w-full p-3 bg-black text-white rounded-md  text-lg">Submit</button>
+            <button id="submit" type="button" class="w-full p-3 bg-black text-white rounded-md text-lg">Submit</button>
 
-            <a id="exit" href="forum.html" class="w-full p-3 bg-black text-white rounded-md text-lg block text-center">I don't want to post!</a>
+            <a id="exit" href="forum.html" class="w-full p-3 bg-black text-white rounded-md text-lg block text-center no-underline">I don't want to post!</a>
 
         </div>
     </div>
