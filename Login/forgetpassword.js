@@ -19,14 +19,15 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app)
 document.getElementById("submitEmail").addEventListener("click", () => {
     const email = document.getElementById("email").value
-    console.log(email)
+    //  console.log(email)
     sendPasswordResetEmail(auth, email)
     .then(() => {
+      // Showing modal
       var myModal = new bootstrap.Modal(document.getElementById('correct'))
       myModal.show()
 
     }).catch(error => {
-        console.log(error.message)
+      // Showing modal
         var myModal = new bootstrap.Modal(document.getElementById('error'))
         myModal.show()
     })
