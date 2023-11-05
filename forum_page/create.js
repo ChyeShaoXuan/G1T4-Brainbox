@@ -47,7 +47,9 @@ function monitorAuthState() {
                 console.log(error.message)
             })
             } else {
-                // FOR WESLEY MODAL HERE
+                // Show Modal
+                var myModal = new bootstrap.Modal(document.getElementById('error'))
+                myModal.show()
             }  
         } else {
             console.log('not logged in')
