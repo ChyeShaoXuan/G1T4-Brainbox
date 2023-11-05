@@ -374,7 +374,7 @@
             },
             {
                 "number": 12,
-                "question": "Choose the correct spelling:",
+                "question": "Complete the sentence : the school _____ gave an announcement in the school hall today.",
                 "answers": ["Principle", "Principal", "Princippal", "Prinnciple"],
                 "correct_answer": "Principal"
             },
