@@ -157,6 +157,8 @@ function displayPage(page) {
                 document.getElementById('lastPage').innerText = 0
             }
         });
+    }, {
+        onlyOnce:true
     });
 }
 
