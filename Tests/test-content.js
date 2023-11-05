@@ -111,6 +111,8 @@ const app = Vue.createApp({
                             value = Number(this.score) * 2
                         } else if (testDif == "Hard") {
                             value = Number(this.score) * 3
+                        } else {
+                            value = Number(this.score)
                         }
                         if (snapshot.val() == null) {
                             console.log('nulltest')
