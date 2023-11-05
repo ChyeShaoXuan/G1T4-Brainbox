@@ -83,11 +83,13 @@ function displayPage(page) {
     // } else {
     //     document.getElementById('prevButton').disabled = true
     // }
-    postsList = []
+
     let positionStr = ''
-    let newStr = ''
+
     document.getElementById('subjectCaption').innerText = currSub.charAt(0).toUpperCase() + currSub.slice(1)
     onValue(userRef, (snapshot) => {
+        postsList = []
+        let newStr = ''
         const users = snapshot.val()
         onValue(postsRef,(snapshot2) => {
             snapshot2.forEach((childSnapshot) => {
