@@ -40,8 +40,6 @@ function showSearch() {
             postsLength++
             commentsNum += Number(snapshot.val().comments)
         });
-        document.getElementById('firstPage').innerText = '1'
-        document.getElementById('lastPage').innerText = '5'
         document.getElementById('totalnumresults').innerText = postsLength
         document.getElementById('threads').innerText = 'Threads: ' + postsLength
         document.getElementById('comments').innerText = 'Comments: ' + commentsNum
@@ -107,12 +105,16 @@ function displayPage(page) {
                 postsList = postsList.reverse()
                 let firstPage = (page-1)*5
                 let lastPage = page*5
+                console.log(firstPage,lastPage,postsList.length)
                 for (let i=firstPage;i<lastPage;i++) {
+                    console.log(i,postsList.length)
                     if (i >= postsList.length) {
+                        console.log('test',firstPage,i)
                         document.getElementById('firstPage').innerText = firstPage+1
                         document.getElementById('lastPage').innerText = `${i}`
                         break;
                     }
+                    console.log('testradaw')
                     document.getElementById('firstPage').innerText = firstPage+1
                     document.getElementById('lastPage').innerText = lastPage
                     currPost = postsList[i]
@@ -164,10 +166,11 @@ function displayPage(page) {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    showSearch()
     displayPage(1)
 })
 
-document.addEventListener('DOMContentLoaded', showSearch)
+// document.addEventListener('DOMContentLoaded', showSearch)
 
 document.getElementById('english').addEventListener('click', () => {
     postsRef = ref(db, 'posts/english');
