@@ -212,6 +212,8 @@ function populate_page(){
 // Declaration 
 let displayValue = '';
 
+// Calculator inspiration from CodePen, Modified for Use
+
 // Calculator display addons
 function appendToDisplay(value) {
   displayValue += value;
