@@ -28,7 +28,7 @@ function monitorAuthState() {
             const postTitle = document.getElementById('title').value
             const postContent = document.getElementById('content').value
             const postSubject = document.getElementById('subject').value
-
+            if (postTitle != "" && postContent != "") {
             console.log(postTitle,postContent,postSubject)
 
             const current = new Date()
@@ -46,6 +46,9 @@ function monitorAuthState() {
             }).catch(error => {
                 console.log(error.message)
             })
+            } else {
+                // FOR WESLEY MODAL HERE
+            }  
         } else {
             console.log('not logged in')
         }
