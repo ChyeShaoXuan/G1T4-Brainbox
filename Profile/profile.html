@@ -260,30 +260,30 @@
         <div class="md:w-1/2 mx-auto">
             <div class="profile-card p-6 bg-cover md:bg-cover" style='background-image:url("../Images/progress_backgroundgif.gif");background-repeat: no-repeat;background-position: center bottom;'>
                 
-                <h3 class="text-2xl font-bold text-orange-400 mb-4">Progress</h3>
+                <h3 class="text-2xl font-bold text-orange-500 mb-4">Progress</h3>
 
                 <!--Study Progress Bar-->
                 <div>
-                    <p class="ml-0 text-xl font-bold text-white mb-1">Study</p>
+                    <p class="ml-0 text-xl font-bold text-orange-500 mb-1">Study</p>
                     <div class="flex items-center mb-4">
                         <div class="w-40 h-6 bg-gray-200 rounded-full flex-shrink-0 mr-4">
                             <div class="progress-bar h-6 rounded-full" :style="studyWidth"></div>
                         </div>
                         <div>
-                            <p class="text-white font-bold">{{ studyCompleted }} Completed</p>
+                            <p class="text-orange-500 font-bold">{{ studyCompleted }} Completed</p>
                         </div>
                     </div>
                 </div>
 
                 <!--Test Progress Bar-->
                 <div>
-                    <p class="text-xl ml-0 font-bold text-white mb-1">Test</p>
+                    <p class="text-xl ml-0 font-bold text-orange-500 mb-1">Test</p>
                     <div class="flex items-center mb-4">
                         <div class="w-40 h-6 bg-gray-200 rounded-full flex-shrink-0 mr-4">
                             <div class="progress-bar h-6 rounded-full" :style="testWidth"></div>
                         </div>
                         <div>
-                            <p class="text-white font-bold"> {{ testCompleted }} Completed</p>
+                            <p class="text-orange-500 font-bold"> {{ testCompleted }} Completed</p>
                         </div>
                     </div>
                 </div>
