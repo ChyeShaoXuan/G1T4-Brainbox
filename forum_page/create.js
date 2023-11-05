@@ -25,9 +25,11 @@ function monitorAuthState() {
     onAuthStateChanged(auth, user => {
         if (user) {
 
-            const postTitle = document.getElementById('title').value
-            const postContent = document.getElementById('content').value
+            let postTitle = document.getElementById('title').value
+            let postContent = document.getElementById('content').value
             const postSubject = document.getElementById('subject').value
+            postTitle = postTitle.trim()
+            postContent = postContent.trim()
             if (postTitle != "" && postContent != "") {
             console.log(postTitle,postContent,postSubject)
 
