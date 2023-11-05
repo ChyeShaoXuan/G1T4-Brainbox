@@ -103,6 +103,8 @@ const app = Vue.createApp({
                     let value = 0
 
                     let updates = {}
+                    let testKey = testSub+testDif
+                    updates[testKey] = true
                     onValue(completeRef, (snapshot) => {
 
                         if (testDif == "Medium") {
