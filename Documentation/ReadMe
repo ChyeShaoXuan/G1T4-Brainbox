@@ -23,6 +23,10 @@ Steps for accessing web app:
     - Username: haha@gmail.com 
     - Password: 123456
 
+Note:
+  - Github Pages Deployment may be laggy and test/progress changes may appear later 
+  - Running the web app directly via localhost makes all progress immediate
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 --- Technologies Utilised ---
