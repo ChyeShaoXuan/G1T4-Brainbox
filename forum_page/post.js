@@ -70,6 +70,9 @@ const root = Vue.createApp({
                 
                 onValue(postRef, (snapshot) => {
                     const postContent = snapshot.val()
+                    if (snapshot.val() == null){
+                        window.location.href = "forum.html"
+                    }
                     let replies = postContent.comments + 1 //Increase comment counter for posts
                     const updates = {
                         comments: replies
