@@ -158,6 +158,8 @@ function displayPage(page) {
         });
     }, {
         onlyOnce:true
+    }, {
+        onlyOnce:true
     });
 }
 
