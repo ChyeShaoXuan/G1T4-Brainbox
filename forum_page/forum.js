@@ -155,12 +155,12 @@ function displayPage(page) {
                 document.getElementById('firstPage').innerText = 0
                 document.getElementById('lastPage').innerText = 0
             }
+        }, {
+            onlyOnce:true
         });
     }, {
         onlyOnce:true
-    }, {
-        onlyOnce:true
-    });
+    },);
 }
 
 
