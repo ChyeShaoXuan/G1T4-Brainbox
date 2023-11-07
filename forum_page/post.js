@@ -70,9 +70,6 @@ const root = Vue.createApp({
                 
                 onValue(postRef, (snapshot) => {
                     const postContent = snapshot.val()
-                    if (snapshot.val() == null){
-                        window.location.href = "forum.html"
-                    }
                     let replies = postContent.comments + 1 //Increase comment counter for posts
                     const updates = {
                         comments: replies
@@ -129,6 +126,9 @@ const root = Vue.createApp({
     created() { //On load
         onValue(postRef, (snapshot) => {
             const postContent = snapshot.val()
+            if (snapshot.val() == null){
+                window.location.href = "forum.html"
+            }
             let currViews = postContent.views + 1 //Increase viewcount in database
             const updates = {
                 views: currViews
