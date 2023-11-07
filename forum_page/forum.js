@@ -160,7 +160,7 @@ function displayPage(page) {
         });
     }, {
         onlyOnce:true
-    },);
+    });
 }
 
 
